@@ -339,6 +339,6 @@ if analysis == "[3] Search Engine":
                     with st.expander("See original page"):
                         img = Image.open(os.path.join("ocr_exports", "se_png", sel_png))
                         st.image(img)
-                except ValueError:
+                except AttributeError:
                     pass
                 st.markdown("""---""")
