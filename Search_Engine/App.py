@@ -71,27 +71,26 @@ if analysis == "[1] Image Processing":
 
     side_bar()
 
-    col1, col2 = st.columns([1, 1])
-    with col1:
-        box_save = st.radio('Save export ?', ('Yes', 'No'))
-        if box_save == 'Yes':
-            box_save = True
-        elif box_save == 'No':
-            box_save = False
-    with col2:
-        save = st.radio('Export format (choose 1)', ('box contents', 'box relations', 'whole structure', 'text', 'image', 'all formats'), index=5)
-        if save == 'box contents':
-            save = 'bc'
-        elif save == 'box relations':
-            save = 'br'
-        elif save == 'whole structure':
-            save = 'ws'
-        elif save == 'text':
-            save = 'txt'
-        elif save == 'image':
-            save = 'png'
-        elif save == 'all formats':
-            save = 'all'
+
+    box_save = st.radio('Save export ?', ('Yes', 'No'))
+    if box_save == 'Yes':
+        box_save = True
+    elif box_save == 'No':
+        box_save = False
+
+    save = st.radio('Export format (choose 1)', ('box contents', 'box relations', 'whole structure', 'text', 'image', 'all formats'), index=5)
+    if save == 'box contents':
+        save = 'bc'
+    elif save == 'box relations':
+        save = 'br'
+    elif save == 'whole structure':
+        save = 'ws'
+    elif save == 'text':
+        save = 'txt'
+    elif save == 'image':
+        save = 'png'
+    elif save == 'all formats':
+        save = 'all'
 
     folder_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process")
     ocrplus = OCRPlus(path=folder_path, neo4j_location="local")
@@ -123,35 +122,6 @@ if analysis == "[1] Image Processing":
 
         st.markdown("**Done**")
         st.balloons()
-
-    # data = st.file_uploader("Upload a file", type=["png", "jpg", "jpeg", "pdf"])
-
-    # if data:
-    #     st.download_button('download file ?', data, file_name='test.pdf')
-    # if data is not None:
-    #     if "png" in str(data.type) or "jpg" in str(data.type):
-    #         # st.text(data.type)
-    #         image = Image.open(data)
-    #         st.image(image, caption='Selected document')
-    #         # st.text(np.array(image))
-
-    #     elif "pdf" in str(data.type):
-    #         images = pdf2image.convert_from_bytes(data.read())
-
-    #         col1, col2 = st.columns([.8,1])
-    #         with col1:
-    #             int_val = st.slider('Page number', min_value=0, max_value=len(images), value=0, step=1)
-    #         with col2:
-    #             button1 = st.button("Confirm page number")
-    #         button2 = st.button("All pages?")
-
-    #         if button2:
-    #             for iPage in images:
-    #                 st.image(iPage, use_column_width=True)
-    #         elif int_val != 0 and button1:
-    #             page = images[int_val-1]
-    #             st.image(page, use_column_width=True)
-    #             img = np.array(page)
 
 # #######################################################################################################################
 #                                              # === INDEXER === #
@@ -229,16 +199,15 @@ if analysis == "[3] Search Engine":
     response = st.radio('Number of response', ('Best', 'Most Relevant', 'All'), index=1)
 
 
-    col1, col2 = st.columns([.75, 1])
-    with col1:
-        lang = st.multiselect('Which language', ['french', 'english', 'spanish', 'italian', 'german'], default=['french', 'english', 'spanish', 'italian', 'german'])
-    with col2:
-        st.write('Specific Parameters')
-        kw = st.checkbox('Key words selected')
-        doc = st.checkbox('Number of document in the database')
-        positive = st.checkbox('Number of results')
-        score = st.checkbox('Score of documents')
-        all_of_them = st.checkbox('All', value=True)
+
+    lang = st.multiselect('Which language', ['french', 'english', 'spanish', 'italian', 'german'], default=['french', 'english', 'spanish', 'italian', 'german'])
+
+    st.write('Specific Parameters')
+    kw = st.checkbox('Key words selected')
+    doc = st.checkbox('Number of document in the database')
+    positive = st.checkbox('Number of results')
+    score = st.checkbox('Score of documents')
+    all_of_them = st.checkbox('All', value=True)
 
     search_button = st.button("Search")
 
