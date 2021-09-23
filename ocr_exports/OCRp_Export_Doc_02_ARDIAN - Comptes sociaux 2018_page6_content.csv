@@ -1,0 +1,1367 @@
+identifier;block_num;par_num;line_num;word_num;text;position;height;text_type;page;document
+0;1;1;1;1; ;[284, 184, 1828, 20];20;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;2;1;1;1; ;[289, 191, 1827, 23];23;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;3;1;1;1;ARDIAN;[295, 208, 170, 65];65;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;3;1;1;2;31/12/2018;[1836, 202, 266, 44];44;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;3;1;2;1;COMPTE;[934, 300, 203, 42];42;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;3;1;2;2;DE;[1153, 299, 61, 41];41;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;3;1;2;3;RESULTAT;[1231, 296, 237, 42];42;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;4;1;1;1; ;[280, 401, 1235, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;4;1;2;1;   ;[610, 493, 315, 57];57;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;4;1;3;1; ;[283, 550, 11, 36];36;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;4;1;3;2;   ;[915, 550, 10, 74];74;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;5;1;1;1;31/12/2018;[1564, 429, 192, 41];41;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;5;1;1;2;|;[1773, 413, 52, 61];61;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;5;1;1;3;31/12/2017;[1862, 426, 199, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;6;1;1;1;   ;[280, 422, 24, 81];81;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;6;1;2;1; ;[280, 503, 14, 47];47;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;7;1;1;1;Rubriques;[304, 440, 125, 37];37;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;8;1;1;1;    ;[1807, 1097, 312, 481];481;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;9;1;1;1;Ventes;[301, 511, 83, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;9;1;1;2;de;[394, 508, 32, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;9;1;1;3;marchandises;[436, 507, 174, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;9;1;2;1;Production;[303, 546, 131, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;9;1;2;2;vendue;[444, 545, 95, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;9;1;2;3;de;[549, 544, 31, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;9;1;2;4;biens;[590, 544, 66, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;9;1;3;1;Production;[303, 583, 132, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;9;1;3;2;vendue;[444, 582, 94, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;9;1;3;3;de;[548, 582, 31, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;9;1;3;4;services;[588, 585, 101, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;10;1;1;1;CHIFFRES;[487, 642, 141, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;10;1;1;2;D'AFFAIRES;[638, 642, 176, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;10;1;1;3;NETS;[824, 641, 76, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;11;1;1;1;Production;[303, 702, 131, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;11;1;1;2;stockée;[444, 701, 96, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;11;2;1;1;Production;[303, 739, 131, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;11;2;1;2;immobilisée;[445, 738, 150, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;11;3;1;1;Subventions;[302, 778, 151, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;11;3;1;2;d'exploitation;[462, 777, 173, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;11;4;1;1;Reprises;[303, 819, 102, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;11;4;1;2;sur;[414, 825, 37, 18];18;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;11;4;1;3;amortissements;[460, 818, 191, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;11;4;1;4;et;[661, 819, 24, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;11;4;1;5;provisions,;[693, 817, 134, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;11;4;1;6;transferts;[837, 811, 111, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;11;4;1;7;de;[958, 811, 31, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;11;4;1;8;charges;[999, 811, 100, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;12;1;1;1;Auies;[300, 852, 75, 63];63;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;12;1;1;2;TGV;[390, 853, 74, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;12;1;1;3;|;[1452, 664, 197, 235];235;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;12;1;1;4;|;[1706, 671, 98, 220];220;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;12;1;1;5;.;[1902, 668, 197, 221];221;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;13;1;1;1;:;[401, 928, 5, 2];2;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;13;1;1;2;PRODUITS;[1049, 918, 160, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;13;1;1;3;D'EXPLOITATION;[1219, 914, 260, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;13;1;1;4;nr];[1658, 889, 148, 74];74;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;1;1;1;Achats;[300, 993, 85, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;1;1;2;de;[394, 993, 32, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;1;1;3;marchandises;[437, 991, 174, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;1;1;4;(y;[631, 991, 23, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;1;1;5;compris;[664, 994, 99, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;1;1;6;droits;[772, 990, 70, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;1;1;7;de;[851, 989, 32, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;1;1;8;douane);[894, 989, 103, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;2;1;1;Variation;[300, 1030, 115, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;2;1;2;de;[425, 1027, 32, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;2;1;3;stock;[467, 1027, 64, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;2;1;4;(marchandises);[549, 1025, 192, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;3;1;1;Achats;[300, 1065, 85, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;3;1;2;de;[394, 1065, 32, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;3;1;3;matières;[437, 1067, 107, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;3;1;4;premières;[553, 1066, 125, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;3;1;5;et;[687, 1068, 24, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;3;1;6;autres;[719, 1068, 76, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;3;1;7;approvisionnements;[804, 1065, 253, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;3;1;8;{et;[1068, 1060, 32, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;3;1;9;droits;[1108, 1059, 71, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;3;1;10;de;[1188, 1058, 33, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;3;1;11;douane];[1230, 1058, 107, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;4;1;1;Variation;[300, 1106, 115, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;4;1;2;de;[425, 1102, 31, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;4;1;3;stock;[467, 1102, 64, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;4;1;4;(matières;[549, 1102, 115, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;4;1;5;premières;[674, 1103, 125, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;4;1;6;et;[808, 1105, 25, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;4;1;7;approvisionnements);[841, 1098, 261, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;5;1;1;Autres;[300, 1144, 79, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;5;1;2;achats;[388, 1140, 83, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;5;1;3;et;[480, 1146, 23, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;5;1;4;charges;[511, 1140, 101, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;5;1;5;externes;[622, 1144, 106, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;5;1;6;363;[1663, 1131, 52, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;5;1;7;121;[1730, 1130, 46, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;5;1;8;362;[1967, 1127, 54, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;5;1;9;114;[2036, 1127, 53, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;5;2;1;Impêts,;[302, 1182, 88, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;5;2;2;taxes;[399, 1184, 66, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;5;2;3;et;[462, 1173, 36, 43];43;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;5;2;4;versements;[502, 1183, 143, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;5;2;5;assimilés;[655, 1177, 110, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;5;2;6;144;[1666, 1169, 51, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;5;2;7;185;[1730, 1168, 50, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;5;2;8;(30;[1976, 1165, 45, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;5;2;9;807);[2032, 1164, 65, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;5;3;1;Salaires;[302, 1218, 100, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;5;3;2;et;[412, 1223, 22, 20];20;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;5;3;3;traitements;[442, 1220, 136, 23];23;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;6;1;1;Charges;[302, 1256, 106, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;6;1;2;sociales;[417, 1255, 102, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;7;1;1;DOTATIONS;[303, 1311, 189, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;7;1;2;D'EXPLOITATION;[497, 1310, 264, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;8;1;1;Sur;[303, 1350, 40, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;8;1;2;immobilisations;[351, 1347, 194, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;8;1;3;:;[554, 1356, 6, 18];18;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;8;1;4;dotations;[569, 1346, 118, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;8;1;5;aux;[696, 1355, 47, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;8;1;6;amortissements;[752, 1348, 192, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;9;1;1;Sur;[302, 1388, 41, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;9;1;2;immobilisations;[351, 1385, 194, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;9;1;3;:;[555, 1395, 5, 16];16;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;9;1;4;dotations;[569, 1384, 117, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;9;1;5;aux;[696, 1393, 47, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;9;1;6;provisions;[753, 1386, 128, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;10;1;1;Sur;[302, 1427, 41, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;10;1;2;actif;[351, 1424, 53, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;10;1;3;circulant;[412, 1423, 108, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;10;1;4;:;[528, 1433, 6, 16];16;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;10;1;5;dotations;[543, 1422, 117, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;10;1;6;aux;[670, 1431, 46, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;10;1;7;provisions;[726, 1424, 129, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;11;1;1;Pour;[303, 1465, 55, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;11;1;2;risques;[367, 1466, 85, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;11;1;3;et;[462, 1466, 24, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;11;1;4;charges;[494, 1460, 101, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;11;1;5;:;[592, 1455, 15, 44];44;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;11;1;6;dotations;[620, 1459, 117, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;11;1;7;aux;[747, 1469, 48, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;11;1;8;provisions;[804, 1461, 127, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;12;1;1;Autres;[301, 1514, 78, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;12;1;2;charges;[389, 1511, 101, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;14;12;1;3;1;[1768, 1500, 7, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;15;1;1;1;2;[2071, 1497, 17, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;15;1;2;1;RESULTAT;[1058, 1635, 152, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;15;1;2;2;D'EXPLOITATION;[1219, 1632, 259, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;15;1;2;3;(507;[1644, 1628, 70, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;15;1;2;4;306);[1720, 1626, 69, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;15;1;2;5;(331;[1949, 1625, 63, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;15;1;2;6;307);[2026, 1623, 71, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;16;1;1;1;OPERATIONS;[305, 1708, 206, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;16;1;1;2;EN;[516, 1708, 47, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;16;1;1;3;COMMUN;[570, 1706, 156, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;16;1;2;1;Bénéfice;[303, 1744, 106, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;16;1;2;2;attribué;[419, 1743, 95, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;16;1;2;3;ou;[524, 1753, 31, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;16;1;2;4;perte;[565, 1748, 65, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;16;1;2;5;transférée;[639, 1741, 126, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;16;1;3;1;Perte;[303, 1784, 59, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;16;1;3;2;supportée;[372, 1783, 126, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;16;1;3;3;ou;[508, 1790, 32, 18];18;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;16;1;3;4;bénéfice;[551, 1780, 107, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;16;1;3;5;transféré;[668, 1778, 110, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;1;1;1;PRODUITS;[302, 1838, 161, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;1;1;2;FINANCIERS;[469, 1836, 190, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;2;1;1;Produits;[303, 1873, 96, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;2;1;2;financiers;[408, 1873, 122, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;2;1;3;de;[539, 1872, 32, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;2;1;4;participations;[581, 1874, 173, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;3;1;1;Produits;[303, 1912, 96, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;3;1;2;des;[408, 1911, 44, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;3;1;3;autres;[461, 1917, 77, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;3;1;4;valeurs;[546, 1911, 91, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;3;1;5;mobilières;[647, 1909, 130, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;3;1;6;et;[788, 1915, 22, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;3;1;7;créances;[818, 1911, 114, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;3;1;8;de;[942, 1907, 30, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;3;1;9;l'actif;[983, 1906, 65, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;3;1;10;immobilisé;[1055, 1904, 138, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;3;2;1;Autres;[300, 1954, 79, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;3;2;2;intérêts;[389, 1953, 88, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;3;2;3;et;[486, 1955, 23, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;3;2;4;produits;[519, 1949, 101, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;3;2;5;assimilés;[629, 1947, 110, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;4;1;1;Reprises;[303, 1992, 101, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;4;1;2;sur;[413, 1997, 37, 19];19;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;4;1;3;provisions;[459, 1991, 127, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;4;1;4;et;[596, 1992, 23, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;4;1;5;transferts;[627, 1986, 112, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;4;1;6;de;[749, 1985, 32, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;4;1;7;charges;[792, 1985, 101, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;5;1;1;Différences;[303, 2026, 138, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;5;1;2;positives;[451, 2030, 109, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;5;1;3;de;[569, 2025, 31, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;5;1;4;change;[610, 2025, 95, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;6;1;1;Produits;[303, 2065, 96, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;6;1;2;nets;[409, 2070, 49, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;6;1;3;sur;[466, 2074, 38, 16];16;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;6;1;4;cessions;[513, 2067, 103, 23];23;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;6;1;5;de;[626, 2062, 31, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;6;1;6;valeurs;[667, 2062, 91, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;6;1;7;mobilières;[768, 2061, 131, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;6;1;8;de;[908, 2060, 32, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;17;6;1;9;placement;[950, 2060, 130, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;18;1;1;1;PRODUITS;[1122, 2124, 160, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;18;1;1;2;FINANCIERS;[1292, 2123, 187, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;18;1;1;3;193;[1593, 2121, 55, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;18;1;1;4;658;[1657, 2120, 57, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;18;1;1;5;188;[1727, 2120, 55, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;18;1;1;6;|;[1786, 2094, 48, 70];70;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;18;1;1;7;105505;[1868, 2094, 146, 70];70;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;18;1;1;8;520;[2013, 2094, 71, 70];70;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;18;1;1;9;|;[2084, 2094, 24, 70];70;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;19;1;1;1;  ;[283, 606, 5, 97];97;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;19;1;2;1; ;[283, 703, 11, 40];40;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;19;1;2;2; ;[1505, 703, 9, 40];40;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;19;1;3;1; ;[283, 743, 11, 38];38;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;19;1;3;2; ;[1505, 743, 9, 38];38;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;19;1;4;1; ;[283, 781, 11, 44];44;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;19;1;4;2;    ;[1505, 781, 9, 87];87;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;20;1;1;1; ;[920, 624, 5, 44];44;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;20;1;2;1; ;[920, 668, 594, 35];35;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;21;1;1;1;  ;[283, 825, 11, 43];43;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;21;1;2;1;  ;[283, 868, 5, 140];140;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;21;1;3;1;   ;[279, 1008, 14, 89];89;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;21;1;3;2;   ;[1508, 902, 3, 174];174;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;21;1;4;1;  ;[279, 1116, 14, 72];72;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;21;1;4;2;   ;[1507, 1116, 3, 81];81;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;21;1;5;1; ;[283, 1229, 10, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;21;1;5;2; ;[1508, 1197, 2, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;21;1;6;1;  ;[283, 1258, 10, 92];92;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;21;1;6;2;   ;[1509, 1229, 1, 121];121;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;21;1;7;1; ;[283, 1350, 10, 39];39;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;21;1;7;2; ;[1509, 1350, 1, 39];39;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;21;1;8;1; ;[283, 1389, 10, 43];43;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;21;1;8;2; ;[1509, 1389, 1, 43];43;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;21;1;9;1; ;[283, 1432, 10, 39];39;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;21;1;9;2; ;[1508, 1432, 2, 39];39;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;21;1;10;1; ;[283, 1471, 10, 42];42;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;21;1;11;1;  ;[283, 1513, 5, 145];145;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;21;1;11;2; ;[1508, 1471, 2, 42];42;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;21;1;12;1; ;[283, 1658, 5, 61];61;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;21;1;12;2; ;[1510, 1658, 4, 61];61;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;21;1;13;1; ;[283, 1719, 10, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;21;1;13;2; ;[1505, 1719, 9, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;21;1;14;1;   ;[279, 1749, 14, 91];91;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;21;1;14;2;  ;[1504, 1749, 10, 84];84;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;21;1;15;1;   ;[279, 1840, 14, 81];81;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;22;1;1;1;  ;[279, 1188, 14, 41];41;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;22;1;1;2; ;[1808, 1197, 2, 15];15;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;23;1;1;1; ;[2113, 1578, 3, 82];82;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;23;1;2;1; ;[2113, 1660, 3, 38];38;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;23;1;3;1;   ;[1504, 1833, 616, 16];16;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;23;1;3;2;     ;[1782, 1698, 338, 204];204;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;23;1;4;1; ;[279, 1921, 14, 37];37;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;23;1;4;2; ;[1504, 1902, 616, 19];19;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;23;1;5;1;     ;[279, 1958, 14, 118];118;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;23;1;6;1; ;[279, 2076, 9, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;23;1;7;1; ;[279, 2108, 9, 105];105;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;23;1;7;2;    ;[2106, 2076, 14, 146];146;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;23;1;8;1;     ;[1781, 2240, 339, 59];59;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;24;1;1;1; ;[1504, 1849, 16, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;24;1;1;2; ;[1798, 1849, 15, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;24;1;2;1; ;[1504, 1878, 98, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;24;1;2;2; ;[1782, 1878, 124, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;25;1;1;1;193;[1602, 1863, 49, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;25;1;1;2;584;[1662, 1863, 55, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;25;1;1;3;650;[1727, 1862, 55, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;25;1;1;4;105;[1906, 1860, 50, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;25;1;1;5;368;[1967, 1859, 55, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;25;1;1;6;703;[2034, 1858, 54, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;26;1;1;1;    ;[1798, 1922, 322, 56];56;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;27;1;1;1;  ;[1505, 1926, 177, 52];52;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;27;1;2;1;   ;[1505, 1978, 15, 62];62;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;27;1;3;1; ;[1505, 2040, 177, 13];13;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;28;1;1;1; ;[1782, 1926, 32, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;28;1;2;1; ;[1798, 1958, 188, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;29;1;1;1;34;[1682, 1939, 35, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;29;1;1;2;417;[1726, 1939, 56, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;29;1;1;3;45;[1986, 1936, 35, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;29;1;1;4;397;[2034, 1935, 57, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;29;1;2;1;3;[1700, 1978, 15, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;29;1;2;2;824;[1728, 1976, 54, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;30;1;1;1;35;[1682, 2016, 34, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;30;1;1;2;298;[1727, 2016, 54, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;31;1;1;1; ;[1798, 1978, 322, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;31;1;2;1;  ;[1798, 2000, 189, 15];15;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;31;1;3;1;  ;[1798, 2015, 16, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;32;1;1;1;  ;[2090, 2000, 30, 15];15;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;32;1;2;1;    ;[1505, 2015, 615, 45];45;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;32;1;3;1; ;[2112, 2060, 8, 16];16;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;33;1;1;1;91;[1987, 2014, 30, 23];23;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;33;1;1;2;420;[2033, 2012, 57, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;34;1;1;1;  ;[1505, 2213, 15, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;34;1;2;1;  ;[1505, 2240, 15, 43];43;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;34;1;3;1;  ;[1505, 2283, 615, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;34;1;4;1;  ;[1114, 2311, 401, 41];41;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;35;1;1;1;  ;[1798, 2222, 16, 35];35;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;36;1;1;1;   ;[279, 2213, 15, 86];86;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;36;1;2;1;   ;[280, 2299, 23, 79];79;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;36;1;3;1; ;[284, 2378, 1, 61];61;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;37;1;1;1;  ;[1781, 2261, 32, 35];35;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;38;1;1;1;Dotations;[303, 2200, 117, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;38;1;1;2;financières;[430, 2196, 138, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;38;1;1;3;aux;[576, 2204, 49, 18];18;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;38;1;1;4;amortissements;[633, 2197, 193, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;38;1;1;5;et;[836, 2198, 23, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;38;1;1;6;provisions;[868, 2195, 124, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;38;1;1;7;316;[1663, 2186, 53, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;38;1;1;8;837;[1728, 2185, 55, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;38;1;1;9;1;[1944, 2184, 8, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;38;1;1;10;344;[1968, 2182, 55, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;38;1;1;11;543;[2033, 2181, 55, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;38;1;2;1;Intérêts;[303, 2237, 88, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;38;1;2;2;et;[400, 2239, 23, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;38;1;2;3;charges;[431, 2233, 102, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;38;1;2;4;assimilées;[541, 2232, 128, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;38;1;2;5;274;[1663, 2223, 54, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;38;1;2;6;063;[1727, 2222, 53, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;38;1;2;7;92;[1987, 2220, 34, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;38;1;2;8;575;[2034, 2220, 54, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;38;1;3;1;197;[1666, 2261, 52, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;38;1;3;2;559;[1726, 2260, 55, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;38;1;3;3;72;[1987, 2258, 34, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;38;1;3;4;991;[2035, 2257, 48, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;39;1;1;1;Différences;[303, 2272, 139, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;39;1;1;2;négaïives;[452, 2273, 121, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;39;1;1;3;de;[582, 2270, 32, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;39;1;1;4;change;[624, 2270, 96, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;39;1;2;1;Charges;[303, 2310, 106, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;39;1;2;2;nettes;[419, 2314, 72, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;39;1;2;3;sur;[499, 2319, 38, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;39;1;2;4;cessions;[545, 2311, 104, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;39;1;2;5;de;[658, 2306, 32, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;39;1;2;6;valeurs;[699, 2307, 92, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;39;1;2;7;mobilières;[801, 2305, 130, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;39;1;2;8;de;[940, 2304, 31, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;39;1;2;9;placement;[981, 2304, 133, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;40;1;1;1;  ;[2111, 2311, 9, 50];50;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;40;1;2;1; ;[280, 2439, 8, 75];75;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;40;1;2;2;   ;[2115, 2361, 2, 203];203;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;40;1;3;1;     ;[2113, 2830, 9, 359];359;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;40;1;4;1;  ;[2117, 3189, 2, 99];99;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;41;1;1;1;CHARGES;[1117, 2369, 150, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;41;1;1;2;FINANCIERES;[1276, 2366, 203, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;41;1;1;3;788;[1657, 2364, 57, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;41;1;1;4;459;[1723, 2363, 60, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;41;1;1;5;|;[1792, 2339, 47, 69];69;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;41;1;1;6;151010;[1907, 2339, 168, 69];69;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;41;1;1;7;|;[2080, 2339, 35, 69];69;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;42;1;1;1;RESULTAT;[1152, 2432, 150, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;42;1;1;2;FINANCIER;[1310, 2429, 170, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;42;1;1;3;|;[1489, 2406, 44, 66];66;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;42;1;1;4; 192869729;[1593, 2426, 189, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;42;1;1;5;|;[1786, 2406, 44, 66];66;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;42;1;1;6;103995;[1896, 2423, 123, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;42;1;1;7;411;[2029, 2423, 56, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;42;1;2;1;RESULTAT;[916, 2497, 146, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;42;1;2;2;COURANT;[1070, 2495, 160, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;42;1;2;3;AVANT;[1236, 2494, 115, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;42;1;2;4;IMPOTS;[1358, 2492, 121, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;42;1;2;5;|;[1487, 2469, 45, 67];67;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;42;1;2;6; 192362423;[1515, 2473, 288, 59];59;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;42;1;2;7;|;[1782, 2469, 46, 67];67;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;42;1;2;8;103664;[1896, 2487, 125, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;42;1;2;9;104;[2033, 2485, 58, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;43;1;1;1;11;[1621, 2624, 27, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;43;1;1;2;326;[1663, 2623, 54, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;43;1;1;3;537;[1727, 2622, 56, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;43;1;1;4;62;[1922, 2620, 34, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;43;1;1;5;584;[1967, 2619, 56, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;43;1;1;6;280;[2035, 2618, 55, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;44;1;1;1;62;[1913, 2739, 39, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;44;1;1;2;584;[1962, 2738, 60, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;44;1;1;3;280;[2030, 2737, 61, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;45;1;1;1;630;[1664, 2860, 54, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;45;1;1;2;695;[1728, 2860, 53, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;45;1;1;3;2;[1941, 2858, 16, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;45;1;1;4;128;[1972, 2857, 51, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;45;1;1;5;982;[2036, 2855, 54, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;46;1;1;1;CHARGES;[1046, 2984, 151, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;46;1;1;2;EXCEPTIONNELLES;[1206, 2982, 282, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;46;1;1;3;630;[1658, 2979, 58, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;46;1;1;4;695;[1725, 2979, 57, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;46;1;1;5;2;[1934, 2977, 19, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;46;1;1;6;128;[1966, 2977, 55, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;46;1;1;7;982;[2030, 2975, 61, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;46;1;2;1;RESULTAT;[1097, 3026, 152, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;46;1;2;2;EXCEPTIONNEL;[1257, 3022, 232, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;46;1;2;3;10;[1614, 3021, 35, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;46;1;2;4;695;[1658, 3021, 56, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;46;1;2;5;842;[1725, 3020, 58, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;46;1;2;6;60;[1914, 3018, 40, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;46;1;2;7;455;[1961, 3018, 60, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;46;1;2;8;298;[2031, 3016, 61, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;47;1;1;1;12;[1622, 3143, 31, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;47;1;1;2;492;[1664, 3142, 53, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;47;1;1;3;906;[1729, 3141, 54, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;47;1;1;4;35;[1923, 3139, 35, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;47;1;1;5;753;[1969, 3138, 53, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;47;1;1;6;819;[2037, 3137, 54, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;48;1;1;1;TOTAL;[1157, 3224, 100, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;48;1;1;2;DES;[1265, 3223, 57, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;48;1;1;3;PRODUIT:;[1332, 3221, 139, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;48;1;1;4;204;[1591, 3220, 59, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;48;1;1;5;984;[1658, 3219, 58, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;48;1;1;6;726;[1726, 3218, 58, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;48;1;1;7;168;[1898, 3217, 55, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;48;1;1;8;089;[1962, 3215, 60, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;48;1;1;9;801;[2033, 3214, 54, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;48;1;2;1;TOTAL;[1168, 3262, 100, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;48;1;2;2;DES;[1276, 3263, 57, 23];23;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;48;1;2;3;CHARGE;[1342, 3260, 128, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;48;1;2;4;14419;[1615, 3258, 102, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;48;1;2;5;367;[1725, 3257, 61, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;48;1;3;1;BENEFICE;[1194, 3303, 141, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;48;1;3;2;OU;[1344, 3302, 49, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;48;1;3;3;PERTE;[1402, 3301, 88, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;48;1;3;4;190;[1595, 3299, 56, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;48;1;3;5;565;[1660, 3299, 55, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;48;1;3;6;358;[1726, 3298, 58, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;48;1;3;7;128;[1898, 3296, 56, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;48;1;3;8;365;[1963, 3295, 59, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;48;1;3;9;583;[2033, 3293, 60, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;49;1;1;1; ;[288, 2475, 1222, 70];70;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;50;1;1;1;   ;[280, 2514, 1234, 50];50;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;51;1;1;1;  ;[280, 2564, 1234, 80];80;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;51;1;2;1;     ;[280, 2644, 1234, 86];86;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;51;1;3;1;   ;[280, 2730, 1234, 100];100;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;51;1;3;2; ;[1488, 2730, 26, 56];56;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;51;1;4;1; ;[280, 2830, 14, 53];53;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;52;1;1;1;  ;[280, 2571, 23, 73];73;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;53;1;1;1;Produits;[303, 2594, 97, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;53;1;1;2;exceptionnels;[409, 2592, 175, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;53;1;1;3;sur;[594, 2601, 37, 18];18;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;53;1;1;4;opérations;[639, 2594, 136, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;53;1;1;5;de;[784, 2589, 33, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;53;1;1;6;gestion;[827, 2593, 91, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;53;1;2;1;Produits;[303, 2634, 97, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;53;1;2;2;exceptionnels;[409, 2633, 175, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;53;1;2;3;sur;[594, 2642, 36, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;53;1;2;4;opérations;[639, 2634, 136, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;53;1;2;5;en;[784, 2640, 31, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;53;1;2;6;capital;[825, 2629, 86, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;53;1;3;1;Reprises;[303, 2677, 102, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;53;1;3;2;sur;[414, 2683, 36, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;53;1;3;3;provisions;[459, 2676, 127, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;53;1;3;4;et;[596, 2677, 24, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;53;1;3;5;transferts;[627, 2671, 113, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;53;1;3;6;de;[750, 2670, 32, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;53;1;3;7;charges;[793, 2669, 101, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;54;1;1;1;PRODUITS;[1067, 2747, 161, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;54;1;1;2;EXCEPTIONNELS;[1238, 2744, 250, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;55;1;1;1; ;[949, 2810, 565, 20];20;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;55;1;2;1; ;[1509, 2830, 2, 53];53;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;55;1;3;1;  ;[280, 2883, 14, 78];78;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;55;1;3;2; ;[1509, 2883, 2, 41];41;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;56;1;1;1;Charges;[303, 2833, 106, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;56;1;1;2;exceptionnelles;[418, 2831, 198, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;56;1;1;3;sur;[626, 2840, 37, 16];16;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;56;1;1;4;opérations;[672, 2832, 136, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;56;1;1;5;de;[817, 2828, 33, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;56;1;1;6;gestion;[860, 2830, 89, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;56;1;2;1;Charges;[303, 2872, 106, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;56;1;2;2;exceptionnelles;[418, 2870, 199, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;56;1;2;3;sur;[626, 2879, 37, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;56;1;2;4;opérations;[672, 2871, 136, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;56;1;2;5;en;[817, 2877, 30, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;56;1;2;6;capital;[858, 2866, 85, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;56;1;3;1;Dotations;[304, 2915, 117, 23];23;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;56;1;3;2;exceptionnelles;[430, 2909, 200, 35];35;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;56;1;3;3;aux;[639, 2919, 47, 16];16;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;56;1;3;4;amortissements;[695, 2911, 193, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;56;1;3;5;et;[897, 2911, 24, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;56;1;3;6;provisions;[930, 2909, 123, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;57;1;1;1; ;[280, 2961, 766, 71];71;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;57;1;1;2; ;[1509, 2924, 2, 23];23;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;57;1;2;1;   ;[280, 3032, 1235, 40];40;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;58;1;1;1;   ;[1473, 3032, 42, 35];35;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;59;1;1;1;    ;[285, 3092, 1230, 116];116;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;59;1;2;1; ;[285, 3208, 872, 53];53;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;59;1;3;1;   ;[282, 3261, 10, 46];46;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;59;1;3;2; ;[1471, 3208, 44, 53];53;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;59;1;4;1; ;[283, 3307, 911, 43];43;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;59;1;4;2;   ;[2114, 3288, 5, 62];62;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;60;1;1;1;  ;[285, 3092, 20, 73];73;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;61;1;1;1;Participation;[305, 3117, 154, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;61;1;1;2;des;[469, 3113, 44, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;61;1;1;3;salariés;[523, 3113, 96, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;61;1;1;4;aux;[629, 3121, 47, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;61;1;1;5;résultats;[686, 3111, 101, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;61;1;1;6;de;[796, 3110, 32, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;61;1;1;7;l'entreprise;[839, 3110, 136, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;61;1;2;1;Impôts;[305, 3157, 80, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;61;1;2;2;sur;[394, 3164, 37, 15];15;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;61;1;2;3;les;[439, 3153, 33, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+0;61;1;2;4;bénéfices;[483, 3152, 120, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;1;1;1;1; ;[1, 0, 1235, 20];20;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;1;1;2;1;   ;[331, 91, 315, 57];57;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;1;1;3;1; ;[4, 148, 11, 36];36;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;1;1;3;2;   ;[636, 148, 10, 74];74;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;2;1;1;1;   ;[1831, 0, 5, 101];101;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;2;1;2;1;     ;[1225, 695, 615, 132];132;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;3;1;1;1;31/12/2018;[1285, 27, 192, 41];41;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;3;1;1;2;|;[1494, 11, 52, 61];61;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;3;1;1;3;31/12/2017;[1583, 24, 199, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;4;1;1;1;362;[1688, 725, 54, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;4;1;1;2;114;[1757, 725, 53, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;4;1;2;1;(30;[1697, 763, 45, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;4;1;2;2;807};[1753, 762, 65, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;5;1;1;1;   ;[1, 20, 24, 81];81;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;5;1;2;1; ;[1, 101, 14, 47];47;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;6;1;1;1;Rubriques;[25, 38, 125, 37];37;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;7;1;1;1;Ventes;[22, 109, 83, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;7;1;1;2;de;[115, 106, 32, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;7;1;1;3;marchandises;[157, 105, 174, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;7;1;2;1;Production;[24, 144, 131, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;7;1;2;2;vendue;[165, 143, 95, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;7;1;2;3;de;[270, 142, 31, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;7;1;2;4;biens;[311, 142, 66, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;7;1;3;1;Production;[24, 181, 132, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;7;1;3;2;vendue;[165, 180, 94, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;7;1;3;3;de;[269, 180, 31, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;7;1;3;4;services;[309, 183, 101, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;8;1;1;1;CHIFFRES;[208, 240, 141, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;8;1;1;2;D'AFFAIRES;[359, 240, 176, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;8;1;1;3;NETS;[545, 239, 76, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;9;1;1;1;Production;[24, 300, 131, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;9;1;1;2;stockée;[165, 299, 96, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;9;1;2;1;Production;[24, 337, 131, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;9;1;2;2;immobilisée;[166, 336, 150, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;9;1;3;1;Subventions;[23, 376, 151, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;9;1;3;2;d'exploitation;[183, 375, 173, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;9;1;4;1;Autres;[21, 454, 79, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;9;1;4;2;produits;[111, 451, 101, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;10;1;1;1;  ;[4, 204, 5, 97];97;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;10;1;1;2; ;[641, 222, 594, 79];79;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;10;1;2;1; ;[4, 301, 11, 40];40;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;10;1;2;2; ;[1226, 301, 9, 40];40;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;10;1;3;1; ;[4, 341, 11, 38];38;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;10;1;3;2; ;[1226, 341, 9, 38];38;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;10;1;4;1; ;[4, 379, 11, 44];44;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;10;1;4;2;  ;[1226, 379, 9, 73];73;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;10;1;5;1;  ;[4, 466, 5, 142];142;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;10;1;6;1;  ;[4, 608, 10, 66];66;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;10;1;6;2;  ;[1226, 608, 9, 66];66;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;11;1;1;1;Reprises;[24, 417, 102, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;11;1;1;2;sur;[135, 423, 37, 18];18;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;11;1;1;3;amortissements;[181, 416, 191, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;11;1;1;4;et;[382, 417, 24, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;11;1;1;5;provisions,;[414, 415, 134, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;11;1;1;6;transferts;[558, 409, 111, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;11;1;1;7;de;[679, 409, 31, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;11;1;1;8;charges;[720, 409, 100, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;12;1;1;1;:;[122, 526, 5, 2];2;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;12;1;1;2;PRODUITS;[770, 516, 160, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;12;1;1;3;D'EXPLOITATION;[940, 512, 260, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;12;1;1;4;nr];[1379, 487, 148, 74];74;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;1;1;1;Achats;[21, 591, 85, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;1;1;2;de;[115, 591, 32, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;1;1;3;marchandises;[158, 589, 174, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;1;1;4;(y;[352, 589, 23, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;1;1;5;compris;[385, 592, 99, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;1;1;6;droits;[493, 588, 70, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;1;1;7;de;[572, 587, 32, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;1;1;8;douane);[615, 587, 103, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;2;1;1;Variation;[21, 628, 115, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;2;1;2;de;[146, 625, 32, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;2;1;3;stock;[188, 625, 64, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;2;1;4;(marchandises);[270, 623, 192, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;3;1;1;Achats;[21, 663, 85, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;3;1;2;de;[115, 663, 32, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;3;1;3;matières;[158, 665, 107, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;3;1;4;premières;[274, 664, 125, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;3;1;5;et;[408, 666, 24, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;3;1;6;autres;[440, 666, 76, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;3;1;7;approvisionnements;[525, 663, 253, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;3;1;8;{et;[789, 658, 32, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;3;1;9;droits;[829, 657, 71, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;3;1;10;de;[909, 656, 33, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;3;1;11;douane];[951, 656, 107, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;3;2;1;Variation;[21, 704, 115, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;3;2;2;de;[146, 700, 31, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;3;2;3;stock;[188, 700, 64, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;3;2;4;(matières;[270, 700, 115, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;3;2;5;premières;[395, 701, 125, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;3;2;6;et;[529, 703, 25, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;3;2;7;approvisionnements);[562, 696, 261, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;4;1;1;Autres;[21, 742, 79, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;4;1;2;achats;[109, 738, 83, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;4;1;3;et;[201, 744, 23, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;4;1;4;charges;[232, 738, 101, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;4;1;5;externes;[343, 742, 106, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;5;1;1;Impêts,;[23, 780, 88, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;5;1;2;taxes;[120, 782, 66, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;5;1;3;et;[197, 782, 22, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;5;1;4;versements;[226, 781, 140, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;5;1;5;assimilés;[376, 775, 110, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;6;1;1;Salaires;[23, 816, 100, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;6;1;2;et;[133, 821, 22, 20];20;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;6;1;3;traitements;[163, 818, 136, 23];23;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;7;1;1;Charges;[23, 854, 106, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;13;7;1;2;sociales;[138, 853, 102, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;1;1;1;DOTATIONS;[24, 909, 189, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;1;1;2;D'EXPLOITATION;[218, 908, 264, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;2;1;1;Sur;[24, 948, 40, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;2;1;2;immobilisations;[72, 945, 194, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;2;1;3;:;[275, 954, 6, 18];18;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;2;1;4;dotations;[290, 944, 118, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;2;1;5;aux;[417, 953, 47, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;2;1;6;amortissements;[473, 946, 192, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;2;2;1;Sur;[23, 986, 41, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;2;2;2;immobilisations;[72, 983, 194, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;2;2;3;:;[276, 993, 5, 16];16;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;2;2;4;dotations;[290, 982, 117, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;2;2;5;aux;[417, 991, 47, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;2;2;6;provisions;[474, 984, 128, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;3;1;1;Sur;[23, 1025, 41, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;3;1;2;actif;[72, 1022, 53, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;3;1;3;circulant;[133, 1021, 108, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;3;1;4;:;[249, 1031, 6, 16];16;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;3;1;5;dotations;[264, 1020, 117, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;3;1;6;aux;[391, 1029, 46, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;3;1;7;provisions;[447, 1022, 129, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;4;1;1;Pour;[24, 1063, 55, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;4;1;2;risques;[88, 1064, 85, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;4;1;3;et;[183, 1064, 24, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;4;1;4;charges;[215, 1058, 101, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;4;1;5;:;[313, 1053, 15, 44];44;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;4;1;6;dotations;[341, 1057, 117, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;4;1;7;aux;[468, 1067, 48, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;14;4;1;8;provisions;[525, 1059, 127, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;15;1;1;1;  ;[4, 423, 11, 43];43;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;16;1;1;1;    ;[0, 714, 14, 113];113;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;16;1;1;2;  ;[1226, 674, 303, 40];40;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;16;1;2;1;   ;[0, 827, 14, 121];121;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;16;1;2;2;  ;[1225, 827, 615, 77];77;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;16;1;3;1; ;[0, 948, 14, 39];39;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;16;1;3;2;  ;[1226, 904, 614, 83];83;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;16;1;4;1;  ;[0, 987, 14, 82];82;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;16;1;4;2; ;[1225, 987, 615, 43];43;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;16;1;5;1;   ;[0, 1069, 14, 189];189;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;16;1;6;1;   ;[1231, 1158, 610, 159];159;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;17;1;1;1;      ;[1224, 714, 305, 72];72;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;18;1;1;1;363;[1384, 729, 52, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;18;1;1;2;121;[1451, 728, 46, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;18;1;2;1;144;[1387, 762, 49, 42];42;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;18;1;2;2;185;[1451, 762, 50, 42];42;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;19;1;1;1;  ;[1525, 767, 4, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;20;1;1;1;  ;[1225, 1030, 615, 39];39;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;20;1;2;1;  ;[1225, 1069, 304, 89];89;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;21;1;1;1; ;[1831, 1041, 9, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;21;1;2;1; ;[1831, 1069, 9, 42];42;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;21;1;3;1; ;[1831, 1111, 6, 47];47;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;22;1;1;1;Autres;[22, 1112, 78, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;22;1;1;2;charges;[110, 1109, 101, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;23;1;1;1;2;[1792, 1095, 17, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;23;1;2;1;RESULTAT;[779, 1233, 152, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;23;1;2;2;D'EXPLOITATION;[940, 1230, 259, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;23;1;2;3;(507;[1365, 1226, 70, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;23;1;2;4;306);[1441, 1224, 69, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;23;1;2;5;(331;[1670, 1223, 63, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;23;1;2;6;307);[1747, 1221, 71, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;24;1;1;1;OPERATIONS;[26, 1306, 206, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;24;1;1;2;EN;[237, 1306, 47, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;24;1;1;3;COMMUN;[291, 1304, 156, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;24;1;2;1;Bénéfice;[24, 1342, 106, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;24;1;2;2;attribué;[140, 1341, 95, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;24;1;2;3;ou;[245, 1351, 31, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;24;1;2;4;perte;[286, 1346, 65, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;24;1;2;5;transférée;[360, 1339, 126, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;24;1;3;1;Perte;[24, 1382, 59, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;24;1;3;2;supportée;[93, 1381, 126, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;24;1;3;3;ou;[229, 1388, 32, 18];18;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;24;1;3;4;bénéfice;[272, 1378, 107, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;24;1;3;5;transféré;[389, 1376, 110, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;1;1;1;PRODUITS;[23, 1436, 161, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;1;1;2;FINANCIERS;[190, 1434, 190, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;2;1;1;Produits;[24, 1471, 96, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;2;1;2;financiers;[129, 1471, 122, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;2;1;3;de;[260, 1470, 32, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;2;1;4;participations;[302, 1472, 173, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;3;1;1;Produits;[24, 1510, 96, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;3;1;2;des;[129, 1509, 44, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;3;1;3;autres;[182, 1515, 77, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;3;1;4;valeurs;[267, 1509, 91, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;3;1;5;mobilières;[368, 1507, 130, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;3;1;6;et;[509, 1513, 22, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;3;1;7;créances;[539, 1509, 114, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;3;1;8;de;[663, 1505, 30, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;3;1;9;l'actif;[704, 1504, 65, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;3;1;10;immobilisé;[776, 1502, 138, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;3;2;1;Autres;[21, 1552, 79, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;3;2;2;intérêts;[110, 1551, 88, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;3;2;3;et;[207, 1553, 23, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;3;2;4;produits;[240, 1547, 101, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;3;2;5;assimilés;[350, 1545, 110, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;4;1;1;Reprises;[24, 1590, 101, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;4;1;2;sur;[134, 1595, 37, 19];19;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;4;1;3;provisions;[180, 1589, 127, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;4;1;4;et;[317, 1590, 23, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;4;1;5;transferts;[348, 1584, 112, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;4;1;6;de;[470, 1583, 32, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;4;1;7;charges;[513, 1583, 101, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;5;1;1;Différences;[24, 1624, 138, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;5;1;2;positives;[172, 1628, 109, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;5;1;3;de;[290, 1623, 31, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;5;1;4;change;[331, 1623, 95, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;6;1;1;Produits;[24, 1663, 96, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;6;1;2;nets;[130, 1668, 49, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;6;1;3;sur;[187, 1672, 38, 16];16;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;6;1;4;cessions;[234, 1665, 103, 23];23;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;6;1;5;de;[347, 1660, 31, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;6;1;6;valeurs;[388, 1660, 91, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;6;1;7;mobilières;[489, 1659, 131, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;6;1;8;de;[629, 1658, 32, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;25;6;1;9;placement;[671, 1658, 130, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;26;1;1;1;PRODUITS;[843, 1722, 160, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;26;1;1;2;FINANCIERS;[1013, 1721, 187, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;26;1;1;3;193;[1314, 1719, 55, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;26;1;1;4;658;[1378, 1718, 57, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;26;1;1;5;188;[1448, 1718, 55, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;26;1;1;6;|;[1507, 1692, 48, 70];70;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;26;1;1;7;105505;[1589, 1692, 146, 70];70;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;26;1;1;8;520;[1734, 1692, 71, 70];70;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;26;1;1;9;|;[1805, 1692, 24, 70];70;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;27;1;1;1; ;[1, 1258, 8, 59];59;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;27;1;1;2;   ;[1235, 1258, 290, 38];38;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;27;1;2;1; ;[1226, 1317, 615, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;27;1;3;1;   ;[0, 1317, 14, 114];114;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;27;1;3;2; ;[1226, 1347, 615, 44];44;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;27;1;4;1; ;[1225, 1391, 616, 40];40;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;27;1;5;1;   ;[0, 1431, 14, 88];88;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;28;1;1;1;   ;[1503, 1447, 338, 53];53;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;29;1;1;1; ;[1225, 1447, 16, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;29;1;2;1; ;[0, 1519, 14, 37];37;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;29;1;2;2;  ;[1225, 1476, 616, 43];43;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;29;1;3;1; ;[0, 1556, 14, 43];43;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;29;1;4;1;   ;[0, 1599, 14, 59];59;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;29;1;5;1;   ;[0, 1658, 9, 153];153;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;29;1;5;2; ;[1833, 1674, 8, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;29;1;6;1;    ;[1827, 1706, 14, 132];132;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;29;1;7;1;     ;[1502, 1838, 339, 59];59;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;30;1;1;1; ;[1519, 1447, 15, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;30;1;2;1; ;[1503, 1476, 124, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;31;1;1;1;193;[1323, 1461, 49, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;31;1;1;2;584;[1383, 1461, 55, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;31;1;1;3;650;[1448, 1460, 55, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;31;1;1;4;105;[1627, 1458, 50, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;31;1;1;5;368;[1688, 1457, 55, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;31;1;1;6;703;[1755, 1456, 54, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;32;1;1;1;    ;[1519, 1520, 322, 56];56;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;33;1;1;1;  ;[1226, 1524, 177, 52];52;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;33;1;2;1;   ;[1226, 1576, 15, 62];62;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;33;1;3;1; ;[1226, 1638, 177, 13];13;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;34;1;1;1; ;[1503, 1524, 32, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;34;1;2;1; ;[1519, 1556, 188, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;35;1;1;1;34;[1403, 1537, 35, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;35;1;1;2;417;[1447, 1537, 56, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;35;1;1;3;45;[1707, 1534, 35, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;35;1;1;4;397;[1755, 1533, 57, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;35;1;2;1;3;[1421, 1576, 15, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;35;1;2;2;824;[1449, 1574, 54, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;36;1;1;1;35;[1403, 1614, 34, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;36;1;1;2;298;[1448, 1614, 54, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;37;1;1;1; ;[1519, 1576, 322, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;37;1;2;1;  ;[1519, 1598, 189, 15];15;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;37;1;3;1;  ;[1519, 1613, 16, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;38;1;1;1;  ;[1811, 1598, 30, 15];15;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;38;1;2;1;    ;[1226, 1613, 615, 45];45;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;38;1;3;1; ;[1833, 1658, 8, 16];16;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;39;1;1;1;91;[1708, 1612, 30, 23];23;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;39;1;1;2;420;[1754, 1610, 57, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;40;1;1;1;  ;[1226, 1811, 15, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;40;1;1;2; ;[1519, 1811, 16, 8];8;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;40;1;2;1;  ;[1226, 1838, 15, 43];43;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;40;1;3;1;  ;[1226, 1881, 615, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;40;1;4;1;  ;[835, 1909, 401, 41];41;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;41;1;1;1;  ;[1519, 1819, 16, 19];19;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;41;1;2;1; ;[1519, 1838, 16, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;42;1;1;1;   ;[0, 1811, 15, 86];86;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;42;1;2;1;   ;[1, 1897, 23, 79];79;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;42;1;3;1; ;[5, 1976, 1, 61];61;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;43;1;1;1;  ;[1519, 1855, 16, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;43;1;2;1; ;[1502, 1881, 32, 13];13;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;44;1;1;1;Dotations;[24, 1798, 117, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;44;1;1;2;financières;[151, 1794, 138, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;44;1;1;3;aux;[297, 1802, 49, 18];18;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;44;1;1;4;amortissements;[354, 1795, 193, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;44;1;1;5;et;[557, 1796, 23, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;44;1;1;6;provisions;[589, 1793, 124, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;44;1;1;7;316;[1384, 1784, 53, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;44;1;1;8;837;[1449, 1783, 55, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;44;1;1;9;1;[1665, 1782, 8, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;44;1;1;10;344;[1689, 1780, 55, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;44;1;1;11;543;[1754, 1779, 55, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;44;1;2;1;Intérêts;[24, 1835, 88, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;44;1;2;2;et;[121, 1837, 23, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;44;1;2;3;charges;[152, 1831, 102, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;44;1;2;4;assimilées;[262, 1830, 128, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;44;1;2;5;274;[1384, 1821, 54, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;44;1;2;6;063;[1448, 1820, 53, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;44;1;2;7;92;[1708, 1818, 34, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;44;1;2;8;575;[1755, 1818, 54, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;44;1;3;1;197;[1387, 1859, 52, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;44;1;3;2;559;[1447, 1858, 55, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;44;1;3;3;72;[1708, 1856, 34, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;44;1;3;4;991;[1756, 1855, 48, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;45;1;1;1;Différences;[24, 1870, 139, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;45;1;1;2;négaïives;[173, 1871, 121, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;45;1;1;3;de;[303, 1868, 32, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;45;1;1;4;change;[345, 1868, 96, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;45;1;2;1;Charges;[24, 1908, 106, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;45;1;2;2;nettes;[140, 1912, 72, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;45;1;2;3;sur;[220, 1917, 38, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;45;1;2;4;cessions;[266, 1909, 104, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;45;1;2;5;de;[379, 1904, 32, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;45;1;2;6;valeurs;[420, 1905, 92, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;45;1;2;7;mobilières;[522, 1903, 130, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;45;1;2;8;de;[661, 1902, 31, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;45;1;2;9;placement;[702, 1902, 133, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;46;1;1;1;  ;[1832, 1909, 9, 50];50;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;46;1;2;1; ;[1, 2037, 8, 75];75;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;46;1;2;2;   ;[1836, 1959, 2, 203];203;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;46;1;3;1;     ;[1834, 2428, 9, 359];359;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;46;1;4;1;  ;[1838, 2787, 2, 99];99;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;47;1;1;1;CHARGES;[838, 1967, 150, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;47;1;1;2;FINANCIERES;[997, 1964, 203, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;47;1;1;3;788;[1378, 1962, 57, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;47;1;1;4;459;[1444, 1961, 60, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;47;1;1;5;|;[1513, 1937, 47, 69];69;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;47;1;1;6;151010;[1628, 1937, 168, 69];69;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;47;1;1;7;|;[1801, 1937, 35, 69];69;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;48;1;1;1;RESULTAT;[873, 2030, 150, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;48;1;1;2;FINANCIER;[1031, 2027, 170, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;48;1;1;3;|;[1210, 2004, 44, 66];66;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;48;1;1;4; 192869729;[1314, 2024, 189, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;48;1;1;5;|;[1507, 2004, 44, 66];66;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;48;1;1;6;103995;[1617, 2021, 123, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;48;1;1;7;411;[1750, 2021, 56, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;48;1;2;1;RESULTAT;[637, 2095, 146, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;48;1;2;2;COURANT;[791, 2093, 160, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;48;1;2;3;AVANT;[957, 2092, 115, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;48;1;2;4;IMPOTS;[1079, 2090, 121, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;48;1;2;5;|;[1208, 2067, 45, 67];67;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;48;1;2;6; 192362423;[1236, 2071, 288, 59];59;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;48;1;2;7;|;[1503, 2067, 46, 67];67;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;48;1;2;8;103664;[1617, 2085, 125, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;48;1;2;9;104;[1754, 2083, 58, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;49;1;1;1;11;[1342, 2222, 27, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;49;1;1;2;326;[1384, 2221, 54, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;49;1;1;3;537;[1448, 2220, 56, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;49;1;1;4;62;[1643, 2218, 34, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;49;1;1;5;584;[1688, 2217, 56, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;49;1;1;6;280;[1756, 2216, 55, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;50;1;1;1;62;[1634, 2337, 39, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;50;1;1;2;584;[1683, 2336, 60, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;50;1;1;3;280;[1751, 2335, 61, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;51;1;1;1;630;[1385, 2458, 54, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;51;1;1;2;695;[1449, 2458, 53, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;51;1;1;3;2;[1662, 2456, 16, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;51;1;1;4;128;[1693, 2455, 51, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;51;1;1;5;982;[1757, 2453, 54, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;52;1;1;1;CHARGES;[767, 2582, 151, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;52;1;1;2;EXCEPTIONNELLES;[927, 2580, 282, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;52;1;1;3;630;[1379, 2577, 58, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;52;1;1;4;695;[1446, 2577, 57, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;52;1;1;5;2;[1655, 2575, 19, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;52;1;1;6;128;[1687, 2575, 55, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;52;1;1;7;982;[1751, 2573, 61, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;52;1;2;1;RESULTAT;[818, 2624, 152, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;52;1;2;2;EXCEPTIONNEL;[978, 2620, 232, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;52;1;2;3;10;[1335, 2619, 35, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;52;1;2;4;695;[1379, 2619, 56, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;52;1;2;5;842;[1446, 2618, 58, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;52;1;2;6;60;[1635, 2616, 40, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;52;1;2;7;455;[1682, 2616, 60, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;52;1;2;8;298;[1752, 2614, 61, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;53;1;1;1;12;[1343, 2741, 31, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;53;1;1;2;492;[1385, 2740, 53, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;53;1;1;3;906;[1450, 2739, 54, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;53;1;1;4;35;[1644, 2737, 35, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;53;1;1;5;753;[1690, 2736, 53, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;53;1;1;6;819;[1758, 2735, 54, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;54;1;1;1;TOTAL;[878, 2822, 100, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;54;1;1;2;DES;[986, 2821, 57, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;54;1;1;3;PRODUIT:;[1053, 2819, 139, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;54;1;1;4;204;[1312, 2818, 59, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;54;1;1;5;984;[1379, 2817, 58, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;54;1;1;6;726;[1447, 2816, 58, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;54;1;1;7;168;[1619, 2815, 55, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;54;1;1;8;089;[1683, 2813, 60, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;54;1;1;9;801;[1754, 2812, 54, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;54;1;2;1;TOTAL;[889, 2860, 100, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;54;1;2;2;DES;[997, 2861, 57, 23];23;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;54;1;2;3;CHARGE;[1063, 2858, 128, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;54;1;2;4;14419;[1336, 2856, 102, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;54;1;2;5;367;[1446, 2855, 61, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;54;1;3;1;BENEFICE;[915, 2901, 141, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;54;1;3;2;OU;[1065, 2900, 49, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;54;1;3;3;PERTE;[1123, 2899, 88, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;54;1;3;4;190;[1316, 2897, 56, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;54;1;3;5;565;[1381, 2897, 55, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;54;1;3;6;358;[1447, 2896, 58, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;54;1;3;7;128;[1619, 2894, 56, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;54;1;3;8;365;[1684, 2893, 59, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;54;1;3;9;583;[1754, 2891, 60, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;55;1;1;1; ;[9, 2073, 1222, 70];70;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;56;1;1;1;   ;[1, 2112, 1234, 50];50;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;57;1;1;1;  ;[1, 2162, 1234, 80];80;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;57;1;2;1;     ;[1, 2242, 1234, 86];86;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;57;1;3;1;   ;[1, 2328, 1234, 100];100;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;57;1;3;2; ;[1209, 2328, 26, 56];56;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;57;1;4;1; ;[1, 2428, 14, 53];53;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;58;1;1;1;  ;[1, 2169, 23, 73];73;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;59;1;1;1;Produits;[24, 2192, 97, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;59;1;1;2;exceptionnels;[130, 2190, 175, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;59;1;1;3;sur;[315, 2199, 37, 18];18;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;59;1;1;4;opérations;[360, 2192, 136, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;59;1;1;5;de;[505, 2187, 33, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;59;1;1;6;gestion;[548, 2191, 91, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;59;1;2;1;Produits;[24, 2232, 97, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;59;1;2;2;exceptionnels;[130, 2231, 175, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;59;1;2;3;sur;[315, 2240, 36, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;59;1;2;4;opérations;[360, 2232, 136, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;59;1;2;5;en;[505, 2238, 31, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;59;1;2;6;capital;[546, 2227, 86, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;59;1;3;1;Reprises;[24, 2275, 102, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;59;1;3;2;sur;[135, 2281, 36, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;59;1;3;3;provisions;[180, 2274, 127, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;59;1;3;4;et;[317, 2275, 24, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;59;1;3;5;transferts;[348, 2269, 113, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;59;1;3;6;de;[471, 2268, 32, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;59;1;3;7;charges;[514, 2267, 101, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;60;1;1;1;PRODUITS;[788, 2345, 161, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;60;1;1;2;EXCEPTIONNELS;[959, 2342, 250, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;61;1;1;1; ;[670, 2408, 565, 20];20;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;61;1;2;1; ;[1230, 2428, 2, 53];53;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;61;1;3;1;  ;[1, 2481, 14, 78];78;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;61;1;3;2; ;[1230, 2481, 2, 41];41;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;62;1;1;1;Charges;[24, 2431, 106, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;62;1;1;2;exceptionnelles;[139, 2429, 198, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;62;1;1;3;sur;[347, 2438, 37, 16];16;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;62;1;1;4;opérations;[393, 2430, 136, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;62;1;1;5;de;[538, 2426, 33, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;62;1;1;6;gestion;[581, 2428, 89, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;62;1;2;1;Charges;[24, 2470, 106, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;62;1;2;2;exceptionnelles;[139, 2468, 199, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;62;1;2;3;sur;[347, 2477, 37, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;62;1;2;4;opérations;[393, 2469, 136, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;62;1;2;5;en;[538, 2475, 30, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;62;1;2;6;capital;[579, 2464, 85, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;62;1;3;1;Dotations;[25, 2513, 117, 23];23;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;62;1;3;2;exceptionnelles;[151, 2507, 200, 35];35;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;62;1;3;3;aux;[360, 2517, 47, 16];16;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;62;1;3;4;amortissements;[416, 2509, 193, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;62;1;3;5;et;[618, 2509, 24, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;62;1;3;6;provisions;[651, 2507, 123, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;63;1;1;1; ;[1, 2559, 766, 71];71;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;63;1;1;2; ;[1230, 2522, 2, 23];23;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;63;1;2;1;   ;[1, 2630, 1235, 40];40;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;64;1;1;1;   ;[1194, 2630, 42, 35];35;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;65;1;1;1;    ;[6, 2690, 1230, 116];116;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;65;1;2;1; ;[6, 2806, 872, 53];53;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;65;1;3;1;   ;[3, 2859, 10, 46];46;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;65;1;3;2; ;[1192, 2806, 44, 53];53;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;65;1;4;1; ;[4, 2905, 911, 43];43;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;65;1;4;2;   ;[1835, 2886, 5, 62];62;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;66;1;1;1;  ;[6, 2690, 20, 73];73;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;67;1;1;1;Participation;[26, 2715, 154, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;67;1;1;2;des;[190, 2711, 44, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;67;1;1;3;salariés;[244, 2711, 96, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;67;1;1;4;aux;[350, 2719, 47, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;67;1;1;5;résultats;[407, 2709, 101, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;67;1;1;6;de;[517, 2708, 32, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;67;1;1;7;l'entreprise;[560, 2708, 136, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;67;1;2;1;Impôts;[26, 2755, 80, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;67;1;2;2;sur;[115, 2762, 37, 15];15;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;67;1;2;3;les;[160, 2751, 33, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+1;67;1;2;4;bénéfices;[204, 2750, 120, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+2;1;1;1;1;6;[803, 0, 5, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+2;1;1;2;1;ee;[9, 10, 1827, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+2;1;1;2;2;en;[1766, 6, 23, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+2;1;1;2;3;2;[1790, 6, 26, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;1;1;1;1; ;[0, 0, 913, 10];10;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;2;1;1;1;OPERATIONS;[15, 27, 206, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;2;1;1;2;EN;[226, 27, 47, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;2;1;1;3;COMMUN;[280, 25, 156, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;2;1;2;1;Bénéfice;[13, 63, 106, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;2;1;2;2;attribué;[129, 62, 95, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;2;1;2;3;ou;[234, 72, 31, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;2;1;2;4;perte;[275, 66, 65, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;2;1;2;5;transférée;[349, 60, 126, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;2;1;3;1;Perte;[13, 103, 59, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;2;1;3;2;supportée;[82, 102, 126, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;2;1;3;3;ou;[218, 109, 32, 18];18;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;2;1;3;4;bénéfice;[261, 99, 107, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;2;1;3;5;transféré;[378, 97, 110, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;1;1;1;PRODUITS;[12, 157, 161, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;1;1;2;FINANCIERS;[179, 155, 190, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;2;1;1;Produits;[13, 192, 96, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;2;1;2;financiers;[118, 192, 122, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;2;1;3;de;[249, 191, 32, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;2;1;4;participations;[291, 193, 173, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;3;1;1;Produits;[13, 231, 96, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;3;1;2;des;[118, 230, 44, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;3;1;3;autres;[171, 236, 77, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;3;1;4;valeurs;[256, 230, 91, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;3;1;5;mobilières;[357, 228, 130, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;3;1;6;et;[498, 233, 22, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;3;1;7;créances;[528, 230, 114, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;3;1;8;de;[652, 226, 30, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;3;1;9;l'actif;[693, 225, 65, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;3;1;10;immobilisé;[765, 223, 138, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;3;2;1;Autres;[10, 273, 79, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;3;2;2;intérêts;[99, 272, 88, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;3;2;3;et;[196, 274, 23, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;3;2;4;produits;[229, 268, 101, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;3;2;5;assimilés;[339, 266, 110, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;4;1;1;Reprises;[13, 310, 101, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;4;1;2;sur;[123, 316, 37, 19];19;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;4;1;3;provisions;[169, 310, 127, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;4;1;4;et;[306, 311, 23, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;4;1;5;transferts;[337, 305, 112, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;4;1;6;de;[459, 304, 32, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;4;1;7;charges;[502, 303, 101, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;5;1;1;Différences;[13, 345, 138, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;5;1;2;positives;[161, 349, 109, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;5;1;3;de;[279, 344, 31, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;5;1;4;change;[320, 344, 95, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;6;1;1;Produits;[13, 384, 96, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;6;1;2;nets;[119, 389, 49, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;6;1;3;sur;[176, 393, 38, 16];16;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;6;1;4;cessions;[223, 386, 103, 23];23;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;6;1;5;de;[336, 381, 31, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;6;1;6;valeurs;[377, 381, 91, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;6;1;7;mobilières;[478, 379, 131, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;6;1;8;de;[618, 379, 32, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;3;6;1;9;placement;[660, 379, 131, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+3;4;1;1;1;;[348, 418, 869, 10];10;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;1;1;1;1; ;[0, 0, 896, 9];9;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;1;1;1;Achats;[10, 25, 85, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;1;1;2;de;[104, 25, 32, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;1;1;3;marchandises;[147, 23, 174, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;1;1;4;(y;[341, 23, 23, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;1;1;5;compris;[374, 26, 99, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;1;1;6;droits;[482, 22, 70, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;1;1;7;de;[561, 21, 32, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;1;1;8;douane);[604, 21, 103, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;2;1;1;Variation;[10, 62, 115, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;2;1;2;de;[135, 59, 32, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;2;1;3;stock;[177, 59, 64, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;2;1;4;(marchandises);[259, 57, 192, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;3;1;1;Achats;[10, 97, 85, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;3;1;2;de;[104, 97, 32, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;3;1;3;matières;[147, 99, 107, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;3;1;4;premières;[263, 98, 125, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;3;1;5;et;[397, 100, 24, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;3;1;6;autres;[429, 100, 76, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;3;1;7;approvisionnements;[514, 97, 253, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;3;1;8;{et;[778, 92, 33, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;3;1;9;droits;[818, 91, 71, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;3;1;10;de;[898, 90, 33, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;3;1;11;douane];[940, 90, 107, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;3;2;1;Variation;[10, 138, 115, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;3;2;2;de;[135, 134, 31, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;3;2;3;stock;[177, 134, 64, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;3;2;4;(matières;[259, 134, 115, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;3;2;5;premières;[384, 135, 125, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;3;2;6;et;[518, 137, 25, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;3;2;7;approvisionnements);[551, 130, 261, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;4;1;1;Autres;[10, 176, 79, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;4;1;2;achats;[98, 172, 83, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;4;1;3;et;[190, 178, 23, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;4;1;4;charges;[221, 172, 101, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;4;1;5;externes;[332, 176, 106, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;5;1;1;Impêts,;[12, 214, 88, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;5;1;2;taxes;[109, 216, 66, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;5;1;3;et;[186, 216, 22, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;5;1;4;versements;[215, 215, 140, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;5;1;5;assimilés;[365, 209, 110, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;6;1;1;Salaires;[12, 250, 100, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;6;1;2;et;[122, 255, 22, 20];20;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;6;1;3;traitements;[152, 252, 136, 23];23;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;7;1;1;Charges;[12, 288, 106, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;2;7;1;2;sociales;[127, 287, 102, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;1;1;1;DOTATIONS;[13, 343, 189, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;1;1;2;D'EXPLOITATION;[207, 342, 264, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;2;1;1;Sur;[13, 382, 40, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;2;1;2;immobilisations;[61, 379, 194, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;2;1;3;:;[264, 388, 6, 18];18;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;2;1;4;dotations;[279, 378, 118, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;2;1;5;aux;[406, 387, 47, 18];18;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;2;1;6;amortissements;[462, 380, 192, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;2;2;1;Sur;[12, 420, 41, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;2;2;2;immobilisations;[61, 417, 194, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;2;2;3;:;[265, 427, 5, 16];16;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;2;2;4;dotations;[279, 416, 117, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;2;2;5;aux;[406, 425, 47, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;2;2;6;provisions;[463, 418, 128, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;3;1;1;Sur;[12, 459, 41, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;3;1;2;actif;[61, 455, 53, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;3;1;3;circulant;[122, 455, 108, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;3;1;4;:;[238, 465, 6, 16];16;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;3;1;5;dotations;[253, 454, 117, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;3;1;6;aux;[380, 463, 46, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;3;1;7;provisions;[436, 456, 129, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;4;1;1;Pour;[13, 497, 55, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;4;1;2;risques;[77, 498, 85, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;4;1;3;et;[172, 498, 24, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;4;1;4;charges;[204, 492, 101, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;4;1;5;:;[302, 487, 15, 44];44;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;4;1;6;dotations;[330, 491, 117, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;4;1;7;aux;[457, 501, 48, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;3;4;1;8;provisions;[514, 493, 127, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;4;1;1;1;Autres;[11, 546, 78, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;4;1;1;2;charges;[99, 543, 101, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;5;1;1;1;_;[376, 587, 3, 1];1;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;5;1;1;2;2;[737, 586, 1, 2];2;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;5;1;1;3;SC;[895, 569, 104, 19];19;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+4;5;1;1;4;ès;[1045, 569, 172, 19];19;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+5;1;1;1;1;Charges;[12, 52, 106, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+5;1;1;1;2;exceptionnelles;[127, 50, 198, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+5;1;1;1;3;sur;[335, 59, 37, 16];16;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+5;1;1;1;4;opérations;[381, 51, 136, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+5;1;1;1;5;de;[526, 47, 33, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+5;1;1;1;6;gestion;[569, 49, 89, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+5;1;1;2;1;Charges;[12, 91, 106, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+5;1;1;2;2;exceptionnelles;[127, 89, 199, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+5;1;1;2;3;sur;[335, 98, 37, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+5;1;1;2;4;opérations;[381, 90, 136, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+5;1;1;2;5;en;[526, 96, 30, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+5;1;1;2;6;capital;[567, 85, 85, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+5;1;1;3;1;Dotations;[13, 134, 117, 23];23;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+5;1;1;3;2;exceptionnelles;[139, 128, 200, 35];35;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+5;1;1;3;3;aux;[348, 138, 47, 16];16;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+5;1;1;3;4;amortissements;[404, 130, 193, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+5;1;1;3;5;et;[606, 130, 24, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+5;1;1;3;6;provisions;[639, 128, 123, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+5;2;1;1;1;ms;[397, 190, 820, 10];10;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+6;1;1;1;1; ;[0, 0, 892, 10];10;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+6;2;1;1;1;PRODUITS;[776, 0, 161, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+6;2;1;1;2;EXCEPTIONNELS;[947, 3, 250, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+7;1;1;1;1; ;[0, 0, 844, 10];10;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+7;2;1;1;1;Produits;[12, 52, 97, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+7;2;1;1;2;exceptionnels;[118, 50, 175, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+7;2;1;1;3;sur;[303, 59, 37, 18];18;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+7;2;1;1;4;opérations;[348, 52, 136, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+7;2;1;1;5;de;[493, 47, 33, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+7;2;1;1;6;gestion;[536, 51, 91, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+7;2;1;2;1;Produits;[12, 92, 97, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+7;2;1;2;2;exceptionnels;[118, 91, 175, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+7;2;1;2;3;sur;[303, 100, 36, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+7;2;1;2;4;opérations;[348, 92, 136, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+7;2;1;2;5;en;[493, 98, 31, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+7;2;1;2;6;capital;[534, 87, 86, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+7;2;1;3;1;Reprises;[12, 135, 102, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+7;2;1;3;2;sur;[123, 141, 36, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+7;2;1;3;3;provisions;[168, 134, 127, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+7;2;1;3;4;et;[305, 135, 24, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+7;2;1;3;5;transferts;[336, 129, 113, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+7;2;1;3;6;de;[459, 128, 32, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+7;2;1;3;7;charges;[502, 127, 101, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+7;3;1;1;1;;[435, 191, 781, 10];10;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+8;1;1;1;1;RESULTAT;[625, 15, 146, 42];42;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+8;1;1;1;2;COURANT;[779, 0, 152, 55];55;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+8;1;1;1;3;AVANT;[943, 0, 117, 55];55;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+8;1;1;1;4;IMPOTS;[1067, 14, 121, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+9;1;1;1;1;RESULTAT;[861, 17, 150, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+9;1;1;1;2;FINANCIER;[1019, 14, 170, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+9;2;1;1;1;;[436, 52, 780, 10];10;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+10;1;1;1;1;RS;[0, 0, 792, 8];8;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+10;2;1;1;1;CHARGES;[826, 16, 150, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+10;2;1;1;2;FINANCIERES;[985, 13, 203, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+11;1;1;1;1; ;[0, 0, 881, 9];9;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+11;2;1;1;1;Dotations;[12, 29, 117, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+11;2;1;1;2;financières;[139, 25, 138, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+11;2;1;1;3;aux;[285, 33, 49, 18];18;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+11;2;1;1;4;amortissements;[342, 26, 193, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+11;2;1;1;5;et;[545, 27, 23, 21];21;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+11;2;1;1;6;provisions;[577, 24, 124, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+11;2;2;1;1;Intérêts;[12, 66, 88, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+11;2;2;1;2;et;[109, 68, 23, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+11;2;2;1;3;charges;[140, 62, 102, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+11;2;2;1;4;assimilées;[250, 61, 128, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+11;2;3;1;1;Différences;[12, 101, 139, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+11;2;3;1;2;négaïives;[161, 102, 121, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+11;2;3;1;3;de;[291, 99, 32, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+11;2;3;1;4;change;[333, 99, 96, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+11;2;4;1;1;Charges;[12, 139, 106, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+11;2;4;1;2;nettes;[128, 143, 72, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+11;2;4;1;3;sur;[208, 148, 38, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+11;2;4;1;4;cessions;[254, 140, 104, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+11;2;4;1;5;de;[367, 135, 32, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+11;2;4;1;6;valeurs;[408, 136, 92, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+11;2;4;1;7;mobilières;[510, 134, 130, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+11;2;4;1;8;de;[649, 133, 31, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+11;2;4;1;9;placement;[690, 133, 134, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+11;3;1;1;1;;[323, 174, 894, 9];9;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+12;1;1;1;1;aa,;[0, 0, 828, 9];9;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+12;2;1;1;1;PRODUITS;[831, 0, 160, 41];41;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+12;2;1;1;2;FINANCIERS;[1001, 14, 187, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+12;3;1;1;1;;[401, 54, 815, 10];10;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+13;1;1;1;1;RESULTAT;[767, 17, 152, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+13;1;1;1;2;D'EXPLOITATION;[928, 14, 259, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+14;1;1;1;1; ;[0, 0, 841, 10];10;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+14;2;1;1;1;CHARGES;[768, 0, 150, 44];44;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+14;2;1;1;2;D'EXPLOITATION;[928, 14, 259, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+14;3;1;1;1;;[320, 54, 896, 10];10;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+15;1;1;1;1;PRODUITS;[758, 0, 160, 45];45;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+15;1;1;1;2;D'EXPLOITATION;[928, 15, 260, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+15;2;1;1;1;;[461, 60, 755, 9];9;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+16;1;1;1;1;Production;[12, 25, 131, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+16;1;1;1;2;stockée;[153, 24, 96, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+16;1;2;1;1;Production;[12, 62, 131, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+16;1;2;1;2;immobilisée;[154, 61, 150, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+16;1;3;1;1;Subventions;[11, 101, 151, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+16;1;3;1;2;d'exploitation;[171, 100, 173, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+16;1;4;1;1;Reprises;[12, 142, 102, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+16;1;4;1;2;sur;[123, 148, 37, 18];18;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+16;1;4;1;3;amortissements;[169, 141, 191, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+16;1;4;1;4;et;[370, 142, 24, 22];22;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+16;1;4;1;5;provisions,;[402, 140, 134, 29];29;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+16;1;4;1;6;transferts;[546, 134, 111, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+16;1;4;1;7;de;[667, 134, 31, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+16;1;4;1;8;charges;[708, 134, 100, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+16;2;1;1;1;Autres;[9, 179, 79, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+16;2;1;1;2;produits;[99, 176, 101, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+16;3;1;1;1;;[568, 214, 649, 7];7;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+17;1;1;1;1; ;[0, 0, 902, 10];10;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+17;2;1;1;1;Participation;[13, 55, 154, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+17;2;1;1;2;des;[177, 51, 44, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+17;2;1;1;3;salariés;[231, 51, 96, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+17;2;1;1;4;aux;[337, 59, 47, 17];17;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+17;2;1;1;5;résultats;[394, 49, 101, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+17;2;1;1;6;de;[504, 48, 32, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+17;2;1;1;7;l'entreprise;[547, 48, 136, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+17;2;1;2;1;Impôts;[13, 95, 80, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+17;2;1;2;2;sur;[102, 102, 37, 15];15;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+17;2;1;2;3;les;[147, 91, 33, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+17;2;1;2;4;bénéfices;[191, 90, 120, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+17;3;1;1;1;tr;[1034, 140, 57, 19];19;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+17;3;1;1;2;rrtnhhnntÉÉT;[1090, 140, 109, 19];19;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+18;1;1;1;1;RESULTAT;[805, 8, 152, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+18;1;1;1;2;EXCEPTIONNEL;[965, 0, 232, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+19;1;1;1;1; ;[0, 0, 824, 9];9;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+19;2;1;1;1;CHARGES;[754, 0, 151, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+19;2;1;1;2;EXCEPTIONNELLES;[914, 3, 282, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+20;1;1;1;1;CHIFFRES;[195, 0, 141, 36];36;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+20;1;1;1;2;D'AFFAIRES;[344, 9, 178, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+20;1;1;1;3;NETS;[532, 8, 76, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+20;2;1;1;1;;[354, 42, 51, 1];1;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+21;1;1;1;1;Ventes;[9, 22, 83, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+21;1;1;1;2;de;[102, 19, 32, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+21;1;1;1;3;marchandises;[144, 18, 174, 28];28;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+21;1;1;2;1;Production;[11, 57, 131, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+21;1;1;2;2;vendue;[152, 56, 95, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+21;1;1;2;3;de;[257, 55, 31, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+21;1;1;2;4;biens;[298, 55, 66, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+21;1;1;3;1;Production;[11, 94, 132, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+21;1;1;3;2;vendue;[152, 93, 94, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+21;1;1;3;3;de;[256, 93, 31, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+21;1;1;3;4;services;[296, 96, 101, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+22;1;1;1;1; ;[0, 0, 83, 2];2;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+22;2;1;1;1;Rubriques;[12, 0, 125, 53];53;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+23;1;1;1;1; ;[0, 0, 869, 11];11;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+23;2;1;1;1;__;[862, 0, 32, 41];41;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+23;2;1;1;2;BENEFICE;[901, 0, 141, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+23;2;1;1;3;OÙ;[1051, 6, 49, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+23;2;1;1;4;PERTE;[1109, 5, 88, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+24;1;1;1;1; ;[0, 0, 877, 11];11;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+24;2;1;1;1;TOTAL;[875, 0, 100, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+24;2;1;1;2;DES;[983, 6, 57, 23];23;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+24;2;1;1;3;CHARGES;[1049, 3, 147, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+25;1;1;1;1; ;[0, 0, 851, 10];10;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+25;2;1;1;1;TOTAL;[864, 0, 100, 30];30;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+25;2;1;1;2;DES;[972, 5, 57, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+25;2;1;1;3;PRODUITS;[1039, 3, 157, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+28;1;1;1;1;France;[97, 16, 88, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+31;1;1;1;1;Exportation;[68, 16, 147, 33];33;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+32;1;1;1;1;363;[146, 167, 52, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+32;1;1;1;2;121;[213, 166, 46, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+32;1;1;2;1;144;[149, 200, 49, 42];42;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+32;1;1;2;2;185;[213, 200, 50, 42];42;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+35;1;1;1;1;630;[146, 82, 54, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+35;1;1;1;2;695;[210, 82, 53, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+37;1;1;1;1;11;[103, 85, 27, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+37;1;1;1;2;326;[145, 84, 54, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+37;1;1;1;3;537;[209, 83, 56, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+38;1;1;1;1;192;[74, 14, 56, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+38;1;1;1;2;362;[139, 14, 57, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+38;1;1;1;3;423;[205, 13, 59, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+39;1;1;1;1;192;[75, 15, 54, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+39;1;1;1;2;869;[140, 15, 57, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+39;1;1;1;3;729;[205, 14, 59, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+40;1;1;1;1;788;[139, 15, 57, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+40;1;1;1;2;459;[205, 14, 60, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+41;1;1;1;1;316;[145, 18, 53, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+41;1;1;1;2;837;[210, 17, 55, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+41;1;1;2;1;274;[145, 55, 54, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+41;1;1;2;2;063;[209, 54, 53, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+41;1;1;3;1;197;[148, 93, 52, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+41;1;1;3;2;559;[208, 92, 55, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+42;1;1;1;1;193;[75, 16, 55, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+42;1;1;1;2;658;[139, 15, 57, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+42;1;1;1;3;188;[209, 15, 55, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+43;1;1;1;1;193;[84, 185, 49, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+43;1;1;1;2;584;[144, 185, 55, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+43;1;1;1;3;650;[209, 184, 55, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+43;2;1;1;1;34;[164, 261, 35, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+43;2;1;1;2;417;[208, 260, 56, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+43;2;1;2;1;3;[182, 299, 15, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+43;2;1;2;2;824;[210, 298, 54, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+43;2;1;3;1;35;[164, 338, 34, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+43;2;1;3;2;298;[209, 337, 54, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+44;1;1;1;1;|;[50, 0, 36, 1];1;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+44;1;1;1;2;(507;[126, 14, 70, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+44;1;1;1;3;306);[202, 12, 69, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+45;1;1;1;1;507;[139, 15, 59, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+45;1;1;1;2;306;[205, 14, 59, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+50;1;1;1;1;31/12/2018;[46, 13, 192, 41];41;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+53;1;1;1;1;12;[103, 83, 31, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+53;1;1;1;2;492;[145, 82, 53, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+53;1;1;1;3;906;[210, 81, 54, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+55;1;1;1;1;362;[157, 166, 54, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+55;1;1;1;2;114;[226, 166, 53, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+55;1;1;2;1;(30;[166, 204, 45, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+55;1;1;2;2;807];[222, 203, 65, 31];31;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+55;2;1;1;1;(D;[250, 536, 28, 44];44;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+56;1;1;1;1;2;[130, 85, 16, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+56;1;1;1;2;128;[161, 84, 51, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+56;1;1;1;3;982;[225, 82, 54, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+58;1;1;1;1;62;[111, 85, 34, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+58;1;1;1;2;584;[156, 84, 56, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+58;1;1;1;3;280;[224, 83, 55, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+59;1;1;1;1; ;[0, 0, 131, 2];2;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+59;2;1;1;1;103;[85, 16, 56, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+59;2;1;1;2;664;[150, 16, 60, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+59;2;1;1;3;104;[222, 14, 76, 41];41;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+60;1;1;1;1;103;[85, 0, 54, 53];53;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+60;1;1;1;2;995;[142, 0, 63, 53];53;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+60;1;1;1;3;411;[218, 15, 56, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+61;1;1;1;1;1510;[126, 15, 84, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+61;1;1;1;2;109;[223, 13, 58, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+62;1;1;1;1;1;[133, 19, 8, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+62;1;1;1;2;344;[157, 17, 55, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+62;1;1;1;3;543;[222, 16, 55, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+62;1;1;2;1;92;[176, 55, 34, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+62;1;1;2;2;575;[223, 55, 55, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+62;1;1;3;1;72;[176, 93, 34, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+62;1;1;3;2;991;[224, 92, 48, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+63;1;1;1;1;105;[85, 17, 55, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+63;1;1;1;2;505;[150, 16, 58, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+63;1;1;1;3;520;[220, 15, 60, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+64;1;1;1;1;105;[95, 185, 50, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+64;1;1;1;2;368;[156, 184, 55, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+64;1;1;1;3;703;[223, 183, 54, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+64;1;1;2;1;45;[175, 261, 35, 27];27;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+64;1;1;2;2;397;[223, 260, 57, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+64;2;1;1;1;91;[176, 338, 30, 24];24;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+64;2;1;1;2;420;[222, 337, 57, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+65;1;1;1;1;(331;[138, 14, 63, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+65;1;1;1;2;307);[215, 12, 71, 32];32;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+66;1;1;1;1;331;[149, 16, 55, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+66;1;1;1;2;308;[219, 15, 60, 26];26;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+70;1;1;1;1;31/12/2017;[51, 13, 199, 34];34;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+71;1;1;1;1;35;[111, 84, 35, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+71;1;1;1;2;753;[157, 83, 53, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
+71;1;1;1;3;819;[225, 82, 54, 25];25;text;Page_6;02_ARDIAN - Comptes sociaux 2018
