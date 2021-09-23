@@ -333,9 +333,12 @@ if analysis == "[3] Search Engine":
                     pass
 
                 # print the selected previews
-                # st.markdown("___"+str(iCpt+1)+". "+txt+"___")
-                # st.markdown(final_content)
-                # with st.expander("See original page"):
-                #     img = Image.open(os.path.join("ocr_exports", "se_png", sel_png))
-                #     st.image(img)
-                # st.markdown("""---""")
+                st.markdown("___"+str(iCpt+1)+". "+txt+"___")
+                st.markdown(final_content)
+                try:
+                    with st.expander("See original page"):
+                        img = Image.open(os.path.join("ocr_exports", "se_png", sel_png))
+                        st.image(img)
+                except ValueError:
+                    pass
+                st.markdown("""---""")
