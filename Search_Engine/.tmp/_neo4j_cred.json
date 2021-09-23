@@ -1,0 +1,12 @@
+{
+    "online": {
+        "user": "neo4j",
+        "password": "uEWXbEUkT7Nf1OCoyEMAcqBsVALI-g5_3oYRDpblI8s",
+        "uri": "neo4j+s://6366e43e.databases.neo4j.io"
+    },
+    "local": {
+        "user": "neo4j",
+        "password": "_",
+        "uri": "bolt://localhost:7687"
+    }
+}

@@ -1,0 +1,781 @@
+identifier;block_num;par_num;line_num;word_num;text;position;height;text_type;page;document
+0;1;1;1;1;RDIAN;[202, 316, 155, 65];65;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;1;1;1;2;31/12/2017;[1979, 314, 303, 47];47;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;1;1;2;1;BILAN;[1051, 419, 167, 48];48;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;1;1;2;2;ACTIF;[1241, 419, 153, 48];48;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;2;1;1;1;Preis;[165, 1613, 66, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;3;1;1;1;33;[1033, 1479, 41, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;3;1;1;2;403;[1086, 1479, 61, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;3;1;1;3;594;[1159, 1479, 62, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;3;1;1;4;15;[1379, 1479, 37, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;3;1;1;5;464;[1430, 1479, 61, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;3;1;1;6;582;[1505, 1479, 63, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;3;1;1;7;17;[1725, 1479, 38, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;3;1;1;8;939;[1778, 1479, 61, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;3;1;1;9;012;[1850, 1478, 63, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;3;1;1;10;20;[2082, 1478, 41, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;3;1;1;11;396;[2135, 1478, 61, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;3;1;1;12;356;[2208, 1479, 62, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;3;1;2;1;37;[1182, 1613, 39, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;3;1;2;2;37;[1874, 1611, 39, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;3;1;2;3;37;[2229, 1611, 39, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;3;1;3;1;Auires;[163, 1658, 90, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;3;1;3;2;Immobillssiions;[267, 1662, 216, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;3;1;3;3;finenclèros;[493, 1662, 158, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;4;1;1;1;ACTIF;[520, 1737, 98, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;4;1;1;2;IMMOBILISE;[631, 1737, 219, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;4;1;1;3;33;[1023, 1739, 42, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;4;1;1;4;403;[1078, 1739, 63, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;4;1;1;5;631;[1156, 1739, 59, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;4;1;1;6;15464;[1367, 1739, 120, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;4;1;1;7;582;[1502, 1737, 64, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;5;1;1;1;STOCKS;[166, 1821, 146, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;5;1;1;2;ET;[316, 1821, 44, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;5;1;1;3;EN-COURS;[363, 1820, 186, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;5;2;1;1;Metères;[166, 1865, 126, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;5;2;1;2;premières,;[304, 1871, 146, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;5;2;1;3;opprovisonnements;[465, 1869, 288, 35];35;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;5;2;2;1;En-cours;[165, 1910, 118, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;5;2;2;2;de;[297, 1916, 33, 24];24;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;5;2;2;3;production;[343, 1914, 152, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;5;2;2;4;da;[510, 1914, 31, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;5;2;2;5;blens;[556, 1914, 75, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;5;2;3;1;En-cours;[165, 1955, 118, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;5;2;3;2;de;[297, 1959, 33, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;5;2;3;3;production;[343, 1959, 152, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;5;2;3;4;de;[510, 1959, 33, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;5;2;3;5;services;[555, 1959, 112, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;5;2;4;1;Prodults;[165, 1998, 112, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;5;2;4;2;Intermédiaires;[289, 2003, 200, 27];27;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;5;2;4;3;et;[501, 2006, 24, 22];22;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;5;2;4;4;finis;[535, 2003, 56, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;5;2;5;1;Morchondisos;[166, 2043, 203, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;6;1;1;1; ;[138, 550, 10, 115];115;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;6;1;1;2;  ;[2295, 550, 3, 166];166;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;6;1;2;1;  ;[2295, 1682, 12, 575];575;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;7;1;1;1;Capitel;[165, 659, 105, 38];38;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;7;1;1;2;souscrit;[282, 664, 105, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;7;1;1;3;non;[397, 670, 51, 21];21;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;7;1;1;4;appelé;[462, 664, 97, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;8;1;1;1;IMMOBILISATIONS;[169, 725, 338, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;8;1;1;2;INCORPORELLES;[514, 724, 296, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;8;1;2;1;Frels;[165, 770, 67, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;8;1;2;2;d'tablisssment;[244, 770, 216, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;8;2;1;1;Frais;[165, 815, 66, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;8;2;1;2;de;[244, 820, 33, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;8;2;1;3;recherche;[289, 820, 140, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;8;2;1;4;ei;[444, 821, 22, 24];24;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;8;2;1;5;dûveloppement;[480, 818, 225, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;8;2;2;1;Concossions,;[165, 859, 186, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;8;2;2;2;brevets;[364, 863, 101, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;8;2;2;3;et;[477, 866, 24, 23];23;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;8;2;2;4;drolts;[513, 863, 76, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;8;2;2;5;similaires;[601, 863, 131, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;8;2;3;1;Fonds;[165, 904, 84, 29];29;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;8;2;3;2;commerciel;[262, 908, 162, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;8;3;1;1;Autres;[163, 948, 90, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;8;3;1;2;Immobillsetions;[267, 952, 216, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;8;3;1;3;Incorporelles;[495, 951, 186, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;8;3;2;1;Avantos,;[163, 990, 132, 34];34;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;8;3;2;2;comptes;[309, 999, 135, 28];28;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;8;3;2;3;sur;[454, 1000, 42, 21];21;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;8;3;2;4;Immo,;[507, 994, 84, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;8;3;2;5;Incorporeiles;[604, 994, 188, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;9;1;1;1;IMMOBILISATIONS;[168, 1057, 339, 35];35;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;9;1;1;2;CORPORELLES;[514, 1057, 254, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;9;1;2;1;Terrains;[162, 1104, 115, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;9;2;1;1;Constructions;[165, 1147, 192, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;9;3;1;1;Installations;[165, 1192, 166, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;9;3;1;2;techniques,;[343, 1197, 159, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;9;3;1;3;matériel,;[517, 1197, 122, 29];29;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;9;3;1;4;ouililage;[652, 1195, 123, 34];34;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;9;3;2;1;Autres;[163, 1236, 90, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;9;3;2;2;Immobillseilons;[267, 1241, 214, 27];27;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;9;3;2;3;corporelles;[495, 1241, 160, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;9;3;3;1;Immobilisations;[165, 1280, 219, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;9;3;3;2;en;[397, 1292, 30, 19];19;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;9;3;3;3;cours;[441, 1292, 75, 19];19;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;9;4;1;1;Avences;[163, 1325, 123, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;9;4;1;2;et;[300, 1332, 24, 23];23;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;9;4;1;3;ecompies;[336, 1332, 133, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;10;1;1;1;IMMOBILISATIONS;[168, 1391, 339, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;10;1;1;2;FINANCIERES;[511, 1391, 242, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;10;1;2;1;Participations;[163, 1436, 192, 37];37;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;10;1;2;2;per;[369, 1448, 45, 27];27;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;10;1;2;3;mise;[427, 1442, 60, 24];24;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;10;1;2;4;en;[501, 1446, 31, 20];20;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;10;1;2;5;équivelence;[546, 1440, 175, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;10;1;3;1;Autres;[163, 1481, 92, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;10;1;3;2;pericipalions;[268, 1485, 189, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;10;2;1;1;Créancas;[165, 1524, 136, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;10;2;1;2;tstschaas;[313, 1530, 146, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;10;2;1;3;à;[472, 1532, 15, 24];24;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;10;2;1;4;des;[501, 1529, 48, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;10;2;1;5;participations;[562, 1529, 195, 34];34;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;10;2;2;1;Autres;[163, 1569, 90, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;10;2;2;2;ifres;[265, 1575, 65, 24];24;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;10;2;2;3;Immobilsés;[342, 1574, 160, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;1;1; ;[138, 665, 15, 51];51;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;1;2; ;[902, 665, 1, 51];51;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;2;1;  ;[138, 716, 15, 102];102;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;2;2;  ;[902, 716, 1, 102];102;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;3;1; ;[142, 818, 11, 51];51;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;3;2; ;[902, 818, 1, 51];51;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;4;1; ;[142, 869, 11, 39];39;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;4;2; ;[902, 869, 1, 39];39;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;5;1; ;[142, 908, 11, 39];39;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;5;2; ;[902, 908, 1, 39];39;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;6;1; ;[142, 947, 11, 55];55;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;6;2; ;[902, 947, 1, 55];55;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;7;1; ;[142, 1002, 11, 43];43;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;7;2; ;[902, 1002, 1, 43];43;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;8;1; ;[142, 1045, 11, 64];64;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;8;2; ;[902, 1045, 1, 64];64;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;9;1; ;[142, 1109, 11, 40];40;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;9;2; ;[902, 1109, 1, 40];40;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;10;1; ;[142, 1149, 11, 46];46;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;10;2; ;[902, 1149, 1, 46];46;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;11;1; ;[142, 1195, 11, 52];52;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;11;2; ;[902, 1195, 1, 52];52;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;12;1; ;[142, 1247, 11, 43];43;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;12;2; ;[902, 1247, 1, 43];43;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;13;1; ;[142, 1290, 11, 36];36;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;13;2; ;[902, 1290, 1, 36];36;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;14;1; ;[142, 1326, 11, 54];54;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;14;2; ;[902, 1326, 1, 54];54;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;15;1; ;[142, 1380, 11, 60];60;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;15;2; ;[902, 1380, 1, 60];60;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;16;1; ;[142, 1440, 11, 54];54;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;16;2; ;[902, 1440, 1, 54];54;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;17;1; ;[142, 1494, 11, 42];42;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;17;2; ;[902, 1494, 1, 42];42;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;18;1; ;[142, 1536, 11, 46];46;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;18;2; ;[902, 1536, 1, 46];46;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;19;1;   ;[142, 1582, 11, 100];100;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;19;2;   ;[902, 1582, 1, 100];100;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;20;1;  ;[142, 1704, 11, 165];165;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;20;2; ;[899, 1826, 8, 43];43;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;21;1;  ;[142, 1869, 11, 96];96;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;21;2;  ;[899, 1869, 8, 96];96;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;22;1; ;[142, 1965, 11, 45];45;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;22;2; ;[899, 1965, 8, 45];45;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;23;1;     ;[142, 2010, 765, 81];81;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;24;1; ;[142, 2091, 23, 73];73;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;24;2; ;[811, 2091, 96, 73];73;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;25;1; ;[142, 2164, 13, 58];58;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;25;2;  ;[899, 2164, 8, 93];93;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;11;1;26;1;  ;[901, 2257, 158, 52];52;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;12;1;1;1;Avences;[165, 2109, 123, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;12;1;1;2;et;[300, 2117, 24, 23];23;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;12;1;1;3;ecomples;[337, 2117, 134, 29];29;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;12;1;1;4;versés;[484, 2117, 87, 23];23;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;12;1;1;5;sur;[583, 2120, 42, 20];20;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;12;1;1;6;commandos;[637, 2114, 174, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;13;1;1;1;CREANCES;[169, 2176, 186, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;13;2;1;1;Créances;[165, 2219, 136, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;13;2;1;2;clients;[315, 2225, 85, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;13;2;1;3;et;[412, 2227, 24, 24];24;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;13;2;1;4;comptes;[448, 2227, 117, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;13;2;1;5;reltsches;[577, 2224, 134, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;13;2;2;1;Autres;[165, 2264, 90, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;13;2;2;2;créancos;[267, 2272, 127, 24];24;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;13;3;1;1;Cepisl;[165, 2308, 105, 39];39;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;13;3;1;2;souscrit;[282, 2314, 105, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;13;3;1;3;et;[399, 2317, 24, 22];22;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;13;3;1;4;appelé,;[435, 2312, 106, 35];35;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;13;3;1;5;non;[555, 2320, 51, 18];18;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;13;3;1;6;versé;[621, 2315, 73, 23];23;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;14;1;1;1;DIVERS;[169, 2375, 131, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;14;2;1;1;Valeurs;[165, 2419, 106, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;14;2;1;2;mobillères;[286, 2425, 143, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;14;2;1;3;de;[442, 2425, 33, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;14;2;1;4;piscoment;[490, 2425, 149, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;14;3;1;1;{dont;[166, 2461, 75, 37];37;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;14;3;1;2;actions;[253, 2467, 98, 27];27;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;14;3;1;3;propres;[364, 2473, 108, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;14;3;1;4;!;[484, 2470, 5, 22];22;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;14;3;1;5;};[867, 2459, 9, 38];38;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;14;3;2;1;Disponibitiiés;[166, 2506, 189, 37];37;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;15;1;1;1;COMPTES;[169, 2572, 171, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;15;1;1;2;DE;[346, 2572, 50, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;15;1;1;3;RÉGULARISATION;[400, 2570, 324, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;15;1;2;1;Chargos;[166, 2615, 122, 38];38;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;15;1;2;2;constatäes;[301, 2623, 149, 24];24;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;15;1;2;3;d'avance;[462, 2614, 132, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;15;1;2;4;2;[1132, 2615, 20, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;15;1;2;5;700;[1164, 2615, 62, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;15;1;2;6;2700;[1824, 2614, 95, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;15;1;2;7;2;[2181, 2614, 20, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;15;1;2;8;700;[2211, 2614, 63, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;16;1;1;1;ACTIF;[540, 2695, 99, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;16;1;1;2;CIRCULANT;[649, 2695, 204, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;16;1;1;3;6223;[1050, 2696, 96, 29];29;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;16;1;1;4;875;[1161, 2696, 63, 29];29;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;16;1;1;5;Mess];[1206, 2671, 397, 78];78;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;16;1;1;6;6;[1740, 2696, 21, 29];29;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;16;1;1;7;223;[1775, 2696, 61, 29];29;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;16;1;1;8;875;[1851, 2695, 65, 29];29;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;16;1;1;9;4;[2097, 2695, 20, 29];29;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;16;1;1;10;324;[2132, 2695, 63, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;16;1;1;11;872;[2208, 2695, 66, 29];29;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;16;1;2;1;Primos;[166, 2823, 92, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;16;1;2;2;de;[271, 2827, 33, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;16;1;2;3;remboursement;[318, 2827, 220, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;16;1;2;4;des;[550, 2827, 50, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;16;1;2;5;obligations;[612, 2826, 160, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;17;1;1;1;TOTAL;[561, 2946, 114, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;17;1;1;2;GENERAL;[687, 2946, 168, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;17;1;1;3;39627507;[1027, 2946, 199, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;17;1;1;4;15;[1372, 2946, 41, 35];35;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;17;1;1;5;464;[1427, 2946, 64, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;17;1;1;6;582;[1506, 2946, 66, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;17;1;1;7;24162;[1719, 2944, 120, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;17;1;1;8;925;[1853, 2946, 66, 28];28;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;17;1;1;9;24,721;[2078, 2944, 114, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;17;1;1;10;265;[2210, 2944, 64, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;18;1;1;1;   ;[140, 2222, 15, 90];90;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;18;1;2;1; ;[901, 2312, 1407, 54];54;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;18;1;3;1;   ;[140, 2312, 15, 162];162;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;18;1;3;2;  ;[901, 2366, 1407, 108];108;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;18;1;4;1; ;[140, 2474, 15, 42];42;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;18;1;5;1;    ;[140, 2516, 16, 156];156;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;18;1;6;1; ;[141, 2672, 10, 110];110;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;18;1;6;2;  ;[2305, 2672, 3, 217];217;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;18;1;7;1; ;[2303, 2889, 5, 115];115;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;19;1;1;1;  ;[1224, 2257, 525, 52];52;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;19;1;1;2;  ;[1917, 2257, 189, 52];52;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;20;1;1;1;3712;[1059, 2263, 90, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;20;1;1;2;740;[1162, 2263, 62, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;20;1;1;3;3712;[1749, 2263, 90, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;20;1;1;4;740;[1853, 2261, 64, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;20;1;1;5;3179;[2106, 2261, 92, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;20;1;1;6;522;[2211, 2261, 60, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;21;1;1;1; ;[901, 2474, 1407, 14];14;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;21;1;2;1; ;[1224, 2488, 527, 28];28;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;21;1;3;1;  ;[901, 2516, 1407, 45];45;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;22;1;1;1; ;[901, 2488, 159, 28];28;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;22;1;1;2; ;[1917, 2488, 191, 28];28;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;22;1;2;1; ;[901, 2516, 159, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;22;1;2;2;    ;[1917, 2488, 391, 61];61;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;23;1;1;1;2;[1060, 2504, 17, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;23;1;1;2;508;[1089, 2504, 61, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;23;1;1;3;435;[1164, 2503, 60, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;23;1;1;4;2;[1751, 2503, 18, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;23;1;1;5;508;[1781, 2503, 61, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;23;1;1;6;435;[1854, 2503, 63, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;23;1;1;7;1142;[2108, 2503, 90, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;23;1;1;8;650;[2211, 2503, 63, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;24;1;1;1;  ;[901, 2561, 1407, 39];39;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;24;1;2;1; ;[1226, 2600, 598, 19];19;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;24;1;3;1; ;[1245, 2619, 362, 19];19;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;25;1;1;1;  ;[1919, 2599, 262, 20];20;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;25;1;2;1; ;[1938, 2619, 16, 19];19;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;26;1;1;1;  ;[2274, 2599, 34, 20];20;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;26;1;2;1; ;[2293, 2619, 15, 19];19;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;26;1;3;1;   ;[2300, 2638, 6, 23];23;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;26;1;4;1; ;[2301, 2661, 5, 11];11;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;27;1;1;1; ;[901, 2600, 231, 19];19;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;27;1;2;1; ;[901, 2619, 16, 19];19;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;28;1;1;1;Charges;[168, 2778, 121, 37];37;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;28;1;1;2;à;[303, 2785, 15, 23];23;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;28;1;1;3;répartir;[330, 2782, 105, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;28;1;1;4;sur;[445, 2788, 41, 20];20;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;28;1;1;5;plusieurs;[498, 2782, 123, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;28;1;1;6;exercices;[634, 2782, 135, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;29;1;1;1;    ;[141, 2782, 17, 132];132;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;29;1;1;2;   ;[906, 2782, 3, 107];107;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;29;1;2;1; ;[143, 2914, 10, 90];90;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+0;30;1;1;1;;[2413, 275, 6, 990];990;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;1;1;1;1;     ;[763, 1136, 1406, 630];630;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;2;1;1;1;Capitel;[27, 113, 105, 38];38;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;2;1;1;2;souscrit;[144, 118, 105, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;2;1;1;3;non;[259, 124, 51, 21];21;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;2;1;1;4;appelé;[324, 118, 97, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;3;1;1;1;IMMOBILISATIONS;[31, 179, 338, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;3;1;1;2;INCORPORELLES;[376, 178, 296, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;3;1;2;1;Frels;[27, 224, 67, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;3;1;2;2;d'tablisssment;[106, 224, 216, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;3;2;1;1;Frais;[27, 269, 66, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;3;2;1;2;de;[106, 274, 33, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;3;2;1;3;recherche;[151, 274, 140, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;3;2;1;4;ei;[306, 275, 22, 24];24;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;3;2;1;5;dûveloppement;[342, 272, 225, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;3;2;2;1;Concossions,;[27, 313, 186, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;3;2;2;2;brevets;[226, 317, 101, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;3;2;2;3;et;[339, 320, 24, 23];23;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;3;2;2;4;drolts;[375, 317, 76, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;3;2;2;5;similaires;[463, 317, 131, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;3;2;3;1;Fonds;[27, 358, 84, 29];29;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;3;2;3;2;commerciel;[124, 362, 162, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;3;3;1;1;Autres;[25, 402, 90, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;3;3;1;2;Immobillsetions;[129, 406, 216, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;3;3;1;3;Incorporelles;[357, 405, 186, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;3;3;2;1;Avantos,;[25, 444, 132, 34];34;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;3;3;2;2;comptes;[171, 453, 135, 28];28;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;3;3;2;3;sur;[316, 454, 42, 21];21;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;3;3;2;4;Immo,;[369, 448, 84, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;3;3;2;5;Incorporeiles;[466, 448, 188, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;4;1;1;1;IMMOBILISATIONS;[30, 511, 339, 35];35;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;4;1;1;2;CORPORELLES;[376, 511, 254, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;4;1;2;1;Terrains;[24, 558, 115, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;4;2;1;1;Constructions;[27, 601, 192, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;4;3;1;1;Installations;[27, 646, 166, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;4;3;1;2;techniques,;[205, 651, 159, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;4;3;1;3;matériel,;[379, 651, 122, 29];29;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;4;3;1;4;ouililage;[514, 649, 123, 34];34;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;4;3;2;1;Autres;[25, 690, 90, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;4;3;2;2;Immobillseilons;[129, 695, 214, 27];27;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;4;3;2;3;corporelles;[357, 695, 160, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;4;3;3;1;Immobilisations;[27, 734, 219, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;4;3;3;2;en;[259, 746, 30, 19];19;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;4;3;3;3;cours;[303, 746, 75, 19];19;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;4;4;1;1;Avences;[25, 779, 123, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;4;4;1;2;et;[162, 786, 24, 23];23;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;4;4;1;3;ecompies;[198, 786, 133, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;5;1;1;1;IMMOBILISATIONS;[30, 845, 339, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;5;1;1;2;FINANCIERES;[373, 845, 242, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;5;1;2;1;Participations;[25, 890, 192, 37];37;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;5;1;2;2;per;[231, 902, 45, 27];27;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;5;1;2;3;mise;[289, 896, 60, 24];24;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;5;1;2;4;en;[363, 900, 31, 20];20;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;5;1;2;5;équivelence;[408, 894, 175, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;5;1;3;1;Autres;[25, 935, 92, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;5;1;3;2;pericipalions;[130, 939, 189, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;5;2;1;1;Créancas;[27, 978, 136, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;5;2;1;2;tstschaas;[175, 984, 146, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;5;2;1;3;à;[334, 986, 15, 24];24;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;5;2;1;4;des;[363, 983, 48, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;5;2;1;5;participations;[424, 983, 195, 34];34;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;5;2;2;1;Autres;[25, 1023, 90, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;5;2;2;2;ifres;[127, 1029, 65, 24];24;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;5;2;2;3;Immobilsés;[204, 1028, 160, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;6;1;1;1;Preis;[27, 1067, 66, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;7;1;1;1;33;[895, 933, 41, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;7;1;1;2;403;[948, 933, 61, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;7;1;1;3;594;[1021, 933, 62, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;7;1;1;4;15;[1241, 933, 37, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;7;1;1;5;464;[1292, 933, 61, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;7;1;1;6;582;[1367, 933, 63, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;7;1;1;7;17;[1587, 933, 38, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;7;1;1;8;939;[1640, 933, 61, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;7;1;1;9;012;[1712, 932, 63, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;7;1;1;10;20;[1944, 932, 41, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;7;1;1;11;396;[1997, 932, 61, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;7;1;1;12;356;[2070, 933, 62, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;7;1;2;1;37;[1044, 1067, 39, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;7;1;2;2;37;[1736, 1065, 39, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;7;1;2;3;37;[2091, 1065, 39, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;7;1;3;1;Auires;[25, 1112, 90, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;7;1;3;2;Immobillssiions;[129, 1116, 216, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;7;1;3;3;finenclèros;[355, 1116, 158, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;8;1;1;1;ACTIF;[382, 1191, 98, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;8;1;1;2;IMMOBILISE;[493, 1191, 219, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;8;1;1;3;33;[885, 1193, 42, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;8;1;1;4;403;[940, 1193, 63, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;8;1;1;5;631;[1018, 1193, 59, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;8;1;1;6;15464;[1229, 1193, 120, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;8;1;1;7;582;[1364, 1191, 64, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;9;1;1;1;STOCKS;[28, 1275, 146, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;9;1;1;2;ET;[178, 1275, 44, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;9;1;1;3;EN-COURS;[225, 1274, 186, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;9;2;1;1;Metères;[28, 1319, 126, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;9;2;1;2;premières,;[166, 1325, 146, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;9;2;1;3;opprovisonnements;[327, 1323, 288, 35];35;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;9;2;2;1;En-cours;[27, 1364, 118, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;9;2;2;2;de;[159, 1370, 33, 24];24;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;9;2;2;3;production;[205, 1368, 152, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;9;2;2;4;da;[372, 1368, 31, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;9;2;2;5;blens;[418, 1368, 75, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;9;2;3;1;En-cours;[27, 1409, 118, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;9;2;3;2;de;[159, 1413, 33, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;9;2;3;3;production;[205, 1413, 152, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;9;2;3;4;de;[372, 1413, 33, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;9;2;3;5;services;[417, 1413, 112, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;9;2;4;1;Prodults;[27, 1452, 112, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;9;2;4;2;Intermédiaires;[151, 1457, 200, 27];27;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;9;2;4;3;et;[363, 1460, 24, 22];22;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;9;2;4;4;finis;[397, 1457, 56, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;9;2;5;1;Morchondisos;[28, 1497, 203, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;1;1; ;[4, 119, 11, 51];51;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;1;2; ;[764, 119, 1, 51];51;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;2;1;  ;[4, 170, 11, 102];102;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;2;2;  ;[764, 170, 1, 102];102;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;3;1; ;[4, 272, 11, 51];51;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;3;2; ;[764, 272, 1, 51];51;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;4;1; ;[4, 323, 11, 39];39;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;4;2; ;[764, 323, 1, 39];39;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;5;1; ;[4, 362, 11, 39];39;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;5;2; ;[764, 362, 1, 39];39;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;6;1; ;[4, 401, 11, 55];55;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;6;2; ;[764, 401, 1, 55];55;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;7;1; ;[4, 456, 11, 43];43;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;7;2; ;[764, 456, 1, 43];43;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;8;1; ;[4, 499, 11, 64];64;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;8;2; ;[764, 499, 1, 64];64;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;9;1; ;[4, 563, 11, 40];40;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;9;2; ;[764, 563, 1, 40];40;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;10;1; ;[4, 603, 11, 46];46;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;10;2; ;[764, 603, 1, 46];46;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;11;1; ;[4, 649, 11, 52];52;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;11;2; ;[764, 649, 1, 52];52;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;12;1; ;[4, 701, 11, 43];43;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;12;2; ;[764, 701, 1, 43];43;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;13;1; ;[4, 744, 11, 36];36;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;13;2; ;[764, 744, 1, 36];36;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;14;1; ;[4, 780, 11, 54];54;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;14;2; ;[764, 780, 1, 54];54;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;15;1; ;[4, 834, 11, 60];60;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;15;2; ;[764, 834, 1, 60];60;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;16;1; ;[4, 894, 11, 54];54;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;16;2; ;[764, 894, 1, 54];54;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;17;1; ;[4, 948, 11, 42];42;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;17;2; ;[764, 948, 1, 42];42;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;18;1; ;[4, 990, 11, 46];46;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;18;2; ;[764, 990, 1, 46];46;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;19;1;  ;[4, 1036, 11, 77];77;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;19;2;   ;[764, 1036, 1, 100];100;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;20;1;  ;[4, 1158, 11, 165];165;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;20;2; ;[761, 1280, 8, 43];43;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;21;1;  ;[4, 1323, 11, 96];96;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;21;2;  ;[761, 1323, 8, 96];96;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;22;1; ;[4, 1419, 11, 45];45;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;22;2; ;[761, 1419, 8, 45];45;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;23;1;     ;[4, 1464, 765, 81];81;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;24;1; ;[4, 1545, 23, 73];73;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;24;2; ;[673, 1545, 96, 73];73;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;25;1; ;[4, 1618, 13, 58];58;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;25;2; ;[761, 1618, 8, 58];58;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;26;1;  ;[2, 1676, 15, 54];54;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;27;1;   ;[2, 1730, 15, 147];147;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;27;2; ;[763, 1766, 1407, 54];54;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;28;1; ;[763, 1820, 1407, 57];57;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;29;1; ;[2, 1877, 15, 51];51;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;29;2; ;[763, 1877, 1407, 51];51;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;30;1; ;[2, 1928, 15, 39];39;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;31;1; ;[2, 1967, 16, 48];48;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;32;1;  ;[3, 2015, 15, 77];77;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;33;1;  ;[3, 2092, 10, 144];144;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;33;2; ;[2167, 2126, 1, 110];110;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;34;1; ;[2167, 2236, 1, 51];51;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;10;1;35;1;  ;[2165, 2287, 5, 171];171;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;11;1;1;1;  ;[4, 1113, 11, 45];45;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;12;1;1;1;Avences;[27, 1563, 123, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;12;1;1;2;et;[162, 1571, 24, 23];23;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;12;1;1;3;ecomples;[199, 1571, 134, 29];29;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;12;1;1;4;versés;[346, 1571, 87, 23];23;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;12;1;1;5;sur;[445, 1574, 42, 20];20;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;12;1;1;6;commandos;[499, 1568, 174, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;13;1;1;1;CREANCES;[31, 1630, 186, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;13;2;1;1;Créances;[27, 1673, 136, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;13;2;1;2;clients;[177, 1679, 85, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;13;2;1;3;et;[274, 1681, 24, 24];24;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;13;2;1;4;comptes;[310, 1681, 117, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;13;2;1;5;reltsches;[439, 1678, 134, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;13;2;2;1;Autres;[27, 1718, 90, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;13;2;2;2;créancos;[129, 1726, 127, 24];24;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;13;3;1;1;Cepisl;[27, 1762, 105, 39];39;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;13;3;1;2;souscrit;[144, 1768, 105, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;13;3;1;3;et;[261, 1771, 24, 22];22;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;13;3;1;4;appelé,;[297, 1766, 106, 35];35;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;13;3;1;5;non;[417, 1774, 51, 18];18;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;13;3;1;6;versé;[483, 1769, 73, 23];23;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;14;1;1;1;DIVERS;[31, 1829, 131, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;14;2;1;1;Valeurs;[27, 1873, 106, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;14;2;1;2;mobillères;[148, 1879, 143, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;14;2;1;3;de;[304, 1879, 33, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;14;2;1;4;piscoment;[352, 1879, 149, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;14;3;1;1;{dont;[28, 1915, 75, 37];37;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;14;3;1;2;actions;[115, 1921, 98, 27];27;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;14;3;1;3;propres;[226, 1927, 108, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;14;3;1;4;!;[346, 1924, 5, 22];22;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;14;3;1;5;};[729, 1913, 9, 38];38;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;14;3;2;1;Disponibitiiés;[28, 1960, 189, 37];37;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;15;1;1;1;COMPTES;[31, 2026, 171, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;15;1;1;2;DE;[208, 2026, 50, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;15;1;1;3;RÉGULARISATION;[262, 2024, 324, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;15;1;2;1;Chargos;[28, 2069, 122, 38];38;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;15;1;2;2;constatäes;[163, 2077, 149, 24];24;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;15;1;2;3;d'avance;[324, 2068, 132, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;15;1;2;4;2;[994, 2069, 20, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;15;1;2;5;700;[1026, 2069, 62, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;15;1;2;6;2700;[1686, 2068, 95, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;15;1;2;7;2;[2043, 2068, 20, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;15;1;2;8;700;[2073, 2068, 63, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;16;1;1;1;ACTIF;[402, 2149, 99, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;16;1;1;2;CIRCULANT;[511, 2149, 204, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;16;1;1;3;6223;[912, 2150, 96, 29];29;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;16;1;1;4;875;[1023, 2150, 63, 29];29;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;16;1;1;5;Mess];[1068, 2125, 397, 78];78;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;16;1;1;6;6;[1602, 2150, 21, 29];29;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;16;1;1;7;223;[1637, 2150, 61, 29];29;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;16;1;1;8;875;[1713, 2149, 65, 29];29;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;16;1;1;9;4;[1959, 2149, 20, 29];29;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;16;1;1;10;324;[1994, 2149, 63, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;16;1;1;11;872;[2070, 2149, 66, 29];29;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;16;1;2;1;Primos;[28, 2277, 92, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;16;1;2;2;de;[133, 2281, 33, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;16;1;2;3;remboursement;[180, 2281, 220, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;16;1;2;4;des;[412, 2281, 50, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;16;1;2;5;obligations;[474, 2280, 160, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;17;1;1;1;TOTAL;[423, 2400, 114, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;17;1;1;2;GENERAL;[549, 2400, 168, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;17;1;1;3;39627507;[889, 2400, 199, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;17;1;1;4;15;[1234, 2400, 41, 35];35;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;17;1;1;5;464;[1289, 2400, 64, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;17;1;1;6;582;[1368, 2400, 66, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;17;1;1;7;24162;[1581, 2398, 120, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;17;1;1;8;925;[1715, 2400, 66, 28];28;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;17;1;1;9;24,721;[1940, 2398, 114, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;17;1;1;10;265;[2072, 2398, 64, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;18;1;1;1; ;[763, 1676, 6, 35];35;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;18;1;2;1; ;[1105, 1711, 363, 19];19;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;18;1;3;1;  ;[763, 1711, 158, 52];52;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;18;1;3;2; ;[1086, 1730, 525, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;18;1;3;3;  ;[1779, 1711, 189, 52];52;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;19;1;1;1;3712;[921, 1717, 90, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;19;1;1;2;740;[1024, 1717, 62, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;19;1;1;3;3712;[1611, 1717, 90, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;19;1;1;4;740;[1715, 1715, 64, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;19;1;1;5;3179;[1968, 1715, 92, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;19;1;1;6;522;[2073, 1715, 60, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;20;1;1;1; ;[763, 1928, 1407, 14];14;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;20;1;2;1; ;[1086, 1942, 527, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;20;1;3;1; ;[1086, 1967, 527, 36];36;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;21;1;1;1;  ;[763, 1942, 159, 61];61;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;21;1;1;2;     ;[1779, 1942, 391, 61];61;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;22;1;1;1;2;[922, 1958, 17, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;22;1;1;2;508;[951, 1958, 61, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;22;1;1;3;435;[1026, 1957, 60, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;22;1;1;4;2;[1613, 1957, 18, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;22;1;1;5;508;[1643, 1957, 61, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;22;1;1;6;435;[1716, 1957, 63, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;22;1;1;7;1142;[1970, 1957, 90, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;22;1;1;8;650;[2073, 1957, 63, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;23;1;1;1;  ;[763, 2015, 1407, 39];39;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;23;1;2;1; ;[1088, 2054, 598, 19];19;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;23;1;3;1; ;[1107, 2073, 362, 19];19;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;24;1;1;1;  ;[1781, 2053, 262, 20];20;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;24;1;2;1; ;[1800, 2073, 16, 19];19;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;25;1;1;1;  ;[2136, 2053, 34, 20];20;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;25;1;2;1; ;[2155, 2073, 15, 19];19;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;25;1;3;1;   ;[2162, 2092, 6, 23];23;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;25;1;4;1; ;[2163, 2115, 5, 11];11;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;26;1;1;1; ;[763, 2054, 231, 19];19;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;26;1;2;1; ;[763, 2073, 16, 19];19;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;27;1;1;1;Charges;[30, 2232, 121, 37];37;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;27;1;1;2;à;[165, 2239, 15, 23];23;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;27;1;1;3;répartir;[192, 2236, 105, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;27;1;1;4;sur;[307, 2242, 41, 20];20;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;27;1;1;5;plusieurs;[360, 2236, 123, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;27;1;1;6;exercices;[496, 2236, 135, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;28;1;1;1;    ;[3, 2236, 17, 132];132;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;28;1;1;2;   ;[768, 2236, 3, 107];107;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+1;28;1;2;1;;[5, 2368, 10, 90];90;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;1;1;1;1;Capitel;[15, 24, 105, 38];38;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;1;1;1;2;souscrit;[132, 29, 105, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;1;1;1;3;non;[247, 35, 51, 21];21;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;1;1;1;4;appelé;[312, 29, 97, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;2;1;1;1;IMMOBILISATIONS;[19, 90, 338, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;2;1;1;2;INCORPORELLES;[364, 89, 296, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;2;1;2;1;Frels;[15, 135, 67, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;2;1;2;2;d'tablisssment;[94, 135, 216, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;2;2;1;1;Frais;[15, 180, 66, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;2;2;1;2;de;[94, 185, 33, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;2;2;1;3;recherche;[139, 185, 140, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;2;2;1;4;ei;[294, 186, 22, 24];24;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;2;2;1;5;dûveloppement;[330, 183, 225, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;2;2;2;1;Concossions,;[15, 224, 186, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;2;2;2;2;brevets;[214, 228, 101, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;2;2;2;3;et;[327, 231, 24, 23];23;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;2;2;2;4;drolts;[363, 228, 76, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;2;2;2;5;similaires;[451, 228, 131, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;2;2;3;1;Fonds;[15, 269, 84, 29];29;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;2;2;3;2;commerciel;[112, 273, 162, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;2;3;1;1;Autres;[13, 313, 90, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;2;3;1;2;Immobillsetions;[117, 317, 216, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;2;3;1;3;Incorporelles;[345, 316, 186, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;2;3;2;1;Avantos,;[13, 355, 132, 34];34;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;2;3;2;2;comptes;[159, 364, 135, 28];28;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;2;3;2;3;sur;[304, 365, 42, 21];21;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;2;3;2;4;Immo,;[357, 359, 84, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;2;3;2;5;Incorporeiles;[454, 359, 188, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;3;1;1;1;IMMOBILISATIONS;[18, 422, 339, 35];35;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;3;1;1;2;CORPORELLES;[364, 422, 254, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;3;1;2;1;Terrains;[12, 469, 115, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;3;2;1;1;Constructions;[15, 512, 192, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;3;3;1;1;Installations;[15, 557, 166, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;3;3;1;2;techniques,;[193, 562, 159, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;3;3;1;3;matériel,;[367, 562, 122, 29];29;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;3;3;1;4;ouililage;[502, 560, 123, 34];34;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;3;3;2;1;Autres;[13, 601, 90, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;3;3;2;2;Immobillseilons;[117, 606, 214, 27];27;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;3;3;2;3;corporelles;[345, 606, 160, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;3;3;3;1;Immobilisations;[15, 645, 219, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;3;3;3;2;en;[247, 657, 30, 19];19;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;3;3;3;3;cours;[291, 657, 75, 19];19;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;3;4;1;1;Avences;[13, 690, 123, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;3;4;1;2;et;[150, 697, 24, 23];23;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;3;4;1;3;ecompies;[186, 697, 133, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;4;1;1;1;IMMOBILISATIONS;[18, 756, 339, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;4;1;1;2;FINANCIERES;[361, 756, 242, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;4;1;2;1;Participations;[13, 801, 192, 37];37;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;4;1;2;2;per;[219, 813, 45, 27];27;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;4;1;2;3;mise;[277, 807, 60, 24];24;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;4;1;2;4;en;[351, 811, 31, 20];20;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;4;1;2;5;équivelence;[396, 805, 175, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;4;1;3;1;Autres;[13, 846, 92, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;4;1;3;2;pericipalions;[118, 850, 189, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;4;2;1;1;Créancas;[15, 889, 136, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;4;2;1;2;tstschaas;[163, 895, 146, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;4;2;1;3;à;[322, 897, 15, 24];24;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;4;2;1;4;des;[351, 894, 48, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;4;2;1;5;participations;[412, 894, 195, 34];34;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;4;2;2;1;Autres;[13, 934, 90, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;4;2;2;2;res;[115, 940, 65, 24];24;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;4;2;2;3;Immobilisés;[192, 939, 160, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;4;3;1;1;Prés;[15, 978, 66, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;4;4;1;1;Autres;[13, 1023, 90, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;4;4;1;2;Immobilisations;[117, 1027, 216, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+2;4;4;1;3;finenclèros;[343, 1027, 158, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;1;1;1;1;STOCKS;[15, 24, 146, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;1;1;1;2;ET;[165, 24, 44, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;1;1;1;3;EN-COURS;[212, 23, 186, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;1;2;1;1;Metères;[15, 68, 126, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;1;2;1;2;premières,;[153, 74, 146, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;1;2;1;3;opprovisonnements;[314, 72, 288, 35];35;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;1;2;2;1;En-cours;[14, 113, 118, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;1;2;2;2;de;[146, 119, 33, 24];24;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;1;2;2;3;production;[192, 117, 152, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;1;2;2;4;da;[359, 117, 31, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;1;2;2;5;blens;[405, 117, 75, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;1;2;3;1;En-cours;[14, 158, 118, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;1;2;3;2;de;[146, 162, 33, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;1;2;3;3;production;[192, 162, 152, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;1;2;3;4;de;[359, 162, 33, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;1;2;3;5;services;[404, 162, 112, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;1;2;4;1;Prodults;[14, 201, 112, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;1;2;4;2;Intermédiaires;[138, 206, 200, 27];27;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;1;2;4;3;et;[350, 209, 24, 22];22;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;1;2;4;4;finis;[384, 206, 56, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;1;2;5;1;Morchondisos;[15, 246, 203, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;2;1;1;1;Avences;[14, 312, 123, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;2;1;1;2;et;[149, 320, 24, 23];23;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;2;1;1;3;ecomples;[186, 320, 134, 29];29;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;2;1;1;4;versés;[333, 320, 87, 23];23;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;2;1;1;5;sur;[432, 323, 42, 20];20;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;2;1;1;6;commandos;[486, 317, 174, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;3;1;1;1;CREANCES;[18, 379, 186, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;3;2;1;1;Créances;[14, 422, 136, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;3;2;1;2;clients;[164, 428, 85, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;3;2;1;3;et;[261, 430, 24, 24];24;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;3;2;1;4;comptes;[297, 430, 117, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;3;2;1;5;reltsches;[426, 427, 134, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;3;2;2;1;Autres;[14, 467, 90, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;3;2;2;2;créancos;[116, 475, 127, 24];24;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;3;3;1;1;Cepisl;[14, 511, 105, 39];39;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;3;3;1;2;souscrit;[131, 517, 105, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;3;3;1;3;et;[248, 520, 24, 22];22;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;3;3;1;4;appelé,;[284, 515, 106, 35];35;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;3;3;1;5;non;[404, 523, 51, 18];18;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;3;3;1;6;versé;[470, 518, 73, 23];23;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;4;1;1;1;DIVERS;[18, 578, 131, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;4;2;1;1;Valeurs;[14, 622, 106, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;4;2;1;2;mobillères;[135, 628, 143, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;4;2;1;3;de;[291, 628, 33, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;4;2;1;4;piscoment;[339, 628, 149, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;4;2;2;1;{dont;[15, 664, 75, 37];37;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;4;2;2;2;actions;[102, 670, 98, 27];27;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;4;2;2;3;propres;[213, 676, 108, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;4;2;2;4;!;[333, 673, 5, 22];22;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;4;2;3;1;Disponibitiiés;[15, 709, 189, 37];37;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;5;1;1;1;COMPTES;[18, 775, 171, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;5;1;1;2;DE;[195, 775, 50, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;5;1;1;3;REGULARISATION;[249, 773, 324, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;6;1;1;1;Chargos;[15, 818, 122, 38];38;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;6;1;1;2;constatäes;[150, 826, 149, 24];24;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+3;6;1;1;3;d'avance;[311, 817, 132, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+4;1;1;1;1;ACTIF;[369, 15, 98, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+4;1;1;1;2;IMMOBILISE;[480, 15, 219, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+5;1;1;1;1;Rubriques;[15, 20, 146, 37];37;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+6;1;1;1;1;Charges;[14, 26, 121, 37];37;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+6;1;1;1;2;à;[149, 33, 15, 23];23;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+6;1;1;1;3;répartir;[176, 30, 105, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+6;1;1;1;4;sur;[291, 36, 41, 20];20;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+6;1;1;1;5;plusieurs;[344, 30, 123, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+6;1;1;1;6;exercices;[480, 30, 135, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+6;1;1;2;1;Primos;[12, 71, 92, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+6;1;1;2;2;de;[117, 75, 33, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+6;1;1;2;3;remboursement;[164, 75, 220, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+6;1;1;2;4;des;[396, 75, 50, 26];26;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+6;1;1;2;5;obligations;[458, 74, 160, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+6;1;1;3;1;Eceris;[14, 114, 84, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+6;1;1;3;2;de;[111, 119, 33, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+6;1;1;3;3;conversion;[159, 119, 150, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+6;1;1;3;4;aciil;[324, 119, 59, 25];25;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+7;1;1;1;1;ACTIF;[386, 15, 99, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+7;1;1;1;2;CIRCULANT;[495, 15, 204, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+8;1;1;1;1;TOTAL;[405, 17, 114, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+8;1;1;1;2;GENERAL;[531, 17, 168, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+9;1;1;1;1;33;[123, 844, 41, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+9;1;1;1;2;403;[176, 844, 61, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+9;1;1;1;3;594;[249, 844, 62, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+9;2;1;1;1;37;[272, 978, 39, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+10;1;1;1;1;Montant;[72, 17, 125, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+10;1;1;1;2;Brut;[206, 17, 58, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+11;1;1;1;1;3712;[147, 466, 90, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+11;1;1;1;2;740;[250, 466, 62, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+11;2;1;1;1;2;[148, 707, 17, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+11;2;1;1;2;508;[177, 707, 61, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+11;2;1;1;3;435;[252, 706, 60, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+11;3;1;1;1;2;[220, 818, 20, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+11;3;1;1;2;700;[252, 818, 62, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+12;1;1;1;1;33;[111, 17, 42, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+12;1;1;1;2;403;[166, 17, 63, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+12;1;1;1;3;631;[244, 17, 59, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+14;1;1;1;1;6223875;[135, 18, 174, 29];29;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+15;1;1;1;1;39627507;[111, 17, 199, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+16;1;1;1;1;15;[126, 845, 37, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+16;1;1;1;2;464;[177, 845, 61, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+16;1;1;1;3;582;[252, 845, 63, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+17;1;1;1;1;Amortissements;[54, 15, 226, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+18;1;1;1;1;15464;[113, 17, 120, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+18;1;1;1;2;592;[248, 15, 64, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+19;1;1;1;1;;[0, 0, 337, 872];872;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+21;1;1;1;1;15;[113, 17, 40, 34];34;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+21;1;1;1;2;464;[167, 17, 64, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+21;1;1;1;3;582;[246, 17, 66, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+23;1;1;1;1;17;[126, 845, 38, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+23;1;1;1;2;939;[179, 845, 61, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+23;1;1;1;3;012;[251, 844, 63, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+23;2;1;1;1;37;[275, 977, 39, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+24;1;1;1;1;31/12/2017;[57, 13, 224, 35];35;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+25;1;1;1;1;3712;[148, 467, 90, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+25;1;1;1;2;740;[252, 465, 64, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+25;2;1;1;1;2;[150, 707, 18, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+25;2;1;1;2;508;[180, 707, 60, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+25;2;1;1;3;435;[253, 703, 63, 49];49;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+25;3;1;1;1;2;[223, 818, 18, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+25;3;1;1;2;700;[253, 819, 65, 29];29;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+26;1;1;1;1;17.939;[114, 18, 120, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+26;1;1;1;2;049;[244, 16, 69, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+28;1;1;1;1;6223875;[135, 17, 176, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+29;1;1;1;1;24162;[112, 16, 120, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+29;1;1;1;2;925;[246, 18, 66, 28];28;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+30;1;1;1;1;20;[138, 844, 41, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+30;1;1;1;2;396;[191, 844, 61, 31];31;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+30;1;1;1;3;356;[264, 845, 62, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+30;2;1;1;1;37;[285, 977, 39, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+31;1;1;1;1;37/12/2016;[63, 15, 222, 33];33;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+32;1;1;1;1;3179;[159, 465, 92, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+32;1;1;1;2;522;[264, 465, 60, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+32;2;1;1;1;1142;[161, 707, 90, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+32;2;1;1;2;650;[264, 707, 63, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+32;3;1;1;1;2;[234, 818, 20, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+32;3;1;1;2;700;[264, 818, 63, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+33;1;1;1;1;20;[125, 18, 43, 28];28;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+33;1;1;1;2;396,393;[180, 16, 141, 32];32;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+34;1;1;1;1;24721;[126, 16, 114, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+34;1;1;1;2;265;[258, 16, 64, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+36;1;1;1;1;4;[145, 18, 20, 29];29;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+36;1;1;1;2;324;[180, 18, 63, 30];30;text;Page_8;01_ARDIAN - Comptes sociaux 2017
+36;1;1;1;3;872;[256, 18, 66, 29];29;text;Page_8;01_ARDIAN - Comptes sociaux 2017
