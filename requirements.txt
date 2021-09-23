@@ -12,12 +12,12 @@ blinker==1.4
 cachetools==4.2.2
 certifi==2021.5.30
 cffi==1.14.6
-#click==7.1.2
+click
 charset-normalizer==2.0.4
 cycler==0.10.0
 debugpy==1.4.1
 decorator==5.0.9
-deep-translator==1.5.4
+deep-translator
 defusedxml==0.7.1
 entrypoints==0.3
 gitdb==4.0.7
@@ -79,9 +79,9 @@ scipy==1.7.1
 seaborn==0.11.2
 Send2Trash==1.8.0
 six==1.16.0
-smmap==4.0.0
+smmap==4.0.0Ò
 soupsieve==2.2.1
-streamlit==0.88.0
+streamlit
 terminado==0.12.1
 testpath==0.5.0
 toml==0.10.2
