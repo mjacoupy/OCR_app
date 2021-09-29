@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-29 11:43:56
+# @Last Modified time: 2021-09-29 11:47:05
 
 import streamlit as st
 import s3fs
@@ -11,26 +11,23 @@ import cv2
 import numpy as np
 
 fs = s3fs.S3FileSystem(anon=False)
-
+content = "ocrplus-ptc/Page_6.jpeg"
 
 @st.cache(ttl=600)
 def read_file(filename):
     """..."""
 
     infile = fs.open(filename, "rb")
-    image = Image.open(infile)
-    # image = cv2.imdecode(np.asarray(bytearray(infile)), cv2.IMREAD_COLOR)
-
+    pil_image = Image.open(infile).convert('RGB')
+    open_cv_image = numpy.array(pil_image)
+    image = open_cv_image[:, :, ::-1].copy()
     return image
 
-#content = "ocrplus-ptc/ARDIAN_Comptes sociaux2019_p4.pdf"
-content = "ocrplus-ptc/Page_6.jpeg"
+
 
 image = read_file(content)
 
 st.image(image, caption="first test")
 
+st.text(image)
 
-infile = fs.open(content, "rb")
-st.text(infile)
-st.text(infile.type())
