@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-29 15:49:31
+# @Last Modified time: 2021-09-29 15:54:52
 
 import streamlit as st
 import s3fs
@@ -11,7 +11,7 @@ import numpy as np
 
 fs = s3fs.S3FileSystem(anon=False)
 # content = "ocrplus-ptc/Page_6.jpeg"
-content = "03_ARDIAN_P4.jpeg"
+content = "ocrplus-app-mja/03_ARDIAN_P4.jpeg"
 
 @st.cache(ttl=600)
 
