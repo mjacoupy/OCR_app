@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-29 17:16:12
+# @Last Modified time: 2021-09-29 17:46:02
 
 import streamlit as st
 import s3fs
@@ -67,5 +67,5 @@ image = read_file(content)
 st.image(image, caption="first test")
 
 str_text = extract_content_to_txt(image)
-st.text(str_text)
+st.markdown(str_text)
 
