@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-29 11:32:09
+# @Last Modified time: 2021-09-29 11:37:27
 
 import streamlit as st
 import s3fs
@@ -29,3 +29,4 @@ content = "ocrplus-ptc/Page_6.jpeg"
 image = read_file(content)
 
 st.image(image, caption="first test")
+st.text(infile)
