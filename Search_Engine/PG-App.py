@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-29 18:01:06
+# @Last Modified time: 2021-09-29 18:01:48
 
 import streamlit as st
 import s3fs
@@ -75,15 +75,15 @@ st.markdown(docs)
 select = st.selectbox('Which document', docs)
 
 select_path = bucket_name+"/"+select
-st.markdown(select_path)
-# if select:
-#     image = read_file(select)
 
-#     st.image(image, caption="first test")
+if select:
+    image = read_file(select_path)
 
-#     button = st.button('OCR analysis')
+    st.image(image, caption="first test")
 
-#     if button:
-#         str_text = extract_content_to_txt(image)
-#         st.markdown(str_text)
+    button = st.button('OCR analysis')
+
+    if button:
+        str_text = extract_content_to_txt(image)
+        st.markdown(str_text)
 
