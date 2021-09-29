@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-29 11:31:01
+# @Last Modified time: 2021-09-29 11:32:09
 
 import streamlit as st
 import s3fs
@@ -23,7 +23,8 @@ def read_file(filename):
 
     return image
 
-content = "ocrplus-ptc/ARDIAN_Comptes sociaux2019_p4.pdf"
+#content = "ocrplus-ptc/ARDIAN_Comptes sociaux2019_p4.pdf"
+content = "ocrplus-ptc/Page_6.jpeg"
 
 image = read_file(content)
 
