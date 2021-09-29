@@ -110,7 +110,6 @@ if analysis == "[1] Image Processing":
     elif save == 'all formats':
         save = 'all'
 
-    local = False
     if local:
         folder_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process")
         ocrplus = OCRPlus(path=folder_path, neo4j_location="local")
