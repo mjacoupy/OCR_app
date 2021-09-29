@@ -2,14 +2,13 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-29 17:12:00
+# @Last Modified time: 2021-09-29 17:13:23
 
 import streamlit as st
 import s3fs
 from PIL import Image
 import numpy as np
-import os
-from OCRPlus_app_test_import_only_jpg import OCRPlus
+import pytesseract
 
 fs = s3fs.S3FileSystem(anon=False)
 # content = "ocrplus-ptc/Page_6.jpeg"
