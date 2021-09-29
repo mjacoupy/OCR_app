@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-29 17:59:08
+# @Last Modified time: 2021-09-29 18:01:06
 
 import streamlit as st
 import s3fs
@@ -74,7 +74,8 @@ st.markdown(docs)
 
 select = st.selectbox('Which document', docs)
 
-st.markdown(select)
+select_path = bucket_name+"/"+select
+st.markdown(select_path)
 # if select:
 #     image = read_file(select)
 
