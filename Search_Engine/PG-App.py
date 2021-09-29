@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-29 17:13:23
+# @Last Modified time: 2021-09-29 17:16:12
 
 import streamlit as st
 import s3fs
@@ -25,6 +25,7 @@ def read_file(filename):
     image = open_cv_image[:, :, ::-1].copy()
     return image
 
+
 def clean_text(ext_text):
     """Clean extracted text obtain by pytesseract.
 
@@ -41,6 +42,7 @@ def clean_text(ext_text):
             storage_list.append(iWord)
 
     return storage_list
+
 
 def extract_content_to_txt(image):
     """Extract raw text from page.
