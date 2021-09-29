@@ -18,7 +18,6 @@ from OCRPlus_app import OCRPlus
 import pandas as pd
 import re
 import os
-import s3fs
 
 
 from whoosh.index import create_in
@@ -31,13 +30,11 @@ from io import BytesIO
 bucket_name = "ocrplus-ptc"
 item_name = "ARDIAN_Comptes sociaux2019_p4.pdf"
 
-
-
 # #######################################################################################################################
 #                                              # === S3 AWS === #
 # #######################################################################################################################
 
-#fs = s3fs.S3FileSystem(anon=False)
+# fs = s3fs.S3FileSystem(anon=False)
 
 # # @st.cache(ttl=600)
 # # def read_file(filename):
@@ -59,11 +56,13 @@ item_name = "ARDIAN_Comptes sociaux2019_p4.pdf"
 # content = read_file("ocrplus-ptc/ARDIAN - Comptes sociaux 2019.pdf")
 # content = read_file("ocrplus-ptc/Page_6.jpeg")
 # content = read_file("ocrplus-ptc/ARDIAN_Comptes sociaux2019_p4.pdf")
-content = "ocrplus-ptc/ARDIAN_Comptes sociaux2019_p4.pdf"
+# content = "ocrplus-ptc/ARDIAN_Comptes sociaux2019_p4.pdf"
+content = "ocrplus-ptc/ARDIAN - Comptes sociaux 2019.pdf"
 
 # #######################################################################################################################
 #                                              # === FUNCTIONS === #
 # #######################################################################################################################
+
 
 def my_split(s, seps):
     """..."""
