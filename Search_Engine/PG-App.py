@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-29 16:04:30
+# @Last Modified time: 2021-09-29 17:12:00
 
 import streamlit as st
 import s3fs
@@ -26,18 +26,45 @@ def read_file(filename):
     image = open_cv_image[:, :, ::-1].copy()
     return image
 
+def clean_text(ext_text):
+    """Clean extracted text obtain by pytesseract.
+
+    :param ext_text: text of each box
+    :type ext_text: str
+    :returns: cleaned text
+    :rtype: list
+    """
+    splits = ext_text.splitlines()
+    storage_list = []
+
+    for iWord in splits:
+        if iWord not in ['', ' ']:
+            storage_list.append(iWord)
+
+    return storage_list
+
+def extract_content_to_txt(image):
+    """Extract raw text from page.
+
+    :returns: raw text
+    :rtype: str
+    """
+    ext_text = pytesseract.image_to_string(image, lang='fra')
+    text = clean_text(ext_text)
+    str_text = ' '.join(text)
+
+    return str_text
+
+
+
+
+    # -------------------
 
 
 image = read_file(content)
 
 st.image(image, caption="first test")
 
+str_text = extract_content_to_txt(image)
+st.text(str_text)
 
-
-
-
-folder_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process")
-
-ocrplus = OCRPlus(path=folder_path, neo4j_location="local")
-
-st.text(ocrplus)
