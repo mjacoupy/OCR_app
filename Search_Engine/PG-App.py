@@ -2,17 +2,26 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-29 17:47:35
+# @Last Modified time: 2021-09-29 17:52:18
 
 import streamlit as st
 import s3fs
 from PIL import Image
 import numpy as np
 import pytesseract
+import boto3
 
 fs = s3fs.S3FileSystem(anon=False)
+bucket_name = "ocrplus-app-mja"
 # content = "ocrplus-ptc/Page_6.jpeg"
-content = "ocrplus-app-mja/03_ARDIAN_P4.jpeg"
+# content = "ocrplus-app-mja/03_ARDIAN_P4.jpeg"
+
+s3 = boto3.resource('s3')
+my_bucket = s3.Bucket(bucket_name)
+
+docs = []
+for file in my_bucket.objects.all():
+    docs.append(file.key)
 
 
 @st.cache(ttl=600)
@@ -61,14 +70,15 @@ def extract_content_to_txt(image):
 
     # -------------------
 
+st.markdown(docs)
 
-image = read_file(content)
+# image = read_file(content)
 
-st.image(image, caption="first test")
+# st.image(image, caption="first test")
 
-button = st.button('OCR analysis')
+# button = st.button('OCR analysis')
 
-if button:
-    str_text = extract_content_to_txt(image)
-    st.markdown(str_text)
+# if button:
+#     str_text = extract_content_to_txt(image)
+#     st.markdown(str_text)
 
