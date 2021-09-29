@@ -2,10 +2,11 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-29 11:29:45
+# @Last Modified time: 2021-09-29 11:31:01
 
 import streamlit as st
 import s3fs
+from PIL import Image
 import cv2
 import numpy as np
 
