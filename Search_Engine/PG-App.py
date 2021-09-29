@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-29 17:52:18
+# @Last Modified time: 2021-09-29 17:57:46
 
 import streamlit as st
 import s3fs
@@ -72,13 +72,16 @@ def extract_content_to_txt(image):
 
 st.markdown(docs)
 
-# image = read_file(content)
+select = st.selecbox('Which document', docs)
 
-# st.image(image, caption="first test")
+if select:
+    image = read_file(select)
 
-# button = st.button('OCR analysis')
+    st.image(image, caption="first test")
 
-# if button:
-#     str_text = extract_content_to_txt(image)
-#     st.markdown(str_text)
+    button = st.button('OCR analysis')
+
+    if button:
+        str_text = extract_content_to_txt(image)
+        st.markdown(str_text)
 
