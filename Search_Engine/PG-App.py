@@ -2,12 +2,14 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-29 16:01:02
+# @Last Modified time: 2021-09-29 16:04:30
 
 import streamlit as st
 import s3fs
 from PIL import Image
 import numpy as np
+import os
+from OCRPlus_app_test_import_only_jpg import OCRPlus
 
 fs = s3fs.S3FileSystem(anon=False)
 # content = "ocrplus-ptc/Page_6.jpeg"
@@ -32,8 +34,10 @@ st.image(image, caption="first test")
 
 
 
-from OCRPlus_app_test_import_only_jpg import OCRPlus
 
-ocrplus = OCRPlus(path=None, neo4j_location="local")
+
+folder_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process")
+
+ocrplus = OCRPlus(path=folder_path, neo4j_location="local")
 
 st.text(ocrplus)
