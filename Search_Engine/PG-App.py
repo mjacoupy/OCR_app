@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-29 11:37:27
+# @Last Modified time: 2021-09-29 11:38:07
 
 import streamlit as st
 import s3fs
@@ -18,6 +18,7 @@ def read_file(filename):
     """..."""
 
     infile = fs.open(filename, "rb")
+    st.text(infile)
     image = Image.open(infile)
     # image = cv2.imdecode(np.asarray(bytearray(infile)), cv2.IMREAD_COLOR)
 
@@ -29,4 +30,4 @@ content = "ocrplus-ptc/Page_6.jpeg"
 image = read_file(content)
 
 st.image(image, caption="first test")
-st.text(infile)
+
