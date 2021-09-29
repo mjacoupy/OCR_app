@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-29 15:54:52
+# @Last Modified time: 2021-09-29 15:59:25
 
 import streamlit as st
 import s3fs
@@ -13,8 +13,8 @@ fs = s3fs.S3FileSystem(anon=False)
 # content = "ocrplus-ptc/Page_6.jpeg"
 content = "ocrplus-app-mja/03_ARDIAN_P4.jpeg"
 
-@st.cache(ttl=600)
 
+@st.cache(ttl=600)
 def read_file(filename):
     """..."""
 
@@ -30,5 +30,10 @@ image = read_file(content)
 
 st.image(image, caption="first test")
 
-st.text(image)
 
+
+from OCRPlus_app_test_import_only_jpg import OCRPlus
+
+ocrplus = OCRPlus(path=None, neo4j_location="local")
+
+st.text(ocrplus)
