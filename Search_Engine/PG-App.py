@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-29 17:57:46
+# @Last Modified time: 2021-09-29 17:58:21
 
 import streamlit as st
 import s3fs
@@ -72,7 +72,7 @@ def extract_content_to_txt(image):
 
 st.markdown(docs)
 
-select = st.selecbox('Which document', docs)
+select = st.selectbox('Which document', docs)
 
 if select:
     image = read_file(select)
