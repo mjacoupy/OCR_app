@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-29 18:01:48
+# @Last Modified time: 2021-09-29 18:06:40
 
 import streamlit as st
 import s3fs
@@ -86,4 +86,6 @@ if select:
     if button:
         str_text = extract_content_to_txt(image)
         st.markdown(str_text)
+
+        s3.meta.client.upload_file('/tmp/first_test.txt', bucket_name, str_text)
 
