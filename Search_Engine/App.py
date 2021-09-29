@@ -56,7 +56,7 @@ def read_file(filename):
 
     infile = fs.open(filename, "rb")
     # image = Image.open(infile)
-    image = cv2.imdecode(np.asarray(bytearray(infile)), cv2.IMREAD_COLOR)
+    # image = cv2.imdecode(np.asarray(bytearray(infile)), cv2.IMREAD_COLOR)
 
     return image
 

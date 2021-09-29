@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-29 11:38:07
+# @Last Modified time: 2021-09-29 11:43:56
 
 import streamlit as st
 import s3fs
@@ -18,7 +18,6 @@ def read_file(filename):
     """..."""
 
     infile = fs.open(filename, "rb")
-    st.text(infile)
     image = Image.open(infile)
     # image = cv2.imdecode(np.asarray(bytearray(infile)), cv2.IMREAD_COLOR)
 
@@ -31,3 +30,7 @@ image = read_file(content)
 
 st.image(image, caption="first test")
 
+
+infile = fs.open(content, "rb")
+st.text(infile)
+st.text(infile.type())
