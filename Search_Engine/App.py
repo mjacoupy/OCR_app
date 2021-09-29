@@ -18,12 +18,38 @@ from OCRPlus_app import OCRPlus
 import pandas as pd
 import re
 import os
+import s3fs
 
 
 from whoosh.index import create_in
 from whoosh.fields import Schema, TEXT, ID
 import pathlib
 
+import boto3
+from io import BytesIO
+
+bucket_name ="ocrplus-ptc"
+item_name = "ARDIAN_Comptes sociaux2019_p4.pdf"
+
+
+
+# #######################################################################################################################
+#                                              # === S3 AWS === #
+# #######################################################################################################################
+
+# fs = s3fs.S3FileSystem(anon=False)
+
+
+@st.cache(ttl=600)
+def read_file(filename):
+    """..."""
+    with fs.open(filename) as f:
+        return f.read().decode("utf-8")
+
+# content = read_file("ocrplus-ptc/ARDIAN - Comptes sociaux 2019.pdf")
+# content = read_file("ocrplus-ptc/Page_6.jpeg")
+# content = read_file("ocrplus-ptc/ARDIAN_Comptes sociaux2019_p4.pdf")
+# content = "ocrplus-ptc/ARDIAN_Comptes sociaux2019_p4.pdf"
 # #######################################################################################################################
 #                                              # === FUNCTIONS === #
 # #######################################################################################################################
@@ -92,13 +118,18 @@ if analysis == "[1] Image Processing":
     elif save == 'all formats':
         save = 'all'
 
-    folder_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process")
-    ocrplus = OCRPlus(path=folder_path, neo4j_location="local")
-    docs = os.listdir(ocrplus.path_to_documents)
-    try:
-        docs.remove('.DS_Store')
-    except ValueError:
+    local = False
+    if local:
+        folder_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process")
+        ocrplus = OCRPlus(path=folder_path, neo4j_location="local")
+        docs = os.listdir(ocrplus.path_to_documents)
+        try:
+            docs.remove('.DS_Store')
+        except ValueError:
+            pass
+    else:
         pass
+
 
     st.markdown("**"+str(len(docs))+"** documents will be analyzed")
     button_t = st.button('Analyze documents')
@@ -107,12 +138,28 @@ if analysis == "[1] Image Processing":
         lenghts = []
         for iCpt, iDoc in enumerate(docs):
 
-            doc_path = os.path.join(folder_path, iDoc)
-            pdf = PdfFileReader(open(doc_path, 'rb'))
+            # doc_path = os.path.join(folder_path, iDoc)
+            # pdf = PdfFileReader(open(doc_path, 'rb'))
+            # lenght = pdf.getNumPages()
+            # st.markdown('Document **'+str(iDoc)+"** contains **"+str(lenght)+"** page(s)")
+            # l = list(range(1, lenght+1))
+            # lenghts.append(l)
+
+            ######
+
+            s3 = boto3.resource('s3')
+            obj = s3.Object(bucket_name, item_name)
+            fs = obj.get()['Body'].read()
+            pdf = PdfFileReader(BytesIO(fs))
+
             lenght = pdf.getNumPages()
             st.markdown('Document **'+str(iDoc)+"** contains **"+str(lenght)+"** page(s)")
             l = list(range(1, lenght+1))
             lenghts.append(l)
+
+
+
+
 
         ocrplus.set_pages(lenghts)
         ocrplus.process_documents(save_data=box_save, save_type=[save])
