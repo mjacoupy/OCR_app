@@ -25,7 +25,10 @@ from whoosh.index import create_in
 from whoosh.fields import Schema, TEXT, ID
 import pathlib
 
-
+import boto3
+from io import BytesIO
+bucket_name = "ocrplus-ptc"
+item_name = "ARDIAN_Comptes sociaux2019_p4.pdf"
 
 # #######################################################################################################################
 #                                              # === S3 AWS === #
@@ -128,16 +131,37 @@ if analysis == "[1] Image Processing":
         except ValueError:
             pass
     else:
-        pass
+        s3 = boto3.resource('s3')
+        my_bucket = s3.Bucket(bucket_name)
+
+        ocrplus = OCRPlus(path=None, neo4j_location="local")
+
+        docs = []
+        for file in my_bucket.objects.all():
+            docs.append(file.key)
 
 
     st.markdown("**"+str(len(docs))+"** documents will be analyzed")
     button_t = st.button('Analyze documents')
 
+
     if button_t:
 
+        lengths = []
+        for iCpt, iDoc in enumerate(docs):
 
-        ocrplus.set_pages(lenghts)
+            if iDoc[iDoc.rfind("."):] in [".pdf"]:
+                doc_path = os.path.join(folder_path, iDoc)
+                pdf = PdfFileReader(open(doc_path, 'rb'))
+                lenght = pdf.getNumPages()
+                st.markdown('Document **'+str(iDoc)+"** contains **"+str(lenght)+"** page(s)")
+                l = list(range(1, lenght+1))
+                lengths.append(l)
+            elif iDoc[iDoc.rfind("."):] in [".png", ".jpeg", ".jpg"]:
+                lengths.append(1)
+
+
+        ocrplus.set_pages(lengths)
         ocrplus.process_documents(save_data=box_save, save_type=[save])
 
         st.markdown("**Done**")
