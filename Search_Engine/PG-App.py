@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 11:14:38
+# @Last Modified time: 2021-09-30 11:25:20
 
 
 # #######################################################################################################################
@@ -24,11 +24,12 @@ import pathlib
 # #######################################################################################################################
 fs = s3fs.S3FileSystem(anon=False)
 bucket_name = "ocrplus-app-mja"
-# content = "ocrplus-ptc/Page_6.jpeg"
-# content = "ocrplus-app-mja/03_ARDIAN_P4.jpeg"
+bucket_name_txt = "ocrplus-app-mja-txt"
+
 
 s3 = boto3.resource('s3')
 my_bucket = s3.Bucket(bucket_name)
+my_bucket2 = s3.Bucket(bucket_name_txt)
 
 docs = []
 for file in my_bucket.objects.all():
@@ -131,14 +132,14 @@ if analysis == "[1] Image Processing":
         str_text = extract_content_to_txt(image)
         st.markdown(str_text)
         out_file = "text_files/"+str(select)+'.txt'
-        # s3.Object(bucket_name, out_file).put(Body=str_text)
+        s3.Object(bucket_name_txt, out_file).put(Body=str_text)
 
-        export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_exports", "se_txt")
+        # export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_exports", "se_txt")
 
-        out_txt_file = export_path + out_file
+        # out_txt_file = export_path + out_file
 
-        with open(out_txt_file, "w") as text_file:
-            text_file.write(str_text)
+        # with open(out_txt_file, "w") as text_file:
+        #     text_file.write(str_text)
 # #######################################################################################################################
 #                                              # === INDEXER === #
 # #######################################################################################################################
