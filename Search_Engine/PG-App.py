@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 11:44:24
+# @Last Modified time: 2021-09-30 11:44:44
 
 
 # #######################################################################################################################
@@ -181,5 +181,5 @@ if analysis == "[2] Indexation":
             # except UnicodeDecodeError:
             #     pass
 
-        writer.commit()
+        # writer.commit()
 
