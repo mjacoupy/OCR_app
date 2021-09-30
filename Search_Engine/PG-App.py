@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 11:54:26
+# @Last Modified time: 2021-09-30 12:05:46
 
 
 # #######################################################################################################################
@@ -164,7 +164,7 @@ if analysis == "[2] Indexation":
             filepaths.append(file.key)
 
         st.markdown(filepaths)
-
+        fs = s3fs.S3FileSystem(anon=False)
         for name, percent in zip(filepaths, range(len(filepaths))):
 
             val = (percent+1) / len(filepaths)
