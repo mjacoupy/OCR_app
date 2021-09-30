@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 11:36:37
+# @Last Modified time: 2021-09-30 11:39:54
 
 
 # #######################################################################################################################
@@ -167,16 +167,17 @@ if analysis == "[2] Indexation":
 
         # path = pathlib.PurePath(txt)
         # last = path.name
-        for path, percent in zip(filepaths, range(len(filepaths))):
+        for name, percent in zip(filepaths, range(len(filepaths))):
 
             val = (percent+1) / len(filepaths)
             my_bar.progress(val)
 
             # Do not select empty document
             try:
-                fp = fs.open(path, 'rb')
+                select_path = bucket_name_txt+"/"+name
+                fp = fs.open(select_path, 'rb')
                 text = fp.read()
-                writer.add_document(title=path, path=path, content=text, textdata=text)
+                writer.add_document(title=name, path=select_path, content=text, textdata=text)
                 fp.close()
             except UnicodeDecodeError:
                 pass
