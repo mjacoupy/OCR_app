@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 14:37:41
+# @Last Modified time: 2021-09-30 14:39:10
 
 
 # #######################################################################################################################
@@ -107,18 +107,17 @@ image1 = Image.open("app_logos/PTCtechLab.png")
 image2 = Image.open("app_logos/PTC.png")
 st.sidebar.image(image2, width=200)
 
-analysis = st.sidebar.selectbox('', ['[1] Image Processing', '[2] Indexation', '[3] Search Engine'])
-# #######################################################################################################################
-#                                              # === PROCESS NEW FILE === #
-# #######################################################################################################################
+analysis = st.sidebar.selectbox('', ['[0] Image Import', '[1] Image Processing', '[2] Indexation', '[3] Search Engine'])
 
-
-if analysis == "[1] Image Processing":
-    st.header('Image Processing')
+# #######################################################################################################################
+#                                              # === IMPORT NEW FILE === #
+# #######################################################################################################################
+if analysis == "[0] Image Import":
+    st.header('Image Import')
 
     side_bar()
 
-    ##########################################################################################################################
+
     data = st.file_uploader("Upload a file", type=["png", "jpg", "jpeg"])
     button = st.button("Process")
 
@@ -132,7 +131,16 @@ if analysis == "[1] Image Processing":
         image_string = cv2.imencode('.jpg', image)[1].tostring()
         s3.Bucket(bucket_name).put_object(Key="test_new_image.jpg", Body=image_string, ACL='public-read')
 
-    ##########################################################################################################################
+# #######################################################################################################################
+#                                              # === PROCESS NEW FILE === #
+# #######################################################################################################################
+
+
+if analysis == "[1] Image Processing":
+    st.header('Image Processing')
+
+    side_bar()
+
     docs = []
     for file in my_bucket.objects.all():
         docs.append(file.key)
