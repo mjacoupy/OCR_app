@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 11:10:33
+# @Last Modified time: 2021-09-30 11:14:38
 
 
 # #######################################################################################################################
@@ -131,7 +131,7 @@ if analysis == "[1] Image Processing":
         str_text = extract_content_to_txt(image)
         st.markdown(str_text)
         out_file = "text_files/"+str(select)+'.txt'
-        s3.Object(bucket_name, out_file).put(Body=str_text)
+        # s3.Object(bucket_name, out_file).put(Body=str_text)
 
         export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_exports", "se_txt")
 
