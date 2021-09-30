@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 10:33:19
+# @Last Modified time: 2021-09-30 10:33:59
 
 import streamlit as st
 import s3fs
@@ -22,8 +22,9 @@ my_bucket = s3.Bucket(bucket_name)
 docs = []
 for file in my_bucket.objects.all():
     docs.append(file.key)
-try:
-    docs.remove('text_files/')
+
+docs.remove('text_files/')
+
 
 
 @st.cache(ttl=600)
