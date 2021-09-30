@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 12:28:57
+# @Last Modified time: 2021-09-30 12:31:58
 
 
 # #######################################################################################################################
@@ -123,6 +123,7 @@ if analysis == "[1] Image Processing":
         st.markdown(docs)
         for doc in docs:
             select_path = bucket_name+"/"+doc
+            st.markdown(select_path)
             image = read_file(select_path)
             name = doc.split('.')[0]
             str_text = extract_content_to_txt(image)
