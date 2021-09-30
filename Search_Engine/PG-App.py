@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 16:11:21
+# @Last Modified time: 2021-09-30 16:16:48
 
 
 # #######################################################################################################################
@@ -131,13 +131,13 @@ if analysis == "[1] Image Import":
     button = st.button("Process")
 
     if data is not None and button:
-        s3_client = boto3.client('s3')
-        img = Image.fromarray(image).convert('RGB')
-        out_img = BytesIO()
-        img.save(out_img, format='jpeg')
-        out_img.seek(0)
-        s3_client.Bucket(bucket_name).put_object(Key='text.jpeg', Body=out_img, ContentType='image/png', ACL='public-read')
+        result = s3.meta.client.put_object(Body=image, Bucket=my_bucket, Key='text.jpg')
+        res = result.get('ResponseMetadata')
 
+        if res.get('HTTPStatusCode') == 200:
+            print('File Uploaded Successfully')
+        else:
+            print('File Not Uploaded')
 # #######################################################################################################################
 #                                              # === PROCESS NEW FILE === #
 # #######################################################################################################################
