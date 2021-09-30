@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 12:26:51
+# @Last Modified time: 2021-09-30 12:28:57
 
 
 # #######################################################################################################################
@@ -120,6 +120,7 @@ if analysis == "[1] Image Processing":
     button = st.button('OCR analysis')
 
     if select == 'All' and button:
+        st.markdown(docs)
         for doc in docs:
             select_path = bucket_name+"/"+doc
             image = read_file(select_path)
