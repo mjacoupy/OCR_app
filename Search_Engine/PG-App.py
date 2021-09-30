@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 12:31:58
+# @Last Modified time: 2021-09-30 12:46:07
 
 
 # #######################################################################################################################
@@ -17,6 +17,9 @@ import boto3
 import os
 from whoosh.index import create_in
 from whoosh.fields import Schema, TEXT, ID
+import pandas as pd
+from SearchEngine_app import SearchEngine
+import re
 
 # #######################################################################################################################
 #                                              # === S3 AWS === #
@@ -29,8 +32,6 @@ bucket_name_txt = "ocrplus-app-mja-txt"
 s3 = boto3.resource('s3')
 my_bucket = s3.Bucket(bucket_name)
 my_bucket2 = s3.Bucket(bucket_name_txt)
-
-
 
 
 # #######################################################################################################################
@@ -86,6 +87,15 @@ def side_bar():
     st.sidebar.image(image1, width=50)
     st.sidebar.markdown(end, unsafe_allow_html=True)
 
+
+def my_split(s, seps):
+    """..."""
+    res = [s]
+    for sep in seps:
+        s, res = res, []
+        for seq in s:
+                res += seq.split(sep)
+    return res
 # #######################################################################################################################
 #                                              # === APPEARANCE === #
 # #######################################################################################################################
@@ -178,11 +188,187 @@ if analysis == "[2] Indexation":
                 select_path = bucket_name_txt+"/"+name
                 st.markdown(select_path)
                 fp = fs.open(select_path, "rb")
-            #     text = fp.read()
-            #     writer.add_document(title=name, path=select_path, content=text, textdata=text)
-            #     fp.close()
+                text = fp.read()
+                writer.add_document(title=name, path=select_path, content=text, textdata=text)
+                fp.close()
             except UnicodeDecodeError:
                 pass
 
-        # writer.commit()
+        writer.commit()
 
+
+# #######################################################################################################################
+#                                              # === SEARCH ENGINE === #
+# #######################################################################################################################
+if analysis == "[3] Search Engine":
+
+    # Create the Search Engine
+    SE = SearchEngine()
+
+    # Initialize variable
+    languages = ['french', 'english', 'spanish', 'italian', 'german']
+    is_response = False
+    lang = None
+    kw = doc = positive = score = None
+
+# ##################################### == SIDE BAR == ##########################################################
+    # Create header and subheader
+    st.sidebar.markdown('1. Write your text')
+    st.sidebar.markdown('2. Select the number of response')
+    st.sidebar.markdown('3. Select in which language the keys word will be translated')
+    st.sidebar.markdown('4. Choose the parameters you want to display')
+    st.sidebar.markdown('5. Click on search')
+    side_bar()
+
+# ##################################### == PART 1 == ##########################################################
+    st.header('Search Engine')
+    st.subheader('Part1 - Search')
+
+    # Ask user for parameters
+    user_input = st.text_input("Request")
+    response = st.radio('Number of response', ('Best', 'Most Relevant', 'All'), index=1)
+
+
+
+    lang = st.multiselect('Which language', ['french', 'english', 'spanish', 'italian', 'german'], default=['french', 'english', 'spanish', 'italian', 'german'])
+
+    st.write('Specific Parameters')
+    kw = st.checkbox('Key words selected')
+    doc = st.checkbox('Number of document in the database')
+    positive = st.checkbox('Number of results')
+    score = st.checkbox('Score of documents')
+    all_of_them = st.checkbox('All', value=True)
+
+    search_button = st.button("Search")
+
+    # Create the variables
+    if all_of_them:
+        kw = doc = positive = score = 1
+
+    # Launch the reaserch
+    if user_input and lang and search_button:
+        tmp = SE.analyze_in_different_language(user_input)
+
+        # Count the number of positive document for each language
+        doc_found = []
+        for ilang in lang:
+            try:
+                doc_found.append(tmp[ilang]['Documents containing key words'])
+            except TypeError:
+                doc_found.append(0)
+
+        # Prepare the data for the dataframe
+        title_list = []
+        score_list = []
+        preview_list = []
+        lang_list = []
+
+        idx_list = list(range(1, sum(doc_found)+1))
+        for iCpt, ilang in enumerate(lang):
+            if doc_found[iCpt] != 0:
+                for n in range(doc_found[iCpt]):
+                    title_list.append(tmp[ilang][n]['Document'][:-4])
+                    score_list.append(float(tmp[ilang][n]['Score']))
+                    lang_list.append(ilang)
+
+        # Create and clean the dataframe
+        df = pd.DataFrame(title_list, columns=['Documents'])
+        df['Language'] = lang_list
+        df['Score'] = score_list
+        df = df.sort_values(by=['Score'], ascending=False)
+        df = df.drop_duplicates(subset=['Documents'])
+        df.index = np.arange(1, len(df) + 1)
+
+        # Print the informations if the are asked
+        if kw:
+            for ilang in lang:
+                try:
+                    st.markdown("Key Words selected in **"+ilang+"**: **"+str(tmp[ilang]['Key Words'])+"**")
+                except TypeError:
+                    pass
+        if doc:
+            argmax = np.argmax(doc_found)
+            try:
+                st.markdown("The Database contain: **"+str(tmp[lang[argmax]]['Documents to analyze'])+"** documents")
+            except TypeError:
+                pass
+        if positive:
+            st.markdown("**"+str(len(df))+"** results found in the Database")
+
+        # Crop the daframe depending on the paramaters selected
+        if response == "Best":
+            df = df.iloc[:1]
+        elif response == "Most Relevant":
+            df = df.loc[df['Score'] > 3]
+            st.markdown("**"+str(len(df))+"** relevant results found in the Database")
+            if len(df) > 20:
+                df = df.iloc[:20]
+
+        if score:
+            pass
+        else:
+            df = df.drop(['Score'], axis=1)
+
+        # Print the Dataframe
+        st.write(df)
+
+
+        st.markdown("""---""")
+
+ # ##################################### == PART 2 == ##########################################################
+        st.subheader('Part2 - Show')
+
+        # Create list of document and language for the previews
+        tmp_doc_list = [doc for doc in df['Documents']]
+        tmp_lang = [l for l in df['Language']]
+
+        if 0 < len(tmp_doc_list):
+
+            # find localisation of key word in the text and create the previews
+
+            for (iCpt, txt), lang in zip(enumerate(tmp_doc_list[:20]), tmp_lang[:20]):
+                sel_txt = txt+'.txt'
+                sel_png = txt+'.png'
+                for i in range(20):
+                    try:
+                        if sel_txt == tmp[lang][i]['Document']:
+                            content = tmp[lang][i]["Content"]
+                    except KeyError:
+                        pass
+
+                split_content = my_split(content, [" ", "'"])
+
+                regex = re.compile('[,\.!?]')
+                content_simplifyed = regex.sub('', content)
+                simplifyed_split_content = my_split(content_simplifyed, [" ", "'"])
+
+                final_content = ""
+                for word, simplifyed_word in zip(split_content, simplifyed_split_content):
+                    keywords = my_split(tmp[lang]['Key Words'], [" ", "'"])
+                    if simplifyed_word.lower() in keywords:
+                        modif_word = "**"+word+"** "
+                    else:
+                        modif_word = word+" "
+                    final_content += modif_word
+
+                lenght = []
+                for iCpt2, letter in enumerate(final_content):
+                    if letter == '*':
+                        lenght.append(iCpt2)
+
+                try:
+                    final_content = '[...] '+str(final_content[lenght[0]:])
+                    final_content = str(final_content[:300])+'[...]'
+                except IndexError:
+                    pass
+
+                # print the selected previews
+                st.markdown("___"+str(iCpt+1)+". "+txt+"___")
+                st.markdown(final_content)
+                try:
+                    with st.expander("See original page"):
+                        img = Image.open(os.path.join("ocr_exports", "se_png", sel_png))
+                        st.image(img)
+                except AttributeError:
+                    pass
+                st.markdown("""---""")
