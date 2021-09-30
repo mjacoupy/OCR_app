@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 12:12:17
+# @Last Modified time: 2021-09-30 12:18:09
 
 
 # #######################################################################################################################
@@ -115,7 +115,8 @@ if analysis == "[1] Image Processing":
     docs_all = docs.copy()
     docs_all.append('All')
 
-    select = st.selectbox('Which document', docs_all)
+    l = len(docs_all)
+    select = st.selectbox('Which document', docs_all, index=l)
     button = st.button('OCR analysis')
 
     if select == 'All' and button:
