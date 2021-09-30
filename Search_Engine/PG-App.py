@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 11:44:44
+# @Last Modified time: 2021-09-30 11:45:14
 
 
 # #######################################################################################################################
@@ -178,8 +178,8 @@ if analysis == "[2] Indexation":
             #     text = fp.read()
             #     writer.add_document(title=name, path=select_path, content=text, textdata=text)
             #     fp.close()
-            # except UnicodeDecodeError:
-            #     pass
+            except UnicodeDecodeError:
+                pass
 
         # writer.commit()
 
