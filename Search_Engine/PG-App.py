@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 09:49:23
+# @Last Modified time: 2021-09-30 10:06:27
 
 import streamlit as st
 import s3fs
@@ -63,7 +63,7 @@ def extract_content_to_txt(image):
     text = clean_text(ext_text)
     str_text = ' '.join(text)
 
-    return str_text
+    return str(str_text)
 
 
 
@@ -88,26 +88,7 @@ if select:
         str_text = extract_content_to_txt(image)
         st.markdown(str_text)
 
-        out_file = "text.txt"
 
-        # with open(out_file, "w") as text_file:
-        #     text_file.write(str_text)
-
-        object = s3.Object(my_bucket, out_file)
-        object.put(Body=str_text)
-
-
-        # import boto3
-
-        # some_binary_data = b'Here we have some data'
-        # more_binary_data = b'Here we have some more data'
-
-        # # Method 1: Object.put()
-        # s3 = boto3.resource('s3')
-        # object = s3.Object('my_bucket_name', 'my/key/including/filename.txt')
-        # object.put(Body=some_binary_data)
-
-        # # Method 2: Client.put_object()
-        # client = boto3.client('s3')
-        # client.put_object(Body=more_binary_data, Bucket='my_bucket_name', Key='my/key/including/anotherfilename.txt')
+        content="String content to write to a new S3 file"
+        s3.Object(bucket_name, 'newfile.txt').put(Body=content)
 
