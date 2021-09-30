@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-29 18:06:40
+# @Last Modified time: 2021-09-30 09:04:01
 
 import streamlit as st
 import s3fs
@@ -84,8 +84,19 @@ if select:
     button = st.button('OCR analysis')
 
     if button:
+
         str_text = extract_content_to_txt(image)
         st.markdown(str_text)
+
+        out_file = "text.txt"
+
+        with open(out_file, "w") as text_file:
+            text_file.write(str_text)
+            s3.upload_fileobj(text_file, bucket_name, "test")
+
+        # with open("FILE_NAME", "rb") as f:
+        #     s3.upload_fileobj(, "BUCKET_NAME", "OBJECT_NAME")
+
 
         s3.meta.client.upload_file('/tmp/first_test.txt', bucket_name, str_text)
 
