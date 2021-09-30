@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 17:02:53
+# @Last Modified time: 2021-09-30 17:16:13
 
 
 # #######################################################################################################################
@@ -129,9 +129,9 @@ if analysis == "[1] Image Import":
         image2 = open_cv_image[:, :, ::-1].copy()
         st.image(image2, caption='Selected document')
 
-    button = st.button("Process")
+    # button = st.button("Process")
 
-    if data is not None and button:
+    # if data is not None and button:
         image2_png = cv2.imencode(".png", image2)[1].tostring()
         st.markdown(image2_png)
         # image2_png_filename = "test.png"
