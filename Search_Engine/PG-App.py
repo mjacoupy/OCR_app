@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 15:55:19
+# @Last Modified time: 2021-09-30 16:01:00
 
 
 # #######################################################################################################################
@@ -15,13 +15,11 @@ import numpy as np
 import pytesseract
 import boto3
 import os
-import cv2
 from whoosh.index import create_in
 from whoosh.fields import Schema, TEXT, ID
 import pandas as pd
 from SearchEngine_app import SearchEngine
 import re
-import io
 
 # #######################################################################################################################
 #                                              # === S3 AWS === #
@@ -32,6 +30,7 @@ bucket_name_txt = "ocrplus-app-mja-txt"
 
 
 s3 = boto3.resource('s3')
+client = boto3.client('s3')
 my_bucket = s3.Bucket(bucket_name)
 my_bucket2 = s3.Bucket(bucket_name_txt)
 
@@ -132,8 +131,7 @@ if analysis == "[1] Image Import":
     button = st.button("Process")
 
     if data is not None and button:
-        out_file = 'test.jpeg'
-        s3.Object(bucket_name, out_file).put(Body=data)
+        client.upload_file('image_0.jpg', my_bucket, 'image_0.jpg')
 
 # #######################################################################################################################
 #                                              # === PROCESS NEW FILE === #
