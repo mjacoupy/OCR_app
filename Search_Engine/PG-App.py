@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 14:28:47
+# @Last Modified time: 2021-09-30 14:29:18
 
 
 # #######################################################################################################################
@@ -120,8 +120,9 @@ if analysis == "[1] Image Processing":
 
     ##########################################################################################################################
     data = st.file_uploader("Upload a file", type=["png", "jpg", "jpeg"])
+    button = st.button("Process")
 
-    if data is not None:
+    if data is not None and button:
         image = Image.open(data)
         pil_image = Image.open(data).convert('RGB')
         open_cv_image = np.array(pil_image)
