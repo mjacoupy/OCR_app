@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 10:54:03
+# @Last Modified time: 2021-09-30 10:54:50
 
 
 # #######################################################################################################################
@@ -15,6 +15,9 @@ import numpy as np
 import pytesseract
 import boto3
 import os
+from whoosh.index import create_in
+from whoosh.fields import Schema, TEXT, ID
+import pathlib
 
 # #######################################################################################################################
 #                                              # === S3 AWS === #
