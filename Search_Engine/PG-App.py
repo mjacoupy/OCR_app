@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 11:39:54
+# @Last Modified time: 2021-09-30 11:44:24
 
 
 # #######################################################################################################################
@@ -30,11 +30,8 @@ s3 = boto3.resource('s3')
 my_bucket = s3.Bucket(bucket_name)
 my_bucket2 = s3.Bucket(bucket_name_txt)
 
-docs = []
-for file in my_bucket.objects.all():
-    docs.append(file.key)
 
-# docs.remove('text_files/')
+
 
 # #######################################################################################################################
 #                                              # === FUNCTIONS === #
@@ -104,10 +101,16 @@ analysis = st.sidebar.selectbox('', ['[1] Image Processing', '[2] Indexation', '
 #                                              # === PROCESS NEW FILE === #
 # #######################################################################################################################
 
+
 if analysis == "[1] Image Processing":
     st.header('Image Processing')
 
     side_bar()
+
+    docs = []
+    for file in my_bucket.objects.all():
+        docs.append(file.key)
+
 
     docs_all = docs.copy()
     docs_all.append('All')
@@ -141,9 +144,6 @@ if analysis == "[2] Indexation":
 
     side_bar()
 
-    # folder_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_exports", "se_txt")
-
-    # txt = st.text_input('root', folder_path)
     button = st.button('Run')
 
     if button:
@@ -165,8 +165,6 @@ if analysis == "[2] Indexation":
 
         st.markdown(filepaths)
 
-        # path = pathlib.PurePath(txt)
-        # last = path.name
         for name, percent in zip(filepaths, range(len(filepaths))):
 
             val = (percent+1) / len(filepaths)
@@ -175,12 +173,13 @@ if analysis == "[2] Indexation":
             # Do not select empty document
             try:
                 select_path = bucket_name_txt+"/"+name
-                fp = fs.open(select_path, 'rb')
-                text = fp.read()
-                writer.add_document(title=name, path=select_path, content=text, textdata=text)
-                fp.close()
-            except UnicodeDecodeError:
-                pass
+                st.markdown(select_path)
+            #     fp = fs.open(select_path, 'rb')
+            #     text = fp.read()
+            #     writer.add_document(title=name, path=select_path, content=text, textdata=text)
+            #     fp.close()
+            # except UnicodeDecodeError:
+            #     pass
 
         writer.commit()
 
