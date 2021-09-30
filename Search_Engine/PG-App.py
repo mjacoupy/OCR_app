@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 14:06:41
+# @Last Modified time: 2021-09-30 14:08:10
 
 
 # #######################################################################################################################
@@ -188,15 +188,15 @@ if analysis == "[2] Indexation":
                 select_path = bucket_name_txt+"/"+name
                 fp = fs.open(select_path, "rb")
                 text = fp.read().decode('utf-8', 'ignore')
-                st.markdown(select_path)
-                st.markdown(name)
-                st.markdown(text)
+                # st.markdown(select_path)
+                # st.markdown(name)
+                # st.markdown(text)
                 writer.add_document(title=name, path=select_path, content=text, textdata=text)
-                # fp.close()
+                fp.close()
             except UnicodeDecodeError:
                 pass
 
-        # writer.commit()
+        writer.commit()
 
 
 # #######################################################################################################################
