@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 09:33:21
+# @Last Modified time: 2021-09-30 09:41:26
 
 import streamlit as st
 import s3fs
@@ -90,11 +90,11 @@ if select:
 
         out_file = "text.txt"
 
-        with open(out_file, "w") as text_file:
-            text_file.write(str_text)
+        # with open(out_file, "w") as text_file:
+        #     text_file.write(str_text)
 
-        object = s3.Object(my_bucket, 'filename.txt')
-        object.put(Body=out_file)
+        object = s3.Object(my_bucket, out_file)
+        object.put(Body=str_text)
 
 
         # import boto3
