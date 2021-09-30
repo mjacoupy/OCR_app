@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 16:58:47
+# @Last Modified time: 2021-09-30 17:02:53
 
 
 # #######################################################################################################################
@@ -133,9 +133,10 @@ if analysis == "[1] Image Import":
 
     if data is not None and button:
         image2_png = cv2.imencode(".png", image2)[1].tostring()
-        image2_png_filename = "test.png"
-        object = s3.Object(my_bucket, image2_png_filename)
-        object.put(Body=image2_png, ContentType="image/png")
+        st.markdown(image2_png)
+        # image2_png_filename = "test.png"
+        # object = s3.Object(my_bucket, image2_png_filename)
+        # object.put(Body=image2_png, ContentType="image/png")
 
 
 # thumbnail_image = cv2.resize(original_image, (100, 100))
