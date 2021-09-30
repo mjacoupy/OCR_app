@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 17:59:22
+# @Last Modified time: 2021-09-30 18:01:24
 
 
 # #######################################################################################################################
@@ -139,7 +139,7 @@ if analysis == "[1] Image Import":
 
     if path is not None and button:
         st.markdown(path)
-    #     s3.Bucket(my_bucket).upload_file(path, "test.jpeg")
+        s3.meta.client.upload_file(Filename = path, Bucket = my_bucket, Key = 'test.jpeg')
 
 
 # #######################################################################################################################
