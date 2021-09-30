@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 17:16:13
+# @Last Modified time: 2021-09-30 17:38:32
 
 
 # #######################################################################################################################
@@ -132,11 +132,10 @@ if analysis == "[1] Image Import":
     # button = st.button("Process")
 
     # if data is not None and button:
-        image2_png = cv2.imencode(".png", image2)[1].tostring()
-        st.markdown(image2_png)
-        # image2_png_filename = "test.png"
-        # object = s3.Object(my_bucket, image2_png_filename)
-        # object.put(Body=image2_png, ContentType="image/png")
+        image_jpeg = cv2.imencode(".jpeg", image2)[1].tostring()
+        image2_jpeg_filename = "test.jpeg"
+        object = s3.Object(my_bucket, image2_jpeg_filename)
+        object.put(Body=image_jpeg, ContentType="image/jpeg")
 
 
 # thumbnail_image = cv2.resize(original_image, (100, 100))
