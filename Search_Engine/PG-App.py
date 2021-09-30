@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 09:04:01
+# @Last Modified time: 2021-09-30 09:26:02
 
 import streamlit as st
 import s3fs
@@ -92,11 +92,27 @@ if select:
 
         with open(out_file, "w") as text_file:
             text_file.write(str_text)
-            s3.upload_fileobj(text_file, bucket_name, "test")
+
+        with open(out_file, "rb") as f:
+            s3.upload_fileobj(f, bucket_name, "test")
 
         # with open("FILE_NAME", "rb") as f:
-        #     s3.upload_fileobj(, "BUCKET_NAME", "OBJECT_NAME")
+        #     s3.upload_fileobj(f, "BUCKET_NAME", "OBJECT_NAME")
 
 
-        s3.meta.client.upload_file('/tmp/first_test.txt', bucket_name, str_text)
+
+
+        # import boto3
+
+        # some_binary_data = b'Here we have some data'
+        # more_binary_data = b'Here we have some more data'
+
+        # # Method 1: Object.put()
+        # s3 = boto3.resource('s3')
+        # object = s3.Object('my_bucket_name', 'my/key/including/filename.txt')
+        # object.put(Body=some_binary_data)
+
+        # # Method 2: Client.put_object()
+        # client = boto3.client('s3')
+        # client.put_object(Body=more_binary_data, Bucket='my_bucket_name', Key='my/key/including/anotherfilename.txt')
 
