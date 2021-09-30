@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 18:06:56
+# @Last Modified time: 2021-09-30 18:13:37
 
 
 # #######################################################################################################################
@@ -20,8 +20,6 @@ from whoosh.fields import Schema, TEXT, ID
 import pandas as pd
 from SearchEngine_app import SearchEngine
 import re
-# from io import BytesIO
-import cv2
 
 # #######################################################################################################################
 #                                              # === S3 AWS === #
@@ -119,6 +117,31 @@ if analysis == "[1] Image Import":
     side_bar()
 
 
+    def upload_files(path):
+        """..."""
+        session = boto3.Session(
+            aws_access_key_id='AKIA3P6K3RKQWDYCLIER',
+            aws_secret_access_key='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',
+            region_name='eu-west-3'
+        )
+        s3 = session.resource('s3')
+        bucket = s3.Bucket('crplus-app-mja-txt')
+
+        for subdir, dirs, files in os.walk(path):
+            for file in files:
+                full_path = os.path.join(subdir, file)
+                with open(full_path, 'rb') as data:
+                    bucket.put_object(Key=full_path[len(path)+1:], Body=data)
+
+    path = str(st.text_input('Write path'))
+    button = st.button("Process")
+
+    if path is not None and button:
+        if __name__ == "__main__":
+            upload_files(path)
+
+
+
     # data = st.file_uploader("Upload a file", type=["png", "jpg", "jpeg"])
 
 
@@ -133,14 +156,14 @@ if analysis == "[1] Image Import":
 
     # if data is not None and button:
 
-    path = st.text_input('Write path')
-    button = st.button("Process")
+    # path = st.text_input('Write path')
+    # button = st.button("Process")
 
 
-    if path is not None and button:
+    # if path is not None and button:
 
-        client = boto3.client('s3')
-        client.upload_file(str(path), my_bucket, 'image_0.jpg')
+    #     client = boto3.client('s3')
+    #     client.upload_file(str(path), my_bucket, 'image_0.jpg')
 # #######################################################################################################################
 #                                              # === PROCESS NEW FILE === #
 # #######################################################################################################################
