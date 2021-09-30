@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 16:07:13
+# @Last Modified time: 2021-09-30 16:11:21
 
 
 # #######################################################################################################################
@@ -131,11 +131,12 @@ if analysis == "[1] Image Import":
     button = st.button("Process")
 
     if data is not None and button:
+        s3_client = boto3.client('s3')
         img = Image.fromarray(image).convert('RGB')
         out_img = BytesIO()
         img.save(out_img, format='jpeg')
         out_img.seek(0)
-        my_bucket.put_object(Key='text.jpeg', Body=out_img, ContentType='image/png', ACL='public-read')
+        s3_client.Bucket(bucket_name).put_object(Key='text.jpeg', Body=out_img, ContentType='image/png', ACL='public-read')
 
 # #######################################################################################################################
 #                                              # === PROCESS NEW FILE === #
