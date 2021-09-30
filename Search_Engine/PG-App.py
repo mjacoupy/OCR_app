@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 10:54:50
+# @Last Modified time: 2021-09-30 10:55:40
 
 
 # #######################################################################################################################
@@ -149,7 +149,7 @@ if analysis == "[2] Indexation":
 
     if txt and button:
 
-        my_bar = st.progress(0)
+        # my_bar = st.progress(0)
         schema = Schema(title=TEXT(stored=True), path=ID(stored=True), content=TEXT, textdata=TEXT(stored=True))
         if not os.path.exists("se_indexdir"):
             os.mkdir("se_indexdir")
