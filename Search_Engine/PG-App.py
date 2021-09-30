@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 11:25:20
+# @Last Modified time: 2021-09-30 11:26:00
 
 
 # #######################################################################################################################
@@ -35,7 +35,7 @@ docs = []
 for file in my_bucket.objects.all():
     docs.append(file.key)
 
-docs.remove('text_files/')
+# docs.remove('text_files/')
 
 # #######################################################################################################################
 #                                              # === FUNCTIONS === #
