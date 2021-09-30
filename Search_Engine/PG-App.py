@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 18:13:37
+# @Last Modified time: 2021-09-30 18:14:38
 
 
 # #######################################################################################################################
@@ -137,8 +137,7 @@ if analysis == "[1] Image Import":
     button = st.button("Process")
 
     if path is not None and button:
-        if __name__ == "__main__":
-            upload_files(path)
+        upload_files(path)
 
 
 
