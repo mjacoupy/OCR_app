@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 10:25:19
+# @Last Modified time: 2021-09-30 10:27:03
 
 import streamlit as st
 import s3fs
@@ -73,27 +73,24 @@ def extract_content_to_txt(image):
 docs_all = docs.copy()
 docs_all.append('All')
 
-st.markdown(docs)
-st.markdown(docs_all)
+select = st.selectbox('Which document', docs_all)
+button = st.button('OCR analysis')
 
-# select = st.selectbox('Which document', docs_all)
-# button = st.button('OCR analysis')
+if select == 'All' and button:
+    for doc in docs:
+        select_path = bucket_name+"/"+select
+        image = read_file(select_path)
+        str_text = extract_content_to_txt(image)
+        out_file = str(select)+'.txt'
+        s3.Object(bucket_name, out_file).put(Body=str_text)
 
-# if select == 'All' and button:
-#     for doc in docs:
-#         select_path = bucket_name+"/"+select
-#         image = read_file(select_path)
-#         str_text = extract_content_to_txt(image)
-#         out_file = str(select)+'.txt'
-#         s3.Object(bucket_name, out_file).put(Body=str_text)
+elif select != 'All' and button:
+    select_path = bucket_name+"/"+select
+    image = read_file(select_path)
 
-# elif select != 'All' and button:
-#     select_path = bucket_name+"/"+select
-#     image = read_file(select_path)
-
-#     st.image(image, caption=select)
-#     str_text = extract_content_to_txt(image)
-#     st.markdown(str_text)
-#     out_file = str(select)+'.txt'
-#     s3.Object(bucket_name, out_file).put(Body=str_text)
+    st.image(image, caption=select)
+    str_text = extract_content_to_txt(image)
+    st.markdown(str_text)
+    out_file = str(select)+'.txt'
+    s3.Object(bucket_name, out_file).put(Body=str_text)
 
