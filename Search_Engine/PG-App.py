@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 17:58:41
+# @Last Modified time: 2021-09-30 17:59:22
 
 
 # #######################################################################################################################
@@ -136,8 +136,9 @@ if analysis == "[1] Image Import":
     path = st.text_input('Write path')
     button = st.button("Process")
 
-    st.markdown(path)
-    # if path is not None and button:
+
+    if path is not None and button:
+        st.markdown(path)
     #     s3.Bucket(my_bucket).upload_file(path, "test.jpeg")
 
 
