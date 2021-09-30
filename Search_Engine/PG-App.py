@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 15:29:59
+# @Last Modified time: 2021-09-30 15:55:19
 
 
 # #######################################################################################################################
@@ -108,53 +108,37 @@ image1 = Image.open("app_logos/PTCtechLab.png")
 image2 = Image.open("app_logos/PTC.png")
 st.sidebar.image(image2, width=200)
 
-analysis = st.sidebar.selectbox('', ['[0] Image Import', '[1] Image Processing', '[2] Indexation', '[3] Search Engine'])
+analysis = st.sidebar.selectbox('', ['[1] Image Import', '[2] Image Processing', '[3] Indexation', '[4] Search Engine'])
 
 # #######################################################################################################################
 #                                              # === IMPORT NEW FILE === #
 # #######################################################################################################################
-if analysis == "[0] Image Import":
+if analysis == "[1] Image Import":
     st.header('Image Import')
 
     side_bar()
 
 
     data = st.file_uploader("Upload a file", type=["png", "jpg", "jpeg"])
-    button = st.button("Process")
 
-    if data is not None and button:
+
+    if data is not None:
         image = Image.open(data)
         pil_image = Image.open(data).convert('RGB')
         open_cv_image = np.array(pil_image)
         image = open_cv_image[:, :, ::-1].copy()
         st.image(image, caption='Selected document')
 
-        #image_string = cv2.imencode('.jpg', image)[1].tostring()
-        #s3.Bucket(bucket_name).put_object(Key="test_new_image.jpg", Body=image_string, ACL='public-read')
+    button = st.button("Process")
 
-
-
-        # Save the image to an in-memory file
-        in_mem_file = io.BytesIO()
-        pil_image.save(in_mem_file, format=pil_image.format)
-        in_mem_file.seek(0)
-
-        # Upload image to s3
-        s3.upload_fileobj(
-            in_mem_file,
-            my_bucket,
-            "test_new_image",
-            ExtraArgs={
-                'ACL': 'public-read'
-            }
-        )
+    if data is not None and button:
+        out_file = 'test.jpeg'
+        s3.Object(bucket_name, out_file).put(Body=data)
 
 # #######################################################################################################################
 #                                              # === PROCESS NEW FILE === #
 # #######################################################################################################################
-
-
-if analysis == "[1] Image Processing":
+if analysis == "[2] Image Processing":
     st.header('Image Processing')
 
     side_bar()
@@ -194,7 +178,7 @@ if analysis == "[1] Image Processing":
 ##########################################################################
 #                                              # === INDEXER === #
 # #######################################################################################################################
-if analysis == "[2] Indexation":
+if analysis == "[3] Indexation":
     st.header('Indexation')
 
     side_bar()
@@ -244,7 +228,7 @@ if analysis == "[2] Indexation":
 # #######################################################################################################################
 #                                              # === SEARCH ENGINE === #
 # #######################################################################################################################
-if analysis == "[3] Search Engine":
+if analysis == "[4] Search Engine":
 
     # Create the Search Engine
     SE = SearchEngine()
