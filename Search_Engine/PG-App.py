@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 17:38:32
+# @Last Modified time: 2021-09-30 17:56:06
 
 
 # #######################################################################################################################
@@ -119,33 +119,23 @@ if analysis == "[1] Image Import":
     side_bar()
 
 
-    data = st.file_uploader("Upload a file", type=["png", "jpg", "jpeg"])
+    # data = st.file_uploader("Upload a file", type=["png", "jpg", "jpeg"])
 
 
-    if data is not None:
-        image = Image.open(data)
-        pil_image = Image.open(data).convert('RGB')
-        open_cv_image = np.array(pil_image)
-        image2 = open_cv_image[:, :, ::-1].copy()
-        st.image(image2, caption='Selected document')
+    # if data is not None:
+    #     image = Image.open(data)
+    #     pil_image = Image.open(data).convert('RGB')
+    #     open_cv_image = np.array(pil_image)
+    #     image2 = open_cv_image[:, :, ::-1].copy()
+    #     st.image(image2, caption='Selected document')
 
     # button = st.button("Process")
 
     # if data is not None and button:
-        image_jpeg = cv2.imencode(".jpeg", image2)[1].tostring()
-        image2_jpeg_filename = "test.jpeg"
-        object = s3.Object(my_bucket, image2_jpeg_filename)
-        object.put(Body=image_jpeg, ContentType="image/jpeg")
 
+    path = st.text_input('Write path')
 
-# thumbnail_image = cv2.resize(original_image, (100, 100))
-# thumbnail_image_png = cv2.imencode(".png", thumbnail_image)[1].tostring()
-
-# # Upload the PNG bytes of the thumbnail to S3
-# s3 = boto3.resource("s3")
-# thumbnail_image_filename = "thumbnail.png"
-# object = s3.Object(BUCKET_NAME, thumbnail_image_filename)
-# object.put(Body=thumbnail_image_png, ContentType="image/png")
+    s3.Bucket(my_bucket).upload_file(path, "test.jpeg")
 
 
 # #######################################################################################################################
