@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 16:25:24
+# @Last Modified time: 2021-09-30 16:27:51
 
 
 # #######################################################################################################################
@@ -131,10 +131,14 @@ if analysis == "[1] Image Import":
     button = st.button("Process")
 
     if data is not None and button:
-        in_memory_file = BytesIO()
-        pil_image.imwrite(in_memory_file)
-        obj = my_bucket.Object('test.jpg')
-        obj.upload_fileobj(in_memory_file)
+        buffer = io.BytesIO()
+        pil_image.save(buffer, "JPEG")
+        buffer.seek(0) # rewind pointer back to start
+        s3.put_object(
+            Bucket=my_bucket,
+            Key='text.jpeg',
+            Body=buffer,
+            ContentType='image/jpeg',
 # #######################################################################################################################
 #                                              # === PROCESS NEW FILE === #
 # #######################################################################################################################
