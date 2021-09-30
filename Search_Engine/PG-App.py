@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 09:41:26
+# @Last Modified time: 2021-09-30 09:49:23
 
 import streamlit as st
 import s3fs
