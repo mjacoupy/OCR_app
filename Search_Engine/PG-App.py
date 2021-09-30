@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 16:28:43
+# @Last Modified time: 2021-09-30 16:34:36
 
 
 # #######################################################################################################################
@@ -132,14 +132,21 @@ if analysis == "[1] Image Import":
     button = st.button("Process")
 
     if data is not None and button:
-        buffer = io.BytesIO()
-        pil_image.save(buffer, "JPEG")
-        buffer.seek(0) # rewind pointer back to start
-        s3.put_object(
-            Bucket=my_bucket,
-            Key='text.jpeg',
-            Body=buffer,
-            ContentType='image/jpeg')
+
+        # Save the image to an in-memory file
+        in_mem_file = io.BytesIO()
+        pil_image.save(in_mem_file, format=pil_image.format)
+        in_mem_file.seek(0)
+
+        # Upload image to s3
+        client_s3 = boto3.client('s3')
+        client_s3.upload_fileobj(
+            in_mem_file, # This is what i am trying to upload
+            my_bucket,
+            'text.jpeg',
+            ExtraArgs={
+                'ACL': 'public-read'
+            })
 # #######################################################################################################################
 #                                              # === PROCESS NEW FILE === #
 # #######################################################################################################################
