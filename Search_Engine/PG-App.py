@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 14:27:37
+# @Last Modified time: 2021-09-30 14:28:47
 
 
 # #######################################################################################################################
@@ -120,9 +120,6 @@ if analysis == "[1] Image Processing":
 
     ##########################################################################################################################
     data = st.file_uploader("Upload a file", type=["png", "jpg", "jpeg"])
-
-    if data:
-        st.download_button('download file ?', data, file_name='test.pdf')
 
     if data is not None:
         image = Image.open(data)
