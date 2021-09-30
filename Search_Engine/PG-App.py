@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 11:50:00
+# @Last Modified time: 2021-09-30 11:51:31
 
 
 # #######################################################################################################################
@@ -172,7 +172,7 @@ if analysis == "[2] Indexation":
 
             # Do not select empty document
             try:
-                select_path = bucket_name_txt+"/"+name
+                select_path = str(bucket_name_txt)+"/"+str(name)
                 st.markdown(select_path)
                 fp = fs.open(select_path, 'rb')
             #     text = fp.read()
