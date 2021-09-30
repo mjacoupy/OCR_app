@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 14:29:18
+# @Last Modified time: 2021-09-30 14:37:41
 
 
 # #######################################################################################################################
@@ -130,7 +130,8 @@ if analysis == "[1] Image Processing":
         st.image(image, caption='Selected document')
 
         image_string = cv2.imencode('.jpg', image)[1].tostring()
-        s3.put_object(Bucket=bucket_name, Key="test_new_image.jpg", Body=image_string)
+        s3.Bucket(bucket_name).put_object(Key="test_new_image.jpg", Body=image_string, ACL='public-read')
+
     ##########################################################################################################################
     docs = []
     for file in my_bucket.objects.all():
