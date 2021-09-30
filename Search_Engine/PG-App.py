@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 12:46:07
+# @Last Modified time: 2021-09-30 13:52:42
 
 
 # #######################################################################################################################
@@ -186,15 +186,17 @@ if analysis == "[2] Indexation":
             # Do not select empty document
             try:
                 select_path = bucket_name_txt+"/"+name
-                st.markdown(select_path)
                 fp = fs.open(select_path, "rb")
                 text = fp.read()
-                writer.add_document(title=name, path=select_path, content=text, textdata=text)
-                fp.close()
+                st.markdown(select_path)
+                st.markdown(name)
+                st.markdown(text)
+                # writer.add_document(title=name, path=select_path, content=text, textdata=text)
+                # fp.close()
             except UnicodeDecodeError:
                 pass
 
-        writer.commit()
+        # writer.commit()
 
 
 # #######################################################################################################################
