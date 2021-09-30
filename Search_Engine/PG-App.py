@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 16:23:34
+# @Last Modified time: 2021-09-30 16:24:50
 
 
 # #######################################################################################################################
@@ -125,14 +125,14 @@ if analysis == "[1] Image Import":
         image = Image.open(data)
         pil_image = Image.open(data).convert('RGB')
         open_cv_image = np.array(pil_image)
-        image = open_cv_image[:, :, ::-1].copy()
-        st.image(image, caption='Selected document')
+        image2 = open_cv_image[:, :, ::-1].copy()
+        st.image(image2, caption='Selected document')
 
     button = st.button("Process")
 
     if data is not None and button:
         in_memory_file = BytesIO()
-        open_cv_image.imwrite(in_memory_file)
+        image.imwrite(in_memory_file)
         obj = my_bucket.Object('test.jpg')
         obj.upload_fileobj(in_memory_file)
 # #######################################################################################################################
