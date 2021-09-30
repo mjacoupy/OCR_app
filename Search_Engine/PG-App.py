@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 11:26:00
+# @Last Modified time: 2021-09-30 11:27:22
 
 
 # #######################################################################################################################
@@ -121,8 +121,8 @@ if analysis == "[1] Image Processing":
             select_path = bucket_name+"/"+doc
             image = read_file(select_path)
             str_text = extract_content_to_txt(image)
-            out_file = "text_files/"+str(doc)+'.txt'
-            s3.Object(bucket_name, out_file).put(Body=str_text)
+            out_file = str(doc)+'.txt'
+            s3.Object(bucket_name_txt, out_file).put(Body=str_text)
 
     elif select != 'All' and button:
         select_path = bucket_name+"/"+select
@@ -131,7 +131,7 @@ if analysis == "[1] Image Processing":
         st.image(image, caption=select)
         str_text = extract_content_to_txt(image)
         st.markdown(str_text)
-        out_file = "text_files/"+str(select)+'.txt'
+        out_file = str(select)+'.txt'
         s3.Object(bucket_name_txt, out_file).put(Body=str_text)
 
         # export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_exports", "se_txt")
