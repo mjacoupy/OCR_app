@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 12:20:44
+# @Last Modified time: 2021-09-30 12:26:51
 
 
 # #######################################################################################################################
@@ -123,18 +123,18 @@ if analysis == "[1] Image Processing":
         for doc in docs:
             select_path = bucket_name+"/"+doc
             image = read_file(select_path)
+            name = doc.split('.')[0]
             str_text = extract_content_to_txt(image)
-            out_file = str(doc)+'.txt'
+            out_file = str(name)+'.txt'
             s3.Object(bucket_name_txt, out_file).put(Body=str_text)
 
     elif select != 'All' and button:
         select_path = bucket_name+"/"+select
         image = read_file(select_path)
-
-        st.image(image, caption=select)
+        name = select.split('.')[0]
+        st.image(image, caption=name)
         str_text = extract_content_to_txt(image)
-        st.markdown(str_text)
-        out_file = str(select)+'.txt'
+        out_file = str(name)+'.txt'
         s3.Object(bucket_name_txt, out_file).put(Body=str_text)
 
 ##########################################################################
@@ -159,16 +159,6 @@ if analysis == "[2] Indexation":
         writer = ix.writer()
 
         # filepaths = [os.path.join(txt, i) for i in os.listdir(txt)]
-
-        fs = s3fs.S3FileSystem(anon=False)
-        bucket_name = "ocrplus-app-mja"
-        bucket_name_txt = "ocrplus-app-mja-txt"
-
-
-        s3 = boto3.resource('s3')
-        my_bucket = s3.Bucket(bucket_name)
-        my_bucket2 = s3.Bucket(bucket_name_txt)
-
 
         filepaths = []
         for file in my_bucket2.objects.all():
