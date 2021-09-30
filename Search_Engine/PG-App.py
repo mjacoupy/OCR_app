@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 09:26:02
+# @Last Modified time: 2021-09-30 09:33:21
 
 import streamlit as st
 import s3fs
@@ -93,13 +93,8 @@ if select:
         with open(out_file, "w") as text_file:
             text_file.write(str_text)
 
-        with open(out_file, "rb") as f:
-            s3.upload_fileobj(f, bucket_name, "test")
-
-        # with open("FILE_NAME", "rb") as f:
-        #     s3.upload_fileobj(f, "BUCKET_NAME", "OBJECT_NAME")
-
-
+        object = s3.Object(my_bucket, 'filename.txt')
+        object.put(Body=out_file)
 
 
         # import boto3
