@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 16:01:00
+# @Last Modified time: 2021-09-30 16:03:56
 
 
 # #######################################################################################################################
@@ -30,7 +30,6 @@ bucket_name_txt = "ocrplus-app-mja-txt"
 
 
 s3 = boto3.resource('s3')
-client = boto3.client('s3')
 my_bucket = s3.Bucket(bucket_name)
 my_bucket2 = s3.Bucket(bucket_name_txt)
 
@@ -131,7 +130,9 @@ if analysis == "[1] Image Import":
     button = st.button("Process")
 
     if data is not None and button:
-        client.upload_file('image_0.jpg', my_bucket, 'image_0.jpg')
+        s3client = boto3.client('s3')
+        with open(image, "rb") as f:
+            s3client.upload_fileobj(f, my_bucket, "text.jpg")
 
 # #######################################################################################################################
 #                                              # === PROCESS NEW FILE === #
