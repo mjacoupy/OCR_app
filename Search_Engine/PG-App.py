@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 10:30:36
+# @Last Modified time: 2021-09-30 10:31:38
 
 import streamlit as st
 import s3fs
@@ -91,6 +91,6 @@ elif select != 'All' and button:
     st.image(image, caption=select)
     str_text = extract_content_to_txt(image)
     st.markdown(str_text)
-    out_file = "text_files/"str(select)+'.txt'
+    out_file = "text_files/"+str(select)+'.txt'
     s3.Object(bucket_name, out_file).put(Body=str_text)
 
