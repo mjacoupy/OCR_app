@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 10:55:40
+# @Last Modified time: 2021-09-30 11:08:56
 
 
 # #######################################################################################################################
@@ -133,7 +133,12 @@ if analysis == "[1] Image Processing":
         out_file = "text_files/"+str(select)+'.txt'
         s3.Object(bucket_name, out_file).put(Body=str_text)
 
+        export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_exports", "se_txt")
 
+        out_txt_file = export_path + out_file
+
+        with open(out_txt_file, "w") as text_file:
+            text_file.write(str_text)
 # #######################################################################################################################
 #                                              # === INDEXER === #
 # #######################################################################################################################
@@ -147,7 +152,7 @@ if analysis == "[2] Indexation":
     txt = st.text_input('root', folder_path)
     button = st.button('Run')
 
-    if txt and button:
+    if button:
 
         # my_bar = st.progress(0)
         schema = Schema(title=TEXT(stored=True), path=ID(stored=True), content=TEXT, textdata=TEXT(stored=True))
@@ -162,21 +167,21 @@ if analysis == "[2] Indexation":
 
         st.markdown(filepaths)
 
-    #     path = pathlib.PurePath(txt)
-    #     last = path.name
-    #     for path, percent in zip(filepaths, range(len(filepaths))):
+        path = pathlib.PurePath(txt)
+        last = path.name
+        for path, percent in zip(filepaths, range(len(filepaths))):
 
-    #         val = (percent+1) / len(filepaths)
-    #         my_bar.progress(val)
+            val = (percent+1) / len(filepaths)
+            my_bar.progress(val)
 
-    #         # Do not select empty document
-    #         try:
-    #             fp = open(path, 'r')
-    #             text = fp.read()
-    #             writer.add_document(title=path.split(last+"/")[1], path=path, content=text, textdata=text)
-    #             fp.close()
-    #         except UnicodeDecodeError:
-    #             pass
+            # Do not select empty document
+            try:
+                fp = open(path, 'r')
+                text = fp.read()
+                writer.add_document(title=path.split(last+"/")[1], path=path, content=text, textdata=text)
+                fp.close()
+            except UnicodeDecodeError:
+                pass
 
-    #     writer.commit()
+        writer.commit()
 
