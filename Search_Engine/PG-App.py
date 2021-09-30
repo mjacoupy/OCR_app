@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 10:28:38
+# @Last Modified time: 2021-09-30 10:29:34
 
 import streamlit as st
 import s3fs
@@ -81,7 +81,7 @@ if select == 'All' and button:
         select_path = bucket_name+"/"+doc
         image = read_file(select_path)
         str_text = extract_content_to_txt(image)
-        out_file = str(select)+'.txt'
+        out_file = str(doc)+'.txt'
         s3.Object(bucket_name, out_file).put(Body=str_text)
 
 elif select != 'All' and button:
