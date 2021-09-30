@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 16:34:36
+# @Last Modified time: 2021-09-30 16:58:47
 
 
 # #######################################################################################################################
@@ -20,8 +20,8 @@ from whoosh.fields import Schema, TEXT, ID
 import pandas as pd
 from SearchEngine_app import SearchEngine
 import re
-from io import BytesIO
-import io
+# from io import BytesIO
+import cv2
 
 # #######################################################################################################################
 #                                              # === S3 AWS === #
@@ -132,21 +132,22 @@ if analysis == "[1] Image Import":
     button = st.button("Process")
 
     if data is not None and button:
+        image2_png = cv2.imencode(".png", image2)[1].tostring()
+        image2_png_filename = "test.png"
+        object = s3.Object(my_bucket, image2_png_filename)
+        object.put(Body=image2_png, ContentType="image/png")
 
-        # Save the image to an in-memory file
-        in_mem_file = io.BytesIO()
-        pil_image.save(in_mem_file, format=pil_image.format)
-        in_mem_file.seek(0)
 
-        # Upload image to s3
-        client_s3 = boto3.client('s3')
-        client_s3.upload_fileobj(
-            in_mem_file, # This is what i am trying to upload
-            my_bucket,
-            'text.jpeg',
-            ExtraArgs={
-                'ACL': 'public-read'
-            })
+# thumbnail_image = cv2.resize(original_image, (100, 100))
+# thumbnail_image_png = cv2.imencode(".png", thumbnail_image)[1].tostring()
+
+# # Upload the PNG bytes of the thumbnail to S3
+# s3 = boto3.resource("s3")
+# thumbnail_image_filename = "thumbnail.png"
+# object = s3.Object(BUCKET_NAME, thumbnail_image_filename)
+# object.put(Body=thumbnail_image_png, ContentType="image/png")
+
+
 # #######################################################################################################################
 #                                              # === PROCESS NEW FILE === #
 # #######################################################################################################################
