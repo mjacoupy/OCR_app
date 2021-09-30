@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 10:06:27
+# @Last Modified time: 2021-09-30 10:08:02
 
 import streamlit as st
 import s3fs
@@ -89,6 +89,6 @@ if select:
         st.markdown(str_text)
 
 
-        content="String content to write to a new S3 file"
-        s3.Object(bucket_name, 'newfile.txt').put(Body=content)
+        content = "String content to write to a new S3 file"
+        s3.Object(bucket_name, 'newfile2.txt').put(Body=str_text)
 
