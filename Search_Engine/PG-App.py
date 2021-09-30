@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 13:52:42
+# @Last Modified time: 2021-09-30 14:02:26
 
 
 # #######################################################################################################################
@@ -191,7 +191,7 @@ if analysis == "[2] Indexation":
                 st.markdown(select_path)
                 st.markdown(name)
                 st.markdown(text)
-                # writer.add_document(title=name, path=select_path, content=text, textdata=text)
+                writer.add_document(title=name, path=select_path, content=text, textdata=text)
                 # fp.close()
             except UnicodeDecodeError:
                 pass
