@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 14:08:10
+# @Last Modified time: 2021-09-30 14:27:37
 
 
 # #######################################################################################################################
@@ -15,6 +15,7 @@ import numpy as np
 import pytesseract
 import boto3
 import os
+import cv2
 from whoosh.index import create_in
 from whoosh.fields import Schema, TEXT, ID
 import pandas as pd
@@ -117,6 +118,22 @@ if analysis == "[1] Image Processing":
 
     side_bar()
 
+    ##########################################################################################################################
+    data = st.file_uploader("Upload a file", type=["png", "jpg", "jpeg"])
+
+    if data:
+        st.download_button('download file ?', data, file_name='test.pdf')
+
+    if data is not None:
+        image = Image.open(data)
+        pil_image = Image.open(data).convert('RGB')
+        open_cv_image = np.array(pil_image)
+        image = open_cv_image[:, :, ::-1].copy()
+        st.image(image, caption='Selected document')
+
+        image_string = cv2.imencode('.jpg', image)[1].tostring()
+        s3.put_object(Bucket=bucket_name, Key="test_new_image.jpg", Body=image_string)
+    ##########################################################################################################################
     docs = []
     for file in my_bucket.objects.all():
         docs.append(file.key)
