@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 10:24:04
+# @Last Modified time: 2021-09-30 10:25:19
 
 import streamlit as st
 import s3fs
@@ -70,7 +70,8 @@ def extract_content_to_txt(image):
 
     # -------------------
 
-docs_all = docs.append('All')
+docs_all = docs.copy()
+docs_all.append('All')
 
 st.markdown(docs)
 st.markdown(docs_all)
