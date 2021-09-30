@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 10:51:17
+# @Last Modified time: 2021-09-30 10:54:03
 
 
 # #######################################################################################################################
@@ -143,18 +143,21 @@ if analysis == "[2] Indexation":
 
     txt = st.text_input('root', folder_path)
     button = st.button('Run')
-    # if txt and button:
 
-    #     my_bar = st.progress(0)
-    #     schema = Schema(title=TEXT(stored=True), path=ID(stored=True), content=TEXT, textdata=TEXT(stored=True))
-    #     if not os.path.exists("se_indexdir"):
-    #         os.mkdir("se_indexdir")
+    if txt and button:
 
-    #     # Creating a index writer to add document as per schema
-    #     ix = create_in("se_indexdir", schema)
-    #     writer = ix.writer()
+        my_bar = st.progress(0)
+        schema = Schema(title=TEXT(stored=True), path=ID(stored=True), content=TEXT, textdata=TEXT(stored=True))
+        if not os.path.exists("se_indexdir"):
+            os.mkdir("se_indexdir")
 
-    #     filepaths = [os.path.join(txt, i) for i in os.listdir(txt)]
+        # Creating a index writer to add document as per schema
+        ix = create_in("se_indexdir", schema)
+        writer = ix.writer()
+
+        filepaths = [os.path.join(txt, i) for i in os.listdir(txt)]
+
+        st.markdown(filepaths)
 
     #     path = pathlib.PurePath(txt)
     #     last = path.name
