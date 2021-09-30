@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 16:03:56
+# @Last Modified time: 2021-09-30 16:07:13
 
 
 # #######################################################################################################################
@@ -20,6 +20,7 @@ from whoosh.fields import Schema, TEXT, ID
 import pandas as pd
 from SearchEngine_app import SearchEngine
 import re
+from io import BytesIO
 
 # #######################################################################################################################
 #                                              # === S3 AWS === #
@@ -130,9 +131,11 @@ if analysis == "[1] Image Import":
     button = st.button("Process")
 
     if data is not None and button:
-        s3client = boto3.client('s3')
-        with open(image, "rb") as f:
-            s3client.upload_fileobj(f, my_bucket, "text.jpg")
+        img = Image.fromarray(image).convert('RGB')
+        out_img = BytesIO()
+        img.save(out_img, format='jpeg')
+        out_img.seek(0)
+        my_bucket.put_object(Key='text.jpeg', Body=out_img, ContentType='image/png', ACL='public-read')
 
 # #######################################################################################################################
 #                                              # === PROCESS NEW FILE === #
