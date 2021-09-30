@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 11:45:14
+# @Last Modified time: 2021-09-30 11:46:30
 
 
 # #######################################################################################################################
@@ -174,7 +174,7 @@ if analysis == "[2] Indexation":
             try:
                 select_path = bucket_name_txt+"/"+name
                 st.markdown(select_path)
-            #     fp = fs.open(select_path, 'rb')
+                fp = fs.open(select_path, 'rb')
             #     text = fp.read()
             #     writer.add_document(title=name, path=select_path, content=text, textdata=text)
             #     fp.close()
