@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 11:33:53
+# @Last Modified time: 2021-09-30 11:36:37
 
 
 # #######################################################################################################################
@@ -17,7 +17,6 @@ import boto3
 import os
 from whoosh.index import create_in
 from whoosh.fields import Schema, TEXT, ID
-import pathlib
 
 # #######################################################################################################################
 #                                              # === S3 AWS === #
@@ -142,9 +141,9 @@ if analysis == "[2] Indexation":
 
     side_bar()
 
-    #folder_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_exports", "se_txt")
+    # folder_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_exports", "se_txt")
 
-    #txt = st.text_input('root', folder_path)
+    # txt = st.text_input('root', folder_path)
     button = st.button('Run')
 
     if button:
@@ -158,7 +157,7 @@ if analysis == "[2] Indexation":
         ix = create_in("se_indexdir", schema)
         writer = ix.writer()
 
-        #filepaths = [os.path.join(txt, i) for i in os.listdir(txt)]
+        # filepaths = [os.path.join(txt, i) for i in os.listdir(txt)]
 
         filepaths = []
         for file in my_bucket2.objects.all():
@@ -175,7 +174,7 @@ if analysis == "[2] Indexation":
 
             # Do not select empty document
             try:
-                fp = open(path, 'r')
+                fp = fs.open(path, 'rb')
                 text = fp.read()
                 writer.add_document(title=path, path=path, content=text, textdata=text)
                 fp.close()
