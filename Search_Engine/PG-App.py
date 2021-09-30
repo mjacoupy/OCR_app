@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 16:22:12
+# @Last Modified time: 2021-09-30 16:23:34
 
 
 # #######################################################################################################################
@@ -132,7 +132,7 @@ if analysis == "[1] Image Import":
 
     if data is not None and button:
         in_memory_file = BytesIO()
-        image.imwrite(in_memory_file)
+        open_cv_image.imwrite(in_memory_file)
         obj = my_bucket.Object('test.jpg')
         obj.upload_fileobj(in_memory_file)
 # #######################################################################################################################
