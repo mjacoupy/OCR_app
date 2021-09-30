@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 18:14:38
+# @Last Modified time: 2021-09-30 18:16:08
 
 
 # #######################################################################################################################
@@ -116,28 +116,9 @@ if analysis == "[1] Image Import":
 
     side_bar()
 
-
-    def upload_files(path):
-        """..."""
-        session = boto3.Session(
-            aws_access_key_id='AKIA3P6K3RKQWDYCLIER',
-            aws_secret_access_key='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',
-            region_name='eu-west-3'
-        )
-        s3 = session.resource('s3')
-        bucket = s3.Bucket('crplus-app-mja-txt')
-
-        for subdir, dirs, files in os.walk(path):
-            for file in files:
-                full_path = os.path.join(subdir, file)
-                with open(full_path, 'rb') as data:
-                    bucket.put_object(Key=full_path[len(path)+1:], Body=data)
-
     path = str(st.text_input('Write path'))
     button = st.button("Process")
 
-    if path is not None and button:
-        upload_files(path)
 
 
 
