@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 16:16:48
+# @Last Modified time: 2021-09-30 16:22:12
 
 
 # #######################################################################################################################
@@ -131,13 +131,10 @@ if analysis == "[1] Image Import":
     button = st.button("Process")
 
     if data is not None and button:
-        result = s3.meta.client.put_object(Body=image, Bucket=my_bucket, Key='text.jpg')
-        res = result.get('ResponseMetadata')
-
-        if res.get('HTTPStatusCode') == 200:
-            print('File Uploaded Successfully')
-        else:
-            print('File Not Uploaded')
+        in_memory_file = BytesIO()
+        image.imwrite(in_memory_file)
+        obj = my_bucket.Object('test.jpg')
+        obj.upload_fileobj(in_memory_file)
 # #######################################################################################################################
 #                                              # === PROCESS NEW FILE === #
 # #######################################################################################################################
