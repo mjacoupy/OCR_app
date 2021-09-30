@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 12:19:06
+# @Last Modified time: 2021-09-30 12:20:44
 
 
 # #######################################################################################################################
@@ -159,6 +159,16 @@ if analysis == "[2] Indexation":
         writer = ix.writer()
 
         # filepaths = [os.path.join(txt, i) for i in os.listdir(txt)]
+
+        fs = s3fs.S3FileSystem(anon=False)
+        bucket_name = "ocrplus-app-mja"
+        bucket_name_txt = "ocrplus-app-mja-txt"
+
+
+        s3 = boto3.resource('s3')
+        my_bucket = s3.Bucket(bucket_name)
+        my_bucket2 = s3.Bucket(bucket_name_txt)
+
 
         filepaths = []
         for file in my_bucket2.objects.all():
