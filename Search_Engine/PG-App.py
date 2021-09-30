@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 18:16:08
+# @Last Modified time: 2021-09-30 18:51:54
 
 
 # #######################################################################################################################
@@ -119,7 +119,8 @@ if analysis == "[1] Image Import":
     path = str(st.text_input('Write path'))
     button = st.button("Process")
 
-
+    if path is not None and button:
+        my_bucket.download_file('test.jpeg', path)
 
 
     # data = st.file_uploader("Upload a file", type=["png", "jpg", "jpeg"])
