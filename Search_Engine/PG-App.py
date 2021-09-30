@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 14:39:10
+# @Last Modified time: 2021-09-30 15:29:59
 
 
 # #######################################################################################################################
@@ -21,6 +21,7 @@ from whoosh.fields import Schema, TEXT, ID
 import pandas as pd
 from SearchEngine_app import SearchEngine
 import re
+import io
 
 # #######################################################################################################################
 #                                              # === S3 AWS === #
@@ -128,8 +129,25 @@ if analysis == "[0] Image Import":
         image = open_cv_image[:, :, ::-1].copy()
         st.image(image, caption='Selected document')
 
-        image_string = cv2.imencode('.jpg', image)[1].tostring()
-        s3.Bucket(bucket_name).put_object(Key="test_new_image.jpg", Body=image_string, ACL='public-read')
+        #image_string = cv2.imencode('.jpg', image)[1].tostring()
+        #s3.Bucket(bucket_name).put_object(Key="test_new_image.jpg", Body=image_string, ACL='public-read')
+
+
+
+        # Save the image to an in-memory file
+        in_mem_file = io.BytesIO()
+        pil_image.save(in_mem_file, format=pil_image.format)
+        in_mem_file.seek(0)
+
+        # Upload image to s3
+        s3.upload_fileobj(
+            in_mem_file,
+            my_bucket,
+            "test_new_image",
+            ExtraArgs={
+                'ACL': 'public-read'
+            }
+        )
 
 # #######################################################################################################################
 #                                              # === PROCESS NEW FILE === #
