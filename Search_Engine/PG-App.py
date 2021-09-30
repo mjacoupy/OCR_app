@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 11:27:22
+# @Last Modified time: 2021-09-30 11:29:53
 
 
 # #######################################################################################################################
@@ -134,13 +134,7 @@ if analysis == "[1] Image Processing":
         out_file = str(select)+'.txt'
         s3.Object(bucket_name_txt, out_file).put(Body=str_text)
 
-        # export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_exports", "se_txt")
-
-        # out_txt_file = export_path + out_file
-
-        # with open(out_txt_file, "w") as text_file:
-        #     text_file.write(str_text)
-# #######################################################################################################################
+##########################################################################
 #                                              # === INDEXER === #
 # #######################################################################################################################
 if analysis == "[2] Indexation":
@@ -148,9 +142,9 @@ if analysis == "[2] Indexation":
 
     side_bar()
 
-    folder_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_exports", "se_txt")
+    #folder_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_exports", "se_txt")
 
-    txt = st.text_input('root', folder_path)
+    #txt = st.text_input('root', folder_path)
     button = st.button('Run')
 
     if button:
@@ -164,25 +158,29 @@ if analysis == "[2] Indexation":
         ix = create_in("se_indexdir", schema)
         writer = ix.writer()
 
-        filepaths = [os.path.join(txt, i) for i in os.listdir(txt)]
+        #filepaths = [os.path.join(txt, i) for i in os.listdir(txt)]
+
+        filepaths = []
+        for file in my_bucket2.objects.all():
+            filepaths.append(file.key)
 
         st.markdown(filepaths)
 
-        path = pathlib.PurePath(txt)
-        last = path.name
-        for path, percent in zip(filepaths, range(len(filepaths))):
+        # path = pathlib.PurePath(txt)
+        # last = path.name
+        # for path, percent in zip(filepaths, range(len(filepaths))):
 
-            val = (percent+1) / len(filepaths)
-            my_bar.progress(val)
+        #     val = (percent+1) / len(filepaths)
+        #     my_bar.progress(val)
 
-            # Do not select empty document
-            try:
-                fp = open(path, 'r')
-                text = fp.read()
-                writer.add_document(title=path.split(last+"/")[1], path=path, content=text, textdata=text)
-                fp.close()
-            except UnicodeDecodeError:
-                pass
+        #     # Do not select empty document
+        #     try:
+        #         fp = open(path, 'r')
+        #         text = fp.read()
+        #         writer.add_document(title=path.split(last+"/")[1], path=path, content=text, textdata=text)
+        #         fp.close()
+        #     except UnicodeDecodeError:
+        #         pass
 
-        writer.commit()
+        # writer.commit()
 
