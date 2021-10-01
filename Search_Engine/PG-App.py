@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 11:54:06
+# @Last Modified time: 2021-10-01 12:00:35
 
 
 # #######################################################################################################################
@@ -175,7 +175,10 @@ if analysis == "[2] Image Processing":
     select = st.selectbox('Which document', docs_all, index=l)
     button = st.button('OCR analysis')
 
+
+
     if select == 'All' and button:
+
         for doc in docs_s3:
             select_path = bucket_name+"/"+doc
             st.markdown(select_path)
@@ -214,7 +217,7 @@ if analysis == "[2] Image Processing":
             out_file = str(name)+'.txt'
             s3.Object(bucket_name_txt, out_file).put(Body=str_text)
 
-
+    st.text('Done!')
 
 ##########################################################################
 #                                              # === INDEXER === #
