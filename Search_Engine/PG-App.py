@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 10:17:02
+# @Last Modified time: 2021-10-01 10:18:01
 
 
 # #######################################################################################################################
@@ -138,14 +138,14 @@ if analysis == "[1] Image Import":
 
     if data is not None and button:
         export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
-        out_file = export_path + "test_image.png"
+        out_file = export_path + "test_image.jpg"
         st.markdown(out_file)
         cv2.imwrite(out_file, image2)
         docs = os.listdir(export_path)
         st.markdown(docs)
 
         im = cv2.imread(out_file)
-        is_success, im_buf_arr = cv2.imencode(".png", im)
+        is_success, im_buf_arr = cv2.imencode(".jpg", im)
         byte_im = im_buf_arr.tobytes()
 
         st.markdown(byte_im)
