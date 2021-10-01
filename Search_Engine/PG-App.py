@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 11:43:14
+# @Last Modified time: 2021-10-01 11:44:15
 
 
 # #######################################################################################################################
@@ -207,7 +207,7 @@ if analysis == "[2] Image Processing":
             select_path = import_path + select
             st.markdown(select_path)
             image = cv2.imread(select_path)
-            name = doc.split('.')[0]
+            name = select.split('.')[0]
             str_text = extract_content_to_txt(image)
             out_file = str(name)+'.txt'
             s3.Object(bucket_name_txt, out_file).put(Body=str_text)
