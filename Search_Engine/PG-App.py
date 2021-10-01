@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 10:21:49
+# @Last Modified time: 2021-10-01 10:23:34
 
 
 # #######################################################################################################################
@@ -144,14 +144,20 @@ if analysis == "[1] Image Import":
         docs = os.listdir(export_path)
         st.markdown(docs)
 
-        im = cv2.imread(out_file)
-        is_success, im_buf_arr = cv2.imencode(".jpg", im)
-        byte_im = im_buf_arr.tobytes()
+        # im = cv2.imread(out_file)
+        # is_success, im_buf_arr = cv2.imencode(".jpg", im)
+        # byte_im = im_buf_arr.tobytes()
 
-        a = byte_im.copy()
-        st.markdown(a)
+        # a = byte_im.copy()
+        # st.markdown(a)
 
-        #s3.Bucket(my_bucket).put_object(Key='test_image.png', Body=byte_im)
+        im = Image.open(out_file)
+        im_resize = im.resize((500, 500))
+        buf = io.BytesIO()
+        im_resize.save(buf, format='JPEG')
+        byte_im = buf.getvalue()
+
+        s3.Bucket(my_bucket).put_object(Key='test_image.png', Body=byte_im)
 
 # #######################################################################################################################
 #                                              # === PROCESS NEW FILE === #
