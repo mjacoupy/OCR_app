@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 15:33:00
+# @Last Modified time: 2021-10-01 15:34:25
 
 
 # #######################################################################################################################
@@ -170,13 +170,14 @@ if analysis == "[1] Image Import":
         int_val = st.slider('Page number', min_value=0, max_value=len(images), value=0, step=1)
 
         for iPage in images:
+            img = np.array(iPage)
             scale_percent = 20
-            width = int(iPage.shape[1] * scale_percent / 100)
-            height = int(iPage.shape[0] * scale_percent / 100)
+            width = int(img.shape[1] * scale_percent / 100)
+            height = int(img.shape[0] * scale_percent / 100)
             dim = (width, height)
 
             # resize image
-            resized = cv2.resize(iPage, dim, interpolation=cv2.INTER_AREA)
+            resized = cv2.resize(img, dim, interpolation=cv2.INTER_AREA)
             st.image(resized, use_column_width=True)
 
 
