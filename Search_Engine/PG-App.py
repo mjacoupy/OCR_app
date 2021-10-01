@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 15:15:05
+# @Last Modified time: 2021-10-01 15:19:57
 
 
 # #######################################################################################################################
@@ -184,14 +184,11 @@ if analysis == "[1] Image Import":
 
             st.image(resized, caption='Selected document')
 
-            button2 = st.button("Process")
+            export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
+            out_file = export_path + str(name) + ".png"
+            cv2.imwrite(out_file, img)
 
-            if data is not None and "pdf" in str(data.type) and button1 and button2:
-                export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
-                out_file = export_path + str(name) + ".png"
-                cv2.imwrite(out_file, img)
-
-                st.text('Done!')
+            st.text('Done!')
 
 
 
