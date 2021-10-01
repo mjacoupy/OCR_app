@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 15:19:57
+# @Last Modified time: 2021-10-01 15:33:00
 
 
 # #######################################################################################################################
@@ -168,24 +168,26 @@ if analysis == "[1] Image Import":
     if data is not None and "pdf" in str(data.type):
         images = convert_from_bytes(data.read())
         int_val = st.slider('Page number', min_value=0, max_value=len(images), value=0, step=1)
+
+        for iPage in images:
+            scale_percent = 20
+            width = int(iPage.shape[1] * scale_percent / 100)
+            height = int(iPage.shape[0] * scale_percent / 100)
+            dim = (width, height)
+
+            # resize image
+            resized = cv2.resize(iPage, dim, interpolation=cv2.INTER_AREA)
+            st.image(resized, use_column_width=True)
+
+
         button1 = st.button("Confirm page number")
 
         if data is not None and "pdf" in str(data.type) and button1:
             page = images[int_val-1]
             img = np.array(page)
 
-            scale_percent = 20
-            width = int(img.shape[1] * scale_percent / 100)
-            height = int(img.shape[0] * scale_percent / 100)
-            dim = (width, height)
-
-            # resize image
-            resized = cv2.resize(img, dim, interpolation=cv2.INTER_AREA)
-
-            st.image(resized, caption='Selected document')
-
             export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
-            out_file = export_path + str(name) + ".png"
+            out_file = export_path + str(name) + "-" + str(int_val) + ".png"
             cv2.imwrite(out_file, img)
 
             st.text('Done!')
