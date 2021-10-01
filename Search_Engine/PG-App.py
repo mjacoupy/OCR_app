@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 10:27:51
+# @Last Modified time: 2021-10-01 10:28:57
 
 
 # #######################################################################################################################
@@ -148,8 +148,8 @@ if analysis == "[1] Image Import":
         with open(out_file, "rb") as image:
             f = image.read()
             b = bytearray(f)
-
-        s3.Bucket(my_bucket).put_object(Key='test_image.png', Body=b)
+        st.text(b.type)
+        #s3.Bucket(my_bucket).put_object(Key='test_image.png', Body=b)
 
 # #######################################################################################################################
 #                                              # === PROCESS NEW FILE === #
