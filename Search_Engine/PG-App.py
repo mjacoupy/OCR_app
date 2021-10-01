@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 14:01:16
+# @Last Modified time: 2021-10-01 14:04:13
 
 
 # #######################################################################################################################
@@ -122,7 +122,9 @@ if analysis == "[1] Image Import":
     data = st.file_uploader("Upload a file", type=["png", "jpg", "jpeg", "pdf"])
     name = st.text_input('File name')
 
-    if data is not None:
+    button = st.button("Process")
+
+    if data is not None and button:
 
         if "pdf" in str(data.type):
             images = pdf2image.convert_from_bytes(data.read())
@@ -130,7 +132,7 @@ if analysis == "[1] Image Import":
             int_val = st.slider('Page number', min_value=0, max_value=len(images), value=0, step=1)
             button1 = st.button("Confirm page number")
 
-            if button1 and data is not None:
+            if button1 and button and data is not None:
                 page = images[int_val-1]
                 img = np.array(page)
 
@@ -160,7 +162,7 @@ if analysis == "[1] Image Import":
             out_file = export_path + str(name) + ".png"
             cv2.imwrite(out_file, image2)
             docs = os.listdir(export_path)
-            st.text('Done!')
+            #st.text('Done!')
 
 # #######################################################################################################################
 #                                              # === PROCESS NEW FILE === #
