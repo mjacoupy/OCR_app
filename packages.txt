@@ -2,3 +2,4 @@ libgl1-mesa-glx
 libglib2.0-0
 tesseract-ocr
 tesseract-ocr-fra
+poppler-utils
