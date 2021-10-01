@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 13:57:48
+# @Last Modified time: 2021-10-01 14:01:16
 
 
 # #######################################################################################################################
@@ -123,15 +123,6 @@ if analysis == "[1] Image Import":
     name = st.text_input('File name')
 
     if data is not None:
-        image = Image.open(data)
-        pil_image = Image.open(data).convert('RGB')
-        open_cv_image = np.array(pil_image)
-        image2 = open_cv_image[:, :, ::-1].copy()
-
-    button = st.button("Process")
-
-
-    if data is not None and button:
 
         if "pdf" in str(data.type):
             images = pdf2image.convert_from_bytes(data.read())
@@ -139,7 +130,7 @@ if analysis == "[1] Image Import":
             int_val = st.slider('Page number', min_value=0, max_value=len(images), value=0, step=1)
             button1 = st.button("Confirm page number")
 
-            if button1 and data is not None and button:
+            if button1 and data is not None:
                 page = images[int_val-1]
                 img = np.array(page)
 
@@ -159,6 +150,12 @@ if analysis == "[1] Image Import":
                 docs = os.listdir(export_path)
 
         else:
+
+            image = Image.open(data)
+            pil_image = Image.open(data).convert('RGB')
+            open_cv_image = np.array(pil_image)
+            image2 = open_cv_image[:, :, ::-1].copy()
+
             export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
             out_file = export_path + str(name) + ".png"
             cv2.imwrite(out_file, image2)
