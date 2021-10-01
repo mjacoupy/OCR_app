@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 11:00:52
+# @Last Modified time: 2021-10-01 11:03:11
 
 
 # #######################################################################################################################
@@ -161,9 +161,6 @@ if analysis == "[2] Image Processing":
     import_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
     docs_repo = os.listdir(import_path)
 
-    st.markdown(docs)
-    st.markdown(docs_repo)
-
     final_list = docs + docs_repo
 
     docs_all = final_list.copy()
@@ -187,7 +184,7 @@ if analysis == "[2] Image Processing":
         for doc in docs_repo:
             select_path = import_path + doc
             st.markdown(select_path)
-            image = read_file(select_path)
+            image = cv2.imread(select_path)
             name = doc.split('.')[0]
             str_text = extract_content_to_txt(image)
             out_file = str(name)+'.txt'
