@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 10:42:19
+# @Last Modified time: 2021-10-01 10:50:02
 
 
 # #######################################################################################################################
@@ -126,6 +126,7 @@ if analysis == "[1] Image Import":
 
 
     data = st.file_uploader("Upload a file", type=["png", "jpg", "jpeg"])
+    name = st.text_input('File name')
 
 
     if data is not None:
@@ -139,7 +140,7 @@ if analysis == "[1] Image Import":
 
     if data is not None and button:
         export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
-        out_file = export_path + "test_image.png"
+        out_file = export_path + name + ".png"
         cv2.imwrite(out_file, image2)
         docs = os.listdir(export_path)
         st.markdown(docs)
