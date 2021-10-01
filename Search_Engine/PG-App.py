@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 10:23:34
+# @Last Modified time: 2021-10-01 10:24:08
 
 
 # #######################################################################################################################
@@ -21,6 +21,7 @@ import pandas as pd
 from SearchEngine_app import SearchEngine
 import re
 import cv2
+import io
 
 # #######################################################################################################################
 #                                              # === S3 AWS === #
