@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 10:32:30
+# @Last Modified time: 2021-10-01 10:34:02
 
 
 # #######################################################################################################################
@@ -147,8 +147,9 @@ if analysis == "[1] Image Import":
 
         img_str = cv2.imencode('.jpg', image2)[1].tostring()
 
+        st.text(img_str)
 
-        s3.Bucket(my_bucket).put_object(Key='test_image.png', Body=img_str)
+        #s3.Bucket(my_bucket).put_object(Key='test_image.png', Body=img_str)
 
 # #######################################################################################################################
 #                                              # === PROCESS NEW FILE === #
