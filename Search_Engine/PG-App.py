@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 11:29:17
+# @Last Modified time: 2021-10-01 11:30:48
 
 
 # #######################################################################################################################
@@ -133,7 +133,8 @@ if analysis == "[1] Image Import":
 
     if data is not None and button:
         export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
-        out_file = export_path + str(name) + ".png"
+        out_file = export_path + 'test.png'
+        # out_file = export_path + str(name) + ".png"
         cv2.imwrite(out_file, image2)
         docs = os.listdir(export_path)
 
