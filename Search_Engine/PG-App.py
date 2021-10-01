@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 09:40:27
+# @Last Modified time: 2021-10-01 09:43:42
 
 
 # #######################################################################################################################
@@ -137,7 +137,7 @@ if analysis == "[1] Image Import":
     button = st.button("Process")
 
     if data is not None and button:
-        export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process")
+        export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
         out_file = export_path + "test_image.png"
         cv2.imwrite(out_file, image2)
 # #######################################################################################################################
@@ -201,8 +201,6 @@ if analysis == "[3] Indexation":
         ix = create_in("se_indexdir", schema)
         writer = ix.writer()
 
-        # filepaths = [os.path.join(txt, i) for i in os.listdir(txt)]
-
         filepaths = []
         for file in my_bucket2.objects.all():
             filepaths.append(file.key)
@@ -219,9 +217,6 @@ if analysis == "[3] Indexation":
                 select_path = bucket_name_txt+"/"+name
                 fp = fs.open(select_path, "rb")
                 text = fp.read().decode('utf-8', 'ignore')
-                # st.markdown(select_path)
-                # st.markdown(name)
-                # st.markdown(text)
                 writer.add_document(title=name, path=select_path, content=text, textdata=text)
                 fp.close()
             except UnicodeDecodeError:
