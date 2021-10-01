@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 11:40:18
+# @Last Modified time: 2021-10-01 11:42:47
 
 
 # #######################################################################################################################
@@ -127,13 +127,21 @@ if analysis == "[1] Image Import":
         pil_image = Image.open(data).convert('RGB')
         open_cv_image = np.array(pil_image)
         image2 = open_cv_image[:, :, ::-1].copy()
-        # st.image(image2, caption='Selected document')
+
+        scale_percent = 20
+        width = int(image2.shape[1] * scale_percent / 100)
+        height = int(image2.shape[0] * scale_percent / 100)
+        dim = (width, height)
+
+        # resize image
+        resized = cv2.resize(image2, dim, interpolation=cv2.INTER_AREA)
+
+        st.image(image2, caption='Selected document')
 
     button = st.button("Process")
 
     if data is not None and button:
         export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
-        #out_file = export_path + 'test.png'
         out_file = export_path + str(name) + ".png"
         cv2.imwrite(out_file, image2)
         docs = os.listdir(export_path)
