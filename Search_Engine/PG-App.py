@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 14:39:14
+# @Last Modified time: 2021-10-01 14:48:30
 
 
 # #######################################################################################################################
@@ -21,7 +21,8 @@ import pandas as pd
 from SearchEngine_app import SearchEngine
 import re
 import cv2
-from pdf2image import convert_from_bytes
+import PyPDF2
+import io
 
 
 # #######################################################################################################################
@@ -166,8 +167,11 @@ if analysis == "[1] Image Import":
     name = st.text_input('File name')
 
     if data is not None:
-        images = convert_from_bytes(data.read())
-        int_val = st.slider('Page number', min_value=0, max_value=len(images), value=0, step=1)
+        reserve_pdf_on_memory = io.BytesIO(data)
+        pdf = PyPDF2.PdfFileReader(reserve_pdf_on_memory)
+        lenght = pdf.getNumPages()
+        st.markdown(str(lenght)+"** page(s)")
+
 
 
 
