@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 15:12:30
+# @Last Modified time: 2021-10-01 15:15:05
 
 
 # #######################################################################################################################
@@ -172,7 +172,6 @@ if analysis == "[1] Image Import":
 
         if data is not None and "pdf" in str(data.type) and button1:
             page = images[int_val-1]
-            st.image(page, use_column_width=True)
             img = np.array(page)
 
             scale_percent = 20
@@ -190,7 +189,7 @@ if analysis == "[1] Image Import":
             if data is not None and "pdf" in str(data.type) and button1 and button2:
                 export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
                 out_file = export_path + str(name) + ".png"
-                cv2.imwrite(out_file, image2)
+                cv2.imwrite(out_file, img)
 
                 st.text('Done!')
 
