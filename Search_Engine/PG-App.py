@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 10:50:02
+# @Last Modified time: 2021-10-01 10:58:59
 
 
 # #######################################################################################################################
@@ -174,6 +174,15 @@ if analysis == "[2] Image Processing":
         st.markdown(docs)
         for doc in docs:
             select_path = bucket_name+"/"+doc
+            st.markdown(select_path)
+            image = read_file(select_path)
+            name = doc.split('.')[0]
+            str_text = extract_content_to_txt(image)
+            out_file = str(name)+'.txt'
+            s3.Object(bucket_name_txt, out_file).put(Body=str_text)
+
+        for doc in docs_repo:
+            select_path = import_path + doc
             st.markdown(select_path)
             image = read_file(select_path)
             name = doc.split('.')[0]
