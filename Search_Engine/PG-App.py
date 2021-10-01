@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 10:24:08
+# @Last Modified time: 2021-10-01 10:26:26
 
 
 # #######################################################################################################################
@@ -139,26 +139,19 @@ if analysis == "[1] Image Import":
 
     if data is not None and button:
         export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
-        out_file = export_path + "test_image.jpg"
+        out_file = export_path + "test_image.png"
         st.markdown(out_file)
         cv2.imwrite(out_file, image2)
         docs = os.listdir(export_path)
         st.markdown(docs)
 
-        # im = cv2.imread(out_file)
-        # is_success, im_buf_arr = cv2.imencode(".jpg", im)
-        # byte_im = im_buf_arr.tobytes()
+        with open(out_file, "rb") as image:
+            f = image.read()
+            b = bytearray(f)
+            #print b[0]
+        st.markdown(b[0])
 
-        # a = byte_im.copy()
-        # st.markdown(a)
-
-        im = Image.open(out_file)
-        im_resize = im.resize((500, 500))
-        buf = io.BytesIO()
-        im_resize.save(buf, format='JPEG')
-        byte_im = buf.getvalue()
-
-        s3.Bucket(my_bucket).put_object(Key='test_image.png', Body=byte_im)
+        # s3.Bucket(my_bucket).put_object(Key='test_image.png', Body=byte_im)
 
 # #######################################################################################################################
 #                                              # === PROCESS NEW FILE === #
