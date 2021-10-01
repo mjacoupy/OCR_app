@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 11:44:15
+# @Last Modified time: 2021-10-01 11:54:06
 
 
 # #######################################################################################################################
@@ -145,6 +145,8 @@ if analysis == "[1] Image Import":
         out_file = export_path + str(name) + ".png"
         cv2.imwrite(out_file, image2)
         docs = os.listdir(export_path)
+
+        st.text('Done!')
 
 
 # #######################################################################################################################
