@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 11:42:47
+# @Last Modified time: 2021-10-01 11:43:14
 
 
 # #######################################################################################################################
@@ -136,7 +136,7 @@ if analysis == "[1] Image Import":
         # resize image
         resized = cv2.resize(image2, dim, interpolation=cv2.INTER_AREA)
 
-        st.image(image2, caption='Selected document')
+        st.image(resized, caption='Selected document')
 
     button = st.button("Process")
 
