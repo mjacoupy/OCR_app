@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 10:58:59
+# @Last Modified time: 2021-10-01 11:00:52
 
 
 # #######################################################################################################################
@@ -160,6 +160,9 @@ if analysis == "[2] Image Processing":
 
     import_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
     docs_repo = os.listdir(import_path)
+
+    st.markdown(docs)
+    st.markdown(docs_repo)
 
     final_list = docs + docs_repo
 
