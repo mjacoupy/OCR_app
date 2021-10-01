@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 11:15:56
+# @Last Modified time: 2021-10-01 11:22:01
 
 
 # #######################################################################################################################
@@ -117,12 +117,6 @@ if analysis == "[1] Image Import":
 
     side_bar()
 
-    # path = str(st.text_input('Write path'))
-    # button = st.button("Process")
-
-    # if path is not None and button:
-    #     my_bucket.download_file('test.jpeg', path)
-
 
     data = st.file_uploader("Upload a file", type=["png", "jpg", "jpeg"])
     name = st.text_input('File name')
@@ -133,7 +127,7 @@ if analysis == "[1] Image Import":
         pil_image = Image.open(data).convert('RGB')
         open_cv_image = np.array(pil_image)
         image2 = open_cv_image[:, :, ::-1].copy()
-        st.image(image2, caption='Selected document')
+        # st.image(image2, caption='Selected document')
 
     button = st.button("Process")
 
@@ -142,7 +136,10 @@ if analysis == "[1] Image Import":
         out_file = export_path + name + ".png"
         cv2.imwrite(out_file, image2)
         docs = os.listdir(export_path)
-        st.markdown(docs)
+        try:
+            docs.remove('tmp')
+        except ValueError:
+            pass
 
 
 # #######################################################################################################################
@@ -157,99 +154,103 @@ if analysis == "[2] Image Processing":
     for file in my_bucket.objects.all():
         docs_s3.append(file.key)
 
+    # try:
+    import_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
+    docs_repo = os.listdir(import_path)
     try:
-        import_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
-        docs_repo = os.listdir(import_path)
+        docs_repo.remove('tmp')
+    except ValueError:
+        pass
 
-        final_list = docs_s3 + docs_repo
+    final_list = docs_s3 + docs_repo
 
-        docs_all = final_list.copy()
-        docs_all.append('All')
-
-
-        l = len(docs_all)-1
-        select = st.selectbox('Which document', docs_all, index=l)
-        button = st.button('OCR analysis')
-
-        if select == 'All' and button:
-            for doc in docs_s3:
-                select_path = bucket_name+"/"+doc
-                st.markdown(select_path)
-                image = read_file(select_path)
-                name = doc.split('.')[0]
-                str_text = extract_content_to_txt(image)
-                out_file = str(name)+'.txt'
-                s3.Object(bucket_name_txt, out_file).put(Body=str_text)
-
-            for doc in docs_repo:
-                select_path = import_path + doc
-                st.markdown(select_path)
-                image = cv2.imread(select_path)
-                name = doc.split('.')[0]
-                str_text = extract_content_to_txt(image)
-                out_file = str(name)+'.txt'
-                s3.Object(bucket_name_txt, out_file).put(Body=str_text)
-
-        elif select != 'All' and button:
-            if select in docs_s3:
-                select_path = bucket_name+"/"+select
-                st.markdown(select_path)
-                image = read_file(select_path)
-                name = select.split('.')[0]
-                st.image(image, caption=name)
-                str_text = extract_content_to_txt(image)
-                out_file = str(name)+'.txt'
-                s3.Object(bucket_name_txt, out_file).put(Body=str_text)
-
-            elif select in docs_repo:
-                select_path = import_path + select
-                st.markdown(select_path)
-                image = cv2.imread(select_path)
-                name = doc.split('.')[0]
-                str_text = extract_content_to_txt(image)
-                out_file = str(name)+'.txt'
-                s3.Object(bucket_name_txt, out_file).put(Body=str_text)
+    docs_all = final_list.copy()
+    docs_all.append('All')
 
 
+    l = len(docs_all)-1
+    select = st.selectbox('Which document', docs_all, index=l)
+    button = st.button('OCR analysis')
 
-    except OSError:
-        docs_all = docs_s3.copy()
-        docs_all.append('All')
+    if select == 'All' and button:
+        for doc in docs_s3:
+            select_path = bucket_name+"/"+doc
+            st.markdown(select_path)
+            image = read_file(select_path)
+            name = doc.split('.')[0]
+            str_text = extract_content_to_txt(image)
+            out_file = str(name)+'.txt'
+            s3.Object(bucket_name_txt, out_file).put(Body=str_text)
+
+        for doc in docs_repo:
+            select_path = import_path + doc
+            st.markdown(select_path)
+            image = cv2.imread(select_path)
+            name = doc.split('.')[0]
+            str_text = extract_content_to_txt(image)
+            out_file = str(name)+'.txt'
+            s3.Object(bucket_name_txt, out_file).put(Body=str_text)
+
+    elif select != 'All' and button:
+        if select in docs_s3:
+            select_path = bucket_name+"/"+select
+            st.markdown(select_path)
+            image = read_file(select_path)
+            name = select.split('.')[0]
+            st.image(image, caption=name)
+            str_text = extract_content_to_txt(image)
+            out_file = str(name)+'.txt'
+            s3.Object(bucket_name_txt, out_file).put(Body=str_text)
+
+        elif select in docs_repo:
+            select_path = import_path + select
+            st.markdown(select_path)
+            image = cv2.imread(select_path)
+            name = doc.split('.')[0]
+            str_text = extract_content_to_txt(image)
+            out_file = str(name)+'.txt'
+            s3.Object(bucket_name_txt, out_file).put(Body=str_text)
 
 
-        l = len(docs_all)-1
-        select = st.selectbox('Which document', docs_all, index=l)
-        button = st.button('OCR analysis')
 
-        if select == 'All' and button:
-            for doc in docs_s3:
-                select_path = bucket_name+"/"+doc
-                st.markdown(select_path)
-                image = read_file(select_path)
-                name = doc.split('.')[0]
-                str_text = extract_content_to_txt(image)
-                out_file = str(name)+'.txt'
-                s3.Object(bucket_name_txt, out_file).put(Body=str_text)
+    # except OSError:
+    #     docs_all = docs_s3.copy()
+    #     docs_all.append('All')
 
-        elif select != 'All' and button:
-            if select in docs_s3:
-                select_path = bucket_name+"/"+select
-                st.markdown(select_path)
-                image = read_file(select_path)
-                name = select.split('.')[0]
-                st.image(image, caption=name)
-                str_text = extract_content_to_txt(image)
-                out_file = str(name)+'.txt'
-                s3.Object(bucket_name_txt, out_file).put(Body=str_text)
 
-            elif select in docs_repo:
-                select_path = import_path + select
-                st.markdown(select_path)
-                image = cv2.imread(select_path)
-                name = doc.split('.')[0]
-                str_text = extract_content_to_txt(image)
-                out_file = str(name)+'.txt'
-                s3.Object(bucket_name_txt, out_file).put(Body=str_text)
+    #     l = len(docs_all)-1
+    #     select = st.selectbox('Which document', docs_all, index=l)
+    #     button = st.button('OCR analysis')
+
+    #     if select == 'All' and button:
+    #         for doc in docs_s3:
+    #             select_path = bucket_name+"/"+doc
+    #             st.markdown(select_path)
+    #             image = read_file(select_path)
+    #             name = doc.split('.')[0]
+    #             str_text = extract_content_to_txt(image)
+    #             out_file = str(name)+'.txt'
+    #             s3.Object(bucket_name_txt, out_file).put(Body=str_text)
+
+    #     elif select != 'All' and button:
+    #         if select in docs_s3:
+    #             select_path = bucket_name+"/"+select
+    #             st.markdown(select_path)
+    #             image = read_file(select_path)
+    #             name = select.split('.')[0]
+    #             st.image(image, caption=name)
+    #             str_text = extract_content_to_txt(image)
+    #             out_file = str(name)+'.txt'
+    #             s3.Object(bucket_name_txt, out_file).put(Body=str_text)
+
+    #         elif select in docs_repo:
+    #             select_path = import_path + select
+    #             st.markdown(select_path)
+    #             image = cv2.imread(select_path)
+    #             name = doc.split('.')[0]
+    #             str_text = extract_content_to_txt(image)
+    #             out_file = str(name)+'.txt'
+    #             s3.Object(bucket_name_txt, out_file).put(Body=str_text)
 
 ##########################################################################
 #                                              # === INDEXER === #
