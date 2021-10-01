@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 15:35:13
+# @Last Modified time: 2021-10-01 15:38:00
 
 
 # #######################################################################################################################
@@ -171,7 +171,7 @@ if analysis == "[1] Image Import":
 
         for iPage in images:
             img = np.array(iPage)
-            scale_percent = 20
+            scale_percent = 5
             width = int(img.shape[1] * scale_percent / 100)
             height = int(img.shape[0] * scale_percent / 100)
             dim = (width, height)
