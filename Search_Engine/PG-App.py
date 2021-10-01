@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 10:34:02
+# @Last Modified time: 2021-10-01 10:34:39
 
 
 # #######################################################################################################################
@@ -145,7 +145,7 @@ if analysis == "[1] Image Import":
         docs = os.listdir(export_path)
         st.markdown(docs)
 
-        img_str = cv2.imencode('.jpg', image2)[1].tostring()
+        img_str = cv2.imencode('.png', image2)[1].tostring()
 
         st.text(img_str)
 
