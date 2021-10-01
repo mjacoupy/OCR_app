@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 14:30:48
+# @Last Modified time: 2021-10-01 14:39:14
 
 
 # #######################################################################################################################
@@ -21,6 +21,7 @@ import pandas as pd
 from SearchEngine_app import SearchEngine
 import re
 import cv2
+from pdf2image import convert_from_bytes
 
 
 # #######################################################################################################################
@@ -113,7 +114,7 @@ analysis = st.sidebar.selectbox('', ['[1] Image Import', '[2] Image Processing',
 # #######################################################################################################################
 #                                              # === IMPORT NEW FILE === #
 # #######################################################################################################################
-if analysis == "[1] Image Import":
+if analysis == "[1] Image Import xxxxxxx":
     st.header('Image Import')
 
     side_bar()
@@ -151,6 +152,25 @@ if analysis == "[1] Image Import":
         docs = os.listdir(export_path)
 
         st.text('Done!')
+
+
+# #######################################################################################################################
+#                                              # === IMPORT NEW FILE PDF === #
+# #######################################################################################################################
+if analysis == "[1] Image Import":
+    st.header('Image Import')
+
+    side_bar()
+
+    data = st.file_uploader("Upload a file", type=["pdf"])
+    name = st.text_input('File name')
+
+    if data is not None:
+        images = convert_from_bytes(data.read())
+        int_val = st.slider('Page number', min_value=0, max_value=len(images), value=0, step=1)
+
+
+
 
 
 # #######################################################################################################################
