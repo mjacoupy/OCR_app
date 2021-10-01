@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 11:25:21
+# @Last Modified time: 2021-10-01 11:27:21
 
 
 # #######################################################################################################################
@@ -136,14 +136,6 @@ if analysis == "[1] Image Import":
         out_file = export_path + name + ".png"
         cv2.imwrite(out_file, image2)
         docs = os.listdir(export_path)
-        try:
-            docs.remove('tmp.rtf')
-        except ValueError:
-            pass
-        try:
-            docs.remove('.DS_Store')
-        except ValueError:
-            pass
 
 
 # #######################################################################################################################
@@ -161,14 +153,6 @@ if analysis == "[2] Image Processing":
     # try:
     import_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
     docs_repo = os.listdir(import_path)
-    try:
-        docs_repo.remove('tmp.rtf')
-    except ValueError:
-        pass
-    try:
-        docs_repo.remove('.DS_Store')
-    except ValueError:
-        pass
 
     final_list = docs_s3 + docs_repo
 
