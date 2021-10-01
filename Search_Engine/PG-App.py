@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 09:43:42
+# @Last Modified time: 2021-10-01 09:51:25
 
 
 # #######################################################################################################################
@@ -139,6 +139,7 @@ if analysis == "[1] Image Import":
     if data is not None and button:
         export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
         out_file = export_path + "test_image.png"
+        st.markdown(out_file)
         cv2.imwrite(out_file, image2)
 # #######################################################################################################################
 #                                              # === PROCESS NEW FILE === #
