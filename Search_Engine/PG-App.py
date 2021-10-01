@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-09-30 18:51:54
+# @Last Modified time: 2021-10-01 09:35:43
 
 
 # #######################################################################################################################
@@ -20,6 +20,7 @@ from whoosh.fields import Schema, TEXT, ID
 import pandas as pd
 from SearchEngine_app import SearchEngine
 import re
+import cv2
 
 # #######################################################################################################################
 #                                              # === S3 AWS === #
@@ -116,35 +117,29 @@ if analysis == "[1] Image Import":
 
     side_bar()
 
-    path = str(st.text_input('Write path'))
-    button = st.button("Process")
-
-    if path is not None and button:
-        my_bucket.download_file('test.jpeg', path)
-
-
-    # data = st.file_uploader("Upload a file", type=["png", "jpg", "jpeg"])
-
-
-    # if data is not None:
-    #     image = Image.open(data)
-    #     pil_image = Image.open(data).convert('RGB')
-    #     open_cv_image = np.array(pil_image)
-    #     image2 = open_cv_image[:, :, ::-1].copy()
-    #     st.image(image2, caption='Selected document')
-
+    # path = str(st.text_input('Write path'))
     # button = st.button("Process")
-
-    # if data is not None and button:
-
-    # path = st.text_input('Write path')
-    # button = st.button("Process")
-
 
     # if path is not None and button:
+    #     my_bucket.download_file('test.jpeg', path)
 
-    #     client = boto3.client('s3')
-    #     client.upload_file(str(path), my_bucket, 'image_0.jpg')
+
+    data = st.file_uploader("Upload a file", type=["png", "jpg", "jpeg"])
+
+
+    if data is not None:
+        image = Image.open(data)
+        pil_image = Image.open(data).convert('RGB')
+        open_cv_image = np.array(pil_image)
+        image2 = open_cv_image[:, :, ::-1].copy()
+        st.image(image2, caption='Selected document')
+
+    button = st.button("Process")
+
+    if data is not None and button:
+        export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_export")
+        out_file = export_path + "test_image.png"
+        cv2.imwrite(out_file, image2)
 # #######################################################################################################################
 #                                              # === PROCESS NEW FILE === #
 # #######################################################################################################################
