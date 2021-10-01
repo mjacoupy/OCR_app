@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 11:24:34
+# @Last Modified time: 2021-10-01 11:25:21
 
 
 # #######################################################################################################################
@@ -166,7 +166,7 @@ if analysis == "[2] Image Processing":
     except ValueError:
         pass
     try:
-        docs.remove('.DS_Store')
+        docs_repo.remove('.DS_Store')
     except ValueError:
         pass
 
