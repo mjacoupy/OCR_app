@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 15:05:01
+# @Last Modified time: 2021-10-01 15:12:30
 
 
 # #######################################################################################################################
@@ -162,14 +162,67 @@ if analysis == "[1] Image Import":
 
     side_bar()
 
-    data = st.file_uploader("Upload a file", type=["pdf"])
+    data = st.file_uploader("Upload a file", type=["png", "jpg", "jpeg", "pdf"])
     name = st.text_input('File name')
 
-    if data is not None:
+    if data is not None and "pdf" in str(data.type):
         images = convert_from_bytes(data.read())
         int_val = st.slider('Page number', min_value=0, max_value=len(images), value=0, step=1)
+        button1 = st.button("Confirm page number")
+
+        if data is not None and "pdf" in str(data.type) and button1:
+            page = images[int_val-1]
+            st.image(page, use_column_width=True)
+            img = np.array(page)
+
+            scale_percent = 20
+            width = int(img.shape[1] * scale_percent / 100)
+            height = int(img.shape[0] * scale_percent / 100)
+            dim = (width, height)
+
+            # resize image
+            resized = cv2.resize(img, dim, interpolation=cv2.INTER_AREA)
+
+            st.image(resized, caption='Selected document')
+
+            button2 = st.button("Process")
+
+            if data is not None and "pdf" in str(data.type) and button1 and button2:
+                export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
+                out_file = export_path + str(name) + ".png"
+                cv2.imwrite(out_file, image2)
+
+                st.text('Done!')
 
 
+
+    elif data is not None and "pdf" not in str(data.type):
+
+        image = Image.open(data)
+        pil_image = Image.open(data).convert('RGB')
+        open_cv_image = np.array(pil_image)
+        image2 = open_cv_image[:, :, ::-1].copy()
+
+        scale_percent = 20
+        width = int(image2.shape[1] * scale_percent / 100)
+        height = int(image2.shape[0] * scale_percent / 100)
+        dim = (width, height)
+
+        # resize image
+        resized = cv2.resize(image2, dim, interpolation=cv2.INTER_AREA)
+
+        st.image(resized, caption='Selected document')
+
+        button = st.button("Process")
+
+
+        if data is not None and button:
+
+            export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
+            out_file = export_path + str(name) + ".png"
+            cv2.imwrite(out_file, image2)
+
+            st.text('Done!')
 
 
 
