@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 09:35:43
+# @Last Modified time: 2021-10-01 09:40:27
 
 
 # #######################################################################################################################
@@ -137,7 +137,7 @@ if analysis == "[1] Image Import":
     button = st.button("Process")
 
     if data is not None and button:
-        export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_export")
+        export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process")
         out_file = export_path + "test_image.png"
         cv2.imwrite(out_file, image2)
 # #######################################################################################################################
