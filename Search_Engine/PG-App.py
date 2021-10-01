@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 11:03:11
+# @Last Modified time: 2021-10-01 11:15:56
 
 
 # #######################################################################################################################
@@ -21,7 +21,6 @@ import pandas as pd
 from SearchEngine_app import SearchEngine
 import re
 import cv2
-import io
 
 # #######################################################################################################################
 #                                              # === S3 AWS === #
@@ -154,50 +153,103 @@ if analysis == "[2] Image Processing":
 
     side_bar()
 
-    docs = []
+    docs_s3 = []
     for file in my_bucket.objects.all():
-        docs.append(file.key)
+        docs_s3.append(file.key)
 
-    import_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
-    docs_repo = os.listdir(import_path)
+    try:
+        import_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
+        docs_repo = os.listdir(import_path)
 
-    final_list = docs + docs_repo
+        final_list = docs_s3 + docs_repo
 
-    docs_all = final_list.copy()
-    docs_all.append('All')
+        docs_all = final_list.copy()
+        docs_all.append('All')
 
-    l = len(docs_all)-1
-    select = st.selectbox('Which document', docs_all, index=l)
-    button = st.button('OCR analysis')
 
-    if select == 'All' and button:
-        st.markdown(docs)
-        for doc in docs:
-            select_path = bucket_name+"/"+doc
-            st.markdown(select_path)
-            image = read_file(select_path)
-            name = doc.split('.')[0]
-            str_text = extract_content_to_txt(image)
-            out_file = str(name)+'.txt'
-            s3.Object(bucket_name_txt, out_file).put(Body=str_text)
+        l = len(docs_all)-1
+        select = st.selectbox('Which document', docs_all, index=l)
+        button = st.button('OCR analysis')
 
-        for doc in docs_repo:
-            select_path = import_path + doc
-            st.markdown(select_path)
-            image = cv2.imread(select_path)
-            name = doc.split('.')[0]
-            str_text = extract_content_to_txt(image)
-            out_file = str(name)+'.txt'
-            s3.Object(bucket_name_txt, out_file).put(Body=str_text)
+        if select == 'All' and button:
+            for doc in docs_s3:
+                select_path = bucket_name+"/"+doc
+                st.markdown(select_path)
+                image = read_file(select_path)
+                name = doc.split('.')[0]
+                str_text = extract_content_to_txt(image)
+                out_file = str(name)+'.txt'
+                s3.Object(bucket_name_txt, out_file).put(Body=str_text)
 
-    elif select != 'All' and button:
-        select_path = bucket_name+"/"+select
-        image = read_file(select_path)
-        name = select.split('.')[0]
-        st.image(image, caption=name)
-        str_text = extract_content_to_txt(image)
-        out_file = str(name)+'.txt'
-        s3.Object(bucket_name_txt, out_file).put(Body=str_text)
+            for doc in docs_repo:
+                select_path = import_path + doc
+                st.markdown(select_path)
+                image = cv2.imread(select_path)
+                name = doc.split('.')[0]
+                str_text = extract_content_to_txt(image)
+                out_file = str(name)+'.txt'
+                s3.Object(bucket_name_txt, out_file).put(Body=str_text)
+
+        elif select != 'All' and button:
+            if select in docs_s3:
+                select_path = bucket_name+"/"+select
+                st.markdown(select_path)
+                image = read_file(select_path)
+                name = select.split('.')[0]
+                st.image(image, caption=name)
+                str_text = extract_content_to_txt(image)
+                out_file = str(name)+'.txt'
+                s3.Object(bucket_name_txt, out_file).put(Body=str_text)
+
+            elif select in docs_repo:
+                select_path = import_path + select
+                st.markdown(select_path)
+                image = cv2.imread(select_path)
+                name = doc.split('.')[0]
+                str_text = extract_content_to_txt(image)
+                out_file = str(name)+'.txt'
+                s3.Object(bucket_name_txt, out_file).put(Body=str_text)
+
+
+
+    except OSError:
+        docs_all = docs_s3.copy()
+        docs_all.append('All')
+
+
+        l = len(docs_all)-1
+        select = st.selectbox('Which document', docs_all, index=l)
+        button = st.button('OCR analysis')
+
+        if select == 'All' and button:
+            for doc in docs_s3:
+                select_path = bucket_name+"/"+doc
+                st.markdown(select_path)
+                image = read_file(select_path)
+                name = doc.split('.')[0]
+                str_text = extract_content_to_txt(image)
+                out_file = str(name)+'.txt'
+                s3.Object(bucket_name_txt, out_file).put(Body=str_text)
+
+        elif select != 'All' and button:
+            if select in docs_s3:
+                select_path = bucket_name+"/"+select
+                st.markdown(select_path)
+                image = read_file(select_path)
+                name = select.split('.')[0]
+                st.image(image, caption=name)
+                str_text = extract_content_to_txt(image)
+                out_file = str(name)+'.txt'
+                s3.Object(bucket_name_txt, out_file).put(Body=str_text)
+
+            elif select in docs_repo:
+                select_path = import_path + select
+                st.markdown(select_path)
+                image = cv2.imread(select_path)
+                name = doc.split('.')[0]
+                str_text = extract_content_to_txt(image)
+                out_file = str(name)+'.txt'
+                s3.Object(bucket_name_txt, out_file).put(Body=str_text)
 
 ##########################################################################
 #                                              # === INDEXER === #
