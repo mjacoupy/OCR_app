@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-04 10:23:56
+# @Last Modified time: 2021-10-04 10:26:45
 
 
 # #######################################################################################################################
@@ -89,6 +89,11 @@ def side_bar():
     st.sidebar.markdown("""---""")
     st.sidebar.image(image1, width=50)
     st.sidebar.markdown(end, unsafe_allow_html=True)
+
+    st.sidebar.markdown('1. Add a new file (image or PDF')
+    st.sidebar.markdown('2. Process imported files')
+    st.sidebar.markdown('3. Create indexer (necessary before 4.')
+    st.sidebar.markdown('4. Search Engine')
 
 
 def my_split(s, seps):
@@ -346,13 +351,6 @@ if analysis == "[4] Search Engine":
     lang = None
     kw = doc = positive = score = None
 
-# ##################################### == SIDE BAR == ##########################################################
-    # # Create header and subheader
-    # st.sidebar.markdown('1. Write your text')
-    # st.sidebar.markdown('2. Select the number of response')
-    # st.sidebar.markdown('3. Select in which language the keys word will be translated')
-    # st.sidebar.markdown('4. Choose the parameters you want to display')
-    # st.sidebar.markdown('5. Click on search')
     side_bar()
 
 # ##################################### == PART 1 == ##########################################################
