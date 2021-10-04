@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-04 10:30:58
+# @Last Modified time: 2021-10-04 10:32:06
 
 
 # #######################################################################################################################
@@ -260,8 +260,8 @@ if analysis == "[2] Image Processing":
 
         for doc in docs_s3:
             select_path = bucket_name+"/"+doc
-            st.markdown(select_path)
-            image = read_file(doc)
+            st.markdown(doc)
+            image = read_file(select_path)
             name = doc.split('.')[0]
             str_text = extract_content_to_txt(image)
             out_file = str(name)+'.txt'
@@ -269,8 +269,8 @@ if analysis == "[2] Image Processing":
 
         for doc in docs_repo:
             select_path = import_path + doc
-            st.markdown(select_path)
-            image = cv2.imread(doc)
+            st.markdown(doc)
+            image = cv2.imread(select_path)
             name = doc.split('.')[0]
             str_text = extract_content_to_txt(image)
             out_file = str(name)+'.txt'
