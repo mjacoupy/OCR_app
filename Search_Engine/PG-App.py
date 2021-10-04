@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-01 15:38:00
+# @Last Modified time: 2021-10-04 10:23:56
 
 
 # #######################################################################################################################
@@ -25,7 +25,7 @@ from pdf2image import convert_from_bytes
 
 
 # #######################################################################################################################
-#                                              # === S3 AWS === #
+#                                              # === S3 AWS CONNEXION === #
 # #######################################################################################################################
 fs = s3fs.S3FileSystem(anon=False)
 bucket_name = "ocrplus-app-mja"
@@ -111,51 +111,51 @@ st.sidebar.image(image2, width=200)
 
 analysis = st.sidebar.selectbox('', ['[1] Image Import', '[2] Image Processing', '[3] Indexation', '[4] Search Engine'])
 
+# # #######################################################################################################################
+# #                                              # === IMPORT NEW FILE (OLD) === #
+# # #######################################################################################################################
+# if analysis == "[1] Image Importxxxx":
+#     st.header('Image Import')
+
+#     side_bar()
+
+
+#     data = st.file_uploader("Upload a file", type=["png", "jpg", "jpeg"])
+#     name = st.text_input('File name')
+
+
+#     if data is not None:
+
+#         image = Image.open(data)
+#         pil_image = Image.open(data).convert('RGB')
+#         open_cv_image = np.array(pil_image)
+#         image2 = open_cv_image[:, :, ::-1].copy()
+
+#         scale_percent = 20
+#         width = int(image2.shape[1] * scale_percent / 100)
+#         height = int(image2.shape[0] * scale_percent / 100)
+#         dim = (width, height)
+
+#         # resize image
+#         resized = cv2.resize(image2, dim, interpolation=cv2.INTER_AREA)
+
+#         st.image(resized, caption='Selected document')
+
+#     button = st.button("Process")
+
+
+#     if data is not None and button:
+
+#         export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
+#         out_file = export_path + str(name) + ".png"
+#         cv2.imwrite(out_file, image2)
+#         docs = os.listdir(export_path)
+
+#         st.text('Done!')
+
+
 # #######################################################################################################################
 #                                              # === IMPORT NEW FILE === #
-# #######################################################################################################################
-if analysis == "[1] Image Importxxxx":
-    st.header('Image Import')
-
-    side_bar()
-
-
-    data = st.file_uploader("Upload a file", type=["png", "jpg", "jpeg"])
-    name = st.text_input('File name')
-
-
-    if data is not None:
-
-        image = Image.open(data)
-        pil_image = Image.open(data).convert('RGB')
-        open_cv_image = np.array(pil_image)
-        image2 = open_cv_image[:, :, ::-1].copy()
-
-        scale_percent = 20
-        width = int(image2.shape[1] * scale_percent / 100)
-        height = int(image2.shape[0] * scale_percent / 100)
-        dim = (width, height)
-
-        # resize image
-        resized = cv2.resize(image2, dim, interpolation=cv2.INTER_AREA)
-
-        st.image(resized, caption='Selected document')
-
-    button = st.button("Process")
-
-
-    if data is not None and button:
-
-        export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
-        out_file = export_path + str(name) + ".png"
-        cv2.imwrite(out_file, image2)
-        docs = os.listdir(export_path)
-
-        st.text('Done!')
-
-
-# #######################################################################################################################
-#                                              # === IMPORT NEW FILE PDF === #
 # #######################################################################################################################
 if analysis == "[1] Image Import":
     st.header('Image Import')
@@ -191,9 +191,6 @@ if analysis == "[1] Image Import":
             out_file = export_path + str(name) + "-" + str(int_val) + ".png"
             cv2.imwrite(out_file, img)
 
-            st.text('Done!')
-
-
 
     elif data is not None and "pdf" not in str(data.type):
 
@@ -221,12 +218,9 @@ if analysis == "[1] Image Import":
             out_file = export_path + str(name) + ".png"
             cv2.imwrite(out_file, image2)
 
-            st.text('Done!')
-
-
 
 # #######################################################################################################################
-#                                              # === PROCESS NEW FILE === #
+#                                              # === PROCESS NEW FILE(S) === #
 # #######################################################################################################################
 if analysis == "[2] Image Processing":
     st.header('Image Processing')
@@ -293,9 +287,7 @@ if analysis == "[2] Image Processing":
             out_file = str(name)+'.txt'
             s3.Object(bucket_name_txt, out_file).put(Body=str_text)
 
-    st.text('Done!')
-
-##########################################################################
+#########################################################################################################################
 #                                              # === INDEXER === #
 # #######################################################################################################################
 if analysis == "[3] Indexation":
@@ -355,12 +347,12 @@ if analysis == "[4] Search Engine":
     kw = doc = positive = score = None
 
 # ##################################### == SIDE BAR == ##########################################################
-    # Create header and subheader
-    st.sidebar.markdown('1. Write your text')
-    st.sidebar.markdown('2. Select the number of response')
-    st.sidebar.markdown('3. Select in which language the keys word will be translated')
-    st.sidebar.markdown('4. Choose the parameters you want to display')
-    st.sidebar.markdown('5. Click on search')
+    # # Create header and subheader
+    # st.sidebar.markdown('1. Write your text')
+    # st.sidebar.markdown('2. Select the number of response')
+    # st.sidebar.markdown('3. Select in which language the keys word will be translated')
+    # st.sidebar.markdown('4. Choose the parameters you want to display')
+    # st.sidebar.markdown('5. Click on search')
     side_bar()
 
 # ##################################### == PART 1 == ##########################################################
@@ -515,3 +507,11 @@ if analysis == "[4] Search Engine":
                 except AttributeError:
                     pass
                 st.markdown("""---""")
+
+#########################################################################################################################
+#########################################################################################################################
+
+#                                              # === END OF FILE === #
+
+#########################################################################################################################
+# #######################################################################################################################
