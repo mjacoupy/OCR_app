@@ -158,11 +158,11 @@ showPyplotGlobalUse = true
 
 # Name of the AWS S3 bucket to save apps.
 # Default: (unset)
-# bucket = ocrplus-ptc
+bucket = ocrplus-ptc
 
 # URL root for external view of Streamlit apps.
 # Default: (unset)
-# url =
+#url =
 
 # Access key to write to the S3 bucket.
 # Leave unset if you want to use an AWS profile.
@@ -181,12 +181,12 @@ keyPrefix = ""
 
 # AWS region where the bucket is located, e.g. "us-west-2".
 # Default: (unset)
-# region = eu-west-3
+region = eu-west-3
 
 # AWS credentials profile to use.
 # Leave unset to use your default profile.
 # Default: (unset)
-# profile =
+#profile =
 
 
 [theme]
