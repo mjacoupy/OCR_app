@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-04 10:27:25
+# @Last Modified time: 2021-10-04 10:27:53
 
 
 # #######################################################################################################################
@@ -89,9 +89,9 @@ def side_bar():
 
     st.sidebar.markdown("""---""")
 
-    st.sidebar.markdown('1. Add a new file (image or PDF')
+    st.sidebar.markdown('1. Add a new file (image or PDF)')
     st.sidebar.markdown('2. Process imported files')
-    st.sidebar.markdown('3. Create indexer (necessary before 4.')
+    st.sidebar.markdown('3. Create indexer (necessary before 4.)')
     st.sidebar.markdown('4. Search Engine')
 
     st.sidebar.markdown("""---""")
