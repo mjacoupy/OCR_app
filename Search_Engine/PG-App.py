@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-04 10:26:45
+# @Last Modified time: 2021-10-04 10:27:25
 
 
 # #######################################################################################################################
@@ -86,14 +86,18 @@ def extract_content_to_txt(image):
 def side_bar():
     """..."""
     end = '<p style="font-family:Avenir; font-weight:bold; color:#FCBA28; font-size:12px; ">©2021 Positive Thinking Company et/ou ses affiliés. Tous droits réservés. Produit par le PTC Tech Lab.</p>'
+
     st.sidebar.markdown("""---""")
-    st.sidebar.image(image1, width=50)
-    st.sidebar.markdown(end, unsafe_allow_html=True)
 
     st.sidebar.markdown('1. Add a new file (image or PDF')
     st.sidebar.markdown('2. Process imported files')
     st.sidebar.markdown('3. Create indexer (necessary before 4.')
     st.sidebar.markdown('4. Search Engine')
+
+    st.sidebar.markdown("""---""")
+
+    st.sidebar.image(image1, width=50)
+    st.sidebar.markdown(end, unsafe_allow_html=True)
 
 
 def my_split(s, seps):
