@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-04 10:32:06
+# @Last Modified time: 2021-10-04 10:32:59
 
 
 # #######################################################################################################################
@@ -304,7 +304,7 @@ if analysis == "[3] Indexation":
 
     side_bar()
 
-    button = st.button('Run')
+    button = st.button('Create')
 
     if button:
 
@@ -320,8 +320,6 @@ if analysis == "[3] Indexation":
         filepaths = []
         for file in my_bucket2.objects.all():
             filepaths.append(file.key)
-
-        st.markdown(filepaths)
 
         for name, percent in zip(filepaths, range(len(filepaths))):
 
