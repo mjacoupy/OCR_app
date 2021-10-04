@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-04 10:27:53
+# @Last Modified time: 2021-10-04 10:30:58
 
 
 # #######################################################################################################################
@@ -261,7 +261,7 @@ if analysis == "[2] Image Processing":
         for doc in docs_s3:
             select_path = bucket_name+"/"+doc
             st.markdown(select_path)
-            image = read_file(select_path)
+            image = read_file(doc)
             name = doc.split('.')[0]
             str_text = extract_content_to_txt(image)
             out_file = str(name)+'.txt'
@@ -270,7 +270,7 @@ if analysis == "[2] Image Processing":
         for doc in docs_repo:
             select_path = import_path + doc
             st.markdown(select_path)
-            image = cv2.imread(select_path)
+            image = cv2.imread(doc)
             name = doc.split('.')[0]
             str_text = extract_content_to_txt(image)
             out_file = str(name)+'.txt'
@@ -279,7 +279,7 @@ if analysis == "[2] Image Processing":
     elif select != 'All' and button:
         if select in docs_s3:
             select_path = bucket_name+"/"+select
-            st.markdown(select_path)
+            st.markdown(select)
             image = read_file(select_path)
             name = select.split('.')[0]
             st.image(image, caption=name)
@@ -289,7 +289,7 @@ if analysis == "[2] Image Processing":
 
         elif select in docs_repo:
             select_path = import_path + select
-            st.markdown(select_path)
+            st.markdown(select)
             image = cv2.imread(select_path)
             name = select.split('.')[0]
             str_text = extract_content_to_txt(image)
