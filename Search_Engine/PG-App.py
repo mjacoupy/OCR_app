@@ -91,8 +91,8 @@ def side_bar():
 
     st.sidebar.markdown('1. Add a new file (image or PDF)')
     st.sidebar.markdown('2. Process imported files')
-    st.sidebar.markdown('3. Create indexer (necessary before 4.)')
-    st.sidebar.markdown('4. Search Engine')
+    #st.sidebar.markdown('3. Create indexer (necessary before 4.)')
+    st.sidebar.markdown('3. Search Engine')
 
     st.sidebar.markdown("""---""")
 
