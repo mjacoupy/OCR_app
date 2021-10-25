@@ -88,9 +88,9 @@ def side_bar():
 
     st.sidebar.markdown("""---""")
 
-    st.sidebar.markdown('1. Image Import : Add a new file (image or PDF)')
-    st.sidebar.markdown('2. Image Processing : Extract content of imported files')
-    st.sidebar.markdown('3. Search Engine')
+    st.sidebar.markdown('1. **Image Import :** Add a new file (image or PDF)')
+    st.sidebar.markdown('2. **Image Processing :** Extract content of imported files')
+    st.sidebar.markdown('3. **Search Engine**')
 
     st.sidebar.markdown("""---""")
 
