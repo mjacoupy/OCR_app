@@ -185,9 +185,9 @@ if analysis == "Image Import":
             height = int(img.shape[0] * scale_percent / 100)
             dim = (width, height)
 
-            # resize image
-            resized = cv2.resize(img, dim, interpolation=cv2.INTER_AREA)
-            st.image(resized)
+            # # resize image
+            # resized = cv2.resize(img, dim, interpolation=cv2.INTER_AREA)
+            # st.image(resized)
 
 
         button1 = st.button("Confirm page number")
@@ -502,12 +502,14 @@ if analysis == "Search Engine":
                 st.markdown(final_content)
                 try:
                     with st.expander("See original page"):
-                        img = Image.open(os.path.join("ocr_exports", "se_png", sel_png))
+                        import_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
+                        in_file = import_path + str(txt) + ".png"
+                        img = Image.open(in_file)
                         st.image(img)
                 except AttributeError:
                     pass
                 st.markdown("""---""")
-
+                
 #########################################################################################################################
 #########################################################################################################################
 
