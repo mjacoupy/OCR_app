@@ -84,7 +84,6 @@ Send2Trash==1.8.0
 six==1.16.0
 smmap==4.0.0
 soupsieve==2.2.1
-streamlit
 terminado==0.12.1
 testpath==0.5.0
 toml==0.10.2
