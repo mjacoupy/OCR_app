@@ -206,13 +206,16 @@ if analysis == "Image Processing":
     final_list = docs_s3 + docs_repo
 
     docs_all = final_list.copy()
-    docs_all.append('All')
+    # docs_all.append('All')
 
 
     l = len(docs_all)-1
     select = st.selectbox('Which document', docs_all, index=l)
-    all_image = st.checkbox('All')
-    last_image = st.checkbox('Last')
+    col1, col2 = st.columns(2)
+    with col1:
+        all_image = st.checkbox('All')
+    with col2:
+        last_image = st.checkbox('Last')
     
     button = st.button('OCR analysis')
 
