@@ -88,10 +88,10 @@ def side_bar():
 
     st.sidebar.markdown("""---""")
 
-    st.sidebar.markdown('1. Add a new file (image or PDF)')
-    st.sidebar.markdown('2. Process imported files')
+    st.sidebar.markdown('1. Image Import : Add a new file (image or PDF)')
+    st.sidebar.markdown('2. Image Processing : Extract content of imported files')
     st.sidebar.markdown('3. Create indexer (necessary before 4.)')
-    st.sidebar.markdown('4. Search Engine')
+    st.sidebar.markdown('3. Search Engine')
 
     st.sidebar.markdown("""---""")
 
@@ -111,57 +111,15 @@ def my_split(s, seps):
 #                                              # === APPEARANCE === #
 # #######################################################################################################################
 st.title("OCR+")
-st.subtitle("Environnement de démo+")
+st.header("Environnement de démonstration")
+st.text('Description')
 st.markdown("""---""")
 
 image1 = Image.open("app_logos/PTCtechLab.png")
 image2 = Image.open("app_logos/PTC.png")
 st.sidebar.image(image2, width=200)
 
-analysis = st.sidebar.selectbox('', ['Image Import', 'Image Processing', 'Indexation', 'Search Engine'])
-
-# # #######################################################################################################################
-# #                                              # === IMPORT NEW FILE (OLD) === #
-# # #######################################################################################################################
-# if analysis == "[1] Image Importxxxx":
-#     st.header('Image Import')
-
-#     side_bar()
-
-
-#     data = st.file_uploader("Upload a file", type=["png", "jpg", "jpeg"])
-#     name = st.text_input('File name')
-
-
-#     if data is not None:
-
-#         image = Image.open(data)
-#         pil_image = Image.open(data).convert('RGB')
-#         open_cv_image = np.array(pil_image)
-#         image2 = open_cv_image[:, :, ::-1].copy()
-
-#         scale_percent = 20
-#         width = int(image2.shape[1] * scale_percent / 100)
-#         height = int(image2.shape[0] * scale_percent / 100)
-#         dim = (width, height)
-
-#         # resize image
-#         resized = cv2.resize(image2, dim, interpolation=cv2.INTER_AREA)
-
-#         st.image(resized, caption='Selected document')
-
-#     button = st.button("Process")
-
-
-#     if data is not None and button:
-
-#         export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
-#         out_file = export_path + str(name) + ".png"
-#         cv2.imwrite(out_file, image2)
-#         docs = os.listdir(export_path)
-
-#         st.text('Done!')
-
+analysis = st.sidebar.selectbox('', ['Image Import', 'Image Processing', 'Search Engine'])
 
 # #######################################################################################################################
 #                                              # === IMPORT NEW FILE === #
@@ -170,27 +128,28 @@ if analysis == "Image Import":
     st.header('Image Import')
 
     side_bar()
-
+    
+    i = 0
     data = st.file_uploader("Upload a file", type=["png", "jpg", "jpeg", "pdf"])
-    name = st.text_input('File name')
+    i+=1
+    name = "Document-"+str(i)
+    # name = st.text_input('File name')
 
     if data is not None and "pdf" in str(data.type):
         images = convert_from_bytes(data.read())
-        int_val = st.slider('Page number', min_value=0, max_value=len(images), value=0, step=1)
+        int_val = st.number_input('age number', min_value=1, max_value=len(images), value=1)
+        # int_val = st.slider('Page number', min_value=0, max_value=len(images), value=0, step=1)
 
-        for iPage in images:
-            img = np.array(iPage)
-            scale_percent = 5
-            width = int(img.shape[1] * scale_percent / 100)
-            height = int(img.shape[0] * scale_percent / 100)
-            dim = (width, height)
-
-            # # resize image
-            # resized = cv2.resize(img, dim, interpolation=cv2.INTER_AREA)
-            # st.image(resized)
+        img = np.array(images[int_val-1])
+        scale_percent = 5
+        width = int(img.shape[1] * scale_percent / 100)
+        height = int(img.shape[0] * scale_percent / 100)
+        dim = (width, height)
+        resized = cv2.resize(img, dim, interpolation=cv2.INTER_AREA)
+        st.image(resized)
 
 
-        button1 = st.button("Confirm page number")
+        button1 = st.button("Process")
 
         if data is not None and "pdf" in str(data.type) and button1:
             page = images[int_val-1]
