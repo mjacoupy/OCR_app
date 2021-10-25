@@ -118,7 +118,7 @@ image1 = Image.open("app_logos/PTCtechLab.png")
 image2 = Image.open("app_logos/PTC.png")
 st.sidebar.image(image2, width=200)
 
-analysis = st.sidebar.selectbox('', ['[1] Image Import', '[2] Image Processing', '[3] Indexation', '[4] Search Engine'])
+analysis = st.sidebar.selectbox('', ['Image Import', 'Image Processing', 'Search Engine'])
 
 # # #######################################################################################################################
 # #                                              # === IMPORT NEW FILE (OLD) === #
@@ -166,7 +166,7 @@ analysis = st.sidebar.selectbox('', ['[1] Image Import', '[2] Image Processing',
 # #######################################################################################################################
 #                                              # === IMPORT NEW FILE === #
 # #######################################################################################################################
-if analysis == "[1] Image Import":
+if analysis == "Image Import":
     st.header('Image Import')
 
     side_bar()
@@ -231,7 +231,7 @@ if analysis == "[1] Image Import":
 # #######################################################################################################################
 #                                              # === PROCESS NEW FILE(S) === #
 # #######################################################################################################################
-if analysis == "[2] Image Processing":
+if analysis == "Image Processing":
     st.header('Image Processing')
 
     side_bar()
@@ -342,7 +342,37 @@ if analysis == "[3] Indexation":
 # #######################################################################################################################
 #                                              # === SEARCH ENGINE === #
 # #######################################################################################################################
-if analysis == "[4] Search Engine":
+if analysis == "Search Engine":
+    
+    my_bar = st.progress(0)
+    schema = Schema(title=TEXT(stored=True), path=ID(stored=True), content=TEXT, textdata=TEXT(stored=True))
+    if not os.path.exists("se_indexdir"):
+        os.mkdir("se_indexdir")
+
+    # Creating a index writer to add document as per schema
+    ix = create_in("se_indexdir", schema)
+    writer = ix.writer()
+
+    filepaths = []
+    for file in my_bucket2.objects.all():
+        filepaths.append(file.key)
+
+    for name, percent in zip(filepaths, range(len(filepaths))):
+
+        val = (percent+1) / len(filepaths)
+        my_bar.progress(val)
+
+        # Do not select empty document
+        try:
+            select_path = bucket_name_txt+"/"+name
+            fp = fs.open(select_path, "rb")
+            text = fp.read().decode('utf-8', 'ignore')
+            writer.add_document(title=name, path=select_path, content=text, textdata=text)
+            fp.close()
+        except UnicodeDecodeError:
+            pass
+
+    writer.commit()
 
     # Create the Search Engine
     SE = SearchEngine()
