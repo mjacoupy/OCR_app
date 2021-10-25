@@ -76,6 +76,7 @@ pyzmq==22.2.1
 rake-nltk==1.0.4
 regex==2021.8.28
 requests==2.26.0
+rake-nltk
 s3fs
 scipy==1.7.1
 seaborn==0.11.2
