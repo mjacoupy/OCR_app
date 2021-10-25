@@ -345,8 +345,11 @@ if analysis == "Indexation":
 if analysis == "Search Engine":
     
     # Create the Search Engine
-    #try:
-    SE = SearchEngine()
+    try:
+        SE = SearchEngine()
+    except ValueError:
+        st.error("Create the indexer first")
+        st.stop()
 
     # Initialize variable
     languages = ['french', 'english', 'spanish', 'italian', 'german']
