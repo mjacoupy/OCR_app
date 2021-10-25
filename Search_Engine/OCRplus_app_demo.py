@@ -211,7 +211,7 @@ if analysis == "Image Processing":
 
     l = len(docs_all)-1
     select = st.selectbox('Which document', docs_all, index=l)
-    col1, col2, col2 = st.columns(3)
+    col1, col2, col3 = st.columns(3)
     with col1:
         all_image = st.checkbox('All')
     with col2:
