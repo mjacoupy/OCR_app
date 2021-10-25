@@ -136,7 +136,8 @@ if analysis == "Image Import":
 
     if data is not None and "pdf" in str(data.type):
         images = convert_from_bytes(data.read())
-        int_val = st.number_input('age number', min_value=1, max_value=len(images), value=1)
+        text = 'Page number beween 1 and '+str(len(images))
+        int_val = st.number_input(text, min_value=1, max_value=len(images), value=1)
         # int_val = st.slider('Page number', min_value=0, max_value=len(images), value=0, step=1)
 
         img = np.array(images[int_val-1])
