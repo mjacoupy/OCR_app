@@ -141,7 +141,7 @@ if analysis == "Image Import":
         # int_val = st.slider('Page number', min_value=0, max_value=len(images), value=0, step=1)
 
         img = np.array(images[int_val-1])
-        scale_percent = 3
+        scale_percent = 20
         width = int(img.shape[1] * scale_percent / 100)
         height = int(img.shape[0] * scale_percent / 100)
         dim = (width, height)
