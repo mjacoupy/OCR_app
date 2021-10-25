@@ -482,7 +482,7 @@ if analysis == "Search Engine":
             df = df.drop(['Score'], axis=1)
 
         # Print the Dataframe
-        st.write(df)
+        st.dataframe(df)
 
 
         st.markdown("""---""")
