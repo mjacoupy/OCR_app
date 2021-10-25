@@ -128,18 +128,14 @@ if analysis == "Image Import":
 
     side_bar()
     
-    i = 0
     data = st.file_uploader("Upload a file", type=["png", "jpg", "jpeg", "pdf"])
-    st.write(data.name)
-    i+=1
-    name = "Document-"+str(i)
-    # name = st.text_input('File name')
+    if data:
+        name = str(data.name)
 
     if data is not None and "pdf" in str(data.type):
         images = convert_from_bytes(data.read())
         text = 'Page number beween 1 and '+str(len(images))
         int_val = st.number_input(text, min_value=1, max_value=len(images), value=1)
-        # int_val = st.slider('Page number', min_value=0, max_value=len(images), value=0, step=1)
 
         img = np.array(images[int_val-1])
         scale_percent = 20
