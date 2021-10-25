@@ -135,8 +135,12 @@ if analysis == "Image Import":
     if data is not None and "pdf" in str(data.type):
         images = convert_from_bytes(data.read())
         text = 'Page number beween 1 and '+str(len(images))
-        int_val = st.number_input(text, min_value=1, max_value=len(images), value=1)
-
+        col1, col2 = st.columns([8, 2])
+        with col1:
+            int_val = st.number_input(text, min_value=1, max_value=len(images), value=1)
+        with col2:
+            button1 = st.button("Process")
+            
         img = np.array(images[int_val-1])
         scale_percent = 20
         width = int(img.shape[1] * scale_percent / 100)
@@ -145,8 +149,6 @@ if analysis == "Image Import":
         resized = cv2.resize(img, dim, interpolation=cv2.INTER_AREA)
         st.image(resized)
 
-
-        button1 = st.button("Process")
 
         if data is not None and "pdf" in str(data.type) and button1:
             page = images[int_val-1]
