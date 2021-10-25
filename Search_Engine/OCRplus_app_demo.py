@@ -141,7 +141,7 @@ if analysis == "Image Import":
         # int_val = st.slider('Page number', min_value=0, max_value=len(images), value=0, step=1)
 
         img = np.array(images[int_val-1])
-        scale_percent = 5
+        scale_percent = 3
         width = int(img.shape[1] * scale_percent / 100)
         height = int(img.shape[0] * scale_percent / 100)
         dim = (width, height)
@@ -535,14 +535,14 @@ if analysis == "Search Engine":
                 # print the selected previews
                 st.markdown("___"+str(iCpt+1)+". "+txt+"___")
                 st.markdown(final_content)
-                try:
-                    with st.expander("See original page"):
-                        import_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
-                        in_file = import_path + str(txt) + ".png"
-                        img = Image.open(in_file)
-                        st.image(img)
-                except AttributeError:
-                    pass
+                # try:
+                #     with st.expander("See original page"):
+                #         import_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
+                #         in_file = import_path + str(txt) + ".png"
+                #         img = Image.open(in_file)
+                #         st.image(img)
+                # except AttributeError:
+                #     pass
                 st.markdown("""---""")
                 
 #########################################################################################################################
