@@ -90,7 +90,6 @@ def side_bar():
 
     st.sidebar.markdown('1. Image Import : Add a new file (image or PDF)')
     st.sidebar.markdown('2. Image Processing : Extract content of imported files')
-    st.sidebar.markdown('3. Create indexer (necessary before 4.)')
     st.sidebar.markdown('3. Search Engine')
 
     st.sidebar.markdown("""---""")
@@ -211,11 +210,13 @@ if analysis == "Image Processing":
 
     l = len(docs_all)-1
     select = st.selectbox('Which document', docs_all, index=l)
+    all_image = st.checkbox('All')
+    last_image = st.checkbox('Last')
+    
     button = st.button('OCR analysis')
 
 
-
-    if select == 'All' and button:
+    if all_image and button:
 
         for doc in docs_s3:
             select_path = bucket_name+"/"+doc
@@ -234,8 +235,42 @@ if analysis == "Image Processing":
             str_text = extract_content_to_txt(image)
             out_file = str(name)+'.txt'
             s3.Object(bucket_name_txt, out_file).put(Body=str_text)
+            
+            ############
+        if button:
+    
+            my_bar = st.progress(0)
+            schema = Schema(title=TEXT(stored=True), path=ID(stored=True), content=TEXT, textdata=TEXT(stored=True))
+            if not os.path.exists("se_indexdir"):
+                os.mkdir("se_indexdir")
+    
+            # Creating a index writer to add document as per schema
+            ix = create_in("se_indexdir", schema)
+            writer = ix.writer()
+    
+            filepaths = []
+            for file in my_bucket2.objects.all():
+                filepaths.append(file.key)
+    
+            for name, percent in zip(filepaths, range(len(filepaths))):
+    
+                val = (percent+1) / len(filepaths)
+                my_bar.progress(val)
+    
+                # Do not select empty document
+                try:
+                    select_path = bucket_name_txt+"/"+name
+                    fp = fs.open(select_path, "rb")
+                    text = fp.read().decode('utf-8', 'ignore')
+                    writer.add_document(title=name, path=select_path, content=text, textdata=text)
+                    fp.close()
+                except UnicodeDecodeError:
+                    pass
+    
+            writer.commit()
 
-    elif select != 'All' and button:
+
+    elif select is not None and all_image is not None and last_image is not None and button:
         if select in docs_s3:
             select_path = bucket_name+"/"+select
             st.markdown(select)
@@ -254,6 +289,42 @@ if analysis == "Image Processing":
             str_text = extract_content_to_txt(image)
             out_file = str(name)+'.txt'
             s3.Object(bucket_name_txt, out_file).put(Body=str_text)
+            
+            ############
+        if button:
+    
+            my_bar = st.progress(0)
+            schema = Schema(title=TEXT(stored=True), path=ID(stored=True), content=TEXT, textdata=TEXT(stored=True))
+            if not os.path.exists("se_indexdir"):
+                os.mkdir("se_indexdir")
+    
+            # Creating a index writer to add document as per schema
+            ix = create_in("se_indexdir", schema)
+            writer = ix.writer()
+    
+            filepaths = []
+            for file in my_bucket2.objects.all():
+                filepaths.append(file.key)
+    
+            for name, percent in zip(filepaths, range(len(filepaths))):
+    
+                val = (percent+1) / len(filepaths)
+                my_bar.progress(val)
+    
+                # Do not select empty document
+                try:
+                    select_path = bucket_name_txt+"/"+name
+                    fp = fs.open(select_path, "rb")
+                    text = fp.read().decode('utf-8', 'ignore')
+                    writer.add_document(title=name, path=select_path, content=text, textdata=text)
+                    fp.close()
+                except UnicodeDecodeError:
+                    pass
+    
+            writer.commit()  
+            
+    elif last_image and button:
+        pass
 
 #########################################################################################################################
 #                                              # === INDEXER === #
