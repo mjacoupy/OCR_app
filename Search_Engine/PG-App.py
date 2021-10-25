@@ -345,6 +345,7 @@ if analysis == "Indexation":
 if analysis == "Search Engine":
     
     # Create the Search Engine
+    #try:
     SE = SearchEngine()
 
     # Initialize variable
@@ -500,14 +501,14 @@ if analysis == "Search Engine":
                 # print the selected previews
                 st.markdown("___"+str(iCpt+1)+". "+txt+"___")
                 st.markdown(final_content)
-                # try:
-                with st.expander("See original page"):
-                    import_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
-                    in_file = import_path + str(txt) + ".png"
-                    img = Image.open(in_file)
-                    st.image(img)
-                # except AttributeError:
-                #     pass
+                try:
+                    with st.expander("See original page"):
+                        import_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
+                        in_file = import_path + str(txt) + ".png"
+                        img = Image.open(in_file)
+                        st.image(img)
+                except AttributeError:
+                    pass
                 st.markdown("""---""")
                 
 #########################################################################################################################
