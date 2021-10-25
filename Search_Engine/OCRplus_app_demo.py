@@ -130,6 +130,7 @@ if analysis == "Image Import":
     
     i = 0
     data = st.file_uploader("Upload a file", type=["png", "jpg", "jpeg", "pdf"])
+    st.write(data.name)
     i+=1
     name = "Document-"+str(i)
     # name = st.text_input('File name')
