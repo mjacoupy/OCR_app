@@ -211,13 +211,13 @@ if analysis == "Image Processing":
 
     l = len(docs_all)-1
     select = st.selectbox('Which document', docs_all, index=l)
-    col1, col2 = st.columns(2)
+    col1, col2, col2 = st.columns(3)
     with col1:
         all_image = st.checkbox('All')
     with col2:
         last_image = st.checkbox('Last')
-    
-    button = st.button('OCR analysis')
+    with col3:    
+        button = st.button('OCR analysis')
 
 
     if all_image and button:
