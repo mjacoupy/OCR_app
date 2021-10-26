@@ -694,18 +694,19 @@ if analysis == "Search Engine":
                 st.markdown("___"+str(iCpt+1)+". "+txt+"___")
                 st.markdown(final_content)
 
-                # with st.expander("See original page"):
-                #     st.text(iCpt)
-                #     st.text(sel_png)
+                with st.expander("See original page"):
+                    name = txt[:9].copy
+                    name_png = name+'png'
+                    st.text(name_png)
                     
-                #     bucket = my_bucket
-                #     object = bucket.Object(str(sel_png))
-                #     tmp = tempfile.NamedTemporaryFile()
+                    bucket = my_bucket
+                    object = bucket.Object(str(name_png))
+                    tmp = tempfile.NamedTemporaryFile()
                     
-                #     with open(tmp.name, 'wb') as f:
-                #         object.download_fileobj(f)
-                #         img=mpimg.imread(tmp.name)
-                #         st.image(img)
+                    with open(tmp.name, 'wb') as f:
+                        object.download_fileobj(f)
+                        img=mpimg.imread(tmp.name)
+                        st.image(img)
 
 #########################################################################################################################
 #########################################################################################################################
