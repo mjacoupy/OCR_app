@@ -695,6 +695,7 @@ if analysis == "Search Engine":
                 st.markdown(final_content)
 
                 with st.expander("See original page"):
+                    st.write(txt)
                     name = txt[:9]
                     name_png = name+'png'
                     st.text(name_png)
