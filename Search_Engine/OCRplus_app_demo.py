@@ -683,11 +683,37 @@ if analysis == "Search Engine":
                 st.markdown(final_content)
 
                 with st.expander("See original page"):
-                    img = Image.open(os.path.join("ocr_exports", "se_png", sel_png))
-                    st.image(img)
+                    st.text(iCpt)
+                    st.text(sel_png)
+                    
+                    # img = Image.open(os.path.join("ocr_exports", "se_png", sel_png))
+                    # st.image(img)
 
 
                 st.markdown("""---""")
+                
+                
+                
+        # filepaths = []
+        # for file in my_bucket2.objects.all():
+        #     filepaths.append(file.key)
+        
+            
+        # filepaths = filepaths[:10]
+        # for name, percent in zip(filepaths, range(len(filepaths))):
+
+        #     val = (percent+1) / len(filepaths)
+        #     my_bar.progress(val)
+
+        #     # Do not select empty document
+        #     try:
+        #         select_path = bucket_name_txt+"/"+name
+        #         fp = fs.open(select_path, "rb")
+        #         text = fp.read().decode('utf-8', 'ignore')
+        #         writer.add_document(title=name, path=select_path, content=text, textdata=text)
+        #         fp.close()
+        #     except UnicodeDecodeError:
+        #         pass
                 
 #########################################################################################################################
 #########################################################################################################################
