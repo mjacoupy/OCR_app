@@ -88,9 +88,9 @@ def side_bar():
 
     st.sidebar.markdown("""---""")
 
-    st.sidebar.markdown('1. **Image Import:** Add a new file (image or PDF)')
-    st.sidebar.markdown('2. **Image Processing:** Extract content of imported files')
-    st.sidebar.markdown('3. **Search Engine**')
+    st.sidebar.markdown("1. **Import :** Ajout d'un nouveau document à analyser. Cela peut etre une image (png ou jpeg) ou un document PDF")
+    st.sidebar.markdown("2. **Processing :** Analyse OCR du ou des fichiers sélectionnés et création de l'indexer")
+    st.sidebar.markdown('3. **Moteur de recherche**')
 
     st.sidebar.markdown("""---""")
 
@@ -118,12 +118,12 @@ image1 = Image.open("app_logos/PTCtechLab.png")
 image2 = Image.open("app_logos/PTC.png")
 st.sidebar.image(image2, width=200)
 
-analysis = st.sidebar.selectbox('', ['Image Import', 'Image Processing', 'Search Engine'])
+analysis = st.sidebar.selectbox('', ['Import', 'Processing', 'Moteur de recherche'])
 
 # #######################################################################################################################
 #                                              # === IMPORT NEW FILE === #
 # #######################################################################################################################
-if analysis == "Image Import":
+if analysis == "Import":
     st.header("Import d'un nouveau document")
 
     side_bar()
@@ -174,7 +174,7 @@ if analysis == "Image Import":
         # resize image
         resized = cv2.resize(image2, dim, interpolation=cv2.INTER_AREA)
 
-        st.image(resized, caption='Document selectionné')
+        st.image(resized, caption='Document sélectionné')
 
         button = st.button("Import")
 
@@ -190,7 +190,7 @@ if analysis == "Image Import":
 # #######################################################################################################################
 #                                              # === PROCESS NEW FILE(S) === #
 # #######################################################################################################################
-if analysis == "Image Processing":
+if analysis == "Processing":
     st.header('Analyse du document')
 
     side_bar()
@@ -210,14 +210,14 @@ if analysis == "Image Processing":
 
 
     l = len(docs_all)-1
-    select = st.selectbox('Selection du document', docs_all, index=l)
+    select = st.selectbox('Sélection du document', docs_all, index=l)
     col1, col2, col3, col4, col5 = st.columns(5)
     with col1:
         all_image = st.checkbox('Tous')
     with col2:
         last_image = st.checkbox('Dernier')
     with col5:    
-        button = st.button('OCR analysis')
+        button = st.button('Analyse OCR')
 
 
     if all_image and button:
@@ -376,7 +376,7 @@ if analysis == "Image Processing":
 # #######################################################################################################################
 #                                              # === SEARCH ENGINE === #
 # #######################################################################################################################
-if analysis == "Search Engine":
+if analysis == "Moteur de recherche":
     
     # Create the Search Engine
     try:
@@ -435,7 +435,7 @@ if analysis == "Search Engine":
     lang = st.multiselect('Which language', ['french', 'english', 'spanish', 'italian', 'german'], default=['french', 'english', 'spanish', 'italian', 'german'])
 
     st.write('Paramètres a afficher')
-    kw = st.checkbox('Mots clés selectionnés')
+    kw = st.checkbox('Mots clés sélectionnés')
     doc = st.checkbox('Nombre de document dans la base de donnée')
     positive = st.checkbox('Nombre de résultats positifs obtenus')
     score = st.checkbox('Score du document')
@@ -485,7 +485,7 @@ if analysis == "Search Engine":
         if kw:
             for ilang in lang:
                 try:
-                    st.markdown("Les mots clés selectionnés en **"+ilang+"** : **"+str(tmp[ilang]['Key Words'])+"**")
+                    st.markdown("Les mots clés sélectionnés en **"+ilang+"** : **"+str(tmp[ilang]['Key Words'])+"**")
                 except TypeError:
                     pass
         if doc:
