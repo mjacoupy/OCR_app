@@ -508,7 +508,9 @@ if analysis == "Search Engine":
         filepaths = []
         for file in my_bucket2.objects.all():
             filepaths.append(file.key)
-
+        
+            
+        filepaths = filepaths[:10]
         for name, percent in zip(filepaths, range(len(filepaths))):
 
             val = (percent+1) / len(filepaths)
@@ -630,7 +632,7 @@ if analysis == "Search Engine":
         st.markdown("""---""")
 
  # ##################################### == PART 2 == ##########################################################
-        st.subheader('Partie 2 - Affichage')
+        st.subheader('Part 2 - Display')
 
         # Create list of document and language for the previews
         tmp_doc_list = [doc for doc in df['Documents']]
@@ -679,14 +681,14 @@ if analysis == "Search Engine":
                 # print the selected previews
                 st.markdown("___"+str(iCpt+1)+". "+txt+"___")
                 st.markdown(final_content)
-                # try:
-                #     with st.expander("See original page"):
-                #         import_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
-                #         in_file = import_path + str(txt) + ".png"
-                #         img = Image.open(in_file)
-                #         st.image(img)
-                # except AttributeError:
-                #     pass
+                try:
+                    with st.expander("See original page"):
+                        import_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
+                        in_file = import_path + str(txt) + ".png"
+                        img = Image.open(in_file)
+                        st.image(img)
+                except AttributeError:
+                    pass
                 st.markdown("""---""")
                 
 #########################################################################################################################
