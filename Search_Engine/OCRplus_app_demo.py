@@ -23,7 +23,8 @@ import re
 import cv2
 from pdf2image import convert_from_bytes
 import io
-import matplotlib.image as mpimg
+import matplotlib.pyplot as plt
+
 
 
 # #######################################################################################################################
@@ -688,16 +689,17 @@ if analysis == "Search Engine":
                     st.text(iCpt)
                     st.text(sel_png)
                     
-                    file_stream = io.StringIO()
-                    object = my_bucket.Object(sel_png)
-                    object.download_fileobj(file_stream)
-                    img = mpimg.imread(file_stream)
-                    st.image(img)
-
-
-                st.markdown("""---""")
-                
-      
+                    client = boto3.client("s3")
+                    
+                    bucket= my_bucket
+                    key= st.secrets["AWS_SECRET_ACCESS_KEY"]
+                    
+                    outfile = io.BytesIO()
+                    client.download_fileobj(bucket, key, outfile)
+                    outfile.seek(0)
+                    img = plt.imread(outfile)
+                    
+                    plt.imshow(img)
                 
       
 # fs = s3fs.S3FileSystem(anon=False)
