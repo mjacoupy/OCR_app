@@ -111,8 +111,8 @@ def my_split(s, seps):
 # #######################################################################################################################
 st.title("OCR+")
 st.header("Environnement de démonstration")
-st.markdown("Ce module OCR+ a été développé par le PTCTech Lab. Il vise à interpréter divers types de documents, tels que des factures, des tickets, des rapports officiels, ou encore des documents financiers")
-st.markdown("Cette démo est un exemple concret du fonctionnement du module l'OCR+ avec différent types de cas. Cependant, il doit être adapté et affiné à votre contexte afin d'être performant")
+st.markdown("Ce module OCR+ a été développé par le PTCTech Lab. Il vise à interpréter divers types de documents, tels que des factures, des tickets, des rapports officiels, ou encore des documents financiers.")
+st.markdown("Cette démo est un exemple concret du fonctionnement du module l'OCR+ avec différent types de cas. Cependant, il doit être adapté et affiné à votre contexte afin d'être performant.")
 
 st.markdown("""---""")
 
