@@ -694,12 +694,9 @@ if analysis == "Search Engine":
                 st.markdown(final_content)
 
                 with st.expander("See original page"):
-                    name = txt.copy()
-                    name_png = name[:-9]+'.png'
-                    st.text(name_png)
-                    
+
                     bucket = my_bucket
-                    object = bucket.Object(str(name_png))
+                    object = bucket.Object(txt[:-9]+'.png')
                     tmp = tempfile.NamedTemporaryFile()
                     
                     with open(tmp.name, 'wb') as f:
