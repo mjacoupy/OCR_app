@@ -601,15 +601,15 @@ if analysis == "Moteur de recherche":
                     if ilang == "french":
                         L = "français"
                     elif ilang == "english":
-                        L == "anglais"
+                        L = "anglais"
                     elif ilang == "spanish":
-                        L == "espagnol"
-                    elif ilang = "italian":
-                        L == "italien"
-                    elif ilang = "german":
-                        L == "allemand"
+                        L = "espagnol"
+                    elif ilang == "italian":
+                        L = "italien"
+                    elif ilang == "german":
+                        L = "allemand"
                         
-                    st.markdown("Les mots clés sélectionnés en **"+str(L)"** : **"+str(tmp[ilang]['Key Words'])+"**")
+                    st.markdown("Les mots clés sélectionnés en **"+str(L)+"** : **"+str(tmp[ilang]['Key Words'])+"**")
                 except TypeError:
                     pass
         if doc:
