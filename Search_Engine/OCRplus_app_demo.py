@@ -110,6 +110,14 @@ def my_split(s, seps):
         for seq in s:
                 res += seq.split(sep)
     return res
+
+def image_from_s3(bucket, key):
+
+    bucket = s3_resource.Bucket(bucket)
+    image = bucket.Object(key)
+    img_data = image.get().get('Body').read()
+    
+    return Image.open(io.BytesIO(img_data))
 # #######################################################################################################################
 #                                              # === APPEARANCE === #
 # #######################################################################################################################
@@ -689,15 +697,8 @@ if analysis == "Search Engine":
                 with st.expander("See original page"):
                     st.text(iCpt)
                     st.text(sel_png)
-                                    
-                    object1 = my_bucket.Object(sel_png)
-                    response = object1.get()
-                    file_stream = response['Body']
-                    im = Image.open(file_stream)
-                    st.image(im)
-                    
-                    
-                    
+
+                    st.image(image_from_s3("ocrplus-app-mja", sel_png))
                               
 
 #########################################################################################################################
