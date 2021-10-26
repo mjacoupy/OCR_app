@@ -611,7 +611,7 @@ if analysis == "Moteur de recherche":
                     elif ilang == "german":
                         L = "allemand"
                         
-                    st.markdown("Les mots clés sélectionnés en **"+str(L)+"** : **"+str(tmp[ilang]['Key Words'])+"**")
+                    # st.markdown("Les mots clés sélectionnés en **"+str(L)+"** : **"+str(tmp[ilang]['Key Words'])+"**")
                 except TypeError:
                     pass
         if doc:
