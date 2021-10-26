@@ -696,8 +696,7 @@ if analysis == "Search Engine":
 
                 with st.expander("See original page"):
                     st.write(txt)
-                    name = txt[:9]
-                    name_png = name+'png'
+                    name_png = txt[:-9]+'.png'
                     st.text(name_png)
                     
                     bucket = my_bucket
