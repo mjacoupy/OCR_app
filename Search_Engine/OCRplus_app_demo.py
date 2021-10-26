@@ -686,15 +686,15 @@ if analysis == "Search Engine":
                 st.markdown("___"+str(iCpt+1)+". "+txt+"___")
                 st.markdown(final_content)
 
-                # with st.expander("See original page"):
-                #     st.text(iCpt)
-                #     st.text(sel_png)
+                with st.expander("See original page"):
+                    st.text(iCpt)
+                    st.text(sel_png)
                                     
-                #     object = my_bucket.Object(sel_png)
-                #     response = object.get()
-                #     file_stream = response['Body']
-                #     im = Image.open(file_stream)
-                #     st.image(im)
+                    object1 = my_bucket.Object(sel_png)
+                    response = object1.get()
+                    file_stream = response['Body']
+                    im = Image.open(file_stream)
+                    st.image(im)
                     
                     
                     
