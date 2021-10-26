@@ -699,27 +699,7 @@ if analysis == "Search Engine":
                     
                     
                               
-# fs = s3fs.S3FileSystem(anon=False)
-# bucket_name = "ocrplus-app-mja"
-# bucket_name_txt = "ocrplus-app-mja-txt"
 
-
-# s3 = boto3.resource('s3')
-# my_bucket = s3.Bucket(bucket_name)
-# my_bucket2 = s3.Bucket(bucket_name_txt)  
-      
-        
-      
-                
-# s3 = boto3.resource('s3', region_name='us-east-2')
-# bucket = s3.Bucket('sentinel-s2-l1c')
-# object = bucket.Object('tiles/10/S/DG/2015/12/7/0/B01.jp2')
-
-# file_stream = io.StringIO()
-# object.download_fileobj(file_stream)
-# img = mpimg.imread(file_stream)
-# # whatever you need to do
-                
 #########################################################################################################################
 #########################################################################################################################
 
