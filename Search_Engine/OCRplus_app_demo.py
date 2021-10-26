@@ -690,18 +690,11 @@ if analysis == "Search Engine":
                     st.text(iCpt)
                     st.text(sel_png)
                     
-
-
-
-    
-                    bucket = s3.Bucket('sentinel-s2-l1c')
                     object = my_bucket.Object(str(sel_png))
-                    tmp = tempfile.NamedTemporaryFile()
-                    
-                    with open(tmp.name, 'wb') as f:
-                        object.download_fileobj(f)
-                        img=mpimg.imread(tmp.name)
-          
+                    file_stream = io.StringIO()
+                    object.download_fileobj(file_stream)
+                    img = mpimg.imread(file_stream)
+                              
 # fs = s3fs.S3FileSystem(anon=False)
 # bucket_name = "ocrplus-app-mja"
 # bucket_name_txt = "ocrplus-app-mja-txt"
