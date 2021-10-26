@@ -656,7 +656,7 @@ if analysis == "Search Engine":
 
             for (iCpt, txt), lang in zip(enumerate(tmp_doc_list[:20]), tmp_lang[:20]):
                 sel_txt = txt+'.txt'
-                sel_png = txt[:-9]+'.png'
+                sel_png = txt+'.png'
                 for i in range(20):
                     try:
                         if sel_txt == tmp[lang][i]['Document']:
@@ -694,18 +694,18 @@ if analysis == "Search Engine":
                 st.markdown("___"+str(iCpt+1)+". "+txt+"___")
                 st.markdown(final_content)
 
-                with st.expander("See original page"):
-                    st.text(iCpt)
-                    st.text(sel_png)
+                # with st.expander("See original page"):
+                #     st.text(iCpt)
+                #     st.text(sel_png)
                     
-                    bucket = my_bucket
-                    object = bucket.Object(str(sel_png))
-                    tmp = tempfile.NamedTemporaryFile()
+                #     bucket = my_bucket
+                #     object = bucket.Object(str(sel_png))
+                #     tmp = tempfile.NamedTemporaryFile()
                     
-                    with open(tmp.name, 'wb') as f:
-                        object.download_fileobj(f)
-                        img=mpimg.imread(tmp.name)
-                        st.image(img)
+                #     with open(tmp.name, 'wb') as f:
+                #         object.download_fileobj(f)
+                #         img=mpimg.imread(tmp.name)
+                #         st.image(img)
 
 #########################################################################################################################
 #########################################################################################################################
