@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-04 10:32:59
+# @Last Modified time: 2021-10-26 17:52:28
 
 
 # #######################################################################################################################
@@ -552,7 +552,7 @@ if analysis == "Search Engine":
     response = 'All'
 
 
-    lang = st.multiselect('Selected language for the request', ['french', 'english', 'spanish', 'italian', 'german'], default=['french', 'english', 'spanish', 'italian', 'german'])
+    lang = st.multiselect('Selected language of the documents', ['french', 'english', 'spanish', 'italian', 'german'], default=['french', 'english', 'spanish', 'italian', 'german'])
 
     # st.write('Paramètres a afficher')
     # kw = st.checkbox('Mots clés sélectionnés')
