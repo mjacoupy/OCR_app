@@ -691,7 +691,7 @@ if analysis == "Search Engine":
                     
                     client = boto3.client("s3")
                     
-                    bucket= my_bucket
+                    bucket= bucket_name
                     key= st.secrets["AWS_SECRET_ACCESS_KEY"]
                     
                     outfile = io.BytesIO()
