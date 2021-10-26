@@ -541,12 +541,12 @@ if analysis == "Moteur de recherche":
     st.subheader('Partie 1 - Recherche')
 
     # Ask user for parameters
-    user_input = st.text_input("Requete")
+    user_input = st.text_input("Requête")
     # response = st.radio('Nombre de réponses', ('La meilleure', 'Les plus pertinentes', 'Toutes'), index=1)
     response = 'Toutes'
 
 
-    lang = st.multiselect('Which language', ['french', 'english', 'spanish', 'italian', 'german'], default=['french', 'english', 'spanish', 'italian', 'german'])
+    lang = st.multiselect('Langues sélectionnées pour la requête', ['french', 'english', 'spanish', 'italian', 'german'], default=['french', 'english', 'spanish', 'italian', 'german'])
 
     # st.write('Paramètres a afficher')
     # kw = st.checkbox('Mots clés sélectionnés')
