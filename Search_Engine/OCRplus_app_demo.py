@@ -158,6 +158,11 @@ if analysis == "Import":
             out_file = export_path + str(name) + "-" + str(int_val) + ".png"
             cv2.imwrite(out_file, img)
 
+            st.image(img)
+            str_text = extract_content_to_txt(img)
+            out_file = str(name)+'.txt'
+            s3.Object(bucket_name_txt, out_file).put(Body=str_text)
+            
 
     elif data is not None and "pdf" not in str(data.type):
 
