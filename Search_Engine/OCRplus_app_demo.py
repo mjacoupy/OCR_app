@@ -110,9 +110,9 @@ def my_split(s, seps):
 #                                              # === APPEARANCE === #
 # #######################################################################################################################
 st.title("OCR+")
-st.header("Environnement de démonstration")
-st.markdown("Ce module OCR+ a été développé par le PTCTech Lab. Il vise à interpréter divers types de documents, tels que des factures, des tickets, des rapports officiels, ou encore des documents financiers.")
-st.markdown("Cette démo est un exemple concret du fonctionnement du module OCR+. Cependant, il doit être adapté et affiné à votre contexte afin d'attendre sa performance maximale.")
+st.header("Demonstration environment")
+st.markdown("This OCR+ module has been developped by PTCTech Lab. It aims at interpreting various types of documents, such as bills, tickets, official reports, or financial documents.")
+st.markdown("This demo is a concrete example of how the OCR+ module works in a various setting of cases. However, it needs to be adapted and tweaked to your context so as to be performing at its full capacity.")
 
 st.markdown("""---""")
 
@@ -120,13 +120,13 @@ image1 = Image.open("app_logos/PTCtechLab.png")
 image2 = Image.open("app_logos/PTC.png")
 st.sidebar.image(image2, width=200)
 
-analysis = st.sidebar.selectbox('', ['Moteur de recherche', 'Import'])
+analysis = st.sidebar.selectbox('', ['Search Engine', 'Import'])
 
 # #######################################################################################################################
 #                                              # === IMPORT NEW FILE === #
 # #######################################################################################################################
 if analysis == "Import":
-    st.header("Import d'un nouveau document")
+    st.header("Import of a new document")
 
     side_bar()
     
@@ -136,7 +136,7 @@ if analysis == "Import":
 
     if data is not None and "pdf" in str(data.type):
         images = convert_from_bytes(data.read())
-        text = 'Numéro de page entre 1 et '+str(len(images))
+        text = 'Page number between **1** and **'+str(len(images)+"**")
         col1, col2 = st.columns([8, 2])
         with col1:
             int_val = st.number_input(text, min_value=1, max_value=len(images), value=1)
@@ -211,7 +211,7 @@ if analysis == "Import":
         # resize image
         resized = cv2.resize(image2, dim, interpolation=cv2.INTER_AREA)
 
-        st.image(resized, caption='Document sélectionné')
+        st.image(resized, caption='Selected document')
 
         button = st.button("Import")
 
@@ -489,7 +489,7 @@ if analysis == "Indexation":
 # #######################################################################################################################
 #                                              # === SEARCH ENGINE === #
 # #######################################################################################################################
-if analysis == "Moteur de recherche":
+if analysis == "Search Engine":
     
     # Create the Search Engine
     try:
@@ -525,7 +525,7 @@ if analysis == "Moteur de recherche":
                 pass
 
         writer.commit()    
-        st.success("L'indexer a bien été créé")
+        st.success("The indexer has been created")
 
 
     # Initialize variable
@@ -537,16 +537,16 @@ if analysis == "Moteur de recherche":
     side_bar()
 
 # ##################################### == PART 1 == ##########################################################
-    st.header('Moteur de recherche')
-    st.subheader('Partie 1 - Recherche')
+    st.header('Search Engine')
+    st.subheader('Part 1 - Search')
 
     # Ask user for parameters
-    user_input = st.text_input("Requête")
+    user_input = st.text_input("Request")
     # response = st.radio('Nombre de réponses', ('La meilleure', 'Les plus pertinentes', 'Toutes'), index=1)
-    response = 'Toutes'
+    response = 'All'
 
 
-    lang = st.multiselect('Langues sélectionnées pour la requête', ['french', 'english', 'spanish', 'italian', 'german'], default=['french', 'english', 'spanish', 'italian', 'german'])
+    lang = st.multiselect('Selected language for the request', ['french', 'english', 'spanish', 'italian', 'german'], default=['french', 'english', 'spanish', 'italian', 'german'])
 
     # st.write('Paramètres a afficher')
     # kw = st.checkbox('Mots clés sélectionnés')
@@ -556,7 +556,7 @@ if analysis == "Moteur de recherche":
     # all_of_them = st.checkbox('Tout afficher', value=True)
 
     all_of_them = True
-    search_button = st.button("Recherche")
+    search_button = st.button("Search")
 
     # Create the variables
     if all_of_them:
@@ -597,36 +597,22 @@ if analysis == "Moteur de recherche":
         df.index = np.arange(1, len(df) + 1)
 
         # Print the informations if the are asked
-        if kw:
-            for ilang in lang:
-                try:
-                    if ilang == "french":
-                        L = "français"
-                    elif ilang == "english":
-                        L = "anglais"
-                    elif ilang == "spanish":
-                        L = "espagnol"
-                    elif ilang == "italian":
-                        L = "italien"
-                    elif ilang == "german":
-                        L = "allemand"
-                        
-                    # st.markdown("Les mots clés sélectionnés en **"+str(L)+"** : **"+str(tmp[ilang]['Key Words'])+"**")
-                except TypeError:
-                    pass
+        # if kw:
+        #     for ilang in lang:                      
+        #             st.markdown("Les mots clés sélectionnés en **"+str(L)+"** : **"+str(tmp[ilang]['Key Words'])+"**")
         if doc:
             argmax = np.argmax(doc_found)
             try:
-                st.markdown("La base de donnée contient : **"+str(tmp[lang[argmax]]['Documents to analyze'])+"** documents")
+                st.markdown("The database contains: **"+str(tmp[lang[argmax]]['Documents to analyze'])+"** documents")
             except TypeError:
                 pass
         if positive:
-            st.markdown("**"+str(len(df))+"** résultats positifs ont été trouvé dans la base de données")
+            st.markdown("**"+str(len(df))+"** positive results have been found in the database")
 
         # Crop the daframe depending on the paramaters selected
-        if response == "La meilleure":
+        if response == "Best":
             df = df.iloc[:1]
-        elif response == "Les plus pertinentes":
+        elif response == "Most Pertinent":
             df = df.loc[df['Score'] > 3]
             #st.markdown("**"+str(len(df))+"** résultats positifs ont été trouvé dans la base de données")
             if len(df) > 20:
