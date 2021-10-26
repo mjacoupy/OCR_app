@@ -88,7 +88,7 @@ def side_bar():
 
     st.sidebar.markdown("""---""")
 
-    st.sidebar.markdown("1. **Import :\n** Ajout d'un nouveau document à analyser. Cela peut etre une image (png ou jpeg) ou un document PDF")
+    st.sidebar.markdown("1. **Import :<br/>** Ajout d'un nouveau document à analyser. Cela peut etre une image (png ou jpeg) ou un document PDF")
     st.sidebar.markdown("2. **Processing :** Analyse OCR du ou des fichiers sélectionnés et création de l'indexer")
     st.sidebar.markdown('3. **Moteur de recherche**')
 
