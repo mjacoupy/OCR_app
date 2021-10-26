@@ -23,7 +23,8 @@ import re
 import cv2
 from pdf2image import convert_from_bytes
 import io
-import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+import tempfile
 
 
 
@@ -689,19 +690,18 @@ if analysis == "Search Engine":
                     st.text(iCpt)
                     st.text(sel_png)
                     
-                    client = boto3.client("s3")
+
+
+
+    
+                    bucket = s3.Bucket('sentinel-s2-l1c')
+                    object = my_bucket.Object(str(sel_png))
+                    tmp = tempfile.NamedTemporaryFile()
                     
-                    bucket= bucket_name
-                    key= st.secrets["AWS_SECRET_ACCESS_KEY"]
-                    
-                    outfile = io.BytesIO()
-                    client.download_fileobj(bucket, key, outfile)
-                    outfile.seek(0)
-                    img = plt.imread(outfile)
-                    
-                    plt.imshow(img)
-                
-      
+                    with open(tmp.name, 'wb') as f:
+                        object.download_fileobj(f)
+                        img=mpimg.imread(tmp.name)
+          
 # fs = s3fs.S3FileSystem(anon=False)
 # bucket_name = "ocrplus-app-mja"
 # bucket_name_txt = "ocrplus-app-mja-txt"
