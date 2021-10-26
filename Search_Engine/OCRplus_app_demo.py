@@ -698,8 +698,14 @@ if analysis == "Search Engine":
                     st.text(iCpt)
                     st.text(sel_png)
 
-                    st.image(image_from_s3(sel_png))
-                              
+                    bucket = my_bucket
+                    object = bucket.Object(str(sel_png))
+                    tmp = tempfile.NamedTemporaryFile()
+                    
+                    with open(tmp.name, 'wb') as f:
+                        object.download_fileobj(f)
+                        img=mpimg.imread(tmp.name)
+                        st.image(img)
 
 #########################################################################################################################
 #########################################################################################################################
