@@ -539,8 +539,8 @@ if analysis == "Moteur de recherche":
 
     # Ask user for parameters
     user_input = st.text_input("Requete")
-    response = st.radio('Nombre de réponses', ('La meilleure', 'Les plus pertinentes', 'Toutes'), index=1)
-
+    # response = st.radio('Nombre de réponses', ('La meilleure', 'Les plus pertinentes', 'Toutes'), index=1)
+    response = 'Toutes'
 
 
     lang = st.multiselect('Which language', ['french', 'english', 'spanish', 'italian', 'german'], default=['french', 'english', 'spanish', 'italian', 'german'])
