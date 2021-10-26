@@ -560,7 +560,7 @@ if analysis == "Search Engine":
     # positive = st.checkbox('Nombre de résultats positifs obtenus')
     # score = st.checkbox('Score du document')
     # all_of_them = st.checkbox('Tout afficher', value=True)
-
+    doc = True
     all_of_them = True
     search_button = st.button("Search")
 
