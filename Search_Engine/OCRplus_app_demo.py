@@ -128,7 +128,7 @@ if analysis == "Import":
 
     side_bar()
     
-    data = st.file_uploader("Document à ajouter", type=["png", "jpg", "jpeg", "pdf"])
+    data = st.file_uploader("", type=["png", "jpg", "jpeg", "pdf"])
     if data:
         name = str(data.name)
 
