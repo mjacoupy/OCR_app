@@ -493,7 +493,7 @@ if analysis == "Moteur de recherche":
     try:
         SE = SearchEngine()
     except ValueError:
-        st.success("L'indexer a bien été créé")
+
         my_bar = st.progress(0)
         schema = Schema(title=TEXT(stored=True), path=ID(stored=True), content=TEXT, textdata=TEXT(stored=True))
         if not os.path.exists("se_indexdir"):
@@ -522,7 +522,8 @@ if analysis == "Moteur de recherche":
             except UnicodeDecodeError:
                 pass
 
-        writer.commit()        
+        writer.commit()    
+        st.success("L'indexer a bien été créé")
 
 
     # Initialize variable
