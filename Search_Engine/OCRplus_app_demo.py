@@ -111,9 +111,9 @@ def my_split(s, seps):
                 res += seq.split(sep)
     return res
 
-def image_from_s3(bucket, key):
+def image_from_s3(key):
 
-    bucket = s3_resource.Bucket(bucket)
+    bucket = my_bucket
     image = bucket.Object(key)
     img_data = image.get().get('Body').read()
     
@@ -698,7 +698,7 @@ if analysis == "Search Engine":
                     st.text(iCpt)
                     st.text(sel_png)
 
-                    st.image(image_from_s3("ocrplus-app-mja", sel_png))
+                    st.image(image_from_s3(sel_png))
                               
 
 #########################################################################################################################
