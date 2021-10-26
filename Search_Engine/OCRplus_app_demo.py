@@ -124,22 +124,22 @@ analysis = st.sidebar.selectbox('', ['Image Import', 'Image Processing', 'Search
 #                                              # === IMPORT NEW FILE === #
 # #######################################################################################################################
 if analysis == "Image Import":
-    st.header('Image Import')
+    st.header("Import d'un nouveau document")
 
     side_bar()
     
-    data = st.file_uploader("Upload a file", type=["png", "jpg", "jpeg", "pdf"])
+    data = st.file_uploader("Document à ajouter", type=["png", "jpg", "jpeg", "pdf"])
     if data:
         name = str(data.name)
 
     if data is not None and "pdf" in str(data.type):
         images = convert_from_bytes(data.read())
-        text = 'Page number beween 1 and '+str(len(images))
+        text = 'Numéro de page entre 1 et '+str(len(images))
         col1, col2 = st.columns([8, 2])
         with col1:
             int_val = st.number_input(text, min_value=1, max_value=len(images), value=1)
         with col2:
-            button1 = st.button("Process")
+            button1 = st.button("Import")
             
         img = np.array(images[int_val-1])
         scale_percent = 20
@@ -174,9 +174,9 @@ if analysis == "Image Import":
         # resize image
         resized = cv2.resize(image2, dim, interpolation=cv2.INTER_AREA)
 
-        st.image(resized, caption='Selected document')
+        st.image(resized, caption='Document selectionné')
 
-        button = st.button("Process")
+        button = st.button("Import")
 
 
         if data is not None and button:
@@ -191,7 +191,7 @@ if analysis == "Image Import":
 #                                              # === PROCESS NEW FILE(S) === #
 # #######################################################################################################################
 if analysis == "Image Processing":
-    st.header('Image Processing')
+    st.header('Analyse du document')
 
     side_bar()
 
@@ -210,12 +210,12 @@ if analysis == "Image Processing":
 
 
     l = len(docs_all)-1
-    select = st.selectbox('Which document', docs_all, index=l)
+    select = st.selectbox('Selection du documebt', docs_all, index=l)
     col1, col2, col3 = st.columns(3)
     with col1:
-        all_image = st.checkbox('All')
+        all_image = st.checkbox('Tous')
     with col2:
-        last_image = st.checkbox('Last')
+        last_image = st.checkbox('Dernier')
     with col3:    
         button = st.button('OCR analysis')
 
@@ -382,7 +382,7 @@ if analysis == "Search Engine":
     try:
         SE = SearchEngine()
     except ValueError:
-        st.warning("Indexer Creation")
+        st.success("L'indexer a bien été créé")
         my_bar = st.progress(0)
         schema = Schema(title=TEXT(stored=True), path=ID(stored=True), content=TEXT, textdata=TEXT(stored=True))
         if not os.path.exists("se_indexdir"):
@@ -423,25 +423,25 @@ if analysis == "Search Engine":
     side_bar()
 
 # ##################################### == PART 1 == ##########################################################
-    st.header('Search Engine')
-    st.subheader('Part1 - Search')
+    st.header('Moteur de recherche')
+    st.subheader('Partie 1 - Recherche')
 
     # Ask user for parameters
-    user_input = st.text_input("Request")
-    response = st.radio('Number of response', ('Best', 'Most Relevant', 'All'), index=1)
+    user_input = st.text_input("Requete")
+    response = st.radio('Nombre de réponses', ('La meilleure', 'Les plus pertinentes', 'Toutes'), index=1)
 
 
 
     lang = st.multiselect('Which language', ['french', 'english', 'spanish', 'italian', 'german'], default=['french', 'english', 'spanish', 'italian', 'german'])
 
-    st.write('Specific Parameters')
-    kw = st.checkbox('Key words selected')
-    doc = st.checkbox('Number of document in the database')
-    positive = st.checkbox('Number of results')
-    score = st.checkbox('Score of documents')
-    all_of_them = st.checkbox('All', value=True)
+    st.write('Paramètres a afficher')
+    kw = st.checkbox('Mots clés selectionnés')
+    doc = st.checkbox('Nombre de document dans la base de donnée')
+    positive = st.checkbox('Nombre de résultats positifs obtenus')
+    score = st.checkbox('Score du document')
+    all_of_them = st.checkbox('Tout afficher', value=True)
 
-    search_button = st.button("Search")
+    search_button = st.button("Recherche")
 
     # Create the variables
     if all_of_them:
@@ -485,22 +485,22 @@ if analysis == "Search Engine":
         if kw:
             for ilang in lang:
                 try:
-                    st.markdown("Key Words selected in **"+ilang+"**: **"+str(tmp[ilang]['Key Words'])+"**")
+                    st.markdown("Les mots clés selectionnés en **"+ilang+"** : **"+str(tmp[ilang]['Key Words'])+"**")
                 except TypeError:
                     pass
         if doc:
             argmax = np.argmax(doc_found)
             try:
-                st.markdown("The Database contain: **"+str(tmp[lang[argmax]]['Documents to analyze'])+"** documents")
+                st.markdown("La base de donnée contient : **"+str(tmp[lang[argmax]]['Documents to analyze'])+"** documents")
             except TypeError:
                 pass
         if positive:
-            st.markdown("**"+str(len(df))+"** results found in the Database")
+            st.markdown("**"+str(len(df))+"** résultats positifs ont été trouvé dans la base de données ")
 
         # Crop the daframe depending on the paramaters selected
-        if response == "Best":
+        if response == "La meilleure":
             df = df.iloc[:1]
-        elif response == "Most Relevant":
+        elif response == "Les plus pertinentes":
             df = df.loc[df['Score'] > 3]
             st.markdown("**"+str(len(df))+"** relevant results found in the Database")
             if len(df) > 20:
@@ -518,7 +518,7 @@ if analysis == "Search Engine":
         st.markdown("""---""")
 
  # ##################################### == PART 2 == ##########################################################
-        st.subheader('Part2 - Show')
+        st.subheader('Part2 - Affichage')
 
         # Create list of document and language for the previews
         tmp_doc_list = [doc for doc in df['Documents']]
