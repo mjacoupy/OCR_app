@@ -88,9 +88,9 @@ def side_bar():
 
     st.sidebar.markdown("""---""")
 
-    st.sidebar.markdown("1. **Import :** Ajout d'un nouveau document à analyser. Cela peut etre une image (png ou jpeg) ou un document PDF")
-    #st.sidebar.markdown("2. **Processing :** Analyse OCR du ou des fichiers sélectionnés et création de l'indexer")
-    st.sidebar.markdown('2. **Moteur de recherche**')
+    # st.sidebar.markdown("1. **Import :** Ajout d'un nouveau document à analyser. Cela peut etre une image (png ou jpeg) ou un document PDF")
+    # st.sidebar.markdown("2. **Processing :** Analyse OCR du ou des fichiers sélectionnés et création de l'indexer")
+    # st.sidebar.markdown('2. **Moteur de recherche**')
 
     st.sidebar.markdown("""---""")
 
@@ -118,7 +118,7 @@ image1 = Image.open("app_logos/PTCtechLab.png")
 image2 = Image.open("app_logos/PTC.png")
 st.sidebar.image(image2, width=200)
 
-analysis = st.sidebar.selectbox('', ['Import', 'Moteur de recherche'])
+analysis = st.sidebar.selectbox('', ['Moteur de recherche'])
 
 # #######################################################################################################################
 #                                              # === IMPORT NEW FILE === #
@@ -191,19 +191,7 @@ if analysis == "Import":
                     pass
     
             writer.commit()  
-            
-            # ix = open_dir("se_indexdir")
-            # writer = ix.writer()
-            # try:
-            #     select_path = bucket_name_txt+"/"+name
-            #     fp = fs.open(select_path, "rb")
-            #     text = fp.read().decode('utf-8', 'ignore')
-            #     writer.add_document(title=name, path=select_path, content=text, textdata=text)
-            #     fp.close()
-            # except UnicodeDecodeError:
-            #     pass
-    
-            # writer.commit() 
+
             
 
     elif data is not None and "pdf" not in str(data.type):
