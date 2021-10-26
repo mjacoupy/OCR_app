@@ -109,13 +109,7 @@ def my_split(s, seps):
                 res += seq.split(sep)
     return res
 
-def image_from_s3(key):
 
-    bucket = my_bucket
-    image = bucket.Object(key)
-    img_data = image.get().get('Body').read()
-    
-    return Image.open(io.BytesIO(img_data))
 # #######################################################################################################################
 #                                              # === APPEARANCE === #
 # #######################################################################################################################
@@ -520,7 +514,7 @@ if analysis == "Search Engine":
             filepaths.append(file.key)
         
             
-        filepaths = filepaths[:10]
+        filepaths = filepaths
         for name, percent in zip(filepaths, range(len(filepaths))):
 
             val = (percent+1) / len(filepaths)
