@@ -687,12 +687,15 @@ if analysis == "Search Engine":
                 st.markdown(final_content)
 
                 with st.expander("See original page"):
-
-                    bucket = my_bucket
-                    image_object = bucket.Object(txt[:-9]+'.png')
-                    image = mpimg.imread(BytesIO(image_object.get()['Body'].read()), 'png')
-                    
-                    st.image(image)
+                    try:
+                        bucket = my_bucket
+                        image_object = bucket.Object(txt[:-9]+'.png')
+                        image = mpimg.imread(BytesIO(image_object.get()['Body'].read()), 'png')
+                        
+                        st.image(image)
+                    except AttributeError:
+                        pass    
+                        
 
 #########################################################################################################################
 #########################################################################################################################
