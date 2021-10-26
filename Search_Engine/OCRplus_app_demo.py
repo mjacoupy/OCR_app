@@ -689,11 +689,15 @@ if analysis == "Search Engine":
                 with st.expander("See original page"):
                     st.text(iCpt)
                     st.text(sel_png)
+                                    
+                    object = my_bucket.Object(sel_png)
+                    response = object.get()
+                    file_stream = response['Body']
+                    im = Image.open(file_stream)
+                    st.image(im)
                     
-                    object = my_bucket.Object(str(sel_png))
-                    file_stream = io.StringIO()
-                    object.download_fileobj(file_stream)
-                    img = mpimg.imread(file_stream)
+                    
+                    
                               
 # fs = s3fs.S3FileSystem(anon=False)
 # bucket_name = "ocrplus-app-mja"
