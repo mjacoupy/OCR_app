@@ -120,7 +120,7 @@ image1 = Image.open("app_logos/PTCtechLab.png")
 image2 = Image.open("app_logos/PTC.png")
 st.sidebar.image(image2, width=200)
 
-analysis = st.sidebar.selectbox('', ['Moteur de recherche'])
+analysis = st.sidebar.selectbox('', ['Moteur de recherche', 'Import'])
 
 # #######################################################################################################################
 #                                              # === IMPORT NEW FILE === #
