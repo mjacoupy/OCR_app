@@ -697,12 +697,12 @@ if analysis == "Search Engine":
 
                     bucket = my_bucket
                     object = bucket.Object(txt[:-9]+'.png')
-                    tmp = tempfile.NamedTemporaryFile()
-                    
-                    with open(tmp.name, 'wb') as f:
-                        object.download_fileobj(f)
-                        img=mpimg.imread(tmp.name)
-                        st.image(img)
+                    file_stream = io.StringIO()
+                    object.download_fileobj(file_stream)
+                    img = mpimg.imread(file_stream)
+                    st.image(img)
+
+
 
 #########################################################################################################################
 #########################################################################################################################
