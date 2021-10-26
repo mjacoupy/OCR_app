@@ -22,6 +22,8 @@ from SearchEngine_app import SearchEngine
 import re
 import cv2
 from pdf2image import convert_from_bytes
+import io
+import matplotlib.image as mpimg
 
 
 # #######################################################################################################################
@@ -686,34 +688,38 @@ if analysis == "Search Engine":
                     st.text(iCpt)
                     st.text(sel_png)
                     
-                    # img = Image.open(os.path.join("ocr_exports", "se_png", sel_png))
-                    # st.image(img)
+                    file_stream = io.StringIO()
+                    object = my_bucket.Object(sel_png)
+                    object.download_fileobj(file_stream)
+                    img = mpimg.imread(file_stream)
+                    st.image(img)
 
 
                 st.markdown("""---""")
                 
+      
                 
-                
-        # filepaths = []
-        # for file in my_bucket2.objects.all():
-        #     filepaths.append(file.key)
+      
+# fs = s3fs.S3FileSystem(anon=False)
+# bucket_name = "ocrplus-app-mja"
+# bucket_name_txt = "ocrplus-app-mja-txt"
+
+
+# s3 = boto3.resource('s3')
+# my_bucket = s3.Bucket(bucket_name)
+# my_bucket2 = s3.Bucket(bucket_name_txt)  
+      
         
-            
-        # filepaths = filepaths[:10]
-        # for name, percent in zip(filepaths, range(len(filepaths))):
+      
+                
+# s3 = boto3.resource('s3', region_name='us-east-2')
+# bucket = s3.Bucket('sentinel-s2-l1c')
+# object = bucket.Object('tiles/10/S/DG/2015/12/7/0/B01.jp2')
 
-        #     val = (percent+1) / len(filepaths)
-        #     my_bar.progress(val)
-
-        #     # Do not select empty document
-        #     try:
-        #         select_path = bucket_name_txt+"/"+name
-        #         fp = fs.open(select_path, "rb")
-        #         text = fp.read().decode('utf-8', 'ignore')
-        #         writer.add_document(title=name, path=select_path, content=text, textdata=text)
-        #         fp.close()
-        #     except UnicodeDecodeError:
-        #         pass
+# file_stream = io.StringIO()
+# object.download_fileobj(file_stream)
+# img = mpimg.imread(file_stream)
+# # whatever you need to do
                 
 #########################################################################################################################
 #########################################################################################################################
