@@ -27,7 +27,6 @@ import matplotlib.image as mpimg
 import tempfile
 
 
-
 # #######################################################################################################################
 #                                              # === S3 AWS CONNEXION === #
 # #######################################################################################################################
@@ -695,8 +694,8 @@ if analysis == "Search Engine":
                 st.markdown(final_content)
 
                 with st.expander("See original page"):
-                    st.write(txt)
-                    name_png = txt[:-9]+'.png'
+                    name = txt.copy()
+                    name_png = name[:-9]+'.png'
                     st.text(name_png)
                     
                     bucket = my_bucket
