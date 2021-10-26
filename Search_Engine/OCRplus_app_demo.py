@@ -557,13 +557,14 @@ if analysis == "Moteur de recherche":
 
     lang = st.multiselect('Which language', ['french', 'english', 'spanish', 'italian', 'german'], default=['french', 'english', 'spanish', 'italian', 'german'])
 
-    st.write('Paramètres a afficher')
-    kw = st.checkbox('Mots clés sélectionnés')
-    doc = st.checkbox('Nombre de document dans la base de donnée')
-    positive = st.checkbox('Nombre de résultats positifs obtenus')
-    score = st.checkbox('Score du document')
-    all_of_them = st.checkbox('Tout afficher', value=True)
+    # st.write('Paramètres a afficher')
+    # kw = st.checkbox('Mots clés sélectionnés')
+    # doc = st.checkbox('Nombre de document dans la base de donnée')
+    # positive = st.checkbox('Nombre de résultats positifs obtenus')
+    # score = st.checkbox('Score du document')
+    # all_of_them = st.checkbox('Tout afficher', value=True)
 
+    all_of_them = True
     search_button = st.button("Recherche")
 
     # Create the variables
@@ -618,14 +619,14 @@ if analysis == "Moteur de recherche":
             except TypeError:
                 pass
         if positive:
-            st.markdown("**"+str(len(df))+"** résultats positifs ont été trouvé dans la base de données ")
+            st.markdown("**"+str(len(df))+"** résultats positifs ont été trouvé dans la base de données")
 
         # Crop the daframe depending on the paramaters selected
         if response == "La meilleure":
             df = df.iloc[:1]
         elif response == "Les plus pertinentes":
             df = df.loc[df['Score'] > 3]
-            st.markdown("**"+str(len(df))+"** relevant results found in the Database")
+            #st.markdown("**"+str(len(df))+"** résultats positifs ont été trouvé dans la base de données")
             if len(df) > 20:
                 df = df.iloc[:20]
 
