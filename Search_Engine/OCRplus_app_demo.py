@@ -514,7 +514,7 @@ if analysis == "Search Engine":
             filepaths.append(file.key)
         
             
-        filepaths = filepaths
+        filepaths = filepaths[:10]
         for name, percent in zip(filepaths, range(len(filepaths))):
 
             val = (percent+1) / len(filepaths)
@@ -691,7 +691,13 @@ if analysis == "Search Engine":
                     bucket = my_bucket
                     image_object = bucket.Object(txt[:-9]+'.png')
                     image = mpimg.imread(BytesIO(image_object.get()['Body'].read()), 'png')
-                    st.image(image)
+                    
+                    scale_percent = 50
+                    width = int(image.shape[1] * scale_percent / 100)
+                    height = int(image.shape[0] * scale_percent / 100)
+                    dim = (width, height)
+                    resized = cv2.resize(image, dim, interpolation=cv2.INTER_AREA)
+                    st.image(resized)
 
 #########################################################################################################################
 #########################################################################################################################
