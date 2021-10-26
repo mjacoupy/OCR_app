@@ -15,16 +15,15 @@ import numpy as np
 import pytesseract
 import boto3
 import os
-from whoosh.index import create_in, open_dir
+from whoosh.index import create_in
 from whoosh.fields import Schema, TEXT, ID
 import pandas as pd
 from SearchEngine_app import SearchEngine
 import re
 import cv2
 from pdf2image import convert_from_bytes
-import io
+from io import BytesIO
 import matplotlib.image as mpimg
-import tempfile
 
 
 # #######################################################################################################################
@@ -696,13 +695,9 @@ if analysis == "Search Engine":
                 with st.expander("See original page"):
 
                     bucket = my_bucket
-                    object = bucket.Object(txt[:-9]+'.png')
-                    file_stream = io.StringIO()
-                    object.download_fileobj(file_stream)
-                    img = mpimg.imread(file_stream)
-                    st.image(img)
-
-
+                    image_object = bucket.Object(txt[:-9]+'.png')
+                    image = mpimg.imread(BytesIO(image_object.get()['Body'].read()), 'png')
+                    st.image(image)
 
 #########################################################################################################################
 #########################################################################################################################
