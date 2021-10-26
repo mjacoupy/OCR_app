@@ -162,35 +162,44 @@ if analysis == "Import":
             out_file = str(name)+'.txt'
             s3.Object(bucket_name_txt, out_file).put(Body=str_text)
             
-            my_bar = st.progress(0)
-            schema = Schema(title=TEXT(stored=True), path=ID(stored=True), content=TEXT, textdata=TEXT(stored=True))
-            if not os.path.exists("se_indexdir"):
-                os.mkdir("se_indexdir")
-    
-            # Creating a index writer to add document as per schema
-            ix = create_in("se_indexdir", schema)
-            writer = ix.writer()
-    
-            filepaths = []
-            for file in my_bucket2.objects.all():
-                filepaths.append(file.key)
-    
-            for name, percent in zip(filepaths, range(len(filepaths))):
-    
-                val = (percent+1) / len(filepaths)
-                my_bar.progress(val)
-    
-                # Do not select empty document
-                try:
-                    select_path = bucket_name_txt+"/"+name
-                    fp = fs.open(select_path, "rb")
-                    text = fp.read().decode('utf-8', 'ignore')
-                    writer.add_document(title=name, path=select_path, content=text, textdata=text)
-                    fp.close()
-                except UnicodeDecodeError:
-                    pass
-    
-            writer.commit()  
+            st.write("Voulez vous importer d'autres documents ?")
+            col1, col2, col3 = st.columns([2, 2, 6])
+            with col1:
+                yes = st.checkbox("Oui")
+            with col2:    
+                no = st.checkbox('Non')
+            
+            if yes:  
+            
+                my_bar = st.progress(0)
+                schema = Schema(title=TEXT(stored=True), path=ID(stored=True), content=TEXT, textdata=TEXT(stored=True))
+                if not os.path.exists("se_indexdir"):
+                    os.mkdir("se_indexdir")
+        
+                # Creating a index writer to add document as per schema
+                ix = create_in("se_indexdir", schema)
+                writer = ix.writer()
+        
+                filepaths = []
+                for file in my_bucket2.objects.all():
+                    filepaths.append(file.key)
+        
+                for name, percent in zip(filepaths, range(len(filepaths))):
+        
+                    val = (percent+1) / len(filepaths)
+                    my_bar.progress(val)
+        
+                    # Do not select empty document
+                    try:
+                        select_path = bucket_name_txt+"/"+name
+                        fp = fs.open(select_path, "rb")
+                        text = fp.read().decode('utf-8', 'ignore')
+                        writer.add_document(title=name, path=select_path, content=text, textdata=text)
+                        fp.close()
+                    except UnicodeDecodeError:
+                        pass
+        
+                writer.commit()  
             
 
     elif data is not None and "pdf" not in str(data.type):
