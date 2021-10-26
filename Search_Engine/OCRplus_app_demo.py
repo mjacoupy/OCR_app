@@ -601,7 +601,7 @@ if analysis == "Moteur de recherche":
                     if ilang == "french":
                         L = "français"
                     elif ilang == "english":
-                        L = "anglais"
+                        L == "anglais"
                     elif ilang == "spanish":
                         L == "espagnol"
                     elif ilang = "italian":
