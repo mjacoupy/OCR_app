@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-02 16:35:46
+# @Last Modified time: 2021-11-02 16:37:18
 
 
 # #######################################################################################################################
@@ -694,7 +694,7 @@ if analysis == "Search Engine":
                         
                         st.image(image)
                     except (AttributeError, TypeError) as e:
-                        pass    
+                        st.warning("Erreur - l'image n'existe pas")
                         
 
 
