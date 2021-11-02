@@ -17,7 +17,7 @@ from whoosh.qparser import QueryParser
 from whoosh.index import open_dir
 from deep_translator import GoogleTranslator
 import seaborn as sns
-from whoosh.lang.morph_fr import variations
+from whoosh.lang.morph_en import variations
 
 # #######################################################################################################################
 #                                              # === FUNCTIONS === #
