@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-02 17:59:30
+# @Last Modified time: 2021-11-02 18:00:54
 
 
 # #######################################################################################################################
@@ -24,6 +24,7 @@ import cv2
 from pdf2image import convert_from_bytes
 from io import BytesIO
 import matplotlib.image as mpimg
+from matplotlib import cm
 
 
 
@@ -121,8 +122,9 @@ def img_to_s3(body=None, key=None):
     """..."""
     s3 = session.resource('s3')
 
+    im = Image.fromarray(np.uint8(cm.gist_earth(body)*255))
     out_img = BytesIO()
-    body.save(out_img)
+    im.save(out_img)
     out_img.seek(0)  # Without this line it fails
 
     result = s3.meta.client.put_object(Body=out_img, Bucket=bucket_name, Key=key, ACL='public-read')
