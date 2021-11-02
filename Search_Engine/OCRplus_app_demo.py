@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-02 18:12:52
+# @Last Modified time: 2021-11-02 18:14:00
 
 
 # #######################################################################################################################
@@ -194,7 +194,7 @@ if analysis == "Import":
             img_to_s3(img, str(n))
 
             str_text = extract_content_to_txt(img)
-            out_file = str(name[:-4]+"_page_"+str(int_val)+'.txt'
+            out_file = str(name[:-4]+"_page_"+str(int_val)+'.txt')
             s3.Object(bucket_name_txt, out_file).put(Body=str_text)
         
             # my_bar = st.progress(0)
