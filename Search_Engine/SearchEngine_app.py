@@ -17,6 +17,7 @@ from whoosh.qparser import QueryParser
 from whoosh.index import open_dir
 from deep_translator import GoogleTranslator
 import seaborn as sns
+from whoosh.lang.morph_fr import variations
 
 # #######################################################################################################################
 #                                              # === FUNCTIONS === #
@@ -126,7 +127,19 @@ class SearchEngine():
 
             translated = GoogleTranslator(source='auto', target=iLanguage_short).translate(text)
 
-            important_text = self.extract_important_words(translated, language=iLanguage)
+            if iLanguage == 'english':
+                important_text_tmp = self.extract_important_words(translated, language=iLanguage)
+                important_text = []
+                for word in important_text_tmp:
+                    try:
+                        t = list(variations(word))
+                    except:
+                        t = []
+                    important_text.extend(t)         
+
+            else:
+                important_text = self.extract_important_words(translated, language=iLanguage)
+                
             if self.search_in_database_document(important_text, content=True)[0] != {}:
                 full_results[iLanguage] = self.search_in_database_document(important_text, content=True)
             else:
