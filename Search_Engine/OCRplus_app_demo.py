@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-02 17:30:02
+# @Last Modified time: 2021-11-02 17:34:14
 
 
 # #######################################################################################################################
@@ -39,12 +39,9 @@ s3 = boto3.resource('s3')
 my_bucket = s3.Bucket(bucket_name)
 my_bucket2 = s3.Bucket(bucket_name_txt)
 
-ACCESS_KEY_ID = st.secrets['AWS_ACCESS_KEY_ID']
-SECRET_ACCESS_KEY = st.secrets['AWS_SECRET_ACCESS_KEY']
-
 session = boto3.Session(
-    aws_access_key_id=ACCESS_KEY_ID,
-    aws_secret_access_key=SECRET_ACCESS_KEY
+    aws_access_key_id=st.secrets['AWS_ACCESS_KEY_ID'],
+    aws_secret_access_key=st.secrets['AWS_SECRET_ACCESS_KEY']
     )
 
 
@@ -185,7 +182,8 @@ if analysis == "Import":
 
             export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
             out_file = export_path + str(name) + "-" + str(int_val) + ".png"
-            cv2.imwrite(out_file, img)
+            # cv2.imwrite(out_file, img)
+            img_to_s3(body=img, key=(name+'.png')
 
             str_text = extract_content_to_txt(img)
             out_file = str(name)+'.txt'
@@ -220,7 +218,7 @@ if analysis == "Import":
             #         pass
     
             # writer.commit()
-            img_to_s3(body=img, key=out_file)
+
 
 
 
