@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-02 18:00:54
+# @Last Modified time: 2021-11-02 18:04:11
 
 
 # #######################################################################################################################
@@ -122,12 +122,13 @@ def img_to_s3(body=None, key=None):
     """..."""
     s3 = session.resource('s3')
 
-    im = Image.fromarray(np.uint8(cm.gist_earth(body)*255))
-    out_img = BytesIO()
-    im.save(out_img)
-    out_img.seek(0)  # Without this line it fails
+    img_pil = Image.fromarray(body)
+    byte_io = BytesIO()
+    img_pil.save(byte_io, format="JPG")
 
-    result = s3.meta.client.put_object(Body=out_img, Bucket=bucket_name, Key=key, ACL='public-read')
+    byte_io.seek(0)  # Without this line it fails
+
+    result = s3.meta.client.put_object(Body=byte_io, Bucket=bucket_name, Key=key, ACL='public-read')
     # result = s3.meta.client.put_object(Body='Text Contents', Bucket='<bucket_name>', Key='filename.txt')
 
     res = result.get('ResponseMetadata')
