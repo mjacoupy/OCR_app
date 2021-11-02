@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-02 17:06:14
+# @Last Modified time: 2021-11-02 17:25:44
 
 
 # #######################################################################################################################
@@ -39,10 +39,15 @@ s3 = boto3.resource('s3')
 my_bucket = s3.Bucket(bucket_name)
 my_bucket2 = s3.Bucket(bucket_name_txt)
 
-client = boto3.client('s3')
-
 ACCESS_KEY_ID = None
 SECRET_ACCESS_KEY = None
+
+session = boto3.Session(
+aws_access_key_id=ACCESS_KEY_ID,
+aws_secret_access_key=SECRET_ACCESS_KEY
+)
+
+
 # #######################################################################################################################
 #                                              # === FUNCTIONS === #
 # #######################################################################################################################
@@ -114,7 +119,19 @@ def my_split(s, seps):
                 res += seq.split(sep)
     return res
 
+def img_to_s3(body, key)
+    """..."""
+    s3 = session.resource('s3')
 
+    result = s3.meta.client.put_object(Body=body, Bucket=bucket_name, Key=key)
+    # result = s3.meta.client.put_object(Body='Text Contents', Bucket='<bucket_name>', Key='filename.txt')
+
+    res = result.get('ResponseMetadata')
+
+    if res.get('HTTPStatusCode') == 200:
+        st.seccess('File Uploaded Successfully')
+    else:
+        st.warning('File Not Uploaded')
 # #######################################################################################################################
 #                                              # === APPEARANCE === #
 # #######################################################################################################################
@@ -173,43 +190,39 @@ if analysis == "Import":
             out_file = str(name)+'.txt'
             s3.Object(bucket_name_txt, out_file).put(Body=str_text)
         
-            my_bar = st.progress(0)
-            schema = Schema(title=TEXT(stored=True), path=ID(stored=True), content=TEXT, textdata=TEXT(stored=True))
-            if not os.path.exists("se_indexdir"):
-                os.mkdir("se_indexdir")
+            # my_bar = st.progress(0)
+            # schema = Schema(title=TEXT(stored=True), path=ID(stored=True), content=TEXT, textdata=TEXT(stored=True))
+            # if not os.path.exists("se_indexdir"):
+            #     os.mkdir("se_indexdir")
     
-            # Creating a index writer to add document as per schema
-            ix = create_in("se_indexdir", schema)
-            writer = ix.writer()
+            # # Creating a index writer to add document as per schema
+            # ix = create_in("se_indexdir", schema)
+            # writer = ix.writer()
     
-            filepaths = []
-            for file in my_bucket2.objects.all():
-                filepaths.append(file.key)
+            # filepaths = []
+            # for file in my_bucket2.objects.all():
+            #     filepaths.append(file.key)
     
-            for name, percent in zip(filepaths, range(len(filepaths))):
+            # for name, percent in zip(filepaths, range(len(filepaths))):
     
-                val = (percent+1) / len(filepaths)
-                my_bar.progress(val)
+            #     val = (percent+1) / len(filepaths)
+            #     my_bar.progress(val)
     
-                # Do not select empty document
-                try:
-                    select_path = bucket_name_txt+"/"+name
-                    fp = fs.open(select_path, "rb")
-                    text = fp.read().decode('utf-8', 'ignore')
-                    writer.add_document(title=name, path=select_path, content=text, textdata=text)
-                    fp.close()
-                except UnicodeDecodeError:
-                    pass
+            #     # Do not select empty document
+            #     try:
+            #         select_path = bucket_name_txt+"/"+name
+            #         fp = fs.open(select_path, "rb")
+            #         text = fp.read().decode('utf-8', 'ignore')
+            #         writer.add_document(title=name, path=select_path, content=text, textdata=text)
+            #         fp.close()
+            #     except UnicodeDecodeError:
+            #         pass
     
-            writer.commit()
-            response = client.put_object(
-                Bucket=bucket_name,
-                Body=img,
-                Key=out_file
-            )
+            # writer.commit()
+            img_to_s3(body=img, key=out_file)
 
 
-            
+
 
     elif data is not None and "pdf" not in str(data.type):
 
