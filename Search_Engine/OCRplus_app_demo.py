@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-02 17:26:28
+# @Last Modified time: 2021-11-02 17:30:02
 
 
 # #######################################################################################################################
@@ -39,8 +39,8 @@ s3 = boto3.resource('s3')
 my_bucket = s3.Bucket(bucket_name)
 my_bucket2 = s3.Bucket(bucket_name_txt)
 
-ACCESS_KEY_ID = None
-SECRET_ACCESS_KEY = None
+ACCESS_KEY_ID = st.secrets['AWS_ACCESS_KEY_ID']
+SECRET_ACCESS_KEY = st.secrets['AWS_SECRET_ACCESS_KEY']
 
 session = boto3.Session(
     aws_access_key_id=ACCESS_KEY_ID,
