@@ -108,7 +108,7 @@ class SearchEngine():
         extracted_text = r.get_ranked_phrases_with_scores()
         important_text = []
         for iExtract in extracted_text:
-            important_text.append(iExtract[1])
+            important_text.append(iExtract[1].lower())
         return important_text
     # -------------------------------------------------------------------------- #
 
