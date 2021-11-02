@@ -424,7 +424,7 @@ if analysis == "Processing":
             writer = ix.writer()
     
             filepaths = []
-            for file in my_bucket2.objects.all()[:10]:
+            for file in my_bucket2.objects.all():
                 filepaths.append(file.key)
     
             for name, percent in zip(filepaths, range(len(filepaths))):
@@ -437,7 +437,7 @@ if analysis == "Processing":
                     select_path = bucket_name_txt+"/"+name
                     fp = fs.open(select_path, "rb")
                     text = fp.read().decode('utf-8', 'ignore')
-                    writer.add_document(title=name, path=select_path, content=text.lower(), textdata=text.lower())
+                    writer.add_document(title=name, path=select_path, content=text, textdata=text)
                     fp.close()
                 except UnicodeDecodeError:
                     pass
@@ -510,11 +510,11 @@ if analysis == "Search Engine":
         writer = ix.writer()
 
         filepaths = []
-        for file in my_bucket2.objects.all()[:10]:
+        for file in my_bucket2.objects.all():
             filepaths.append(file.key)
         
             
-        filepaths = filepaths
+        filepaths = filepaths[:10]
         for name, percent in zip(filepaths, range(len(filepaths))):
 
             val = (percent+1) / len(filepaths)
