@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-02 17:34:40
+# @Last Modified time: 2021-11-02 17:37:10
 
 
 # #######################################################################################################################
@@ -183,7 +183,7 @@ if analysis == "Import":
             export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
             out_file = export_path + str(name) + "-" + str(int_val) + ".png"
             # cv2.imwrite(out_file, img)
-            img_to_s3(body=img, key=(name+'.png'))
+            img_to_s3(img, (name+'.png'))
 
             str_text = extract_content_to_txt(img)
             out_file = str(name)+'.txt'
