@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-10-26 17:52:28
+# @Last Modified time: 2021-11-02 16:28:46
 
 
 # #######################################################################################################################
@@ -140,7 +140,7 @@ if analysis == "Import":
 
     if data is not None and "pdf" in str(data.type):
         images = convert_from_bytes(data.read())
-        text = 'Page number between **1** and **'+str(len(images)+"**")
+        text = 'Page number between **1** and **'+str(len(images))+"**"
         col1, col2 = st.columns([8, 2])
         with col1:
             int_val = st.number_input(text, min_value=1, max_value=len(images), value=1)
@@ -514,7 +514,7 @@ if analysis == "Search Engine":
             filepaths.append(file.key)
         
             
-        filepaths = filepaths
+        filepaths = filepaths[:10]
         for name, percent in zip(filepaths, range(len(filepaths))):
 
             val = (percent+1) / len(filepaths)
