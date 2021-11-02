@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-02 16:40:03
+# @Last Modified time: 2021-11-02 17:06:14
 
 
 # #######################################################################################################################
@@ -26,6 +26,7 @@ from io import BytesIO
 import matplotlib.image as mpimg
 
 
+
 # #######################################################################################################################
 #                                              # === S3 AWS CONNEXION === #
 # #######################################################################################################################
@@ -38,6 +39,10 @@ s3 = boto3.resource('s3')
 my_bucket = s3.Bucket(bucket_name)
 my_bucket2 = s3.Bucket(bucket_name_txt)
 
+client = boto3.client('s3')
+
+ACCESS_KEY_ID = None
+SECRET_ACCESS_KEY = None
 # #######################################################################################################################
 #                                              # === FUNCTIONS === #
 # #######################################################################################################################
@@ -196,7 +201,13 @@ if analysis == "Import":
                 except UnicodeDecodeError:
                     pass
     
-            writer.commit()  
+            writer.commit()
+            response = client.put_object(
+                Bucket=bucket_name,
+                Body=img,
+                Key=out_file
+            )
+
 
             
 
@@ -344,7 +355,7 @@ if analysis == "Processing":
         #         pass
 
         # writer.commit()            
-        ix =  ("se_indexdir")
+        ix = ("se_indexdir")
         writer = ix.writer()
         try:
             select_path = bucket_name_txt+"/"+name
@@ -354,7 +365,7 @@ if analysis == "Processing":
             fp.close()
         except UnicodeDecodeError:
             pass
-        writer.commit() 
+        writer.commit()
             
 
             ############
