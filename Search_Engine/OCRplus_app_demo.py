@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-02 16:37:18
+# @Last Modified time: 2021-11-02 16:39:05
 
 
 # #######################################################################################################################
@@ -693,9 +693,9 @@ if analysis == "Search Engine":
                         image = mpimg.imread(BytesIO(image_object.get()['Body'].read()), 'png')
                         
                         st.image(image)
-                    except (AttributeError, TypeError) as e:
+                    except (AttributeError, TypeError, client.exceptions.NoSuchKey) as e:
                         st.warning("Erreur - l'image n'existe pas")
-                        
+
 
 
 #########################################################################################################################
