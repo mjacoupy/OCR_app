@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-02 17:49:46
+# @Last Modified time: 2021-11-02 17:51:55
 
 
 # #######################################################################################################################
@@ -120,7 +120,7 @@ def my_split(s, seps):
 def img_to_s3(body=None, key=None):
     """..."""
     s3 = session.resource('s3')
-    byte_array = bytearray(body)
+    byte_array = body.tobytes()
     result = s3.meta.client.put_object(Body=byte_array, Bucket=bucket_name, Key=key)
     # result = s3.meta.client.put_object(Body='Text Contents', Bucket='<bucket_name>', Key='filename.txt')
 
