@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-02 18:17:19
+# @Last Modified time: 2021-11-02 18:20:43
 
 
 # #######################################################################################################################
@@ -190,11 +190,11 @@ if analysis == "Import":
             export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
             out_file = export_path + str(name) + "-" + str(int_val) + ".png"
             # cv2.imwrite(out_file, img)
-            n = name[:-4]+"_page_"+str(int_val)+'.png'
+            n = name[:-4]+"_page"+str(int_val)+'.png'
             img_to_s3(img, str(n))
 
             str_text = extract_content_to_txt(img)
-            out_file = str(name[:-4]+"_page_"+str(int_val)+'_raw_text.txt')
+            out_file = str(name[:-4]+"_page"+str(int_val)+'_raw_text.txt')
             s3.Object(bucket_name_txt, out_file).put(Body=str_text)
         
             # my_bar = st.progress(0)
@@ -322,7 +322,7 @@ if analysis == "Processing":
         all_image = st.checkbox('Tous')
     with col2:
         last_image = st.checkbox('Dernier')
-    with col5:    
+    with col5:
         button = st.button('Analyse OCR')
 
 
