@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-02 17:26:06
+# @Last Modified time: 2021-11-02 17:26:28
 
 
 # #######################################################################################################################
@@ -43,9 +43,9 @@ ACCESS_KEY_ID = None
 SECRET_ACCESS_KEY = None
 
 session = boto3.Session(
-aws_access_key_id=ACCESS_KEY_ID,
-aws_secret_access_key=SECRET_ACCESS_KEY
-)
+    aws_access_key_id=ACCESS_KEY_ID,
+    aws_secret_access_key=SECRET_ACCESS_KEY
+    )
 
 
 # #######################################################################################################################
@@ -118,6 +118,7 @@ def my_split(s, seps):
         for seq in s:
                 res += seq.split(sep)
     return res
+
 
 def img_to_s3(body, key):
     """..."""
