@@ -437,7 +437,7 @@ if analysis == "Processing":
                     select_path = bucket_name_txt+"/"+name
                     fp = fs.open(select_path, "rb")
                     text = fp.read().decode('utf-8', 'ignore')
-                    writer.add_document(title=name, path=select_path, content=text, textdata=text)
+                    writer.add_document(title=name, path=select_path, content=text.lower(), textdata=text.lowr())
                     fp.close()
                 except UnicodeDecodeError:
                     pass
