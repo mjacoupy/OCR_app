@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-02 17:45:05
+# @Last Modified time: 2021-11-02 17:46:01
 
 
 # #######################################################################################################################
@@ -127,7 +127,7 @@ def img_to_s3(body=None, key=None):
     res = result.get('ResponseMetadata')
 
     if res.get('HTTPStatusCode') == 200:
-        st.seccess('File Uploaded Successfully')
+        st.success('File Uploaded Successfully')
     else:
         st.warning('File Not Uploaded')
 # #######################################################################################################################
