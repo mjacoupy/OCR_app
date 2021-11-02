@@ -514,7 +514,7 @@ if analysis == "Search Engine":
             filepaths.append(file.key)
         
             
-        filepaths = filepaths[:10]
+        filepaths = filepaths
         for name, percent in zip(filepaths, range(len(filepaths))):
 
             val = (percent+1) / len(filepaths)
