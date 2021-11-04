@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-04 10:23:03
+# @Last Modified time: 2021-11-04 10:27:13
 
 
 # #######################################################################################################################
@@ -216,8 +216,10 @@ if analysis == "Import":
 
 
         if data is not None and button:
-
-            name_s3 = str(name)+'.png'
+            if ".jpeg" in str(data.type):
+                name_s3 = str(name[:-5])+'.png'
+            else:
+                name_s3 = str(name[:-4])+'.png'
             img_to_s3(image_s3, str(name_s3))
 
             str_text = extract_content_to_txt(image_s3)
