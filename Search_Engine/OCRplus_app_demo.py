@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-04 10:56:57
+# @Last Modified time: 2021-11-04 11:04:02
 
 
 # #######################################################################################################################
@@ -118,7 +118,7 @@ def my_split(s, seps):
     return res
 
 
-def img_to_s3(body=None, key=None):
+def img_to_s3(body=None, key=None, page=0):
     """..."""
     s3 = session.resource('s3')
 
@@ -133,9 +133,9 @@ def img_to_s3(body=None, key=None):
     res = result.get('ResponseMetadata')
 
     if res.get('HTTPStatusCode') == 200:
-        st.success('File Uploaded Successfully')
+        st.success('Page '+str(page)+' Uploaded Successfully')
     else:
-        st.warning('File Not Uploaded')
+        st.warning('Page '+str(page)+' Not Uploaded')
 # #######################################################################################################################
 #                                              # === APPEARANCE === #
 # #######################################################################################################################
@@ -195,17 +195,17 @@ if analysis == "Import":
             if full_doc is False:
 
                 name_s3 = name[:-4]+"_page"+str(page)+'.png'
-                img_to_s3(img, str(name_s3))
+                img_to_s3(img, str(name_s3), int(page))
 
                 str_text = extract_content_to_txt(img)
                 out_file = str(name[:-4]+"_page"+str(page)+'_raw_text.txt')
                 s3.Object(bucket_name_txt, out_file).put(Body=str_text)
 
             elif full_doc:
-                for iPage in range(len(images)-1):
-                    img = np.array(images[iPage-1])
+                for iPage in range(len(images)):
+                    img = np.array(images[iPage])
                     name_s3 = name[:-4]+"_page"+str(iPage+1)+'.png'
-                    img_to_s3(img, str(name_s3))
+                    img_to_s3(img, str(name_s3), int(iPage+1))
 
                     str_text = extract_content_to_txt(img)
                     out_file = str(name[:-4]+"_page"+str(iPage+1)+'_raw_text.txt')
