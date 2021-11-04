@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-04 11:36:14
+# @Last Modified time: 2021-11-04 12:23:19
 
 
 # #######################################################################################################################
@@ -106,7 +106,11 @@ def side_bar(onglet='Import'):
 
     st.sidebar.markdown("""---""")
 
-    st.sidebar.image(image1, width=50)
+    try:
+        st.sidebar.image(image1, width=50)
+    except Exception as e:
+        pass
+
     st.sidebar.markdown(end, unsafe_allow_html=True)
 
 
@@ -148,9 +152,12 @@ st.markdown("This demo is a concrete example of how the OCR+ module works in a v
 
 st.markdown("""---""")
 
-image1 = Image.open("app_logos/PTCtechLab.png")
-image2 = Image.open("app_logos/PTC.png")
-st.sidebar.image(image2, width=200)
+try:
+    image1 = Image.open("app_logos/PTCtechLab.png")
+    image2 = Image.open("app_logos/PTC.png")
+    st.sidebar.image(image2, width=200)
+except Exception as e:
+    pass
 
 analysis = st.sidebar.selectbox('', ['Import', 'Search Engine'], index=1)
 
