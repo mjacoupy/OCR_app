@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-04 10:29:37
+# @Last Modified time: 2021-11-04 10:32:33
 
 
 # #######################################################################################################################
@@ -218,12 +218,13 @@ if analysis == "Import":
         if data is not None and button:
             if ".jpeg" in str(data.type):
                 name_s3 = str(name[:-5])+'.png'
+                out_file = str(name[:-5]+'_raw_text.txt')
             else:
                 name_s3 = str(name[:-4])+'.png'
+                out_file = str(name[:-4]+'_raw_text.txt')
             img_to_s3(image_s3, str(name_s3))
 
             str_text = extract_content_to_txt(image_s3)
-            out_file = str(name)+'.txt'
             s3.Object(bucket_name_txt, out_file).put(Body=str_text)
 
 
