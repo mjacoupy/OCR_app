@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-02 18:20:43
+# @Last Modified time: 2021-11-03 09:50:14
 
 
 # #######################################################################################################################
@@ -24,7 +24,6 @@ import cv2
 from pdf2image import convert_from_bytes
 from io import BytesIO
 import matplotlib.image as mpimg
-from matplotlib import cm
 
 
 
@@ -129,7 +128,6 @@ def img_to_s3(body=None, key=None):
     byte_io.close()  # Without this line it fails
 
     result = s3.meta.client.put_object(Body=png_buffer, Bucket=bucket_name, Key=key)
-    # result = s3.meta.client.put_object(Body='Text Contents', Bucket='<bucket_name>', Key='filename.txt')
 
     res = result.get('ResponseMetadata')
 
@@ -160,7 +158,7 @@ if analysis == "Import":
     st.header("Import of a new document")
 
     side_bar()
-    
+
     data = st.file_uploader("", type=["png", "jpg", "jpeg", "pdf"])
     if data:
         name = str(data.name)
@@ -189,47 +187,12 @@ if analysis == "Import":
 
             export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
             out_file = export_path + str(name) + "-" + str(int_val) + ".png"
-            # cv2.imwrite(out_file, img)
             n = name[:-4]+"_page"+str(int_val)+'.png'
             img_to_s3(img, str(n))
 
             str_text = extract_content_to_txt(img)
             out_file = str(name[:-4]+"_page"+str(int_val)+'_raw_text.txt')
             s3.Object(bucket_name_txt, out_file).put(Body=str_text)
-        
-            # my_bar = st.progress(0)
-            # schema = Schema(title=TEXT(stored=True), path=ID(stored=True), content=TEXT, textdata=TEXT(stored=True))
-            # if not os.path.exists("se_indexdir"):
-            #     os.mkdir("se_indexdir")
-    
-            # # Creating a index writer to add document as per schema
-            # ix = create_in("se_indexdir", schema)
-            # writer = ix.writer()
-    
-            # filepaths = []
-            # for file in my_bucket2.objects.all():
-            #     filepaths.append(file.key)
-    
-            # for name, percent in zip(filepaths, range(len(filepaths))):
-    
-            #     val = (percent+1) / len(filepaths)
-            #     my_bar.progress(val)
-    
-            #     # Do not select empty document
-            #     try:
-            #         select_path = bucket_name_txt+"/"+name
-            #         fp = fs.open(select_path, "rb")
-            #         text = fp.read().decode('utf-8', 'ignore')
-            #         writer.add_document(title=name, path=select_path, content=text, textdata=text)
-            #         fp.close()
-            #     except UnicodeDecodeError:
-            #         pass
-    
-            # writer.commit()
-
-
-
-
 
     elif data is not None and "pdf" not in str(data.type):
 
@@ -255,43 +218,12 @@ if analysis == "Import":
 
             export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
             out_file = export_path + str(name) + ".png"
-            cv2.imwrite(out_file, image2)
-            
+            n = name[:-4]+"_page"+str(int_val)+'.png'
+            img_to_s3(image2, str(n))
+
             str_text = extract_content_to_txt(image2)
             out_file = str(name)+'.txt'
             s3.Object(bucket_name_txt, out_file).put(Body=str_text)
-            
-            my_bar = st.progress(0)
-            schema = Schema(title=TEXT(stored=True), path=ID(stored=True), content=TEXT, textdata=TEXT(stored=True))
-            if not os.path.exists("se_indexdir"):
-                os.mkdir("se_indexdir")
-    
-            # Creating a index writer to add document as per schema
-            ix = create_in("se_indexdir", schema)
-            writer = ix.writer()
-    
-            filepaths = []
-            for file in my_bucket2.objects.all():
-                filepaths.append(file.key)
-    
-            for name, percent in zip(filepaths, range(len(filepaths))):
-    
-                val = (percent+1) / len(filepaths)
-                my_bar.progress(val)
-    
-                # Do not select empty document
-                try:
-                    select_path = bucket_name_txt+"/"+name
-                    fp = fs.open(select_path, "rb")
-                    text = fp.read().decode('utf-8', 'ignore')
-                    writer.add_document(title=name, path=select_path, content=text, textdata=text)
-                    fp.close()
-                except UnicodeDecodeError:
-                    pass
-    
-            writer.commit()  
-        
-
 
 # #######################################################################################################################
 #                                              # === PROCESS NEW FILE(S) === #
@@ -374,7 +306,8 @@ if analysis == "Processing":
         #     except UnicodeDecodeError:
         #         pass
 
-        # writer.commit()            
+        # writer.commit()
+
         ix = ("se_indexdir")
         writer = ix.writer()
         try:
@@ -561,7 +494,7 @@ if analysis == "Search Engine":
             except UnicodeDecodeError:
                 pass
 
-        writer.commit()    
+        writer.commit()
         st.success("The indexer has been created")
 
 
@@ -635,7 +568,7 @@ if analysis == "Search Engine":
 
         # Print the informations if the are asked
         # if kw:
-        #     for ilang in lang:                      
+        #     for ilang in lang:
         #             st.markdown("Les mots clés sélectionnés en **"+str(L)+"** : **"+str(tmp[ilang]['Key Words'])+"**")
         if doc:
             argmax = np.argmax(doc_found)
@@ -651,7 +584,7 @@ if analysis == "Search Engine":
             df = df.iloc[:1]
         elif response == "Most Pertinent":
             df = df.loc[df['Score'] > 3]
-            #st.markdown("**"+str(len(df))+"** résultats positifs ont été trouvé dans la base de données")
+            # st.markdown("**"+str(len(df))+"** résultats positifs ont été trouvé dans la base de données")
             if len(df) > 20:
                 df = df.iloc[:20]
 
