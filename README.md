@@ -2,21 +2,21 @@
 
 ## Définition
 L'application est un moteur de recherche permettant de trouver la ou les pages de divers documents contenant les informations recherchées. Elle est divisée en deux onglets :
- - Une partie "Import d'un nouveau document" 
- - Une partie "Moteur de recherche"
+ - Une partie **Import d'un nouveau document**
+ - Une partie **Moteur de recherche**
  
 ## Description
 
-### Partie "Import d'un nouveau document" 
+### Partie "Import d'un nouveau document"
 Cette étape de l'application permet d'importer divers types de documents (PNG, PDF, JPG, JPEG). Pour les formats PDF, il est possible d'importer une page ou le document complet. 
-Deux formats sont importés :
+La ou les images sont analysées de manière à isoler :
 - l'image sélectionnée (JPG, JPEG, PNG ou la page sélectionnée si PDF) qui va ensuite être stockée sur un bucket AWS S3.
 - le texte "brut" sous format .txt qui va ensuite être stocké sur un autre bucket AWS S3. 
 > Les noms des deux buckets sont à définir dans le fichier .py
 
 ### Partie "Moteur de recherche"
 Cette étape permet de faire une recherche en 107 langages différents dans des documents en 5 langages différents (Français, Anglais, Espagnol, Italien et Allemand). 
-> La seule étape de "sémantique" existante est une sélection des mots clés pertinents basée sur la bibliothèque "Rake-nltk".
+> La seule étape de "sémantique" implémentée à l'heure actuelle est une sélection des mots clés pertinents basée sur la bibliothèque "Rake-nltk".
  
 Sont affichés une fois la recherche lancée :
 - la quantité de document dans la base de données.
