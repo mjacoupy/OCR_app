@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-04 11:22:19
+# @Last Modified time: 2021-11-04 11:23:03
 
 
 # #######################################################################################################################
@@ -215,9 +215,8 @@ if analysis == "Import":
     elif data is not None and "pdf" not in str(data.type):
 
         image = Image.open(data)
-        pil_image = Image.open(data).convert('RGB')
-        imageRGB = cv2.cvtColor(pil_image, cv2.COLOR_BGR2RGB)
-        open_cv_image = np.array(imageRGB)
+        pil_image = Image.open(data).convert('BGR')
+        open_cv_image = np.array(pil_image)
         image_s3 = open_cv_image[:, :, ::-1].copy()
 
         scale_percent = 20
