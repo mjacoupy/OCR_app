@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-04 10:35:18
+# @Last Modified time: 2021-11-04 10:47:36
 
 
 # #######################################################################################################################
@@ -167,13 +167,18 @@ if analysis == "Import":
 
     # If the document is a PDF
     if data is not None and "pdf" in str(data.type):
+
+        choice = st.radio
+
         images = convert_from_bytes(data.read())
-        text = 'Page number between **1** and **'+str(len(images))+"**"
-        col1, col2 = st.columns([8, 2])
+        text = 'Page number between 1 and '+str(len(images))
+        col1, col2, col3 = st.columns([6, 3, 1])
         with col1:
             # Choose a page to import
             page = st.number_input(text, min_value=1, max_value=len(images), value=1)
         with col2:
+            full_doc = st.checkbox("Analyze full document")
+        with col3:
             button1 = st.button("Import")
 
         # Display the chosen page
