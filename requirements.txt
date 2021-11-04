@@ -1,1 +1,2 @@
 s3fs
+pytesseract==0.3.8
