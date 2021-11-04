@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-04 11:35:44
+# @Last Modified time: 2021-11-04 11:36:14
 
 
 # #######################################################################################################################
@@ -100,9 +100,9 @@ def side_bar(onglet='Import'):
     st.sidebar.markdown("""---""")
 
     if onglet == 'Import':
-        st.sidebar.markdown("1. **Import :** Ajout d'un nouveau document à analyser. Cela peut etre une image (png ou jpeg) ou un document PDF")
+        st.sidebar.markdown("**Import :** Ajout d'un nouveau document à analyser. Cela peut etre une image (png ou jpeg) ou un document PDF")
     elif onglet == 'Search Engine':
-        st.sidebar.markdown("2. **Moteur de recherche :** Permet de chercher un document ou la page d'un document contenant l'information recherchée")
+        st.sidebar.markdown("**Moteur de recherche :** Permet de chercher un document ou la page d'un document contenant l'information recherchée")
 
     st.sidebar.markdown("""---""")
 
