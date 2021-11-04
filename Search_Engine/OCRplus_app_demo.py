@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-04 10:03:01
+# @Last Modified time: 2021-11-04 10:11:22
 
 
 # #######################################################################################################################
@@ -38,8 +38,8 @@ bucket_name_txt = "ocrplus-app-mja-txt"
 
 
 s3 = boto3.resource('s3')
-my_bucket = s3.Bucket(bucket_name)
-my_bucket2 = s3.Bucket(bucket_name_txt)
+my_bucket_img = s3.Bucket("ocrplus-app-mja")
+my_bucket_txt = s3.Bucket("ocrplus-app-mja-txt")
 
 session = boto3.Session(
     aws_access_key_id=st.secrets['AWS_ACCESS_KEY_ID'],
@@ -100,7 +100,6 @@ def side_bar():
     st.sidebar.markdown("""---""")
 
     # st.sidebar.markdown("1. **Import :** Ajout d'un nouveau document à analyser. Cela peut etre une image (png ou jpeg) ou un document PDF")
-    # st.sidebar.markdown("2. **Processing :** Analyse OCR du ou des fichiers sélectionnés et création de l'indexer")
     # st.sidebar.markdown('2. **Moteur de recherche**')
 
     st.sidebar.markdown("""---""")
@@ -173,7 +172,7 @@ if analysis == "Import":
             int_val = st.number_input(text, min_value=1, max_value=len(images), value=1)
         with col2:
             button1 = st.button("Import")
-            
+
         img = np.array(images[int_val-1])
         scale_percent = 20
         width = int(img.shape[1] * scale_percent / 100)
@@ -227,240 +226,12 @@ if analysis == "Import":
             out_file = str(name)+'.txt'
             s3.Object(bucket_name_txt, out_file).put(Body=str_text)
 
-# #######################################################################################################################
-#                                              # === PROCESS NEW FILE(S) === #
-# #######################################################################################################################
-if analysis == "Processing":
-    st.header('Analyse du document')
-
-    side_bar()
-
-    docs_s3 = []
-    for file in my_bucket.objects.all():
-        docs_s3.append(file.key)
-
-    # try:
-    import_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
-    docs_repo = os.listdir(import_path)
-
-    final_list = docs_s3 + docs_repo
-
-    docs_all = final_list.copy()
-    # docs_all.append('All')
-
-
-    l = len(docs_all)-1
-    select = st.selectbox('Sélection du document', docs_all, index=l)
-    col1, col2, col3, col4, col5 = st.columns(5)
-    with col1:
-        all_image = st.checkbox('Tous')
-    with col2:
-        last_image = st.checkbox('Dernier')
-    with col5:
-        button = st.button('Analyse OCR')
-
-
-    if all_image and button:
-
-        for doc in docs_s3:
-            select_path = bucket_name+"/"+doc
-            st.markdown(doc)
-            image = read_file(select_path)
-            name = doc.split('.')[0]
-            str_text = extract_content_to_txt(image)
-            out_file = str(name)+'.txt'
-            s3.Object(bucket_name_txt, out_file).put(Body=str_text)
-
-        for doc in docs_repo:
-            select_path = import_path + doc
-            st.markdown(doc)
-            image = cv2.imread(select_path)
-            name = doc.split('.')[0]
-            str_text = extract_content_to_txt(image)
-            out_file = str(name)+'.txt'
-            s3.Object(bucket_name_txt, out_file).put(Body=str_text)
-
-        # my_bar = st.progress(0)
-        # schema = Schema(title=TEXT(stored=True), path=ID(stored=True), content=TEXT, textdata=TEXT(stored=True))
-        # if not os.path.exists("se_indexdir"):
-        #     os.mkdir("se_indexdir")
-
-        # # Creating a index writer to add document as per schema
-        # ix = create_in("se_indexdir", schema)
-        # writer = ix.writer()
-
-        # filepaths = []
-        # for file in my_bucket2.objects.all():
-        #     filepaths.append(file.key)
-
-        # for name, percent in zip(filepaths, range(len(filepaths))):
-
-        #     val = (percent+1) / len(filepaths)
-        #     my_bar.progress(val)
-
-        #     # Do not select empty document
-        #     try:
-        #         select_path = bucket_name_txt+"/"+name
-        #         fp = fs.open(select_path, "rb")
-        #         text = fp.read().decode('utf-8', 'ignore')
-        #         writer.add_document(title=name, path=select_path, content=text, textdata=text)
-        #         fp.close()
-        #     except UnicodeDecodeError:
-        #         pass
-
-        # writer.commit()
-
-        ix = ("se_indexdir")
-        writer = ix.writer()
-        try:
-            select_path = bucket_name_txt+"/"+name
-            fp = fs.open(select_path, "rb")
-            text = fp.read().decode('utf-8', 'ignore')
-            writer.add_document(title=name, path=select_path, content=text, textdata=text)
-            fp.close()
-        except UnicodeDecodeError:
-            pass
-        writer.commit()
-            
-
-            ############
-        if button:
-    
-            my_bar = st.progress(0)
-            schema = Schema(title=TEXT(stored=True), path=ID(stored=True), content=TEXT, textdata=TEXT(stored=True))
-            if not os.path.exists("se_indexdir"):
-                os.mkdir("se_indexdir")
-    
-            # Creating a index writer to add document as per schema
-            ix = create_in("se_indexdir", schema)
-            writer = ix.writer()
-    
-            filepaths = []
-            for file in my_bucket2.objects.all():
-                filepaths.append(file.key)
-    
-            for name, percent in zip(filepaths, range(len(filepaths))):
-    
-                val = (percent+1) / len(filepaths)
-                my_bar.progress(val)
-    
-                # Do not select empty document
-                try:
-                    select_path = bucket_name_txt+"/"+name
-                    fp = fs.open(select_path, "rb")
-                    text = fp.read().decode('utf-8', 'ignore')
-                    writer.add_document(title=name, path=select_path, content=text, textdata=text)
-                    fp.close()
-                except UnicodeDecodeError:
-                    pass
-    
-            writer.commit()
-
-
-    elif select is not None and all_image is not None and last_image is not None and button:
-        if select in docs_s3:
-            select_path = bucket_name+"/"+select
-            st.markdown(select)
-            image = read_file(select_path)
-            name = select.split('.')[0]
-            st.image(image, caption=name)
-            str_text = extract_content_to_txt(image)
-            out_file = str(name)+'.txt'
-            s3.Object(bucket_name_txt, out_file).put(Body=str_text)
-
-        elif select in docs_repo:
-            select_path = import_path + select
-            st.markdown(select)
-            image = cv2.imread(select_path)
-            name = select.split('.')[0]
-            str_text = extract_content_to_txt(image)
-            out_file = str(name)+'.txt'
-            s3.Object(bucket_name_txt, out_file).put(Body=str_text)
-            
-            ############
-        if button:
-    
-            my_bar = st.progress(0)
-            schema = Schema(title=TEXT(stored=True), path=ID(stored=True), content=TEXT, textdata=TEXT(stored=True))
-            if not os.path.exists("se_indexdir"):
-                os.mkdir("se_indexdir")
-    
-            # Creating a index writer to add document as per schema
-            ix = create_in("se_indexdir", schema)
-            writer = ix.writer()
-    
-            filepaths = []
-            for file in my_bucket2.objects.all():
-                filepaths.append(file.key)
-    
-            for name, percent in zip(filepaths, range(len(filepaths))):
-    
-                val = (percent+1) / len(filepaths)
-                my_bar.progress(val)
-    
-                # Do not select empty document
-                try:
-                    select_path = bucket_name_txt+"/"+name
-                    fp = fs.open(select_path, "rb")
-                    text = fp.read().decode('utf-8', 'ignore')
-                    writer.add_document(title=name, path=select_path, content=text, textdata=text)
-                    fp.close()
-                except UnicodeDecodeError:
-                    pass
-    
-            writer.commit()  
-            
-    elif last_image and button:
-        pass
-
-#########################################################################################################################
-#                                              # === INDEXER === #
-# #######################################################################################################################
-if analysis == "Indexation":
-    st.header('Indexation')
-
-    side_bar()
-
-    button = st.button('Create')
-
-    if button:
-
-        my_bar = st.progress(0)
-        schema = Schema(title=TEXT(stored=True), path=ID(stored=True), content=TEXT, textdata=TEXT(stored=True))
-        if not os.path.exists("se_indexdir"):
-            os.mkdir("se_indexdir")
-
-        # Creating a index writer to add document as per schema
-        ix = create_in("se_indexdir", schema)
-        writer = ix.writer()
-
-        filepaths = []
-        for file in my_bucket2.objects.all():
-            filepaths.append(file.key)
-
-        for name, percent in zip(filepaths, range(len(filepaths))):
-
-            val = (percent+1) / len(filepaths)
-            my_bar.progress(val)
-
-            # Do not select empty document
-            try:
-                select_path = bucket_name_txt+"/"+name
-                fp = fs.open(select_path, "rb")
-                text = fp.read().decode('utf-8', 'ignore')
-                writer.add_document(title=name, path=select_path, content=text, textdata=text)
-                fp.close()
-            except UnicodeDecodeError:
-                pass
-
-        writer.commit()
-
 
 # #######################################################################################################################
 #                                              # === SEARCH ENGINE === #
 # #######################################################################################################################
 if analysis == "Search Engine":
-    
+
     # Create the Search Engine
     try:
         SE = SearchEngine()
@@ -476,10 +247,9 @@ if analysis == "Search Engine":
         writer = ix.writer()
 
         filepaths = []
-        for file in my_bucket2.objects.all():
+        for file in my_bucket_txt.objects.all():
             filepaths.append(file.key)
-        
-            
+
         filepaths = filepaths[:10]
         for name, percent in zip(filepaths, range(len(filepaths))):
 
@@ -654,10 +424,9 @@ if analysis == "Search Engine":
 
                 with st.expander("See original page"):
                     try:
-                        bucket = my_bucket
-                        image_object = bucket.Object(txt[:-9]+'.png')
+                        image_object = my_bucket_img.Object(txt[:-9]+'.png')
                         image = mpimg.imread(BytesIO(image_object.get()['Body'].read()), 'png')
-                        
+
                         st.image(image)
                     except (AttributeError, TypeError, s3.meta.client.exceptions.NoSuchKey) as e:
                         st.warning("Erreur - l'image n'existe pas")
