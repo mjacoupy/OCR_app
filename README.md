@@ -9,7 +9,7 @@ L'application est un moteur de recherche permettant de trouver la ou les pages d
 
 ### Partie "Import d'un nouveau document" 
 Cette étape de l'application permet d'importer divers types de documents (PNG, PDF, JPG, JPEG). Pour les formats PDF, il est possible d'importer une page ou le document complet. 
-Deux formats sont importées :
+Deux formats sont importés :
 - l'image sélectionnée (JPG, JPEG, PNG ou la page sélectionnée si PDF) qui va ensuite être stockée sur un bucket AWS S3.
 - le texte "brut" sous format .txt qui va ensuite être stocké sur un autre bucket AWS S3. 
 > Les noms des deux buckets sont à définir dans le fichier .py
@@ -19,7 +19,7 @@ Cette étape permet de faire une recherche en 107 langages différents dans des 
 > La seule étape de "sémantique" existante est une sélection des mots clés pertinents basée sur la bibliothèque "Rake-nltk".
  
 Sont affichés une fois la recherche lancée :
-- la quantité de document dans la base de donnée.
+- la quantité de document dans la base de données.
 - le nombre de documents prédits comme "positif".
 - un tableau contenant le nom de ces documents, la langue dans laquelle ils sont ainsi qu'un score de prédiction. 
 > Ce score est basé sur la fréquence d'apparition du ou des mots de la requête sur le nombre total de mot unique.
@@ -30,7 +30,7 @@ Sont affichés une fois la recherche lancée :
 
 ### Le Git doit absolument contenir les éléments suivants :
 - le dossier se_indexdir pour la création et le stockage de l'indexer.
-- le dossier Search_Engine contenant:
+- le dossier Search_Engine contenant :
   - le fichier OCRplus_app_demo.py (l'application).
   - le fichier SearchEngine_app.py (pour la partie moteur de recherche.
 - un fichier package.txt contenant : 
@@ -85,9 +85,9 @@ Sont affichés une fois la recherche lancée :
 ## Déploiement sur Streamlit
 
 ### 1. Création d'un compte
-Tout d'abord il faut créer un compte sur https://share.streamlit.io/ 
-  > la version "*Community*" autorise 3 application mais qui doivent se trouver sur un *repository* Git publique.
-  
+Tout d'abord il faut créer un compte sur <https://share.streamlit.io/>
+  > la version "*Community*" autorise 3 applications mais qui doivent se trouver sur un *repository* Git publique.
+  >
   > La version "*Teams*" coute 250$ mensuel et permet le déploiement de 10 applications privées. 
 
 
@@ -95,16 +95,15 @@ Tout d'abord il faut créer un compte sur https://share.streamlit.io/
 - Cliquer sur *New app*
 - Sélectionner le *repository* git 
 - Sélectionner la branche
-- Sélectionner l'application à deployer 
+- Sélectionner l'application à déployer 
 - Cliquer sur *deploy*
 
 ### 3. Une fois l'application déployée
-- Revenir sur https://share.streamlit.io/ et se connecter
+- Revenir sur <https://share.streamlit.io/> et se connecter
 - Cliquer sur les ... verticaux à droite du nom de l'app 
 - Cliquer sur *settings*
 - Cliquer sur *secrets*
-- Remplir les champs suivants:
+- Remplir les champs suivants :
     - AWS_ACCESS_KEY_ID = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     - AWS_SECRET_ACCESS_KEY = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-    > Le lien vers AWS se fait via les bibliothèques boto3 et s3fs. La création de ces deux IDs sont nécessaire au bon fonctionnement de l'application 
-
+    > Le lien vers AWS se fait via les bibliothèques boto3 et s3fs. La création de ces deux IDs est nécessaire au bon fonctionnement de l'application
