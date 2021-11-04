@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-04 10:01:13
+# @Last Modified time: 2021-11-04 10:03:01
 
 
 # #######################################################################################################################
@@ -26,6 +26,7 @@ from io import BytesIO
 import matplotlib.image as mpimg
 import nltk
 nltk.download('stopwords')
+nltk.download('punkt')
 
 
 # #######################################################################################################################
