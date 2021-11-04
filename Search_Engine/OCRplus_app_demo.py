@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-04 11:26:15
+# @Last Modified time: 2021-11-04 11:27:05
 
 
 # #######################################################################################################################
@@ -118,7 +118,7 @@ def my_split(s, seps):
     return res
 
 
-def img_to_s3(body=None, key=None, page=0):
+def img_to_s3(body=None, key=None, page=1):
     """..."""
     s3 = session.resource('s3')
 
