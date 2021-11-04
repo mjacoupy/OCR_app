@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-04 11:34:45
+# @Last Modified time: 2021-11-04 11:35:44
 
 
 # #######################################################################################################################
@@ -254,6 +254,8 @@ if analysis == "Import":
 # #######################################################################################################################
 if analysis == "Search Engine":
 
+    side_bar(analysis)
+
     # Create the Search Engine
     try:
         SE = SearchEngine()
@@ -298,7 +300,7 @@ if analysis == "Search Engine":
     lang = None
     kw = doc = positive = score = None
 
-    side_bar()
+
 
 # ##################################### == PART 1 == ##########################################################
     st.header('Search Engine')
