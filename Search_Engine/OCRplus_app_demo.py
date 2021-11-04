@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-04 11:24:41
+# @Last Modified time: 2021-11-04 11:26:15
 
 
 # #######################################################################################################################
@@ -218,6 +218,7 @@ if analysis == "Import":
         pil_image = Image.open(data).convert('RGB')
         open_cv_image = np.array(pil_image)
         image_s3 = open_cv_image[:, :, ::-1].copy()
+        image_s3 = cv2.cvtColor(image_s3, cv2.COLOR_BGR2RGB)
 
         scale_percent = 20
         width = int(image_s3.shape[1] * scale_percent / 100)
@@ -227,7 +228,7 @@ if analysis == "Import":
         # resize image
         resized = cv2.resize(image_s3, dim, interpolation=cv2.INTER_AREA)
 
-        st.image(resized, caption='Selected document', channels='BGR')
+        st.image(resized, caption='Selected document')
 
         button = st.button("Import")
 
