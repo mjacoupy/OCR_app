@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-04 11:23:03
+# @Last Modified time: 2021-11-04 11:24:41
 
 
 # #######################################################################################################################
@@ -215,7 +215,7 @@ if analysis == "Import":
     elif data is not None and "pdf" not in str(data.type):
 
         image = Image.open(data)
-        pil_image = Image.open(data).convert('BGR')
+        pil_image = Image.open(data).convert('RGB')
         open_cv_image = np.array(pil_image)
         image_s3 = open_cv_image[:, :, ::-1].copy()
 
@@ -227,7 +227,7 @@ if analysis == "Import":
         # resize image
         resized = cv2.resize(image_s3, dim, interpolation=cv2.INTER_AREA)
 
-        st.image(resized, caption='Selected document')
+        st.image(resized, caption='Selected document', channels='BGR')
 
         button = st.button("Import")
 
