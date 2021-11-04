@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-04 10:21:24
+# @Last Modified time: 2021-11-04 10:23:03
 
 
 # #######################################################################################################################
@@ -203,12 +203,12 @@ if analysis == "Import":
         image_s3 = open_cv_image[:, :, ::-1].copy()
 
         scale_percent = 20
-        width = int(image2.shape[1] * scale_percent / 100)
-        height = int(image2.shape[0] * scale_percent / 100)
+        width = int(image_s3.shape[1] * scale_percent / 100)
+        height = int(image_s3.shape[0] * scale_percent / 100)
         dim = (width, height)
 
         # resize image
-        resized = cv2.resize(image2, dim, interpolation=cv2.INTER_AREA)
+        resized = cv2.resize(image_s3, dim, interpolation=cv2.INTER_AREA)
 
         st.image(resized, caption='Selected document')
 
