@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-04 10:16:18
+# @Last Modified time: 2021-11-04 10:21:24
 
 
 # #######################################################################################################################
@@ -171,13 +171,13 @@ if analysis == "Import":
         text = 'Page number between **1** and **'+str(len(images))+"**"
         col1, col2 = st.columns([8, 2])
         with col1:
-            #Choose Page to import
-            int_val = st.number_input(text, min_value=1, max_value=len(images), value=1)
+            # Choose a page to import
+            page = st.number_input(text, min_value=1, max_value=len(images), value=1)
         with col2:
             button1 = st.button("Import")
 
         # Display the chosen page
-        img = np.array(images[int_val-1])
+        img = np.array(images[page-1])
         scale_percent = 20
         width = int(img.shape[1] * scale_percent / 100)
         height = int(img.shape[0] * scale_percent / 100)
@@ -187,13 +187,12 @@ if analysis == "Import":
 
 
         if data is not None and "pdf" in str(data.type) and button1:
-            img = np.array(images[int_val-1])
 
-            n = name[:-4]+"_page"+str(int_val)+'.png'
-            img_to_s3(img, str(n))
+            name_s3 = name[:-4]+"_page"+str(page)+'.png'
+            img_to_s3(img, str(name_s3))
 
             str_text = extract_content_to_txt(img)
-            out_file = str(name[:-4]+"_page"+str(int_val)+'_raw_text.txt')
+            out_file = str(name[:-4]+"_page"+str(page)+'_raw_text.txt')
             s3.Object(bucket_name_txt, out_file).put(Body=str_text)
 
     elif data is not None and "pdf" not in str(data.type):
@@ -201,7 +200,7 @@ if analysis == "Import":
         image = Image.open(data)
         pil_image = Image.open(data).convert('RGB')
         open_cv_image = np.array(pil_image)
-        image2 = open_cv_image[:, :, ::-1].copy()
+        image_s3 = open_cv_image[:, :, ::-1].copy()
 
         scale_percent = 20
         width = int(image2.shape[1] * scale_percent / 100)
@@ -218,12 +217,10 @@ if analysis == "Import":
 
         if data is not None and button:
 
-            export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
-            out_file = export_path + str(name) + ".png"
-            n = name[:-4]+"_page"+str(int_val)+'.png'
-            img_to_s3(image2, str(n))
+            name_s3 = str(name)+'.png'
+            img_to_s3(image_s3, str(name_s3))
 
-            str_text = extract_content_to_txt(image2)
+            str_text = extract_content_to_txt(image_s3)
             out_file = str(name)+'.txt'
             s3.Object(bucket_name_txt, out_file).put(Body=str_text)
 
