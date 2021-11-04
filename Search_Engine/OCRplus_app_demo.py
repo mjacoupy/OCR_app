@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-04 10:53:48
+# @Last Modified time: 2021-11-04 10:56:57
 
 
 # #######################################################################################################################
@@ -169,8 +169,6 @@ if analysis == "Import":
     # If the document is a PDF
     if data is not None and "pdf" in str(data.type):
 
-        choice = st.radio
-
         images = convert_from_bytes(data.read())
         text = 'Page number between 1 and '+str(len(images))
         col1, col2, col3 = st.columns([6, 3, 1])
@@ -206,11 +204,11 @@ if analysis == "Import":
             elif full_doc:
                 for iPage in range(len(images)-1):
                     img = np.array(images[iPage-1])
-                    name_s3 = name[:-4]+"_page"+str(iPage)+'.png'
+                    name_s3 = name[:-4]+"_page"+str(iPage+1)+'.png'
                     img_to_s3(img, str(name_s3))
 
                     str_text = extract_content_to_txt(img)
-                    out_file = str(name[:-4]+"_page"+str(iPage)+'_raw_text.txt')
+                    out_file = str(name[:-4]+"_page"+str(iPage+1)+'_raw_text.txt')
                     s3.Object(bucket_name_txt, out_file).put(Body=str_text)
 
 
