@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-04 11:28:32
+# @Last Modified time: 2021-11-04 11:34:45
 
 
 # #######################################################################################################################
@@ -93,14 +93,16 @@ def extract_content_to_txt(image):
 
 
 
-def side_bar():
+def side_bar(onglet='Import'):
     """..."""
     end = '<p style="font-family:Avenir; font-weight:bold; color:#FCBA28; font-size:12px; ">©2021 Positive Thinking Company et/ou ses affiliés. Tous droits réservés. Produit par le PTC Tech Lab.</p>'
 
     st.sidebar.markdown("""---""")
 
-    # st.sidebar.markdown("1. **Import :** Ajout d'un nouveau document à analyser. Cela peut etre une image (png ou jpeg) ou un document PDF")
-    # st.sidebar.markdown('2. **Moteur de recherche**')
+    if onglet == 'Import':
+        st.sidebar.markdown("1. **Import :** Ajout d'un nouveau document à analyser. Cela peut etre une image (png ou jpeg) ou un document PDF")
+    elif onglet == 'Search Engine':
+        st.sidebar.markdown("2. **Moteur de recherche :** Permet de chercher un document ou la page d'un document contenant l'information recherchée")
 
     st.sidebar.markdown("""---""")
 
@@ -159,7 +161,7 @@ if analysis == "Import":
     st.header("Import of a new document")
 
     # Create Side Bar
-    side_bar()
+    side_bar(analysis)
 
     data = st.file_uploader("", type=["png", "jpg", "jpeg", "pdf"])
     st.markdown("""---""")
