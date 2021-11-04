@@ -1,5 +1,6 @@
-s3fs
+s3fs==2021.10.1
 pytesseract==0.3.8
 boto3==1.17.106
 Whoosh==2.7.4
 rake-nltk
+deep-translator
