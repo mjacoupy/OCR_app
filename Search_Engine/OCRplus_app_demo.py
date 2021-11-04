@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-04 10:32:33
+# @Last Modified time: 2021-11-04 10:35:18
 
 
 # #######################################################################################################################
@@ -150,7 +150,7 @@ image1 = Image.open("app_logos/PTCtechLab.png")
 image2 = Image.open("app_logos/PTC.png")
 st.sidebar.image(image2, width=200)
 
-analysis = st.sidebar.selectbox('', ['Search Engine', 'Import'])
+analysis = st.sidebar.selectbox('', ['Import', 'Search Engine'], index=1)
 
 # #######################################################################################################################
 #                                              # === IMPORT NEW FILE === #
