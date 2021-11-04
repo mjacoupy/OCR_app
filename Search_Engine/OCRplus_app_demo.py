@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-04 11:27:05
+# @Last Modified time: 2021-11-04 11:28:32
 
 
 # #######################################################################################################################
@@ -237,10 +237,7 @@ if analysis == "Import":
             if ".jpeg" in str(data.type):
                 name_s3 = str(name[:-5])+'.png'
                 out_file = str(name[:-5]+'_raw_text.txt')
-            elif ".png" in str(data.type):
-                name_s3 = str(name)
-                out_file = str(name[:-4]+'_raw_text.txt')
-            elif ".jpg" in str(data.type):
+            else:
                 name_s3 = str(name[:-4])+'.png'
                 out_file = str(name[:-4]+'_raw_text.txt')
 
