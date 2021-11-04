@@ -57,30 +57,29 @@ Sont affichés une fois la recherche lancée :
   
 ### Il peut également contenir :
  - Le dossier app_logos à la racine contenant les logos à afficher 
- - Un dossier .streamlit contenant un fichier .config.toml avec le contenu suivant :  
+  - Un dossier .streamlit contenant un fichier .config.toml avec le contenu suivant :  
     ```ruby
-
     [theme]
 
     # The preset Streamlit theme that your custom theme inherits from. One of "light" or "dark".
-    base =
+    base = "light"
 
     # Primary accent color for interactive elements.
-    primaryColor =
+    primaryColor = "#******"
 
     # Background color for the main content area.
     #backgroundColor =
 
     # Background color used for the sidebar and most interactive widgets.
-    secondaryBackgroundColor =
+    secondaryBackgroundColor = "#******"
 
     # Color used for almost all text.
-    textColor =
+    textColor = "#******"
 
     # Font family for all text in the app, except code blocks. One of "sans serif", "serif", or "monospace".
     #font =
     ```
-    > A compléter avec les couleurs choisies 
+    > "#******" --> A compléter avec les couleurs choisies 
 
 ## Déploiement sur Streamlit
 
