@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-04 10:11:22
+# @Last Modified time: 2021-11-04 10:16:18
 
 
 # #######################################################################################################################
@@ -158,21 +158,25 @@ analysis = st.sidebar.selectbox('', ['Search Engine', 'Import'])
 if analysis == "Import":
     st.header("Import of a new document")
 
+    # Create Side Bar
     side_bar()
 
     data = st.file_uploader("", type=["png", "jpg", "jpeg", "pdf"])
     if data:
         name = str(data.name)
 
+    # If the document is a PDF
     if data is not None and "pdf" in str(data.type):
         images = convert_from_bytes(data.read())
         text = 'Page number between **1** and **'+str(len(images))+"**"
         col1, col2 = st.columns([8, 2])
         with col1:
+            #Choose Page to import
             int_val = st.number_input(text, min_value=1, max_value=len(images), value=1)
         with col2:
             button1 = st.button("Import")
 
+        # Display the chosen page
         img = np.array(images[int_val-1])
         scale_percent = 20
         width = int(img.shape[1] * scale_percent / 100)
@@ -183,11 +187,8 @@ if analysis == "Import":
 
 
         if data is not None and "pdf" in str(data.type) and button1:
-            page = images[int_val-1]
-            img = np.array(page)
+            img = np.array(images[int_val-1])
 
-            export_path = os.path.join(os.path.abspath(os.getcwd()), "ocr_doc_to_process/")
-            out_file = export_path + str(name) + "-" + str(int_val) + ".png"
             n = name[:-4]+"_page"+str(int_val)+'.png'
             img_to_s3(img, str(n))
 
