@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-04 10:47:36
+# @Last Modified time: 2021-11-04 10:48:28
 
 
 # #######################################################################################################################
@@ -162,6 +162,7 @@ if analysis == "Import":
     side_bar()
 
     data = st.file_uploader("", type=["png", "jpg", "jpeg", "pdf"])
+    st.markdown("""---""")
     if data:
         name = str(data.name)
 
