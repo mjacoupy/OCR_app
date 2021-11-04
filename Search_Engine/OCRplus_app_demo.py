@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-04 10:48:28
+# @Last Modified time: 2021-11-04 10:53:48
 
 
 # #######################################################################################################################
@@ -194,12 +194,25 @@ if analysis == "Import":
 
         if data is not None and "pdf" in str(data.type) and button1:
 
-            name_s3 = name[:-4]+"_page"+str(page)+'.png'
-            img_to_s3(img, str(name_s3))
+            if full_doc is False:
 
-            str_text = extract_content_to_txt(img)
-            out_file = str(name[:-4]+"_page"+str(page)+'_raw_text.txt')
-            s3.Object(bucket_name_txt, out_file).put(Body=str_text)
+                name_s3 = name[:-4]+"_page"+str(page)+'.png'
+                img_to_s3(img, str(name_s3))
+
+                str_text = extract_content_to_txt(img)
+                out_file = str(name[:-4]+"_page"+str(page)+'_raw_text.txt')
+                s3.Object(bucket_name_txt, out_file).put(Body=str_text)
+
+            elif full_doc:
+                for iPage in range(len(images)-1):
+                    img = np.array(images[iPage-1])
+                    name_s3 = name[:-4]+"_page"+str(iPage)+'.png'
+                    img_to_s3(img, str(name_s3))
+
+                    str_text = extract_content_to_txt(img)
+                    out_file = str(name[:-4]+"_page"+str(iPage)+'_raw_text.txt')
+                    s3.Object(bucket_name_txt, out_file).put(Body=str_text)
+
 
     elif data is not None and "pdf" not in str(data.type):
 
