@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-26 16:19:54
+# @Last Modified time: 2021-12-01 16:29:48
 
 
 # #######################################################################################################################
@@ -52,8 +52,13 @@ session = boto3.Session(
 # #######################################################################################################################
 @st.cache(ttl=600)
 def read_file(filename):
-    """..."""
+    """Import and display image from an s3 bucket.
 
+    :param filename: name of the file
+    :type filename: str
+    :returns: image
+    :rtype: numpy array
+    """
     infile = fs.open(filename, "rb")
     pil_image = Image.open(infile).convert('RGB')
     open_cv_image = np.array(pil_image)
@@ -82,6 +87,8 @@ def clean_text(ext_text):
 def extract_content_to_txt(image):
     """Extract raw text from page.
 
+    :param image: image
+    :type image: numpy array
     :returns: raw text
     :rtype: str
     """
@@ -94,7 +101,11 @@ def extract_content_to_txt(image):
 
 
 def side_bar(onglet='Import'):
-    """..."""
+    """Display a side bar for streamlit.
+
+    :param onglet: onglet name
+    :type onglet: str
+    """
     end = '<p style="font-family:Avenir; font-weight:bold; color:#FCBA28; font-size:12px; ">©2021 Positive Thinking Company et/ou ses affiliés. Tous droits réservés. Produit par le PTC Tech Lab.</p>'
 
     st.sidebar.markdown("""---""")
@@ -125,7 +136,15 @@ def my_split(s, seps):
 
 
 def img_to_s3(body=None, key=None, page=1):
-    """..."""
+    """Save image to an S3 bucket.
+
+    :param body: content
+    :type body: array
+    :param key: file name
+    :type key: str
+    :param page: page number
+    :type page: int
+    """
     s3 = session.resource('s3')
 
     img_pil = Image.fromarray(body)
@@ -471,34 +490,3 @@ if analysis == "Search Engine":
 
 #########################################################################################################################
 # #######################################################################################################################
-
-
-import s3fs
-
-fs = s3fs.S3FileSystem(anon=False)
-bucket_name = "ocrplus-app-mja"
-
-s3 = boto3.resource('s3')
-    my_bucket_txt = s3.Bucket("ocrplus-app-mja")
-
-filepaths = []
-for file in my_bucket_txt.objects.all():
-    filepaths.append(file.key)
-
-
-def read_file(filename):
-    with fs.open(filename) as f:
-        return f.read().decode("utf-8")
-
-import streamlit as st
-x = st.slider("Select a value")
-st.write(x, "squared is", x * x)
-
-session = boto3.Session(
-    aws_access_key_id=st.secrets['AWS_ACCESS_KEY_ID'],
-    aws_secret_access_key=st.secrets['AWS_SECRET_ACCESS_KEY']
-    )
-
-s3 = session.resource('s3')
-
-
