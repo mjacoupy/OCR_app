@@ -2,7 +2,7 @@
 # @Author: mjacoupy
 # @Date:   2021-09-29 11:02:47
 # @Last Modified by:   mjacoupy
-# @Last Modified time: 2021-11-04 12:23:19
+# @Last Modified time: 2021-11-26 16:19:54
 
 
 # #######################################################################################################################
@@ -471,3 +471,34 @@ if analysis == "Search Engine":
 
 #########################################################################################################################
 # #######################################################################################################################
+
+
+import s3fs
+
+fs = s3fs.S3FileSystem(anon=False)
+bucket_name = "ocrplus-app-mja"
+
+s3 = boto3.resource('s3')
+    my_bucket_txt = s3.Bucket("ocrplus-app-mja")
+
+filepaths = []
+for file in my_bucket_txt.objects.all():
+    filepaths.append(file.key)
+
+
+def read_file(filename):
+    with fs.open(filename) as f:
+        return f.read().decode("utf-8")
+
+import streamlit as st
+x = st.slider("Select a value")
+st.write(x, "squared is", x * x)
+
+session = boto3.Session(
+    aws_access_key_id=st.secrets['AWS_ACCESS_KEY_ID'],
+    aws_secret_access_key=st.secrets['AWS_SECRET_ACCESS_KEY']
+    )
+
+s3 = session.resource('s3')
+
+
